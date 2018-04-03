@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ESPRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ESPRequest</TokenIdentifier>
+			<Abstract type="html">ESPRequest</Abstract>
+			<DeclaredIn>ESPRequest.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ESPRequest/request</TokenIdentifier>
+			<Abstract type="html">Conveniance method to allocate, initialize, and return a new request</Abstract>
+			<DeclaredIn>ESPRequest.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)request</Declaration>
+			
+			<ReturnValue><Abstract type="html">a newly created request </Abstract></ReturnValue>
+			<Anchor>//api/name/request</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPRequest/setTarget:</TokenIdentifier>
+			<Abstract type="html">The target device/accessory that will receive the request</Abstract>
+			<DeclaredIn>ESPRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPRequestTarget target</Declaration>
+			
+			
+			<Anchor>//api/name/target</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPRequest/target</TokenIdentifier>
+			<Abstract type="html">The target device/accessory that will receive the request</Abstract>
+			<DeclaredIn>ESPRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPRequestTarget target</Declaration>
+			
+			
+			<Anchor>//api/name/target</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPRequest/target</TokenIdentifier>
+			<Abstract type="html">The target device/accessory that will receive the request</Abstract>
+			<DeclaredIn>ESPRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPRequestTarget target</Declaration>
+			
+			
+			<Anchor>//api/name/target</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPRequest/setPacketID:</TokenIdentifier>
+			<Abstract type="html">The packet identifier of the request</Abstract>
+			<DeclaredIn>ESPRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPPacketID packetID</Declaration>
+			
+			
+			<Anchor>//api/name/packetID</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPRequest/packetID</TokenIdentifier>
+			<Abstract type="html">The packet identifier of the request</Abstract>
+			<DeclaredIn>ESPRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPPacketID packetID</Declaration>
+			
+			
+			<Anchor>//api/name/packetID</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPRequest/packetID</TokenIdentifier>
+			<Abstract type="html">The packet identifier of the request</Abstract>
+			<DeclaredIn>ESPRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPPacketID packetID</Declaration>
+			
+			
+			<Anchor>//api/name/packetID</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPRequest/setPacketData:</TokenIdentifier>
+			<Abstract type="html">The packet data of the request</Abstract>
+			<DeclaredIn>ESPRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSData *packetData</Declaration>
+			
+			
+			<Anchor>//api/name/packetData</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPRequest/packetData</TokenIdentifier>
+			<Abstract type="html">The packet data of the request</Abstract>
+			<DeclaredIn>ESPRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSData *packetData</Declaration>
+			
+			
+			<Anchor>//api/name/packetData</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPRequest/packetData</TokenIdentifier>
+			<Abstract type="html">The packet data of the request</Abstract>
+			<DeclaredIn>ESPRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSData *packetData</Declaration>
+			
+			
+			<Anchor>//api/name/packetData</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPRequest/setResponseExpector:</TokenIdentifier>
+			<Abstract type="html">If a request expects a response, the response expector handles the response action</Abstract>
+			<DeclaredIn>ESPRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) ESPResponseExpector *responseExpector</Declaration>
+			
+			
+			<Anchor>//api/name/responseExpector</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPRequest/responseExpector</TokenIdentifier>
+			<Abstract type="html">If a request expects a response, the response expector handles the response action</Abstract>
+			<DeclaredIn>ESPRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) ESPResponseExpector *responseExpector</Declaration>
+			
+			
+			<Anchor>//api/name/responseExpector</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPRequest/responseExpector</TokenIdentifier>
+			<Abstract type="html">If a request expects a response, the response expector handles the response action</Abstract>
+			<DeclaredIn>ESPRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) ESPResponseExpector *responseExpector</Declaration>
+			
+			
+			<Anchor>//api/name/responseExpector</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPRequest/setMinimumProcessingTime:</TokenIdentifier>
+			<Abstract type="html">The minimum amount of time needed to complete this request. Even if the timeout value is lower than this value, the request will not time out until at least this amount of time has passed after sending the request. By default, this value is 0 */</Abstract>
+			<DeclaredIn>ESPRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSTimeInterval minimumProcessingTime</Declaration>
+			
+			
+			<Anchor>//api/name/minimumProcessingTime</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPRequest/minimumProcessingTime</TokenIdentifier>
+			<Abstract type="html">The minimum amount of time needed to complete this request. Even if the timeout value is lower than this value, the request will not time out until at least this amount of time has passed after sending the request. By default, this value is 0 */</Abstract>
+			<DeclaredIn>ESPRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSTimeInterval minimumProcessingTime</Declaration>
+			
+			
+			<Anchor>//api/name/minimumProcessingTime</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPRequest/minimumProcessingTime</TokenIdentifier>
+			<Abstract type="html">The minimum amount of time needed to complete this request. Even if the timeout value is lower than this value, the request will not time out until at least this amount of time has passed after sending the request. By default, this value is 0 */</Abstract>
+			<DeclaredIn>ESPRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSTimeInterval minimumProcessingTime</Declaration>
+			
+			
+			<Anchor>//api/name/minimumProcessingTime</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

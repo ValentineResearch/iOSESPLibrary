@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ESPResponseExpector Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">ESPLibrary </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Valentine</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/failureCallback">failureCallback</option>
+		
+		<option value="//api/name/packetRecievedCallback">packetRecievedCallback</option>
+		
+		<option value="//api/name/requestTimestamp">requestTimestamp</option>
+		
+		<option value="//api/name/responseIDs">responseIDs</option>
+		
+		<option value="//api/name/sentPackets">sentPackets</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/expector">+ expector</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addResponseID:">- addResponseID:</option>
+		
+		<option value="//api/name/dateOfSentPacket:">- dateOfSentPacket:</option>
+		
+		<option value="//api/name/hasPacketIdenticalTo:">- hasPacketIdenticalTo:</option>
+		
+		<option value="//api/name/hasPacketWithDestination:">- hasPacketWithDestination:</option>
+		
+		<option value="//api/name/hasPacketWithID:destination:">- hasPacketWithID:destination:</option>
+		
+		<option value="//api/name/hasResponseID:">- hasResponseID:</option>
+		
+		<option value="//api/name/isExpiredWithTimeout:">- isExpiredWithTimeout:</option>
+		
+		<option value="//api/name/isInBusyQueue:">- isInBusyQueue:</option>
+		
+		<option value="//api/name/markSentRequest:withPacket:">- markSentRequest:withPacket:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ESPResponseExpector Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ESPResponseExpector.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>ESPResponseExpector</p>
+
+<p>Discussion:
+Handles receiving of response packets from requests. Many request packet identifiers have a corresponding response packet identifier.
+The response <a href="#//api/name/expector">expector</a> expects a packet with the response identifier for a request and has its callback called when the packet is
+received.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/expector" title="expector"></a>
+	<h3 class="method-title"><code><a href="#//api/name/expector">+&nbsp;expector</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Convenience method to allocate, initialize, and return a new response expector</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)expector</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Convenience method to allocate, initialize, and return a new response expector</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPResponseExpector.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addResponseID:" title="addResponseID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addResponseID:">&ndash;&nbsp;addResponseID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds a packet ID that identifies the type of response to be expected</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addResponseID:(ESPPacketID)<em>responseID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>responseID</code></th>
+						<td><p>the packet ID of the type of response to expect</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds a packet ID that identifies the type of response to be expected</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPResponseExpector.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hasResponseID:" title="hasResponseID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hasResponseID:">&ndash;&nbsp;hasResponseID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells whether the given packet ID matches any of the expector&rsquo;s response IDs</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)hasResponseID:(ESPPacketID)<em>responseID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>responseID</code></th>
+						<td><p>the packet ID to look for</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if the <a href="#//api/name/expector">expector</a> has a matching response ID, or NO if it does not have a matching response ID</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Tells whether the given packet ID matches any of the expector&rsquo;s response IDs</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPResponseExpector.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/markSentRequest:withPacket:" title="markSentRequest:withPacket:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/markSentRequest:withPacket:">&ndash;&nbsp;markSentRequest:withPacket:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Marks a request as sent. The given request&rsquo;s responseExpector property should be this response <a href="#//api/name/expector">expector</a>, and the method will throw an exception if it is not. When this method is called, the request&rsquo;s responseExpector property is set to nil to prevent a retain loop.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)markSentRequest:(ESPRequest *)<em>request</em> withPacket:(ESPPacket *)<em>packet</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>the request to mark as sent</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>packet</code></th>
+						<td><p>the packet that was sent for the request</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Marks a request as sent. The given request&rsquo;s responseExpector property should be this response <a href="#//api/name/expector">expector</a>, and the method will throw an exception if it is not. When this method is called, the request&rsquo;s responseExpector property is set to nil to prevent a retain loop.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPResponseExpector.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hasPacketIdenticalTo:" title="hasPacketIdenticalTo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hasPacketIdenticalTo:">&ndash;&nbsp;hasPacketIdenticalTo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Checks if any of the request packets have the same memory address as the given packet</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)hasPacketIdenticalTo:(ESPPacket *)<em>packet</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>packet</code></th>
+						<td><p>the packet to compare packet data against</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if the <a href="#//api/name/expector">expector</a> contains a matching packet, or NO if it does not contain a matching packet</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Checks if any of the request packets have the same memory address as the given packet</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPResponseExpector.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hasPacketWithID:destination:" title="hasPacketWithID:destination:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hasPacketWithID:destination:">&ndash;&nbsp;hasPacketWithID:destination:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Checks if any of the request packets' identifiers and destinations match the given packet identifier and destination</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)hasPacketWithID:(ESPPacketID)<em>packetID</em> destination:(ESPDeviceID)<em>destination</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>packetID</code></th>
+						<td><p>the identifier of the packet to match against</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>destination</code></th>
+						<td><p>the destination of the packet to match against</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if the <a href="#//api/name/expector">expector</a> contains a matching packet identifier, or NO if it does not contain a matching packet identifier</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Checks if any of the request packets' identifiers and destinations match the given packet identifier and destination</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPResponseExpector.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hasPacketWithDestination:" title="hasPacketWithDestination:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hasPacketWithDestination:">&ndash;&nbsp;hasPacketWithDestination:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Checks if any of the request packets' destinations match the given ESP device identifier</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)hasPacketWithDestination:(ESPDeviceID)<em>destination</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>destination</code></th>
+						<td><p>the device identifier of the destination</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if the <a href="#//api/name/expector">expector</a> contains a matching packet destination, or NO if it does not contain a matching packet destination</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Checks if any of the request packets' destinations match the given ESP device identifier</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPResponseExpector.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isInBusyQueue:" title="isInBusyQueue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isInBusyQueue:">&ndash;&nbsp;isInBusyQueue:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Checks if any of the request packets' identifiers match identifiers in the busy queue. If a packet does match, the index of the match is marked, and any subsequent checks will only check up to the previous match index</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isInBusyQueue:(NSArray&lt;NSNumber*&gt; *)<em>busyQueue</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>busyQueue</code></th>
+						<td><p>an array of packet identifiers</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if the busy queue contains a matching packet identifier, or NO if the busy queue does not contain a matching packet identifier</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Checks if any of the request packets' identifiers match identifiers in the busy queue. If a packet does match, the index of the match is marked, and any subsequent checks will only check up to the previous match index</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPResponseExpector.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isExpiredWithTimeout:" title="isExpiredWithTimeout:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isExpiredWithTimeout:">&ndash;&nbsp;isExpiredWithTimeout:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Checks if the response <a href="#//api/name/expector">expector</a> has timed out with the given timeout value</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isExpiredWithTimeout:(NSTimeInterval)<em>timeout</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timeout</code></th>
+						<td><p>the amount of time after the requests were sent to time out</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if the <a href="#//api/name/expector">expector</a> has timed out, or NO if the <a href="#//api/name/expector">expector</a> has not timed out</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Checks if the response <a href="#//api/name/expector">expector</a> has timed out with the given timeout value</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPResponseExpector.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dateOfSentPacket:" title="dateOfSentPacket:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dateOfSentPacket:">&ndash;&nbsp;dateOfSentPacket:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the date/time that a particular packet was sent</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDate *)dateOfSentPacket:(ESPPacket *)<em>packet</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>packet</code></th>
+						<td><p>the packet that was sent for this response <a href="#//api/name/expector">expector</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a date object with the sent timestamp, or nil if the packet is not associated with this response <a href="#//api/name/expector">expector</a></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Gets the date/time that a particular packet was sent</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPResponseExpector.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestTimestamp" title="requestTimestamp"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestTimestamp">&nbsp;&nbsp;requestTimestamp</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The date/time that the first request was sent at, or nil if no requests have been marked as sent</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSDate *requestTimestamp</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The date/time that the first request was sent at, or nil if no requests have been marked as sent</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPResponseExpector.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/responseIDs" title="responseIDs"></a>
+	<h3 class="method-title"><code><a href="#//api/name/responseIDs">&nbsp;&nbsp;responseIDs</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The packet identifiers of the expected responses</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray&lt;NSNumber*&gt; *responseIDs</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The packet identifiers of the expected responses</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPResponseExpector.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sentPackets" title="sentPackets"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sentPackets">&nbsp;&nbsp;sentPackets</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>An array of packets that have been sent and are awaiting a response</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray&lt;ESPPacket*&gt; *sentPackets</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>An array of packets that have been sent and are awaiting a response</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPResponseExpector.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/packetRecievedCallback" title="packetRecievedCallback"></a>
+	<h3 class="method-title"><code><a href="#//api/name/packetRecievedCallback">&nbsp;&nbsp;packetRecievedCallback</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The callback to call when a response packet is received. The callback should return YES if the <a href="#//api/name/expector">expector</a> has finished its business, or NO if the <a href="#//api/name/expector">expector</a> is still waiting on more packets</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) BOOL ( ^ ) ( ESPPacket *packet ) packetRecievedCallback</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The callback to call when a response packet is received. The callback should return YES if the <a href="#//api/name/expector">expector</a> has finished its business, or NO if the <a href="#//api/name/expector">expector</a> is still waiting on more packets</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPResponseExpector.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/failureCallback" title="failureCallback"></a>
+	<h3 class="method-title"><code><a href="#//api/name/failureCallback">&nbsp;&nbsp;failureCallback</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The callback to call when a request fails in some way</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( NSError *error ) failureCallback</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The callback to call when a request fails in some way</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPResponseExpector.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Valentine. All rights reserved. Updated: 2018-04-03</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

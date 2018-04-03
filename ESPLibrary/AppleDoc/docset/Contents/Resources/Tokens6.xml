@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ESPFrequencyRange.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ESPFrequencyRange</TokenIdentifier>
+			<Abstract type="html">ESPFrequencyRange</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/init</TokenIdentifier>
+			<Abstract type="html">Initializes a frequency range with a min and max frequency of 0 MHz (null frequency)</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">a newly initialized frequency range </Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/initWithMinMHz:maxMHz:</TokenIdentifier>
+			<Abstract type="html">Initializes a frequency range with the given min and max frequency</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithMinMHz:(ESPFrequencyMHz)min maxMHz:(ESPFrequencyMHz)max</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>min</Name>
+					<Abstract type="html">the lower bound frequency in MHz</Abstract>
+				</Parameter><Parameter>
+					<Name>max</Name>
+					<Abstract type="html">the upper bound frequency in MHz</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized frequency range </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMinMHz:maxMHz:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/initWithMinGHz:maxGHz:</TokenIdentifier>
+			<Abstract type="html">Initializes a frequency range with the given min and max frequency</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithMinGHz:(ESPFrequencyGHz)min maxGHz:(ESPFrequencyGHz)max</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>min</Name>
+					<Abstract type="html">the lower bound frequency in GHz</Abstract>
+				</Parameter><Parameter>
+					<Name>max</Name>
+					<Abstract type="html">the upper bound frequency in GHz</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized frequency range </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMinGHz:maxGHz:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/initWithFrequencyRange:</TokenIdentifier>
+			<Abstract type="html">Initializes a frequency range with a given frequency range</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithFrequencyRange:(ESPFrequencyRange *)frequencyRange</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frequencyRange</Name>
+					<Abstract type="html">the frequency range to copy frequencies from</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized frequency range </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFrequencyRange:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ESPFrequencyRange/frequencyRangeWithMinMHz:maxMHz:</TokenIdentifier>
+			<Abstract type="html">Returns a frequency range with the given min and max frequency</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)frequencyRangeWithMinMHz:(ESPFrequencyMHz)min maxMHz:(ESPFrequencyMHz)max</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>min</Name>
+					<Abstract type="html">the lower bound frequency in MHz</Abstract>
+				</Parameter><Parameter>
+					<Name>max</Name>
+					<Abstract type="html">the upper bound frequency in MHz</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a frequency range with the given min and max values </Abstract></ReturnValue>
+			<Anchor>//api/name/frequencyRangeWithMinMHz:maxMHz:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ESPFrequencyRange/frequencyRangeWithMinGHz:maxGHz:</TokenIdentifier>
+			<Abstract type="html">Returns a frequency range with the given min and max frequency</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)frequencyRangeWithMinGHz:(ESPFrequencyGHz)min maxGHz:(ESPFrequencyGHz)max</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>min</Name>
+					<Abstract type="html">the lower bound frequency in GHz</Abstract>
+				</Parameter><Parameter>
+					<Name>max</Name>
+					<Abstract type="html">the upper bound frequency in GHz</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a frequency range with the given min and max values </Abstract></ReturnValue>
+			<Anchor>//api/name/frequencyRangeWithMinGHz:maxGHz:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ESPFrequencyRange/frequencyRangeWithFrequencyRange:</TokenIdentifier>
+			<Abstract type="html">Returns a frequency range created by copying the values from a given frequency range</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)frequencyRangeWithFrequencyRange:(ESPFrequencyRange *)frequencyRange</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frequencyRange</Name>
+					<Abstract type="html">a frequency range from which to copy values from</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a copy of the given frequency range </Abstract></ReturnValue>
+			<Anchor>//api/name/frequencyRangeWithFrequencyRange:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ESPFrequencyRange/nullFrequencyRange</TokenIdentifier>
+			<Abstract type="html">Returns a frequency range where the min and max frequencies are both 0</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)nullFrequencyRange</Declaration>
+			
+			<ReturnValue><Abstract type="html">a &quot;null&quot; frequency range </Abstract></ReturnValue>
+			<Anchor>//api/name/nullFrequencyRange</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/isEqualToFrequencyRange:</TokenIdentifier>
+			<Abstract type="html">Tells if the frequency range is equal to another frequency range</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqualToFrequencyRange:(ESPFrequencyRange *)frequencyRange</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frequencyRange</Name>
+					<Abstract type="html">the frequency range to compare</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if they are equal, or NO if they are not equal </Abstract></ReturnValue>
+			<Anchor>//api/name/isEqualToFrequencyRange:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/containsFrequency:</TokenIdentifier>
+			<Abstract type="html">Tells if a given frequency falls inside the frequency range</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)containsFrequency:(ESPFrequencyMHz)frequency</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frequency</Name>
+					<Abstract type="html">the frequency, in MHz, to check</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the frequency falls within the frequency range, or NO if it does not fall within the frequency </Abstract></ReturnValue>
+			<Anchor>//api/name/containsFrequency:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/containsFrequencyRange:</TokenIdentifier>
+			<Abstract type="html">Tells if a another given frequency range falls inside the frequency range</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)containsFrequencyRange:(ESPFrequencyRange *)frequencyRange</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frequencyRange</Name>
+					<Abstract type="html">the frequency range to check</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the other given frequency range falls within the frequency range, or NO if it does not fall within the frequency range </Abstract></ReturnValue>
+			<Anchor>//api/name/containsFrequencyRange:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/overlapsFrequencyRange:</TokenIdentifier>
+			<Abstract type="html">Tells if the frequency range overlaps another frequency range</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)overlapsFrequencyRange:(ESPFrequencyRange *)frequencyRange</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frequencyRange</Name>
+					<Abstract type="html">the frequency range to check against</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the ranges overlap, or NO if the ranges do not overlap </Abstract></ReturnValue>
+			<Anchor>//api/name/overlapsFrequencyRange:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/splitRangeToFitSections:</TokenIdentifier>
+			<Abstract type="html">Splits a frequency range to fit inside other frequency ranges</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>- (NSArray&lt;ESPFrequencyRange*&gt; *)splitRangeToFitSections:(NSArray&lt;ESPFrequencyRange*&gt; *)sections</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sections</Name>
+					<Abstract type="html">the ranges to confine this frequency range to</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">an array of the parts of the frequency range that fit within the given section </Abstract></ReturnValue>
+			<Anchor>//api/name/splitRangeToFitSections:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/isNull</TokenIdentifier>
+			<Abstract type="html">Tells if the given range has a min and max frequency of 0</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isNull</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if both the min and max frequencies are 0, or NO if they are not 0 </Abstract></ReturnValue>
+			<Anchor>//api/name/isNull</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/setMinMHz:</TokenIdentifier>
+			<Abstract type="html">The lower bound frequency in MHz</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPFrequencyMHz minMHz</Declaration>
+			
+			
+			<Anchor>//api/name/minMHz</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/minMHz</TokenIdentifier>
+			<Abstract type="html">The lower bound frequency in MHz</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPFrequencyMHz minMHz</Declaration>
+			
+			
+			<Anchor>//api/name/minMHz</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPFrequencyRange/minMHz</TokenIdentifier>
+			<Abstract type="html">The lower bound frequency in MHz</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPFrequencyMHz minMHz</Declaration>
+			
+			
+			<Anchor>//api/name/minMHz</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/setMinGHz:</TokenIdentifier>
+			<Abstract type="html">The lower bound frequency in GHz</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPFrequencyGHz minGHz</Declaration>
+			
+			
+			<Anchor>//api/name/minGHz</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/minGHz</TokenIdentifier>
+			<Abstract type="html">The lower bound frequency in GHz</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPFrequencyGHz minGHz</Declaration>
+			
+			
+			<Anchor>//api/name/minGHz</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPFrequencyRange/minGHz</TokenIdentifier>
+			<Abstract type="html">The lower bound frequency in GHz</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPFrequencyGHz minGHz</Declaration>
+			
+			
+			<Anchor>//api/name/minGHz</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/setMaxMHz:</TokenIdentifier>
+			<Abstract type="html">The upper bound frequency in MHz</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPFrequencyMHz maxMHz</Declaration>
+			
+			
+			<Anchor>//api/name/maxMHz</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/maxMHz</TokenIdentifier>
+			<Abstract type="html">The upper bound frequency in MHz</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPFrequencyMHz maxMHz</Declaration>
+			
+			
+			<Anchor>//api/name/maxMHz</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPFrequencyRange/maxMHz</TokenIdentifier>
+			<Abstract type="html">The upper bound frequency in MHz</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPFrequencyMHz maxMHz</Declaration>
+			
+			
+			<Anchor>//api/name/maxMHz</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/setMaxGHz:</TokenIdentifier>
+			<Abstract type="html">The upper bound frequency in GHz</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPFrequencyGHz maxGHz</Declaration>
+			
+			
+			<Anchor>//api/name/maxGHz</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPFrequencyRange/maxGHz</TokenIdentifier>
+			<Abstract type="html">The upper bound frequency in GHz</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPFrequencyGHz maxGHz</Declaration>
+			
+			
+			<Anchor>//api/name/maxGHz</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPFrequencyRange/maxGHz</TokenIdentifier>
+			<Abstract type="html">The upper bound frequency in GHz</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPFrequencyGHz maxGHz</Declaration>
+			
+			
+			<Anchor>//api/name/maxGHz</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ESPFrequencyRange/arrayByRemovingNullFrequencyRangesFromArray:</TokenIdentifier>
+			<Abstract type="html">Creates a new array from the input array and removes any frequency ranges with a min and max of 0</Abstract>
+			<DeclaredIn>ESPFrequencyRange.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray&lt;ESPFrequencyRange*&gt; *)arrayByRemovingNullFrequencyRangesFromArray:(NSArray&lt;ESPFrequencyRange*&gt; *)frequencyRanges</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frequencyRanges</Name>
+					<Abstract type="html">the array of frequency ranges</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a new array created from the input array with all of the &quot;null&quot; frequency ranges removed </Abstract></ReturnValue>
+			<Anchor>//api/name/arrayByRemovingNullFrequencyRangesFromArray:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

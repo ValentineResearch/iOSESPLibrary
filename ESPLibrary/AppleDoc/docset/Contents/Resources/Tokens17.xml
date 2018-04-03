@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ESPUserBytes.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ESPUserBytes</TokenIdentifier>
+			<Abstract type="html">ESPUserBytes</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+            
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/init</TokenIdentifier>
+			<Abstract type="html">Initializes user bytes with default values</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">a newly initialized user bytes object </Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/initWithData:</TokenIdentifier>
+			<Abstract type="html">Initializes user bytes with the payload data of a received packet</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithData:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">the payload data from a respUserBytes or reqWriteUserBytes packet</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized user bytes object </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/initWithUserBytes:</TokenIdentifier>
+			<Abstract type="html">Initializes user bytes by copying data from another user bytes object</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithUserBytes:(ESPUserBytes *)userBytes</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userBytes</Name>
+					<Abstract type="html">the user bytes to copy from</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized user bytes object </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithUserBytes:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/isEqualToUserBytes:</TokenIdentifier>
+			<Abstract type="html">Tells whether the the user bytes are equal to another set of user bytes</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqualToUserBytes:(ESPUserBytes *)userBytes</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userBytes</Name>
+					<Abstract type="html">the user bytes to compare</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if equal, NO if not equal </Abstract></ReturnValue>
+			<Anchor>//api/name/isEqualToUserBytes:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/resetToDefaults</TokenIdentifier>
+			<Abstract type="html">Sets all the user bytes back to 0xFF, the default value</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>- (void)resetToDefaults</Declaration>
+			
+			
+			<Anchor>//api/name/resetToDefaults</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setData:</TokenIdentifier>
+			<Abstract type="html">The full payload data of the user bytes</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/data</TokenIdentifier>
+			<Abstract type="html">The full payload data of the user bytes</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/data</TokenIdentifier>
+			<Abstract type="html">The full payload data of the user bytes</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setXBandOn:</TokenIdentifier>
+			<Abstract type="html">Toggles X band detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL XBandOn</Declaration>
+			
+			
+			<Anchor>//api/name/XBandOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/XBandOn</TokenIdentifier>
+			<Abstract type="html">Toggles X band detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL XBandOn</Declaration>
+			
+			
+			<Anchor>//api/name/XBandOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/XBandOn</TokenIdentifier>
+			<Abstract type="html">Toggles X band detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL XBandOn</Declaration>
+			
+			
+			<Anchor>//api/name/XBandOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setKBandOn:</TokenIdentifier>
+			<Abstract type="html">Toggles K band detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KBandOn</Declaration>
+			
+			
+			<Anchor>//api/name/KBandOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/KBandOn</TokenIdentifier>
+			<Abstract type="html">Toggles K band detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KBandOn</Declaration>
+			
+			
+			<Anchor>//api/name/KBandOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/KBandOn</TokenIdentifier>
+			<Abstract type="html">Toggles K band detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KBandOn</Declaration>
+			
+			
+			<Anchor>//api/name/KBandOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setKaBandOn:</TokenIdentifier>
+			<Abstract type="html">Toggles Ka band detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KaBandOn</Declaration>
+			
+			
+			<Anchor>//api/name/KaBandOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/KaBandOn</TokenIdentifier>
+			<Abstract type="html">Toggles Ka band detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KaBandOn</Declaration>
+			
+			
+			<Anchor>//api/name/KaBandOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/KaBandOn</TokenIdentifier>
+			<Abstract type="html">Toggles Ka band detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KaBandOn</Declaration>
+			
+			
+			<Anchor>//api/name/KaBandOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setLaserOn:</TokenIdentifier>
+			<Abstract type="html">Toggles laser detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL laserOn</Declaration>
+			
+			
+			<Anchor>//api/name/laserOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/laserOn</TokenIdentifier>
+			<Abstract type="html">Toggles laser detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL laserOn</Declaration>
+			
+			
+			<Anchor>//api/name/laserOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/laserOn</TokenIdentifier>
+			<Abstract type="html">Toggles laser detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL laserOn</Declaration>
+			
+			
+			<Anchor>//api/name/laserOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setBargraphSensitivity:</TokenIdentifier>
+			<Abstract type="html">Adjusts the response of the signal-strength meter for Ka band</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPBargraphSensitivity bargraphSensitivity</Declaration>
+			
+			
+			<Anchor>//api/name/bargraphSensitivity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/bargraphSensitivity</TokenIdentifier>
+			<Abstract type="html">Adjusts the response of the signal-strength meter for Ka band</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPBargraphSensitivity bargraphSensitivity</Declaration>
+			
+			
+			<Anchor>//api/name/bargraphSensitivity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/bargraphSensitivity</TokenIdentifier>
+			<Abstract type="html">Adjusts the response of the signal-strength meter for Ka band</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPBargraphSensitivity bargraphSensitivity</Declaration>
+			
+			
+			<Anchor>//api/name/bargraphSensitivity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setKaFalseGuardOn:</TokenIdentifier>
+			<Abstract type="html">Toggles the Ka False-Alarm Guard feature</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KaFalseGuardOn</Declaration>
+			
+			
+			<Anchor>//api/name/KaFalseGuardOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/KaFalseGuardOn</TokenIdentifier>
+			<Abstract type="html">Toggles the Ka False-Alarm Guard feature</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KaFalseGuardOn</Declaration>
+			
+			
+			<Anchor>//api/name/KaFalseGuardOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/KaFalseGuardOn</TokenIdentifier>
+			<Abstract type="html">Toggles the Ka False-Alarm Guard feature</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KaFalseGuardOn</Declaration>
+			
+			
+			<Anchor>//api/name/KaFalseGuardOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setKMutingOn:</TokenIdentifier>
+			<Abstract type="html">Toggles initial muting of K-band under certain circumstances</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KMutingOn</Declaration>
+			
+			
+			<Anchor>//api/name/KMutingOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/KMutingOn</TokenIdentifier>
+			<Abstract type="html">Toggles initial muting of K-band under certain circumstances</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KMutingOn</Declaration>
+			
+			
+			<Anchor>//api/name/KMutingOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/KMutingOn</TokenIdentifier>
+			<Abstract type="html">Toggles initial muting of K-band under certain circumstances</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KMutingOn</Declaration>
+			
+			
+			<Anchor>//api/name/KMutingOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setMuteVolumeState:</TokenIdentifier>
+			<Abstract type="html">Controls whether muted volume can be adjusted via the control lever on the V1</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPMuteVolumeState muteVolumeState</Declaration>
+			
+			
+			<Anchor>//api/name/muteVolumeState</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/muteVolumeState</TokenIdentifier>
+			<Abstract type="html">Controls whether muted volume can be adjusted via the control lever on the V1</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPMuteVolumeState muteVolumeState</Declaration>
+			
+			
+			<Anchor>//api/name/muteVolumeState</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/muteVolumeState</TokenIdentifier>
+			<Abstract type="html">Controls whether muted volume can be adjusted via the control lever on the V1</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPMuteVolumeState muteVolumeState</Declaration>
+			
+			
+			<Anchor>//api/name/muteVolumeState</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setPostMuteBogeyLockVolumeState:</TokenIdentifier>
+			<Abstract type="html">Controls how the volume of any Bogey Lock Tones are adjusted after pressing mute</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPPostMuteBogeyLockVolumeState postMuteBogeyLockVolumeState</Declaration>
+			
+			
+			<Anchor>//api/name/postMuteBogeyLockVolumeState</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/postMuteBogeyLockVolumeState</TokenIdentifier>
+			<Abstract type="html">Controls how the volume of any Bogey Lock Tones are adjusted after pressing mute</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPPostMuteBogeyLockVolumeState postMuteBogeyLockVolumeState</Declaration>
+			
+			
+			<Anchor>//api/name/postMuteBogeyLockVolumeState</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/postMuteBogeyLockVolumeState</TokenIdentifier>
+			<Abstract type="html">Controls how the volume of any Bogey Lock Tones are adjusted after pressing mute</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPPostMuteBogeyLockVolumeState postMuteBogeyLockVolumeState</Declaration>
+			
+			
+			<Anchor>//api/name/postMuteBogeyLockVolumeState</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setKMuteTimer:</TokenIdentifier>
+			<Abstract type="html">Sets a time period of automatic muting of K-band alerts</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPKMuteTimerValue KMuteTimer</Declaration>
+			
+			
+			<Anchor>//api/name/KMuteTimer</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/KMuteTimer</TokenIdentifier>
+			<Abstract type="html">Sets a time period of automatic muting of K-band alerts</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPKMuteTimerValue KMuteTimer</Declaration>
+			
+			
+			<Anchor>//api/name/KMuteTimer</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/KMuteTimer</TokenIdentifier>
+			<Abstract type="html">Sets a time period of automatic muting of K-band alerts</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) ESPKMuteTimerValue KMuteTimer</Declaration>
+			
+			
+			<Anchor>//api/name/KMuteTimer</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setKInitialUnmute4LightsOn:</TokenIdentifier>
+			<Abstract type="html">Toggles an automatic override of the K mute timer if the K-band signal strength exceeds 4 LEDs</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KInitialUnmute4LightsOn</Declaration>
+			
+			
+			<Anchor>//api/name/KInitialUnmute4LightsOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/KInitialUnmute4LightsOn</TokenIdentifier>
+			<Abstract type="html">Toggles an automatic override of the K mute timer if the K-band signal strength exceeds 4 LEDs</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KInitialUnmute4LightsOn</Declaration>
+			
+			
+			<Anchor>//api/name/KInitialUnmute4LightsOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/KInitialUnmute4LightsOn</TokenIdentifier>
+			<Abstract type="html">Toggles an automatic override of the K mute timer if the K-band signal strength exceeds 4 LEDs</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KInitialUnmute4LightsOn</Declaration>
+			
+			
+			<Anchor>//api/name/KInitialUnmute4LightsOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setKPersistantUnmute6LightsOn:</TokenIdentifier>
+			<Abstract type="html">Toggles an automatic override of the K mute timer if the K-band signal strength slowly rises to 6 LEDs</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KPersistantUnmute6LightsOn</Declaration>
+			
+			
+			<Anchor>//api/name/KPersistantUnmute6LightsOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/KPersistantUnmute6LightsOn</TokenIdentifier>
+			<Abstract type="html">Toggles an automatic override of the K mute timer if the K-band signal strength slowly rises to 6 LEDs</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KPersistantUnmute6LightsOn</Declaration>
+			
+			
+			<Anchor>//api/name/KPersistantUnmute6LightsOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/KPersistantUnmute6LightsOn</TokenIdentifier>
+			<Abstract type="html">Toggles an automatic override of the K mute timer if the K-band signal strength slowly rises to 6 LEDs</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KPersistantUnmute6LightsOn</Declaration>
+			
+			
+			<Anchor>//api/name/KPersistantUnmute6LightsOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setKRearMuteOn:</TokenIdentifier>
+			<Abstract type="html">Toggles automatic muting of K-band alerts from the rear</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KRearMuteOn</Declaration>
+			
+			
+			<Anchor>//api/name/KRearMuteOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/KRearMuteOn</TokenIdentifier>
+			<Abstract type="html">Toggles automatic muting of K-band alerts from the rear</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KRearMuteOn</Declaration>
+			
+			
+			<Anchor>//api/name/KRearMuteOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/KRearMuteOn</TokenIdentifier>
+			<Abstract type="html">Toggles automatic muting of K-band alerts from the rear</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KRearMuteOn</Declaration>
+			
+			
+			<Anchor>//api/name/KRearMuteOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setKuBandOn:</TokenIdentifier>
+			<Abstract type="html">Toggles Ku band detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KuBandOn</Declaration>
+			
+			
+			<Anchor>//api/name/KuBandOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/KuBandOn</TokenIdentifier>
+			<Abstract type="html">Toggles Ku band detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KuBandOn</Declaration>
+			
+			
+			<Anchor>//api/name/KuBandOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/KuBandOn</TokenIdentifier>
+			<Abstract type="html">Toggles Ku band detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL KuBandOn</Declaration>
+			
+			
+			<Anchor>//api/name/KuBandOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setPopOn:</TokenIdentifier>
+			<Abstract type="html">Toggles POP radar detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL popOn</Declaration>
+			
+			
+			<Anchor>//api/name/popOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/popOn</TokenIdentifier>
+			<Abstract type="html">Toggles POP radar detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL popOn</Declaration>
+			
+			
+			<Anchor>//api/name/popOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/popOn</TokenIdentifier>
+			<Abstract type="html">Toggles POP radar detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL popOn</Declaration>
+			
+			
+			<Anchor>//api/name/popOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setEuroOn:</TokenIdentifier>
+			<Abstract type="html">Toggles Euro Mode</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL euroOn</Declaration>
+			
+			
+			<Anchor>//api/name/euroOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/euroOn</TokenIdentifier>
+			<Abstract type="html">Toggles Euro Mode</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL euroOn</Declaration>
+			
+			
+			<Anchor>//api/name/euroOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/euroOn</TokenIdentifier>
+			<Abstract type="html">Toggles Euro Mode</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL euroOn</Declaration>
+			
+			
+			<Anchor>//api/name/euroOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setEuroXBandOn:</TokenIdentifier>
+			<Abstract type="html">Toggles Euro X band detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL euroXBandOn</Declaration>
+			
+			
+			<Anchor>//api/name/euroXBandOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/euroXBandOn</TokenIdentifier>
+			<Abstract type="html">Toggles Euro X band detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL euroXBandOn</Declaration>
+			
+			
+			<Anchor>//api/name/euroXBandOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/euroXBandOn</TokenIdentifier>
+			<Abstract type="html">Toggles Euro X band detection</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL euroXBandOn</Declaration>
+			
+			
+			<Anchor>//api/name/euroXBandOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setFilterOn:</TokenIdentifier>
+			<Abstract type="html">Toggles the Traffic Monitor Filter/Junk-K Fighter</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL filterOn</Declaration>
+			
+			
+			<Anchor>//api/name/filterOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/filterOn</TokenIdentifier>
+			<Abstract type="html">Toggles the Traffic Monitor Filter/Junk-K Fighter</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL filterOn</Declaration>
+			
+			
+			<Anchor>//api/name/filterOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/filterOn</TokenIdentifier>
+			<Abstract type="html">Toggles the Traffic Monitor Filter/Junk-K Fighter</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL filterOn</Declaration>
+			
+			
+			<Anchor>//api/name/filterOn</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setForceLegacyCD:</TokenIdentifier>
+			<Abstract type="html">Toggles forced Legacy (pre-ESP) Concealed Display operation</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL forceLegacyCD</Declaration>
+			
+			
+			<Anchor>//api/name/forceLegacyCD</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/forceLegacyCD</TokenIdentifier>
+			<Abstract type="html">Toggles forced Legacy (pre-ESP) Concealed Display operation</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL forceLegacyCD</Declaration>
+			
+			
+			<Anchor>//api/name/forceLegacyCD</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/forceLegacyCD</TokenIdentifier>
+			<Abstract type="html">Toggles forced Legacy (pre-ESP) Concealed Display operation</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL forceLegacyCD</Declaration>
+			
+			
+			<Anchor>//api/name/forceLegacyCD</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ESPSweepsBuilder.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ESPSweepsBuilder</TokenIdentifier>
+			<Abstract type="html">ESPSweepsBuilder</Abstract>
+			<DeclaredIn>ESPSweepsBuilder.h</DeclaredIn>
+            
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepsBuilder/initWithMaxSweepIndex:</TokenIdentifier>
+			<Abstract type="html">Initializes the sweeps builder with a max sweep index</Abstract>
+			<DeclaredIn>ESPSweepsBuilder.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithMaxSweepIndex:(NSUInteger)maxSweepIndex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>maxSweepIndex</Name>
+					<Abstract type="html">the index of the last sweep in the sweep list</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized sweeps builder </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMaxSweepIndex:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepsBuilder/addSweep:error:</TokenIdentifier>
+			<Abstract type="html">Adds sweep data to attempt to make a full list of sweeps</Abstract>
+			<DeclaredIn>ESPSweepsBuilder.h</DeclaredIn>
+			
+			<Declaration>- (NSArray&lt;ESPFrequencyRange*&gt; *)addSweep:(ESPCustomSweepData *)sweep error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sweep</Name>
+					<Abstract type="html">the sweep data</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">a pointer to an error object that will be set if an error occurs constructing sweeps; If error is set, then the partial sweeps list has also been cleared</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a full list of sweeps, or nil if a full list could not be constructed </Abstract></ReturnValue>
+			<Anchor>//api/name/addSweep:error:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepsBuilder/removeAllSweeps</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ESPSweepsBuilder.h</DeclaredIn>
+			
+			<Declaration>- (void)removeAllSweeps</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllSweeps</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepsBuilder/setMaxSweepIndex:</TokenIdentifier>
+			<Abstract type="html">The index of the last sweep in the sweep list</Abstract>
+			<DeclaredIn>ESPSweepsBuilder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger maxSweepIndex</Declaration>
+			
+			
+			<Anchor>//api/name/maxSweepIndex</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepsBuilder/maxSweepIndex</TokenIdentifier>
+			<Abstract type="html">The index of the last sweep in the sweep list</Abstract>
+			<DeclaredIn>ESPSweepsBuilder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger maxSweepIndex</Declaration>
+			
+			
+			<Anchor>//api/name/maxSweepIndex</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPSweepsBuilder/maxSweepIndex</TokenIdentifier>
+			<Abstract type="html">The index of the last sweep in the sweep list</Abstract>
+			<DeclaredIn>ESPSweepsBuilder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger maxSweepIndex</Declaration>
+			
+			
+			<Anchor>//api/name/maxSweepIndex</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ESPAlertTableBuilder.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ESPAlertTableBuilder</TokenIdentifier>
+			<Abstract type="html">ESPAlertTableBuilder</Abstract>
+			<DeclaredIn>ESPAlertTableBuilder.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertTableBuilder/addAlert:</TokenIdentifier>
+			<Abstract type="html">Adds an alert to attempt to build a full alert table</Abstract>
+			<DeclaredIn>ESPAlertTableBuilder.h</DeclaredIn>
+			
+			<Declaration>- (NSArray&lt;ESPAlertData*&gt; *)addAlert:(ESPAlertData *)alert</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>alert</Name>
+					<Abstract type="html">the alert to add</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">an array of alerts if a full alert table can be built, or nil if a full alert table cannot be built </Abstract></ReturnValue>
+			<Anchor>//api/name/addAlert:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertTableBuilder/removeAllAlerts</TokenIdentifier>
+			<Abstract type="html">Removes all the added alerts</Abstract>
+			<DeclaredIn>ESPAlertTableBuilder.h</DeclaredIn>
+			
+			<Declaration>- (void)removeAllAlerts</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllAlerts</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

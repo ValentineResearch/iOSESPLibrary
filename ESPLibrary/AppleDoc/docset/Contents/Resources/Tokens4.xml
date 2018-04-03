@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ESPCustomSweepData.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ESPCustomSweepData</TokenIdentifier>
+			<Abstract type="html">ESPCustomSweepData</Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPCustomSweepData/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPCustomSweepData/initWithData:</TokenIdentifier>
+			<Abstract type="html">Initializes a custom sweep from a received packet&apos;s payload</Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithData:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">the payload data from a reqWriteSweepDefinition or respSweepDefinition packet</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized custom sweep </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPCustomSweepData/initWithIndex:range:commit:</TokenIdentifier>
+			<Abstract type="html">Initializes a custom sweep with an index, frequency range, and commit bit</Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithIndex:(NSUInteger)index range:(ESPFrequencyRange *)range commit:(BOOL)commit</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">the index of the custom sweep</Abstract>
+				</Parameter><Parameter>
+					<Name>range</Name>
+					<Abstract type="html">the frequency range of the sweep</Abstract>
+				</Parameter><Parameter>
+					<Name>commit</Name>
+					<Abstract type="html">the commit bit of the sweep, which tells whether the sweep is the last sweep being sent</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized custom sweep </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithIndex:range:commit:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPCustomSweepData/initWithIndex:lowerEdge:upperEdge:commit:</TokenIdentifier>
+			<Abstract type="html">Initializes a custom sweep with an index, frequency range, and commit bit</Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithIndex:(NSUInteger)index lowerEdge:(ESPFrequencyMHz)lowerEdge upperEdge:(ESPFrequencyMHz)upperEdge commit:(BOOL)commit</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">the index of the custom sweep</Abstract>
+				</Parameter><Parameter>
+					<Name>lowerEdge</Name>
+					<Abstract type="html">the lower bound frequency of the sweep</Abstract>
+				</Parameter><Parameter>
+					<Name>upperEdge</Name>
+					<Abstract type="html">the upper bound frequency of the sweep</Abstract>
+				</Parameter><Parameter>
+					<Name>commit</Name>
+					<Abstract type="html">the commit bit of the sweep, which tells whether the sweep is the last sweep being sent</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized custom sweep </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithIndex:lowerEdge:upperEdge:commit:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPCustomSweepData/initWithCustomSweepData:</TokenIdentifier>
+			<Abstract type="html">Initializes a custom sweep by copying data from another custom sweep</Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithCustomSweepData:(ESPCustomSweepData *)customSweepData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>customSweepData</Name>
+					<Abstract type="html">the custom sweep to copy from</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized custom sweep </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCustomSweepData:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPCustomSweepData/setData:</TokenIdentifier>
+			<Abstract type="html">The full payload data of the custom sweep</Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPCustomSweepData/data</TokenIdentifier>
+			<Abstract type="html">The full payload data of the custom sweep</Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPCustomSweepData/data</TokenIdentifier>
+			<Abstract type="html">The full payload data of the custom sweep</Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPCustomSweepData/setIndex:</TokenIdentifier>
+			<Abstract type="html">The index of the sweep</Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger index</Declaration>
+			
+			
+			<Anchor>//api/name/index</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPCustomSweepData/index</TokenIdentifier>
+			<Abstract type="html">The index of the sweep</Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger index</Declaration>
+			
+			
+			<Anchor>//api/name/index</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPCustomSweepData/index</TokenIdentifier>
+			<Abstract type="html">The index of the sweep</Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger index</Declaration>
+			
+			
+			<Anchor>//api/name/index</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPCustomSweepData/setRange:</TokenIdentifier>
+			<Abstract type="html">The range of the sweep</Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) ESPFrequencyRange *range</Declaration>
+			
+			
+			<Anchor>//api/name/range</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPCustomSweepData/range</TokenIdentifier>
+			<Abstract type="html">The range of the sweep</Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) ESPFrequencyRange *range</Declaration>
+			
+			
+			<Anchor>//api/name/range</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPCustomSweepData/range</TokenIdentifier>
+			<Abstract type="html">The range of the sweep</Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) ESPFrequencyRange *range</Declaration>
+			
+			
+			<Anchor>//api/name/range</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPCustomSweepData/setCommit:</TokenIdentifier>
+			<Abstract type="html">The commit bit of the sweep</Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL commit</Declaration>
+			
+			
+			<Anchor>//api/name/commit</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPCustomSweepData/commit</TokenIdentifier>
+			<Abstract type="html">The commit bit of the sweep</Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL commit</Declaration>
+			
+			
+			<Anchor>//api/name/commit</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPCustomSweepData/commit</TokenIdentifier>
+			<Abstract type="html">The commit bit of the sweep</Abstract>
+			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL commit</Declaration>
+			
+			
+			<Anchor>//api/name/commit</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

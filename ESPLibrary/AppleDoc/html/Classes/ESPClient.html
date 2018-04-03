@@ -1,0 +1,3772 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ESPClient Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">ESPLibrary </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Valentine</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/checksums">checksums</option>
+		
+		<option value="//api/name/connected">connected</option>
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/legacy">legacy</option>
+		
+		<option value="//api/name/peripheral">peripheral</option>
+		
+		<option value="//api/name/powerLossDetected">powerLossDetected</option>
+		
+		<option value="//api/name/powerLossTimeout">powerLossTimeout</option>
+		
+		<option value="//api/name/reportsEchoedPackets">reportsEchoedPackets</option>
+		
+		<option value="//api/name/requestTimeout">requestTimeout</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/_destinationFromRequestTarget:">- _destinationFromRequestTarget:</option>
+		
+		<option value="//api/name/_handleDisconnect">- _handleDisconnect</option>
+		
+		<option value="//api/name/_handleResponsePacket:forResponseExpector:">- _handleResponsePacket:forResponseExpector:</option>
+		
+		<option value="//api/name/_payloadFromPacket:">- _payloadFromPacket:</option>
+		
+		<option value="//api/name/_performRequest:">- _performRequest:</option>
+		
+		<option value="//api/name/_queueRequest:">- _queueRequest:</option>
+		
+		<option value="//api/name/_requestIsInBusyQueue:">- _requestIsInBusyQueue:</option>
+		
+		<option value="//api/name/didReceivePacket:">- didReceivePacket:</option>
+		
+		<option value="//api/name/didReceivePacketWithBadChecksum:">- didReceivePacketWithBadChecksum:</option>
+		
+		<option value="//api/name/initWithPeripheral:inShort:inLong:outShort:outLong:">- initWithPeripheral:inShort:inLong:outShort:outLong:</option>
+		
+		<option value="//api/name/requestAllSweepDefinitions:">- requestAllSweepDefinitions:</option>
+		
+		<option value="//api/name/requestAllSweepDefinitionsFrom:completion:">- requestAllSweepDefinitionsFrom:completion:</option>
+		
+		<option value="//api/name/requestBatteryVoltage:">- requestBatteryVoltage:</option>
+		
+		<option value="//api/name/requestBatteryVoltageFrom:completion:">- requestBatteryVoltageFrom:completion:</option>
+		
+		<option value="//api/name/requestChangeMode:completion:">- requestChangeMode:completion:</option>
+		
+		<option value="//api/name/requestChangeMode:target:completion:">- requestChangeMode:target:completion:</option>
+		
+		<option value="//api/name/requestDefaultSweepDefinitions:">- requestDefaultSweepDefinitions:</option>
+		
+		<option value="//api/name/requestDefaultSweepDefinitionsFrom:completion:">- requestDefaultSweepDefinitionsFrom:completion:</option>
+		
+		<option value="//api/name/requestMaxSweepIndex:">- requestMaxSweepIndex:</option>
+		
+		<option value="//api/name/requestMaxSweepIndexFrom:completion:">- requestMaxSweepIndexFrom:completion:</option>
+		
+		<option value="//api/name/requestMuteOff:">- requestMuteOff:</option>
+		
+		<option value="//api/name/requestMuteOffFor:completion:">- requestMuteOffFor:completion:</option>
+		
+		<option value="//api/name/requestMuteOn:">- requestMuteOn:</option>
+		
+		<option value="//api/name/requestMuteOnFor:completion:">- requestMuteOnFor:completion:</option>
+		
+		<option value="//api/name/requestOverrideThumbwheel:completion:">- requestOverrideThumbwheel:completion:</option>
+		
+		<option value="//api/name/requestOverrideThumbwheel:target:completion:">- requestOverrideThumbwheel:target:completion:</option>
+		
+		<option value="//api/name/requestSavvyStatus:">- requestSavvyStatus:</option>
+		
+		<option value="//api/name/requestSavvyStatusFrom:completion:">- requestSavvyStatusFrom:completion:</option>
+		
+		<option value="//api/name/requestSerialNumberFrom:completion:">- requestSerialNumberFrom:completion:</option>
+		
+		<option value="//api/name/requestSetSavvyUnmuteEnabled:completion:">- requestSetSavvyUnmuteEnabled:completion:</option>
+		
+		<option value="//api/name/requestSetSavvyUnmuteEnabled:target:completion:">- requestSetSavvyUnmuteEnabled:target:completion:</option>
+		
+		<option value="//api/name/requestStartAlertData:">- requestStartAlertData:</option>
+		
+		<option value="//api/name/requestStartAlertDataFor:completion:">- requestStartAlertDataFor:completion:</option>
+		
+		<option value="//api/name/requestStopAlertData:">- requestStopAlertData:</option>
+		
+		<option value="//api/name/requestStopAlertDataFor:completion:">- requestStopAlertDataFor:completion:</option>
+		
+		<option value="//api/name/requestSweepSections:">- requestSweepSections:</option>
+		
+		<option value="//api/name/requestSweepSectionsFrom:completion:">- requestSweepSectionsFrom:completion:</option>
+		
+		<option value="//api/name/requestTurnOffMainDisplayFor:completion:">- requestTurnOffMainDisplayFor:completion:</option>
+		
+		<option value="//api/name/requestTurnOnMainDisplayFor:completion:">- requestTurnOnMainDisplayFor:completion:</option>
+		
+		<option value="//api/name/requestUserBytes:">- requestUserBytes:</option>
+		
+		<option value="//api/name/requestUserBytesFrom:completion:">- requestUserBytesFrom:completion:</option>
+		
+		<option value="//api/name/requestVehicleSpeed:">- requestVehicleSpeed:</option>
+		
+		<option value="//api/name/requestVehicleSpeedFrom:completion:">- requestVehicleSpeedFrom:completion:</option>
+		
+		<option value="//api/name/requestVersionFrom:completion:">- requestVersionFrom:completion:</option>
+		
+		<option value="//api/name/requestWriteDefaultSweeps:">- requestWriteDefaultSweeps:</option>
+		
+		<option value="//api/name/requestWriteDefaultSweepsFor:completion:">- requestWriteDefaultSweepsFor:completion:</option>
+		
+		<option value="//api/name/requestWriteFactoryDefaultFor:completion:">- requestWriteFactoryDefaultFor:completion:</option>
+		
+		<option value="//api/name/requestWriteSweepDefinition:">- requestWriteSweepDefinition:</option>
+		
+		<option value="//api/name/requestWriteSweepDefinition:target:">- requestWriteSweepDefinition:target:</option>
+		
+		<option value="//api/name/requestWriteSweepDefinitions:completion:">- requestWriteSweepDefinitions:completion:</option>
+		
+		<option value="//api/name/requestWriteSweepDefinitions:target:completion:">- requestWriteSweepDefinitions:target:completion:</option>
+		
+		<option value="//api/name/requestWriteUserBytes:completion:">- requestWriteUserBytes:completion:</option>
+		
+		<option value="//api/name/requestWriteUserBytes:target:completion:">- requestWriteUserBytes:target:completion:</option>
+		
+		<option value="//api/name/sendData:">- sendData:</option>
+		
+		<option value="//api/name/sendPacket:">- sendPacket:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ESPClient Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>CBPeripheralDelegate</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ESPClient.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>ESPClient</p>
+
+<p>Discussion:
+Class used for interacting with an ESP device. This class is responsible for receiving and dispatching ESP packets.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sendPacket:" title="sendPacket:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendPacket:">&ndash;&nbsp;sendPacket:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Send an <a href="../Classes/ESPPacket.html">ESPPacket</a> to the ESP device.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)sendPacket:(ESPPacket *)<em>packet</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>packet</code></th>
+						<td><p>the packet to send</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if the packet was sent, or NO if the packet was too large or if the client was not <a href="#//api/name/connected">connected</a></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Send an <a href="../Classes/ESPPacket.html">ESPPacket</a> to the ESP device.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendData:" title="sendData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendData:">&ndash;&nbsp;sendData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Send data to the ESP device.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)sendData:(NSData *)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>the data to send</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if the data was sent, or NO if the data was too large or if the client was not <a href="#//api/name/connected">connected</a></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Send data to the ESP device.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didReceivePacket:" title="didReceivePacket:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didReceivePacket:">&ndash;&nbsp;didReceivePacket:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is called whenever a valid <a href="../Classes/ESPPacket.html">ESPPacket</a> is received. This method forwards received packets to their <a href="#//api/name/delegate">delegate</a> methods, so the super method should be called when overriding.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didReceivePacket:(ESPPacket *)<em>packet</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>packet</code></th>
+						<td><p>the received packet</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is called whenever a valid <a href="../Classes/ESPPacket.html">ESPPacket</a> is received. This method forwards received packets to their <a href="#//api/name/delegate">delegate</a> methods, so the super method should be called when overriding.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didReceivePacketWithBadChecksum:" title="didReceivePacketWithBadChecksum:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didReceivePacketWithBadChecksum:">&ndash;&nbsp;didReceivePacketWithBadChecksum:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is called whenever an <a href="../Classes/ESPPacket.html">ESPPacket</a> with a bad checksum is received.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didReceivePacketWithBadChecksum:(ESPPacket *)<em>packet</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>packet</code></th>
+						<td><p>the received packet</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is called whenever an <a href="../Classes/ESPPacket.html">ESPPacket</a> with a bad checksum is received.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestVersionFrom:completion:" title="requestVersionFrom:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestVersionFrom:completion:">&ndash;&nbsp;requestVersionFrom:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the version number of the ESP device or one of its accessories</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestVersionFrom:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( NSString *version , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the version number of the ESP device or one of its accessories</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestSerialNumberFrom:completion:" title="requestSerialNumberFrom:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestSerialNumberFrom:completion:">&ndash;&nbsp;requestSerialNumberFrom:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the serial number of the ESP device or one of its accessories</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestSerialNumberFrom:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( NSString *serial , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the serial number of the ESP device or one of its accessories</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestUserBytesFrom:completion:" title="requestUserBytesFrom:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestUserBytesFrom:completion:">&ndash;&nbsp;requestUserBytesFrom:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the user bytes of the ESP device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestUserBytesFrom:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( ESPUserBytes *userBytes , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the user bytes of the ESP device</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestUserBytes:" title="requestUserBytes:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestUserBytes:">&ndash;&nbsp;requestUserBytes:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the user bytes of the Valentine One</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestUserBytes:(void ( ^ ) ( ESPUserBytes *userBytes , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the user bytes of the Valentine One</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestWriteUserBytes:target:completion:" title="requestWriteUserBytes:target:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestWriteUserBytes:target:completion:">&ndash;&nbsp;requestWriteUserBytes:target:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Writes the given user bytes to the ESP device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestWriteUserBytes:(ESPUserBytes *)<em>userBytes</em> target:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userBytes</code></th>
+						<td><p>the user bytes to write</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Writes the given user bytes to the ESP device</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestWriteUserBytes:completion:" title="requestWriteUserBytes:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestWriteUserBytes:completion:">&ndash;&nbsp;requestWriteUserBytes:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Writes the given user bytes to the Valentine On</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestWriteUserBytes:(ESPUserBytes *)<em>userBytes</em> completion:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userBytes</code></th>
+						<td><p>the user bytes to write</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Writes the given user bytes to the Valentine On</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestWriteFactoryDefaultFor:completion:" title="requestWriteFactoryDefaultFor:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestWriteFactoryDefaultFor:completion:">&ndash;&nbsp;requestWriteFactoryDefaultFor:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the ESP device or one of its accessories to set its factory default settings</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestWriteFactoryDefaultFor:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the ESP device or one of its accessories to set its factory default settings</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestWriteSweepDefinition:target:" title="requestWriteSweepDefinition:target:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestWriteSweepDefinition:target:">&ndash;&nbsp;requestWriteSweepDefinition:target:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Writes a single sweep definition to the ESP device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestWriteSweepDefinition:(ESPCustomSweepData *)<em>sweep</em> target:(ESPRequestTarget)<em>target</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sweep</code></th>
+						<td><p>the custom sweep to write to the device</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Writes a single sweep definition to the ESP device</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestWriteSweepDefinition:" title="requestWriteSweepDefinition:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestWriteSweepDefinition:">&ndash;&nbsp;requestWriteSweepDefinition:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Writes a single sweep definition to the Valentine One</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestWriteSweepDefinition:(ESPCustomSweepData *)<em>sweep</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sweep</code></th>
+						<td><p>the custom sweep to write to the device</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Writes a single sweep definition to the Valentine One</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestWriteSweepDefinitions:target:completion:" title="requestWriteSweepDefinitions:target:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestWriteSweepDefinitions:target:completion:">&ndash;&nbsp;requestWriteSweepDefinitions:target:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Writes all the given custom sweeps to the ESP device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestWriteSweepDefinitions:(NSArray&lt;ESPFrequencyRange*&gt; *)<em>sweeps</em> target:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( NSUInteger writeResult , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sweeps</code></th>
+						<td><p>the sweeps (frequency ranges) to write to the device</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Writes all the given custom sweeps to the ESP device</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestWriteSweepDefinitions:completion:" title="requestWriteSweepDefinitions:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestWriteSweepDefinitions:completion:">&ndash;&nbsp;requestWriteSweepDefinitions:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Writes all the given custom sweeps to the Valentine One</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestWriteSweepDefinitions:(NSArray&lt;ESPFrequencyRange*&gt; *)<em>sweeps</em> completion:(void ( ^ ) ( NSUInteger , NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sweeps</code></th>
+						<td><p>the sweeps (frequency ranges) to write to the device</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Writes all the given custom sweeps to the Valentine One</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestAllSweepDefinitionsFrom:completion:" title="requestAllSweepDefinitionsFrom:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestAllSweepDefinitionsFrom:completion:">&ndash;&nbsp;requestAllSweepDefinitionsFrom:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the sweep definitions from the ESP device. Some of the definitions returned may have frequencies of (0,0). These sweeps are not used and are considered &ldquo;null&rdquo; sweeps.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestAllSweepDefinitionsFrom:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( NSArray&lt;ESPFrequencyRange*&gt; *sweeps , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the sweep definitions from the ESP device. Some of the definitions returned may have frequencies of (0,0). These sweeps are not used and are considered &ldquo;null&rdquo; sweeps.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestAllSweepDefinitions:" title="requestAllSweepDefinitions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestAllSweepDefinitions:">&ndash;&nbsp;requestAllSweepDefinitions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the sweep definitions from the Valentine One. Some of the definitions returned may have frequencies of (0,0). These sweeps are not used and are considered &ldquo;null&rdquo; sweeps.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestAllSweepDefinitions:(void ( ^ ) ( NSArray&lt;ESPFrequencyRange*&gt; *sweeps , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the sweep definitions from the Valentine One. Some of the definitions returned may have frequencies of (0,0). These sweeps are not used and are considered &ldquo;null&rdquo; sweeps.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestWriteDefaultSweepsFor:completion:" title="requestWriteDefaultSweepsFor:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestWriteDefaultSweepsFor:completion:">&ndash;&nbsp;requestWriteDefaultSweepsFor:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the ESP device to reset its custom sweeps to the defaults</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestWriteDefaultSweepsFor:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the ESP device to reset its custom sweeps to the defaults</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestWriteDefaultSweeps:" title="requestWriteDefaultSweeps:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestWriteDefaultSweeps:">&ndash;&nbsp;requestWriteDefaultSweeps:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the Valentine One to reset its custom sweeps to the defaults</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestWriteDefaultSweeps:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the Valentine One to reset its custom sweeps to the defaults</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestMaxSweepIndexFrom:completion:" title="requestMaxSweepIndexFrom:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestMaxSweepIndexFrom:completion:">&ndash;&nbsp;requestMaxSweepIndexFrom:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the max sweep index from the ESP device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestMaxSweepIndexFrom:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( NSUInteger maxSweepIndex , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the max sweep index from the ESP device</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestMaxSweepIndex:" title="requestMaxSweepIndex:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestMaxSweepIndex:">&ndash;&nbsp;requestMaxSweepIndex:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the max sweep index from the Valentine One</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestMaxSweepIndex:(void ( ^ ) ( NSUInteger maxSweepIndex , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the max sweep index from the Valentine One</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestSweepSectionsFrom:completion:" title="requestSweepSectionsFrom:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestSweepSectionsFrom:completion:">&ndash;&nbsp;requestSweepSectionsFrom:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the available custom sweep sections from the ESP device. Some of the sections returned may have frequencies of (0,0). These sections are not used and are considered &ldquo;null&rdquo; sections</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestSweepSectionsFrom:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( NSArray&lt;ESPFrequencyRange*&gt; *sections , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the available custom sweep sections from the ESP device. Some of the sections returned may have frequencies of (0,0). These sections are not used and are considered &ldquo;null&rdquo; sections</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestSweepSections:" title="requestSweepSections:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestSweepSections:">&ndash;&nbsp;requestSweepSections:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the available custom sweep sections from the Valentine One. Some of the sections returned may have frequencies of (0,0). These sections are not used and are considered &ldquo;null&rdquo; sections</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestSweepSections:(void ( ^ ) ( NSArray&lt;ESPFrequencyRange*&gt; *sections , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the available custom sweep sections from the Valentine One. Some of the sections returned may have frequencies of (0,0). These sections are not used and are considered &ldquo;null&rdquo; sections</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestDefaultSweepDefinitionsFrom:completion:" title="requestDefaultSweepDefinitionsFrom:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestDefaultSweepDefinitionsFrom:completion:">&ndash;&nbsp;requestDefaultSweepDefinitionsFrom:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the default custom sweep definitions from the ESP device. Some of the definitions returned may have frequencies of (0,0). These sweeps are not used and are considered &ldquo;null&rdquo; sweeps</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestDefaultSweepDefinitionsFrom:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( NSArray&lt;ESPFrequencyRange*&gt; *sweeps , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the default custom sweep definitions from the ESP device. Some of the definitions returned may have frequencies of (0,0). These sweeps are not used and are considered &ldquo;null&rdquo; sweeps</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestDefaultSweepDefinitions:" title="requestDefaultSweepDefinitions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestDefaultSweepDefinitions:">&ndash;&nbsp;requestDefaultSweepDefinitions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the default custom sweep definitions from the Valentine One. Some of the definitions returned may have frequencies of (0,0). These sweeps are not used and are considered &ldquo;null&rdquo; sweeps</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestDefaultSweepDefinitions:(void ( ^ ) ( NSArray&lt;ESPFrequencyRange*&gt; *sweeps , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the default custom sweep definitions from the Valentine One. Some of the definitions returned may have frequencies of (0,0). These sweeps are not used and are considered &ldquo;null&rdquo; sweeps</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestTurnOffMainDisplayFor:completion:" title="requestTurnOffMainDisplayFor:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestTurnOffMainDisplayFor:completion:">&ndash;&nbsp;requestTurnOffMainDisplayFor:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the ESP device to turn off its main display</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestTurnOffMainDisplayFor:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( BOOL displayOn , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the ESP device to turn off its main display</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestTurnOnMainDisplayFor:completion:" title="requestTurnOnMainDisplayFor:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestTurnOnMainDisplayFor:completion:">&ndash;&nbsp;requestTurnOnMainDisplayFor:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the ESP device to turn on its main display</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestTurnOnMainDisplayFor:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( BOOL displayOn , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the ESP device to turn on its main display</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestMuteOnFor:completion:" title="requestMuteOnFor:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestMuteOnFor:completion:">&ndash;&nbsp;requestMuteOnFor:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the ESP device to mute the current alerts</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestMuteOnFor:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( BOOL muteOn , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the ESP device to mute the current alerts</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestMuteOn:" title="requestMuteOn:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestMuteOn:">&ndash;&nbsp;requestMuteOn:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the Valentine One to mute the current alerts</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestMuteOn:(void ( ^ ) ( BOOL muteOn , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the Valentine One to mute the current alerts</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestMuteOffFor:completion:" title="requestMuteOffFor:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestMuteOffFor:completion:">&ndash;&nbsp;requestMuteOffFor:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the ESP device to unmute all alerts that weren&rsquo;t muted by the ESP device&rsquo;s internal logic</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestMuteOffFor:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( BOOL muteOn , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the ESP device to unmute all alerts that weren&rsquo;t muted by the ESP device&rsquo;s internal logic</p><div class="note"><p><strong>Note:</strong> This will not unmute a laser alert</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestMuteOff:" title="requestMuteOff:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestMuteOff:">&ndash;&nbsp;requestMuteOff:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the Valentine One to unmute all alerts that weren&rsquo;t muted by the Valentine One&rsquo;s internal logic</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestMuteOff:(void ( ^ ) ( BOOL muteOn , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the Valentine One to unmute all alerts that weren&rsquo;t muted by the Valentine One&rsquo;s internal logic</p><div class="note"><p><strong>Note:</strong> This will not unmute a laser alert</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestChangeMode:target:completion:" title="requestChangeMode:target:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestChangeMode:target:completion:">&ndash;&nbsp;requestChangeMode:target:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the ESP device to change its mode</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestChangeMode:(ESPV1Mode)<em>mode</em> target:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( ESPV1Mode mode , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mode</code></th>
+						<td><p>the operating mode of the ESP device</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs
+    @throws NSInvalidArgumentException if the given mode is ESPV1ModeUnknown</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the ESP device to change its mode</p><div class="note"><p><strong>Note:</strong> the ESPV1Mode in the response callback is determined by checking the seven segment display. If the mode cannot be determined, the value of &ldquo;mode&rdquo; will be ESPV1ModeUnknown</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestChangeMode:completion:" title="requestChangeMode:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestChangeMode:completion:">&ndash;&nbsp;requestChangeMode:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the Valentine One to change its mode</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestChangeMode:(ESPV1Mode)<em>mode</em> completion:(void ( ^ ) ( ESPV1Mode mode , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mode</code></th>
+						<td><p>the operating mode of the Valentine One</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs
+    @throws NSInvalidArgumentException if the given mode is ESPV1ModeUnknown</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the Valentine One to change its mode</p><div class="note"><p><strong>Note:</strong> the ESPV1Mode in the response callback is determined by checking the seven segment display. If the mode cannot be determined, the value of &ldquo;mode&rdquo; will be ESPV1ModeUnknown</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestStartAlertDataFor:completion:" title="requestStartAlertDataFor:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestStartAlertDataFor:completion:">&ndash;&nbsp;requestStartAlertDataFor:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests alert data to start being received from the ESP device to the current <a href="#//api/name/delegate">delegate</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestStartAlertDataFor:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests alert data to start being received from the ESP device to the current <a href="#//api/name/delegate">delegate</a></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/ESPClientDelegate.html">ESPClientDelegate</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestStartAlertData:" title="requestStartAlertData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestStartAlertData:">&ndash;&nbsp;requestStartAlertData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests alert data to start being received from the Valentine One to the current <a href="#//api/name/delegate">delegate</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestStartAlertData:(void ( ^ ) ( NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests alert data to start being received from the Valentine One to the current <a href="#//api/name/delegate">delegate</a></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/ESPClientDelegate.html">ESPClientDelegate</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestStopAlertDataFor:completion:" title="requestStopAlertDataFor:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestStopAlertDataFor:completion:">&ndash;&nbsp;requestStopAlertDataFor:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests alert data to stop being received from the ESP device to the current <a href="#//api/name/delegate">delegate</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestStopAlertDataFor:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests alert data to stop being received from the ESP device to the current <a href="#//api/name/delegate">delegate</a></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/ESPClientDelegate.html">ESPClientDelegate</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestStopAlertData:" title="requestStopAlertData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestStopAlertData:">&ndash;&nbsp;requestStopAlertData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests alert data to stop being received from the Valentine One to the current <a href="#//api/name/delegate">delegate</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestStopAlertData:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if the request is successful, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests alert data to stop being received from the Valentine One to the current <a href="#//api/name/delegate">delegate</a></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/ESPClientDelegate.html">ESPClientDelegate</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestBatteryVoltageFrom:completion:" title="requestBatteryVoltageFrom:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestBatteryVoltageFrom:completion:">&ndash;&nbsp;requestBatteryVoltageFrom:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the current battery voltage of the ESP device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestBatteryVoltageFrom:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( double voltage , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the current battery voltage of the ESP device</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestBatteryVoltage:" title="requestBatteryVoltage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestBatteryVoltage:">&ndash;&nbsp;requestBatteryVoltage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the current battery voltage of the Valentine One</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestBatteryVoltage:(void ( ^ ) ( double voltage , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the current battery voltage of the Valentine One</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestSavvyStatusFrom:completion:" title="requestSavvyStatusFrom:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestSavvyStatusFrom:completion:">&ndash;&nbsp;requestSavvyStatusFrom:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the current savvy status from the ESP device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestSavvyStatusFrom:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( ESPSavvyStatus *savvyStatus , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetSavvy is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the current savvy status from the ESP device</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestSavvyStatus:" title="requestSavvyStatus:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestSavvyStatus:">&ndash;&nbsp;requestSavvyStatus:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the current savvy status from the Savvy accessory</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestSavvyStatus:(void ( ^ ) ( ESPSavvyStatus *savvyStatus , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the current savvy status from the Savvy accessory</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestVehicleSpeedFrom:completion:" title="requestVehicleSpeedFrom:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestVehicleSpeedFrom:completion:">&ndash;&nbsp;requestVehicleSpeedFrom:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the current vehicle speed from the ESP device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestVehicleSpeedFrom:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( NSUInteger vehicleSpeedKPH , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetSavvy is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the current vehicle speed from the ESP device</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestVehicleSpeed:" title="requestVehicleSpeed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestVehicleSpeed:">&ndash;&nbsp;requestVehicleSpeed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the current vehicle speed from the Savvy accessory</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestVehicleSpeed:(void ( ^ ) ( NSUInteger vehicleSpeedKPH , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the current vehicle speed from the Savvy accessory</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestOverrideThumbwheel:target:completion:" title="requestOverrideThumbwheel:target:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestOverrideThumbwheel:target:completion:">&ndash;&nbsp;requestOverrideThumbwheel:target:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the thumbwheel speed of the ESP device to be overridden</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestOverrideThumbwheel:(NSUInteger)<em>speedKPH</em> target:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>speedKPH</code></th>
+						<td><p>the speed, in KPH, to override the thumbwheel speed. If this value is greater than or equal to 255, the savvy will mute all speeds.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetSavvy is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the thumbwheel speed of the ESP device to be overridden</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestOverrideThumbwheel:completion:" title="requestOverrideThumbwheel:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestOverrideThumbwheel:completion:">&ndash;&nbsp;requestOverrideThumbwheel:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the thumbwheel speed of the Savvy to be overridden</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestOverrideThumbwheel:(NSUInteger)<em>speedKPH</em> completion:(void ( ^ ) ( NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>speedKPH</code></th>
+						<td><p>the speed, in KPH, to override the thumbwheel speed. If this value is greater than or equal to 255, the Savvy will mute all speeds.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the thumbwheel speed of the Savvy to be overridden</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestSetSavvyUnmuteEnabled:target:completion:" title="requestSetSavvyUnmuteEnabled:target:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestSetSavvyUnmuteEnabled:target:completion:">&ndash;&nbsp;requestSetSavvyUnmuteEnabled:target:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enables or disables the unmute functionality of the ESP device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestSetSavvyUnmuteEnabled:(BOOL)<em>unmuteEnabled</em> target:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>unmuteEnabled</code></th>
+						<td><p>whether or not to automatically unmute the main ESP device</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetSavvy is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Enables or disables the unmute functionality of the ESP device</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestSetSavvyUnmuteEnabled:completion:" title="requestSetSavvyUnmuteEnabled:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestSetSavvyUnmuteEnabled:completion:">&ndash;&nbsp;requestSetSavvyUnmuteEnabled:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enables or disables the unmute functionality of the Savvy</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestSetSavvyUnmuteEnabled:(BOOL)<em>unmuteEnabled</em> completion:(void ( ^ ) ( NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>unmuteEnabled</code></th>
+						<td><p>whether or not to automatically unmute the Valentine One</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Enables or disables the unmute functionality of the Savvy</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The delegate object to receive ESPClient events</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;ESPClientDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The delegate object to receive ESPClient events</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/peripheral" title="peripheral"></a>
+	<h3 class="method-title"><code><a href="#//api/name/peripheral">&nbsp;&nbsp;peripheral</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>the CBPeripheral object that handles the BLE connection to the ESP device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) CBPeripheral *peripheral</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>the CBPeripheral object that handles the BLE connection to the ESP device</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/legacy" title="legacy"></a>
+	<h3 class="method-title"><code><a href="#//api/name/legacy">&nbsp;&nbsp;legacy</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells whether the ESP device is in legacy mode or not. This property may be NO by default until enough display data packets are received with the legacy bit set to confirm that the ESP device is in legacy mode</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=isLegacy) BOOL legacy</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Tells whether the ESP device is in legacy mode or not. This property may be NO by default until enough display data packets are received with the legacy bit set to confirm that the ESP device is in legacy mode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checksums" title="checksums"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checksums">&nbsp;&nbsp;checksums</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells whether the ESP device uses checksums. This property may be NO by default until enough packets are recieved to tell whether the ESP device has checksums</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=hasChecksums) BOOL checksums</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Tells whether the ESP device uses checksums. This property may be NO by default until enough packets are recieved to tell whether the ESP device has checksums</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connected" title="connected"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connected">&nbsp;&nbsp;connected</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells whether the client is connected. Once disconnected, this specific client instance will never be reconnected and the <a href="../Classes/ESPScanner.html">ESPScanner</a> class must be used to connect a new client</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=isConnected) BOOL connected</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Tells whether the client is connected. Once disconnected, this specific client instance will never be reconnected and the <a href="../Classes/ESPScanner.html">ESPScanner</a> class must be used to connect a new client</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/powerLossDetected" title="powerLossDetected"></a>
+	<h3 class="method-title"><code><a href="#//api/name/powerLossDetected">&nbsp;&nbsp;powerLossDetected</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells whether a power loss has been detected. This means that a packet has not been received within the <a href="#//api/name/powerLossTimeout">powerLossTimeout</a>. @see ESPClient::<a href="#//api/name/powerLossTimeout">powerLossTimeout</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL powerLossDetected</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Tells whether a power loss has been detected. This means that a packet has not been received within the <a href="#//api/name/powerLossTimeout">powerLossTimeout</a>. @see ESPClient::<a href="#//api/name/powerLossTimeout">powerLossTimeout</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/powerLossTimeout" title="powerLossTimeout"></a>
+	<h3 class="method-title"><code><a href="#//api/name/powerLossTimeout">&nbsp;&nbsp;powerLossTimeout</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The amount of time after receiving a packet to &ldquo;detect&rdquo; a power loss if no further packets are received. The default value is 5 seconds</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval powerLossTimeout</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The amount of time after receiving a packet to &ldquo;detect&rdquo; a power loss if no further packets are received. The default value is 5 seconds</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestTimeout" title="requestTimeout"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestTimeout">&nbsp;&nbsp;requestTimeout</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The amount of time to wait after a request is sent for it to time out. The default value is 5 seconds</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval requestTimeout</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The amount of time to wait after a request is sent for it to time out. The default value is 5 seconds</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/reportsEchoedPackets" title="reportsEchoedPackets"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reportsEchoedPackets">&nbsp;&nbsp;reportsEchoedPackets</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Controls whether echo packets (packets sent to the V1 that are re-sent back to the client) should be recognized or not. Default value is NO</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL reportsEchoedPackets</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Controls whether echo packets (packets sent to the V1 that are re-sent back to the client) should be recognized or not. Default value is NO</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/_destinationFromRequestTarget:" title="_destinationFromRequestTarget:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_destinationFromRequestTarget:">&ndash;&nbsp;_destinationFromRequestTarget:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (ESPDeviceID)_destinationFromRequestTarget:(ESPRequestTarget)<em>target</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_queueRequest:" title="_queueRequest:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_queueRequest:">&ndash;&nbsp;_queueRequest:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)_queueRequest:(ESPRequest *)<em>request</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_performRequest:" title="_performRequest:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_performRequest:">&ndash;&nbsp;_performRequest:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)_performRequest:(ESPRequest *)<em>request</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_payloadFromPacket:" title="_payloadFromPacket:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_payloadFromPacket:">&ndash;&nbsp;_payloadFromPacket:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSData *)_payloadFromPacket:(ESPPacket *)<em>packet</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_requestIsInBusyQueue:" title="_requestIsInBusyQueue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_requestIsInBusyQueue:">&ndash;&nbsp;_requestIsInBusyQueue:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)_requestIsInBusyQueue:(ESPResponseExpector *)<em>expector</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_handleResponsePacket:forResponseExpector:" title="_handleResponsePacket:forResponseExpector:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_handleResponsePacket:forResponseExpector:">&ndash;&nbsp;_handleResponsePacket:forResponseExpector:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)_handleResponsePacket:(ESPPacket *)<em>packet</em> forResponseExpector:(ESPResponseExpector *)<em>responseExpector</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithPeripheral:inShort:inLong:outShort:outLong:" title="initWithPeripheral:inShort:inLong:outShort:outLong:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithPeripheral:inShort:inLong:outShort:outLong:">&ndash;&nbsp;initWithPeripheral:inShort:inLong:outShort:outLong:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithPeripheral:(CBPeripheral *)<em>peripheral</em> inShort:(CBCharacteristic *)<em>inShort</em> inLong:(CBCharacteristic *)<em>inLong</em> outShort:(CBCharacteristic *)<em>outShort</em> outLong:(CBCharacteristic *)<em>outLong</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_handleDisconnect" title="_handleDisconnect"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_handleDisconnect">&ndash;&nbsp;_handleDisconnect</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)_handleDisconnect</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Valentine. All rights reserved. Updated: 2018-04-03</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

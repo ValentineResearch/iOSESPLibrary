@@ -1,0 +1,1353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ESPDisplayData.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ESPDisplayData</TokenIdentifier>
+			<Abstract type="html">ESPDisplayData</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/initWithData:</TokenIdentifier>
+			<Abstract type="html">Initializes the display data from a received packet&apos;s payload</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithData:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">the payload data of an infDisplayData packet</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized display data object </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/initWithDisplayData:</TokenIdentifier>
+			<Abstract type="html">Initialized the display data by copying from an existing display data object</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDisplayData:(ESPDisplayData *)displayData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>displayData</Name>
+					<Abstract type="html">the display data to copy from</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized display data object </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDisplayData:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setData:</TokenIdentifier>
+			<Abstract type="html">The full payload data of the display data</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/data</TokenIdentifier>
+			<Abstract type="html">The full payload data of the display data</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/data</TokenIdentifier>
+			<Abstract type="html">The full payload data of the display data</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setSegmentA:</TokenIdentifier>
+			<Abstract type="html">Top segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentA</Declaration>
+			
+			
+			<Anchor>//api/name/segmentA</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/segmentA</TokenIdentifier>
+			<Abstract type="html">Top segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentA</Declaration>
+			
+			
+			<Anchor>//api/name/segmentA</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/segmentA</TokenIdentifier>
+			<Abstract type="html">Top segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentA</Declaration>
+			
+			
+			<Anchor>//api/name/segmentA</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setSegmentB:</TokenIdentifier>
+			<Abstract type="html">Upper right segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentB</Declaration>
+			
+			
+			<Anchor>//api/name/segmentB</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/segmentB</TokenIdentifier>
+			<Abstract type="html">Upper right segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentB</Declaration>
+			
+			
+			<Anchor>//api/name/segmentB</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/segmentB</TokenIdentifier>
+			<Abstract type="html">Upper right segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentB</Declaration>
+			
+			
+			<Anchor>//api/name/segmentB</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setSegmentC:</TokenIdentifier>
+			<Abstract type="html">Lower right segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentC</Declaration>
+			
+			
+			<Anchor>//api/name/segmentC</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/segmentC</TokenIdentifier>
+			<Abstract type="html">Lower right segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentC</Declaration>
+			
+			
+			<Anchor>//api/name/segmentC</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/segmentC</TokenIdentifier>
+			<Abstract type="html">Lower right segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentC</Declaration>
+			
+			
+			<Anchor>//api/name/segmentC</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setSegmentD:</TokenIdentifier>
+			<Abstract type="html">Bottom segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentD</Declaration>
+			
+			
+			<Anchor>//api/name/segmentD</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/segmentD</TokenIdentifier>
+			<Abstract type="html">Bottom segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentD</Declaration>
+			
+			
+			<Anchor>//api/name/segmentD</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/segmentD</TokenIdentifier>
+			<Abstract type="html">Bottom segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentD</Declaration>
+			
+			
+			<Anchor>//api/name/segmentD</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setSegmentE:</TokenIdentifier>
+			<Abstract type="html">Lower left segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentE</Declaration>
+			
+			
+			<Anchor>//api/name/segmentE</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/segmentE</TokenIdentifier>
+			<Abstract type="html">Lower left segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentE</Declaration>
+			
+			
+			<Anchor>//api/name/segmentE</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/segmentE</TokenIdentifier>
+			<Abstract type="html">Lower left segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentE</Declaration>
+			
+			
+			<Anchor>//api/name/segmentE</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setSegmentF:</TokenIdentifier>
+			<Abstract type="html">Upper left segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentF</Declaration>
+			
+			
+			<Anchor>//api/name/segmentF</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/segmentF</TokenIdentifier>
+			<Abstract type="html">Upper left segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentF</Declaration>
+			
+			
+			<Anchor>//api/name/segmentF</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/segmentF</TokenIdentifier>
+			<Abstract type="html">Upper left segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentF</Declaration>
+			
+			
+			<Anchor>//api/name/segmentF</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setSegmentG:</TokenIdentifier>
+			<Abstract type="html">Middle segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentG</Declaration>
+			
+			
+			<Anchor>//api/name/segmentG</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/segmentG</TokenIdentifier>
+			<Abstract type="html">Middle segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentG</Declaration>
+			
+			
+			<Anchor>//api/name/segmentG</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/segmentG</TokenIdentifier>
+			<Abstract type="html">Middle segment of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState segmentG</Declaration>
+			
+			
+			<Anchor>//api/name/segmentG</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setDecimalPoint:</TokenIdentifier>
+			<Abstract type="html">Decimal point of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState decimalPoint</Declaration>
+			
+			
+			<Anchor>//api/name/decimalPoint</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/decimalPoint</TokenIdentifier>
+			<Abstract type="html">Decimal point of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState decimalPoint</Declaration>
+			
+			
+			<Anchor>//api/name/decimalPoint</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/decimalPoint</TokenIdentifier>
+			<Abstract type="html">Decimal point of the seven segment display on the ESP device</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState decimalPoint</Declaration>
+			
+			
+			<Anchor>//api/name/decimalPoint</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/strengthLightAtIndex:</TokenIdentifier>
+			<Abstract type="html">Tells whether the specified bargraph strength light is on</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)strengthLightAtIndex:(NSUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">the index of the strength light</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the light is on, NO if the light is off </Abstract></ReturnValue>
+			<Anchor>//api/name/strengthLightAtIndex:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setStrengthLightCount:</TokenIdentifier>
+			<Abstract type="html">The total number of strength lights on the ESP device (8)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger strengthLightCount</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLightCount</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/strengthLightCount</TokenIdentifier>
+			<Abstract type="html">The total number of strength lights on the ESP device (8)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger strengthLightCount</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLightCount</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/strengthLightCount</TokenIdentifier>
+			<Abstract type="html">The total number of strength lights on the ESP device (8)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger strengthLightCount</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLightCount</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setStrengthLight0:</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 0</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight0</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight0</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/strengthLight0</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 0</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight0</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight0</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/strengthLight0</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 0</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight0</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight0</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setStrengthLight1:</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 1</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight1</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight1</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/strengthLight1</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 1</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight1</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight1</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/strengthLight1</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 1</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight1</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight1</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setStrengthLight2:</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 2</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight2</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight2</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/strengthLight2</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 2</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight2</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight2</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/strengthLight2</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 2</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight2</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight2</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setStrengthLight3:</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 3</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight3</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight3</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/strengthLight3</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 3</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight3</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight3</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/strengthLight3</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 3</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight3</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight3</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setStrengthLight4:</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 4</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight4</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight4</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/strengthLight4</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 4</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight4</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight4</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/strengthLight4</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 4</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight4</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight4</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setStrengthLight5:</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 5</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight5</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight5</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/strengthLight5</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 5</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight5</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight5</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/strengthLight5</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 5</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight5</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight5</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setStrengthLight6:</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 6</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight6</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight6</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/strengthLight6</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 6</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight6</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight6</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/strengthLight6</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 6</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight6</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight6</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setStrengthLight7:</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 7</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight7</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight7</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/strengthLight7</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 7</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight7</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight7</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/strengthLight7</TokenIdentifier>
+			<Abstract type="html">The state of bargraph strength light 7</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL strengthLight7</Declaration>
+			
+			
+			<Anchor>//api/name/strengthLight7</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setLaser:</TokenIdentifier>
+			<Abstract type="html">The display state of the laser &quot;band&quot;</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState laser</Declaration>
+			
+			
+			<Anchor>//api/name/laser</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/laser</TokenIdentifier>
+			<Abstract type="html">The display state of the laser &quot;band&quot;</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState laser</Declaration>
+			
+			
+			<Anchor>//api/name/laser</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/laser</TokenIdentifier>
+			<Abstract type="html">The display state of the laser &quot;band&quot;</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState laser</Declaration>
+			
+			
+			<Anchor>//api/name/laser</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setKa:</TokenIdentifier>
+			<Abstract type="html">The display state of the Ka band</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState Ka</Declaration>
+			
+			
+			<Anchor>//api/name/Ka</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/Ka</TokenIdentifier>
+			<Abstract type="html">The display state of the Ka band</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState Ka</Declaration>
+			
+			
+			<Anchor>//api/name/Ka</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/Ka</TokenIdentifier>
+			<Abstract type="html">The display state of the Ka band</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState Ka</Declaration>
+			
+			
+			<Anchor>//api/name/Ka</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setK:</TokenIdentifier>
+			<Abstract type="html">The display state of the K band</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState K</Declaration>
+			
+			
+			<Anchor>//api/name/K</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/K</TokenIdentifier>
+			<Abstract type="html">The display state of the K band</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState K</Declaration>
+			
+			
+			<Anchor>//api/name/K</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/K</TokenIdentifier>
+			<Abstract type="html">The display state of the K band</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState K</Declaration>
+			
+			
+			<Anchor>//api/name/K</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setX:</TokenIdentifier>
+			<Abstract type="html">The display state of the X band</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState X</Declaration>
+			
+			
+			<Anchor>//api/name/X</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/X</TokenIdentifier>
+			<Abstract type="html">The display state of the X band</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState X</Declaration>
+			
+			
+			<Anchor>//api/name/X</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/X</TokenIdentifier>
+			<Abstract type="html">The display state of the X band</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState X</Declaration>
+			
+			
+			<Anchor>//api/name/X</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setFront:</TokenIdentifier>
+			<Abstract type="html">The display state of the front arrow</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState front</Declaration>
+			
+			
+			<Anchor>//api/name/front</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/front</TokenIdentifier>
+			<Abstract type="html">The display state of the front arrow</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState front</Declaration>
+			
+			
+			<Anchor>//api/name/front</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/front</TokenIdentifier>
+			<Abstract type="html">The display state of the front arrow</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState front</Declaration>
+			
+			
+			<Anchor>//api/name/front</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setSide:</TokenIdentifier>
+			<Abstract type="html">The display state of the side arrow</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState side</Declaration>
+			
+			
+			<Anchor>//api/name/side</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/side</TokenIdentifier>
+			<Abstract type="html">The display state of the side arrow</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState side</Declaration>
+			
+			
+			<Anchor>//api/name/side</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/side</TokenIdentifier>
+			<Abstract type="html">The display state of the side arrow</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState side</Declaration>
+			
+			
+			<Anchor>//api/name/side</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setRear:</TokenIdentifier>
+			<Abstract type="html">The display state of the rear arrow</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState rear</Declaration>
+			
+			
+			<Anchor>//api/name/rear</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/rear</TokenIdentifier>
+			<Abstract type="html">The display state of the rear arrow</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState rear</Declaration>
+			
+			
+			<Anchor>//api/name/rear</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/rear</TokenIdentifier>
+			<Abstract type="html">The display state of the rear arrow</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState rear</Declaration>
+			
+			
+			<Anchor>//api/name/rear</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setSoft:</TokenIdentifier>
+			<Abstract type="html">Tells the current mute status. (NO means not muted, YES means muted)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL soft</Declaration>
+			
+			
+			<Anchor>//api/name/soft</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/soft</TokenIdentifier>
+			<Abstract type="html">Tells the current mute status. (NO means not muted, YES means muted)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL soft</Declaration>
+			
+			
+			<Anchor>//api/name/soft</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/soft</TokenIdentifier>
+			<Abstract type="html">Tells the current mute status. (NO means not muted, YES means muted)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL soft</Declaration>
+			
+			
+			<Anchor>//api/name/soft</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setTsHoldoff:</TokenIdentifier>
+			<Abstract type="html">Tells the accessories if a time slice is allowed. (NO means that all accessories can have a time slice after this packet, YES means that none of the accessories can have a time slice after this packet)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL tsHoldoff</Declaration>
+			
+			
+			<Anchor>//api/name/tsHoldoff</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/tsHoldoff</TokenIdentifier>
+			<Abstract type="html">Tells the accessories if a time slice is allowed. (NO means that all accessories can have a time slice after this packet, YES means that none of the accessories can have a time slice after this packet)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL tsHoldoff</Declaration>
+			
+			
+			<Anchor>//api/name/tsHoldoff</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/tsHoldoff</TokenIdentifier>
+			<Abstract type="html">Tells the accessories if a time slice is allowed. (NO means that all accessories can have a time slice after this packet, YES means that none of the accessories can have a time slice after this packet)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL tsHoldoff</Declaration>
+			
+			
+			<Anchor>//api/name/tsHoldoff</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setSystemStatus:</TokenIdentifier>
+			<Abstract type="html">Tells whether the ESP device is actively searching for alerts. (NO means the device is not actively searching for alerts, YES means that the device has successfully signed on and is actively searching for alerts)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL systemStatus</Declaration>
+			
+			
+			<Anchor>//api/name/systemStatus</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/systemStatus</TokenIdentifier>
+			<Abstract type="html">Tells whether the ESP device is actively searching for alerts. (NO means the device is not actively searching for alerts, YES means that the device has successfully signed on and is actively searching for alerts)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL systemStatus</Declaration>
+			
+			
+			<Anchor>//api/name/systemStatus</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/systemStatus</TokenIdentifier>
+			<Abstract type="html">Tells whether the ESP device is actively searching for alerts. (NO means the device is not actively searching for alerts, YES means that the device has successfully signed on and is actively searching for alerts)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL systemStatus</Declaration>
+			
+			
+			<Anchor>//api/name/systemStatus</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setDisplayOn:</TokenIdentifier>
+			<Abstract type="html">Tells the ESP device&apos;s front display status (NO means off, YES means on)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL displayOn</Declaration>
+			
+			
+			<Anchor>//api/name/displayOn</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/displayOn</TokenIdentifier>
+			<Abstract type="html">Tells the ESP device&apos;s front display status (NO means off, YES means on)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL displayOn</Declaration>
+			
+			
+			<Anchor>//api/name/displayOn</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/displayOn</TokenIdentifier>
+			<Abstract type="html">Tells the ESP device&apos;s front display status (NO means off, YES means on)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL displayOn</Declaration>
+			
+			
+			<Anchor>//api/name/displayOn</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setEuroMode:</TokenIdentifier>
+			<Abstract type="html">Tells whether euro mode is enabled (NO means disabled, YES means enabled)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL euroMode</Declaration>
+			
+			
+			<Anchor>//api/name/euroMode</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/euroMode</TokenIdentifier>
+			<Abstract type="html">Tells whether euro mode is enabled (NO means disabled, YES means enabled)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL euroMode</Declaration>
+			
+			
+			<Anchor>//api/name/euroMode</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/euroMode</TokenIdentifier>
+			<Abstract type="html">Tells whether euro mode is enabled (NO means disabled, YES means enabled)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL euroMode</Declaration>
+			
+			
+			<Anchor>//api/name/euroMode</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setCustomSweep:</TokenIdentifier>
+			<Abstract type="html">Tells the custom sweep status (NO means custom sweeps have not been defined, YES means that custom sweeps have been defined and custom modes will be used if in euro mode</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL customSweep</Declaration>
+			
+			
+			<Anchor>//api/name/customSweep</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/customSweep</TokenIdentifier>
+			<Abstract type="html">Tells the custom sweep status (NO means custom sweeps have not been defined, YES means that custom sweeps have been defined and custom modes will be used if in euro mode</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL customSweep</Declaration>
+			
+			
+			<Anchor>//api/name/customSweep</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/customSweep</TokenIdentifier>
+			<Abstract type="html">Tells the custom sweep status (NO means custom sweeps have not been defined, YES means that custom sweeps have been defined and custom modes will be used if in euro mode</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL customSweep</Declaration>
+			
+			
+			<Anchor>//api/name/customSweep</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setLegacy:</TokenIdentifier>
+			<Abstract type="html">Tells whether the ESP device is operating in legacy mode (NO means normal operation, YES means legacy mode</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL legacy</Declaration>
+			
+			
+			<Anchor>//api/name/legacy</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/legacy</TokenIdentifier>
+			<Abstract type="html">Tells whether the ESP device is operating in legacy mode (NO means normal operation, YES means legacy mode</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL legacy</Declaration>
+			
+			
+			<Anchor>//api/name/legacy</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/legacy</TokenIdentifier>
+			<Abstract type="html">Tells whether the ESP device is operating in legacy mode (NO means normal operation, YES means legacy mode</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL legacy</Declaration>
+			
+			
+			<Anchor>//api/name/legacy</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setMode:</TokenIdentifier>
+			<Abstract type="html">Tells the current mode of the V1. The mode is determined by reading the seven segment display data and the systemStatus bit. If the mode cannot be determined from the seven segment display, the mode is ESPV1ModeUnknown</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPV1Mode mode</Declaration>
+			
+			
+			<Anchor>//api/name/mode</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/mode</TokenIdentifier>
+			<Abstract type="html">Tells the current mode of the V1. The mode is determined by reading the seven segment display data and the systemStatus bit. If the mode cannot be determined from the seven segment display, the mode is ESPV1ModeUnknown</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPV1Mode mode</Declaration>
+			
+			
+			<Anchor>//api/name/mode</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/mode</TokenIdentifier>
+			<Abstract type="html">Tells the current mode of the V1. The mode is determined by reading the seven segment display data and the systemStatus bit. If the mode cannot be determined from the seven segment display, the mode is ESPV1ModeUnknown</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPV1Mode mode</Declaration>
+			
+			
+			<Anchor>//api/name/mode</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setJunk:</TokenIdentifier>
+			<Abstract type="html">Tells whether the V1 is indicating a junk signal. This is determined by reading the seven segment display data and the systemStatus bit.</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL junk</Declaration>
+			
+			
+			<Anchor>//api/name/junk</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/junk</TokenIdentifier>
+			<Abstract type="html">Tells whether the V1 is indicating a junk signal. This is determined by reading the seven segment display data and the systemStatus bit.</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL junk</Declaration>
+			
+			
+			<Anchor>//api/name/junk</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/junk</TokenIdentifier>
+			<Abstract type="html">Tells whether the V1 is indicating a junk signal. This is determined by reading the seven segment display data and the systemStatus bit.</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL junk</Declaration>
+			
+			
+			<Anchor>//api/name/junk</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setError:</TokenIdentifier>
+			<Abstract type="html">Tells whether the V1 is indicating an error. This is determined by reading the seven segment display state, the strength lights, and the arrow lights.</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/error</TokenIdentifier>
+			<Abstract type="html">Tells whether the V1 is indicating an error. This is determined by reading the seven segment display state, the strength lights, and the arrow lights.</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/error</TokenIdentifier>
+			<Abstract type="html">Tells whether the V1 is indicating an error. This is determined by reading the seven segment display state, the strength lights, and the arrow lights.</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/isLaserAlerting</TokenIdentifier>
+			<Abstract type="html">@verbatim Method to determine if a &quot;laser&quot; alert is present. This value is determined by a bit-wise AND of the laser property and systemStatus and front or rear properties.</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isLaserAlerting</Declaration>
+			
+			
+			<Anchor>//api/name/isLaserAlerting</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

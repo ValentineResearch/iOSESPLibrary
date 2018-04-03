@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ESPPacket.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ESPPacket</TokenIdentifier>
+			<Abstract type="html">ESPPacket</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/initWithData:</TokenIdentifier>
+			<Abstract type="html">Initializes a packet from a received block of data.</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithData:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">the block of data of the packet</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized packet, or nil if the data does not match the structure of an ESP packet </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/initWithDestination:origin:packetID:payload:checksum:</TokenIdentifier>
+			<Abstract type="html">Initializes a packet with specified information.</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDestination:(ESPDeviceID)destination origin:(ESPDeviceID)origin packetID:(ESPPacketID)packetID payload:(NSData *)payload checksum:(BOOL)checksum</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>destination</Name>
+					<Abstract type="html">the destination of the packet</Abstract>
+				</Parameter><Parameter>
+					<Name>origin</Name>
+					<Abstract type="html">the sender of the packet</Abstract>
+				</Parameter><Parameter>
+					<Name>packetID</Name>
+					<Abstract type="html">the ID of the packet</Abstract>
+				</Parameter><Parameter>
+					<Name>payload</Name>
+					<Abstract type="html">the payload data</Abstract>
+				</Parameter><Parameter>
+					<Name>checksum</Name>
+					<Abstract type="html">tells whether to include a checksum</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized packet, or nil if the payload was too big </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDestination:origin:packetID:payload:checksum:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/isEqualToPacket:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqualToPacket:(ESPPacket *)packet</Declaration>
+			
+			
+			<Anchor>//api/name/isEqualToPacket:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/isChecksumValid</TokenIdentifier>
+			<Abstract type="html">Verify the checksum. Only perform this check if you know the ESP packet has a checksum. Otherwise, it will most likely fail</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isChecksumValid</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the checksum is valid, or NO if the checksum is not valid </Abstract></ReturnValue>
+			<Anchor>//api/name/isChecksumValid</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/setData:</TokenIdentifier>
+			<Abstract type="html">The full data of the packet</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/data</TokenIdentifier>
+			<Abstract type="html">The full data of the packet</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPPacket/data</TokenIdentifier>
+			<Abstract type="html">The full data of the packet</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/setDestination:</TokenIdentifier>
+			<Abstract type="html">The destination field of the packet.</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDeviceID destination</Declaration>
+			
+			
+			<Anchor>//api/name/destination</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/destination</TokenIdentifier>
+			<Abstract type="html">The destination field of the packet.</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDeviceID destination</Declaration>
+			
+			
+			<Anchor>//api/name/destination</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPPacket/destination</TokenIdentifier>
+			<Abstract type="html">The destination field of the packet.</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDeviceID destination</Declaration>
+			
+			
+			<Anchor>//api/name/destination</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/setOrigin:</TokenIdentifier>
+			<Abstract type="html">The origin field of the packet</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDeviceID origin</Declaration>
+			
+			
+			<Anchor>//api/name/origin</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/origin</TokenIdentifier>
+			<Abstract type="html">The origin field of the packet</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDeviceID origin</Declaration>
+			
+			
+			<Anchor>//api/name/origin</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPPacket/origin</TokenIdentifier>
+			<Abstract type="html">The origin field of the packet</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDeviceID origin</Declaration>
+			
+			
+			<Anchor>//api/name/origin</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/setPacketID:</TokenIdentifier>
+			<Abstract type="html">The packet identifier</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPPacketID packetID</Declaration>
+			
+			
+			<Anchor>//api/name/packetID</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/packetID</TokenIdentifier>
+			<Abstract type="html">The packet identifier</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPPacketID packetID</Declaration>
+			
+			
+			<Anchor>//api/name/packetID</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPPacket/packetID</TokenIdentifier>
+			<Abstract type="html">The packet identifier</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPPacketID packetID</Declaration>
+			
+			
+			<Anchor>//api/name/packetID</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/setPayload:</TokenIdentifier>
+			<Abstract type="html">The payload of the packet, including the checksum (if any)</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *payload</Declaration>
+			
+			
+			<Anchor>//api/name/payload</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/payload</TokenIdentifier>
+			<Abstract type="html">The payload of the packet, including the checksum (if any)</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *payload</Declaration>
+			
+			
+			<Anchor>//api/name/payload</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPPacket/payload</TokenIdentifier>
+			<Abstract type="html">The payload of the packet, including the checksum (if any)</Abstract>
+			<DeclaredIn>ESPPacket.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *payload</Declaration>
+			
+			
+			<Anchor>//api/name/payload</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

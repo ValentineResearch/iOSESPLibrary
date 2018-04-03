@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ESPAlertData.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ESPAlertData</TokenIdentifier>
+			<Abstract type="html">ESPAlertData</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/initWithData:</TokenIdentifier>
+			<Abstract type="html">Initializes the alert from a received packet&apos;s payload</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithData:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">the payload data of a respAlertData packet</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized alert </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/initWithAlertData:</TokenIdentifier>
+			<Abstract type="html">Initializes a new alert by copying information from an existing alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithAlertData:(ESPAlertData *)alert</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>alert</Name>
+					<Abstract type="html">the alert to copy from</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized alert </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAlertData:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/isEqualToAlertData:</TokenIdentifier>
+			<Abstract type="html">Tells if the given alert is equal to this alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqualToAlertData:(ESPAlertData *)alertData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>alertData</Name>
+					<Abstract type="html">the alert to compare</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the alerts are equal, or NO if they are not equal </Abstract></ReturnValue>
+			<Anchor>//api/name/isEqualToAlertData:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/isWithinDevianceWindow:</TokenIdentifier>
+			<Abstract type="html">Tells if the given alert is within the deviance window of this alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isWithinDevianceWindow:(ESPAlertData *)alert</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>alert</Name>
+					<Abstract type="html">the alert to compare</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the alert is within the deviance window, NO if it is not </Abstract></ReturnValue>
+			<Anchor>//api/name/isWithinDevianceWindow:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/setData:</TokenIdentifier>
+			<Abstract type="html">The full payload data of the alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/data</TokenIdentifier>
+			<Abstract type="html">The full payload data of the alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPAlertData/data</TokenIdentifier>
+			<Abstract type="html">The full payload data of the alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/setCount:</TokenIdentifier>
+			<Abstract type="html">The number of alerts in the alert table</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/count</TokenIdentifier>
+			<Abstract type="html">The number of alerts in the alert table</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPAlertData/count</TokenIdentifier>
+			<Abstract type="html">The number of alerts in the alert table</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/setIndex:</TokenIdentifier>
+			<Abstract type="html">The index of the alert in the alert table</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger index</Declaration>
+			
+			
+			<Anchor>//api/name/index</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/index</TokenIdentifier>
+			<Abstract type="html">The index of the alert in the alert table</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger index</Declaration>
+			
+			
+			<Anchor>//api/name/index</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPAlertData/index</TokenIdentifier>
+			<Abstract type="html">The index of the alert in the alert table</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger index</Declaration>
+			
+			
+			<Anchor>//api/name/index</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/setFrequency:</TokenIdentifier>
+			<Abstract type="html">The frequency of the alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz frequency</Declaration>
+			
+			
+			<Anchor>//api/name/frequency</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/frequency</TokenIdentifier>
+			<Abstract type="html">The frequency of the alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz frequency</Declaration>
+			
+			
+			<Anchor>//api/name/frequency</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPAlertData/frequency</TokenIdentifier>
+			<Abstract type="html">The frequency of the alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz frequency</Declaration>
+			
+			
+			<Anchor>//api/name/frequency</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/setFrontSignalStrength:</TokenIdentifier>
+			<Abstract type="html">The front signal strength (0-255)</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger frontSignalStrength</Declaration>
+			
+			
+			<Anchor>//api/name/frontSignalStrength</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/frontSignalStrength</TokenIdentifier>
+			<Abstract type="html">The front signal strength (0-255)</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger frontSignalStrength</Declaration>
+			
+			
+			<Anchor>//api/name/frontSignalStrength</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPAlertData/frontSignalStrength</TokenIdentifier>
+			<Abstract type="html">The front signal strength (0-255)</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger frontSignalStrength</Declaration>
+			
+			
+			<Anchor>//api/name/frontSignalStrength</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/setRearSignalStrength:</TokenIdentifier>
+			<Abstract type="html">The rear signal strength (0-255)</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger rearSignalStrength</Declaration>
+			
+			
+			<Anchor>//api/name/rearSignalStrength</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/rearSignalStrength</TokenIdentifier>
+			<Abstract type="html">The rear signal strength (0-255)</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger rearSignalStrength</Declaration>
+			
+			
+			<Anchor>//api/name/rearSignalStrength</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPAlertData/rearSignalStrength</TokenIdentifier>
+			<Abstract type="html">The rear signal strength (0-255)</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger rearSignalStrength</Declaration>
+			
+			
+			<Anchor>//api/name/rearSignalStrength</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/setAlertSignalStrength:</TokenIdentifier>
+			<Abstract type="html">The alert signal strength to use for the bargraph (0-255)</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger alertSignalStrength</Declaration>
+			
+			
+			<Anchor>//api/name/alertSignalStrength</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/alertSignalStrength</TokenIdentifier>
+			<Abstract type="html">The alert signal strength to use for the bargraph (0-255)</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger alertSignalStrength</Declaration>
+			
+			
+			<Anchor>//api/name/alertSignalStrength</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPAlertData/alertSignalStrength</TokenIdentifier>
+			<Abstract type="html">The alert signal strength to use for the bargraph (0-255)</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger alertSignalStrength</Declaration>
+			
+			
+			<Anchor>//api/name/alertSignalStrength</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/setBargraphSignalStrength:</TokenIdentifier>
+			<Abstract type="html">The bargraph strength indicator strength (0-8)</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger bargraphSignalStrength</Declaration>
+			
+			
+			<Anchor>//api/name/bargraphSignalStrength</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/bargraphSignalStrength</TokenIdentifier>
+			<Abstract type="html">The bargraph strength indicator strength (0-8)</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger bargraphSignalStrength</Declaration>
+			
+			
+			<Anchor>//api/name/bargraphSignalStrength</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPAlertData/bargraphSignalStrength</TokenIdentifier>
+			<Abstract type="html">The bargraph strength indicator strength (0-8)</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger bargraphSignalStrength</Declaration>
+			
+			
+			<Anchor>//api/name/bargraphSignalStrength</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/setPriority:</TokenIdentifier>
+			<Abstract type="html">Tells if this alert is a priority alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isPriority) BOOL priority</Declaration>
+			
+			
+			<Anchor>//api/name/priority</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/isPriority</TokenIdentifier>
+			<Abstract type="html">Tells if this alert is a priority alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isPriority) BOOL priority</Declaration>
+			
+			
+			<Anchor>//api/name/priority</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPAlertData/priority</TokenIdentifier>
+			<Abstract type="html">Tells if this alert is a priority alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isPriority) BOOL priority</Declaration>
+			
+			
+			<Anchor>//api/name/priority</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/setDirection:</TokenIdentifier>
+			<Abstract type="html">The direction of the alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPAlertDirection direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/direction</TokenIdentifier>
+			<Abstract type="html">The direction of the alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPAlertDirection direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPAlertData/direction</TokenIdentifier>
+			<Abstract type="html">The direction of the alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPAlertDirection direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/setBand:</TokenIdentifier>
+			<Abstract type="html">The band of the alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPAlertBand band</Declaration>
+			
+			
+			<Anchor>//api/name/band</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/band</TokenIdentifier>
+			<Abstract type="html">The band of the alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPAlertBand band</Declaration>
+			
+			
+			<Anchor>//api/name/band</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPAlertData/band</TokenIdentifier>
+			<Abstract type="html">The band of the alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPAlertBand band</Declaration>
+			
+			
+			<Anchor>//api/name/band</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/setDeviance:</TokenIdentifier>
+			<Abstract type="html">Represents how far an alert may deviate in its frequency</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz deviance</Declaration>
+			
+			
+			<Anchor>//api/name/deviance</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/deviance</TokenIdentifier>
+			<Abstract type="html">Represents how far an alert may deviate in its frequency</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz deviance</Declaration>
+			
+			
+			<Anchor>//api/name/deviance</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPAlertData/deviance</TokenIdentifier>
+			<Abstract type="html">Represents how far an alert may deviate in its frequency</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz deviance</Declaration>
+			
+			
+			<Anchor>//api/name/deviance</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/setUpperWindowEdge:</TokenIdentifier>
+			<Abstract type="html">The alert frequency plus deviance</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz upperWindowEdge</Declaration>
+			
+			
+			<Anchor>//api/name/upperWindowEdge</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/upperWindowEdge</TokenIdentifier>
+			<Abstract type="html">The alert frequency plus deviance</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz upperWindowEdge</Declaration>
+			
+			
+			<Anchor>//api/name/upperWindowEdge</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPAlertData/upperWindowEdge</TokenIdentifier>
+			<Abstract type="html">The alert frequency plus deviance</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz upperWindowEdge</Declaration>
+			
+			
+			<Anchor>//api/name/upperWindowEdge</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/setLowerWindowEdge:</TokenIdentifier>
+			<Abstract type="html">The alert frequency minus devience</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz lowerWindowEdge</Declaration>
+			
+			
+			<Anchor>//api/name/lowerWindowEdge</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/lowerWindowEdge</TokenIdentifier>
+			<Abstract type="html">The alert frequency minus devience</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz lowerWindowEdge</Declaration>
+			
+			
+			<Anchor>//api/name/lowerWindowEdge</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPAlertData/lowerWindowEdge</TokenIdentifier>
+			<Abstract type="html">The alert frequency minus devience</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz lowerWindowEdge</Declaration>
+			
+			
+			<Anchor>//api/name/lowerWindowEdge</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

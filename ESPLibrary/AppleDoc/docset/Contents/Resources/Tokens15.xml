@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ESPSweepSectionsBuilder.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ESPSweepSectionsBuilder</TokenIdentifier>
+			<Abstract type="html">ESPSweepSectionsBuilder</Abstract>
+			<DeclaredIn>ESPSweepSectionsBuilder.h</DeclaredIn>
+            
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepSectionsBuilder/addSectionData:</TokenIdentifier>
+			<Abstract type="html">Adds sweep section data to attempt to make a full list of sweep sections</Abstract>
+			<DeclaredIn>ESPSweepSectionsBuilder.h</DeclaredIn>
+			
+			<Declaration>- (NSArray&lt;ESPFrequencyRange*&gt; *)addSectionData:(ESPSweepSectionData *)sectionData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sectionData</Name>
+					<Abstract type="html">the sweep section data</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a full list of sweep sections, or nil if a full list could not be constructed </Abstract></ReturnValue>
+			<Anchor>//api/name/addSectionData:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepSectionsBuilder/removeAllSectionData</TokenIdentifier>
+			<Abstract type="html">Removes all section data</Abstract>
+			<DeclaredIn>ESPSweepSectionsBuilder.h</DeclaredIn>
+			
+			<Declaration>- (void)removeAllSectionData</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllSectionData</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

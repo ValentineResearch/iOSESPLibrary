@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ESPScanner.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ESPScanner</TokenIdentifier>
+			<Abstract type="html">ESPScanner</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/initWithDelegate:</TokenIdentifier>
+			<Abstract type="html">  Initializes the ESPScanner object with a ESPScannerDelegate instance </Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDelegate:(id&lt;ESPScannerDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDelegate:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/startScan</TokenIdentifier>
+			<Abstract type="html">Starts scanning for ESP devices, or does nothing if already scanning. This method will not automatically connect any peripherals while scanning. Calling this method also clears any discovered peripherals.</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)startScan</Declaration>
+			
+			
+			<Anchor>//api/name/startScan</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/startScanWithMode:</TokenIdentifier>
+			<Abstract type="html">Starts scanning for ESP devices with a given mode, or does nothing if already scanning. Calling this method also clears any discovered peripherals.</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)startScanWithMode:(ESPConnectMode)mode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mode</Name>
+					<Abstract type="html">the mode to use while scanning to connect to an ESP device </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startScanWithMode:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/startScanWithMode:timeout:</TokenIdentifier>
+			<Abstract type="html">Starts scanning for ESP devices and stops the scan after a given amount of time. Calling this method also clears any discovered peripherals</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)startScanWithMode:(ESPConnectMode)mode timeout:(NSTimeInterval)timeout</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mode</Name>
+					<Abstract type="html">the mode to use while scanning to connect to an ESP device</Abstract>
+				</Parameter><Parameter>
+					<Name>timeout</Name>
+					<Abstract type="html">the amount of time to wait after starting the scan to stop the scan. If this value is less than or equal to 0, there is no timeout </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startScanWithMode:timeout:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/startScanForDeviceWithUUID:timeout:</TokenIdentifier>
+			<Abstract type="html">Starts scanning for the ESP device that has a UUID which matches the given UUID. If UUIDString is not nil, then peripherals will only be discovered if they match the UUID. If the ESP device with a matching UUID is found, the scanner will automatically try to connect to it. Calling this method also clears any discovered peripherals.</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)startScanForDeviceWithUUID:(NSString *)UUIDString timeout:(NSTimeInterval)timeout</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>UUIDString</Name>
+					<Abstract type="html">the UUID of the ESP device to search for, or nil to search for any ESP device</Abstract>
+				</Parameter><Parameter>
+					<Name>timeout</Name>
+					<Abstract type="html">the amount of time to wait after starting the scan to stop the scan. If this value is less than or equal to 0, there is no timeout </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startScanForDeviceWithUUID:timeout:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/stopScan</TokenIdentifier>
+			<Abstract type="html">Stops scanning for ESP devices, or does nothing if the scanner is not scanning</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)stopScan</Declaration>
+			
+			
+			<Anchor>//api/name/stopScan</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/connectPeripheral:</TokenIdentifier>
+			<Abstract type="html">Connects a discovered peripheral</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)connectPeripheral:(CBPeripheral *)peripheral</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>peripheral</Name>
+					<Abstract type="html">the peripheral to connect </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectPeripheral:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/disconnectClient</TokenIdentifier>
+			<Abstract type="html">Disconnects the connected ESP device/peripheral and disconnects any peripheral in the process of connecting</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)disconnectClient</Declaration>
+			
+			
+			<Anchor>//api/name/disconnectClient</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/RSSIOfPeripheral:</TokenIdentifier>
+			<Abstract type="html">Gives the RSSI of the specified peripheral (if the RSSI is known)</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (NSNumber *)RSSIOfPeripheral:(CBPeripheral *)peripheral</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>peripheral</Name>
+					<Abstract type="html">the peripheral to find the RSSI of</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">an NSNumber representing the RSSI of the peripheral (in decibels), or nil if the RSSI is not known </Abstract></ReturnValue>
+			<Anchor>//api/name/RSSIOfPeripheral:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/lastReportDateOfPeripheral:</TokenIdentifier>
+			<Abstract type="html">Gives the date/time of the last time the specified peripheral was reported</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (NSDate *)lastReportDateOfPeripheral:(CBPeripheral *)peripheral</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>peripheral</Name>
+					<Abstract type="html">the reported peripheral</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">an NSDate representing the last time the peripheral was reported by the bluetooth scanner, or nil if the peripheral is not known by this scanner </Abstract></ReturnValue>
+			<Anchor>//api/name/lastReportDateOfPeripheral:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/peripheralWithUUID:</TokenIdentifier>
+			<Abstract type="html">Finds the discovered peripheral with the given UUID, if it exists</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (CBPeripheral *)peripheralWithUUID:(NSString *)UUIDString</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>UUIDString</Name>
+					<Abstract type="html">the UUID of the peripheral to search for</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a CBPeripheral with the given UUID, or nil if a matching peripheral could not be found </Abstract></ReturnValue>
+			<Anchor>//api/name/peripheralWithUUID:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/clearRecentUUIDs</TokenIdentifier>
+			<Abstract type="html">Clears the list of recent ESP device UUIDs. @see ESPScanner::recentDeviceUUIDs</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)clearRecentUUIDs</Declaration>
+			
+			
+			<Anchor>//api/name/clearRecentUUIDs</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/removeRecentUUID:</TokenIdentifier>
+			<Abstract type="html">Removes a recent device with the given UUID. @see ESPScanner::recentDeviceUUIDs</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)removeRecentUUID:(NSString *)UUIDString</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>UUIDString</Name>
+					<Abstract type="html">a string representing the UUID of the remembered device </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeRecentUUID:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/setDelegate:</TokenIdentifier>
+			<Abstract type="html">ESPScannerDelegate delegate that will get invoked for ESPScanner events</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;ESPScannerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/delegate</TokenIdentifier>
+			<Abstract type="html">ESPScannerDelegate delegate that will get invoked for ESPScanner events</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;ESPScannerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPScanner/delegate</TokenIdentifier>
+			<Abstract type="html">ESPScannerDelegate delegate that will get invoked for ESPScanner events</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;ESPScannerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/setClientClass:</TokenIdentifier>
+			<Abstract type="html">The class to use to instantiate the connected ESPClient</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) Class clientClass</Declaration>
+			
+			
+			<Anchor>//api/name/clientClass</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/clientClass</TokenIdentifier>
+			<Abstract type="html">The class to use to instantiate the connected ESPClient</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) Class clientClass</Declaration>
+			
+			
+			<Anchor>//api/name/clientClass</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPScanner/clientClass</TokenIdentifier>
+			<Abstract type="html">The class to use to instantiate the connected ESPClient</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) Class clientClass</Declaration>
+			
+			
+			<Anchor>//api/name/clientClass</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/setScanning:</TokenIdentifier>
+			<Abstract type="html">Tells whether the scanner is currently scanning or not</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isScanning) BOOL scanning</Declaration>
+			
+			
+			<Anchor>//api/name/scanning</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/isScanning</TokenIdentifier>
+			<Abstract type="html">Tells whether the scanner is currently scanning or not</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isScanning) BOOL scanning</Declaration>
+			
+			
+			<Anchor>//api/name/scanning</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPScanner/scanning</TokenIdentifier>
+			<Abstract type="html">Tells whether the scanner is currently scanning or not</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isScanning) BOOL scanning</Declaration>
+			
+			
+			<Anchor>//api/name/scanning</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/setScanStartDate:</TokenIdentifier>
+			<Abstract type="html">The timestamp of when the scan began. This property is nil if the scanner is not scanning</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *scanStartDate</Declaration>
+			
+			
+			<Anchor>//api/name/scanStartDate</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/scanStartDate</TokenIdentifier>
+			<Abstract type="html">The timestamp of when the scan began. This property is nil if the scanner is not scanning</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *scanStartDate</Declaration>
+			
+			
+			<Anchor>//api/name/scanStartDate</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPScanner/scanStartDate</TokenIdentifier>
+			<Abstract type="html">The timestamp of when the scan began. This property is nil if the scanner is not scanning</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *scanStartDate</Declaration>
+			
+			
+			<Anchor>//api/name/scanStartDate</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/setTimeout:</TokenIdentifier>
+			<Abstract type="html">The timeout value for the current scan, in seconds. A 0 or negative value means there is no timeout, or that the scanner is not currently scanning</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSTimeInterval timeout</Declaration>
+			
+			
+			<Anchor>//api/name/timeout</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/timeout</TokenIdentifier>
+			<Abstract type="html">The timeout value for the current scan, in seconds. A 0 or negative value means there is no timeout, or that the scanner is not currently scanning</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSTimeInterval timeout</Declaration>
+			
+			
+			<Anchor>//api/name/timeout</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPScanner/timeout</TokenIdentifier>
+			<Abstract type="html">The timeout value for the current scan, in seconds. A 0 or negative value means there is no timeout, or that the scanner is not currently scanning</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSTimeInterval timeout</Declaration>
+			
+			
+			<Anchor>//api/name/timeout</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/setConnecting:</TokenIdentifier>
+			<Abstract type="html">Tells whether the scanner is attempting to connect a peripheral or not</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isConnecting) BOOL connecting</Declaration>
+			
+			
+			<Anchor>//api/name/connecting</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/isConnecting</TokenIdentifier>
+			<Abstract type="html">Tells whether the scanner is attempting to connect a peripheral or not</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isConnecting) BOOL connecting</Declaration>
+			
+			
+			<Anchor>//api/name/connecting</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPScanner/connecting</TokenIdentifier>
+			<Abstract type="html">Tells whether the scanner is attempting to connect a peripheral or not</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isConnecting) BOOL connecting</Declaration>
+			
+			
+			<Anchor>//api/name/connecting</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/setDiscoveredPeripherals:</TokenIdentifier>
+			<Abstract type="html">An array of the discovered peripherals</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray&lt;CBPeripheral*&gt; *discoveredPeripherals</Declaration>
+			
+			
+			<Anchor>//api/name/discoveredPeripherals</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/discoveredPeripherals</TokenIdentifier>
+			<Abstract type="html">An array of the discovered peripherals</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray&lt;CBPeripheral*&gt; *discoveredPeripherals</Declaration>
+			
+			
+			<Anchor>//api/name/discoveredPeripherals</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPScanner/discoveredPeripherals</TokenIdentifier>
+			<Abstract type="html">An array of the discovered peripherals</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray&lt;CBPeripheral*&gt; *discoveredPeripherals</Declaration>
+			
+			
+			<Anchor>//api/name/discoveredPeripherals</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/setMostRecentPeripheral:</TokenIdentifier>
+			<Abstract type="html">The most recently connected to peripheral of the discovered peripherals, or nil if no recent peripheral has been discovered. This property is found by matching the UUIDs in recentDeviceUUIDs with a discovered peripheral&apos;s UUID.</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CBPeripheral *mostRecentPeripheral</Declaration>
+			
+			
+			<Anchor>//api/name/mostRecentPeripheral</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/mostRecentPeripheral</TokenIdentifier>
+			<Abstract type="html">The most recently connected to peripheral of the discovered peripherals, or nil if no recent peripheral has been discovered. This property is found by matching the UUIDs in recentDeviceUUIDs with a discovered peripheral&apos;s UUID.</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CBPeripheral *mostRecentPeripheral</Declaration>
+			
+			
+			<Anchor>//api/name/mostRecentPeripheral</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPScanner/mostRecentPeripheral</TokenIdentifier>
+			<Abstract type="html">The most recently connected to peripheral of the discovered peripherals, or nil if no recent peripheral has been discovered. This property is found by matching the UUIDs in recentDeviceUUIDs with a discovered peripheral&apos;s UUID.</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CBPeripheral *mostRecentPeripheral</Declaration>
+			
+			
+			<Anchor>//api/name/mostRecentPeripheral</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/setStrongestPeripheral:</TokenIdentifier>
+			<Abstract type="html">The peripheral with the strongest signal of the discovered peripherals, or nil if no peripherals have been discovered</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CBPeripheral *strongestPeripheral</Declaration>
+			
+			
+			<Anchor>//api/name/strongestPeripheral</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/strongestPeripheral</TokenIdentifier>
+			<Abstract type="html">The peripheral with the strongest signal of the discovered peripherals, or nil if no peripherals have been discovered</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CBPeripheral *strongestPeripheral</Declaration>
+			
+			
+			<Anchor>//api/name/strongestPeripheral</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPScanner/strongestPeripheral</TokenIdentifier>
+			<Abstract type="html">The peripheral with the strongest signal of the discovered peripherals, or nil if no peripherals have been discovered</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CBPeripheral *strongestPeripheral</Declaration>
+			
+			
+			<Anchor>//api/name/strongestPeripheral</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/setConnectedClient:</TokenIdentifier>
+			<Abstract type="html">The connected ESPClient, or nil if no peripheral has been connected</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) __kindof ESPClient *connectedClient</Declaration>
+			
+			
+			<Anchor>//api/name/connectedClient</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/connectedClient</TokenIdentifier>
+			<Abstract type="html">The connected ESPClient, or nil if no peripheral has been connected</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) __kindof ESPClient *connectedClient</Declaration>
+			
+			
+			<Anchor>//api/name/connectedClient</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPScanner/connectedClient</TokenIdentifier>
+			<Abstract type="html">The connected ESPClient, or nil if no peripheral has been connected</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) __kindof ESPClient *connectedClient</Declaration>
+			
+			
+			<Anchor>//api/name/connectedClient</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/setUserDefaults:</TokenIdentifier>
+			<Abstract type="html">The NSUserDefaults used to save scanner settings. The default &quot;suite name&quot; is com.Valentine.ESPLibrary</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSUserDefaults *userDefaults</Declaration>
+			
+			
+			<Anchor>//api/name/userDefaults</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/userDefaults</TokenIdentifier>
+			<Abstract type="html">The NSUserDefaults used to save scanner settings. The default &quot;suite name&quot; is com.Valentine.ESPLibrary</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSUserDefaults *userDefaults</Declaration>
+			
+			
+			<Anchor>//api/name/userDefaults</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPScanner/userDefaults</TokenIdentifier>
+			<Abstract type="html">The NSUserDefaults used to save scanner settings. The default &quot;suite name&quot; is com.Valentine.ESPLibrary</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSUserDefaults *userDefaults</Declaration>
+			
+			
+			<Anchor>//api/name/userDefaults</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/setRecentDeviceUUIDs:</TokenIdentifier>
+			<Abstract type="html">The most recently connected to ESP devices&apos; UUIDs, with the most recent device&apos;s UUID being the first in the array. If this array is set to an array larger than maximumRecentDevices, then elements are removed from the end of the array until its count is the same as maximumRecentDevices. This list is retrieved from and stored in the userDefaults object. @see ESPScanner::userDefaults</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray&lt;NSString*&gt; *recentDeviceUUIDs</Declaration>
+			
+			
+			<Anchor>//api/name/recentDeviceUUIDs</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/recentDeviceUUIDs</TokenIdentifier>
+			<Abstract type="html">The most recently connected to ESP devices&apos; UUIDs, with the most recent device&apos;s UUID being the first in the array. If this array is set to an array larger than maximumRecentDevices, then elements are removed from the end of the array until its count is the same as maximumRecentDevices. This list is retrieved from and stored in the userDefaults object. @see ESPScanner::userDefaults</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray&lt;NSString*&gt; *recentDeviceUUIDs</Declaration>
+			
+			
+			<Anchor>//api/name/recentDeviceUUIDs</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPScanner/recentDeviceUUIDs</TokenIdentifier>
+			<Abstract type="html">The most recently connected to ESP devices&apos; UUIDs, with the most recent device&apos;s UUID being the first in the array. If this array is set to an array larger than maximumRecentDevices, then elements are removed from the end of the array until its count is the same as maximumRecentDevices. This list is retrieved from and stored in the userDefaults object. @see ESPScanner::userDefaults</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray&lt;NSString*&gt; *recentDeviceUUIDs</Declaration>
+			
+			
+			<Anchor>//api/name/recentDeviceUUIDs</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/setAutomaticallyRemembersDevices:</TokenIdentifier>
+			<Abstract type="html">Controls whether the scanner should automatically add a device&apos;s UUID to the list of recent devices after connecting. By default this value is YES.</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL automaticallyRemembersDevices</Declaration>
+			
+			
+			<Anchor>//api/name/automaticallyRemembersDevices</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/automaticallyRemembersDevices</TokenIdentifier>
+			<Abstract type="html">Controls whether the scanner should automatically add a device&apos;s UUID to the list of recent devices after connecting. By default this value is YES.</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL automaticallyRemembersDevices</Declaration>
+			
+			
+			<Anchor>//api/name/automaticallyRemembersDevices</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPScanner/automaticallyRemembersDevices</TokenIdentifier>
+			<Abstract type="html">Controls whether the scanner should automatically add a device&apos;s UUID to the list of recent devices after connecting. By default this value is YES.</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL automaticallyRemembersDevices</Declaration>
+			
+			
+			<Anchor>//api/name/automaticallyRemembersDevices</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/setMaximumRecentDevices:</TokenIdentifier>
+			<Abstract type="html">The maximum number of recent devices to store. By default this value is 10 @see ESPScanner::recentDeviceUUIDs</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger maximumRecentDevices</Declaration>
+			
+			
+			<Anchor>//api/name/maximumRecentDevices</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/maximumRecentDevices</TokenIdentifier>
+			<Abstract type="html">The maximum number of recent devices to store. By default this value is 10 @see ESPScanner::recentDeviceUUIDs</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger maximumRecentDevices</Declaration>
+			
+			
+			<Anchor>//api/name/maximumRecentDevices</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPScanner/maximumRecentDevices</TokenIdentifier>
+			<Abstract type="html">The maximum number of recent devices to store. By default this value is 10 @see ESPScanner::recentDeviceUUIDs</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger maximumRecentDevices</Declaration>
+			
+			
+			<Anchor>//api/name/maximumRecentDevices</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

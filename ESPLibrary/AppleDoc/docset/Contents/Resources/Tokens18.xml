@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ESPClientDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ESPClientDelegate</TokenIdentifier>
+			<Abstract type="html">Receives events from an ESPClient object</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+            
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ESPClientDelegate/espClient:didReceivePacket:</TokenIdentifier>
+			<Abstract type="html">Invoked when an ESP packet is received. This method is called for every received packet, and can be used to get the full information from each received packet.</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)espClient:(ESPClient *)client didReceivePacket:(ESPPacket *)packet</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">the client handling communication</Abstract>
+				</Parameter><Parameter>
+					<Name>packet</Name>
+					<Abstract type="html">the received ESP packet </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/espClient:didReceivePacket:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ESPClientDelegate/espClient:didReceiveDisplayData:</TokenIdentifier>
+			<Abstract type="html">Invoked when a display data packet is received.</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)espClient:(ESPClient *)client didReceiveDisplayData:(ESPDisplayData *)displayData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">the client handling communication</Abstract>
+				</Parameter><Parameter>
+					<Name>displayData</Name>
+					<Abstract type="html">the display data packet </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/espClient:didReceiveDisplayData:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ESPClientDelegate/espClient:didReceiveAlertTable:</TokenIdentifier>
+			<Abstract type="html">Invoked when an entire alert table is received.</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)espClient:(ESPClient *)client didReceiveAlertTable:(NSArray&lt;ESPAlertData*&gt; *)alertTable</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">the client handling communication</Abstract>
+				</Parameter><Parameter>
+					<Name>alertTable</Name>
+					<Abstract type="html">an array of ESPAlertData objects representing an alert table </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/espClient:didReceiveAlertTable:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ESPClientDelegate/espClient:didSetLegacyEnabled:</TokenIdentifier>
+			<Abstract type="html">Invoked when legacy mode is either enabled or disabled on the ESP device. Legacy mode is assumed to be disabled by default.</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)espClient:(ESPClient *)client didSetLegacyEnabled:(BOOL)legacyEnabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">the client handling communication</Abstract>
+				</Parameter><Parameter>
+					<Name>legacyEnabled</Name>
+					<Abstract type="html">a BOOL representing whether legacy is enabled (YES) or disabled (NO) </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/espClient:didSetLegacyEnabled:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ESPClientDelegate/espClientDidDetectPowerLoss:</TokenIdentifier>
+			<Abstract type="html">Called when no packets have been received from a connected ESP device after 5 seconds.</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)espClientDidDetectPowerLoss:(ESPClient *)client</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">the client handling communication </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/espClientDidDetectPowerLoss:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ESPClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ESPClient</TokenIdentifier>
+			<Abstract type="html">ESPClient</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/sendPacket:</TokenIdentifier>
+			<Abstract type="html">Send an ESPPacket to the ESP device.</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)sendPacket:(ESPPacket *)packet</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>packet</Name>
+					<Abstract type="html">the packet to send</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the packet was sent, or NO if the packet was too large or if the client was not connected </Abstract></ReturnValue>
+			<Anchor>//api/name/sendPacket:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/sendData:</TokenIdentifier>
+			<Abstract type="html">Send data to the ESP device.</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)sendData:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">the data to send</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the data was sent, or NO if the data was too large or if the client was not connected </Abstract></ReturnValue>
+			<Anchor>//api/name/sendData:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/didReceivePacket:</TokenIdentifier>
+			<Abstract type="html">This method is called whenever a valid ESPPacket is received. This method forwards received packets to their delegate methods, so the super method should be called when overriding.</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)didReceivePacket:(ESPPacket *)packet</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>packet</Name>
+					<Abstract type="html">the received packet </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didReceivePacket:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/didReceivePacketWithBadChecksum:</TokenIdentifier>
+			<Abstract type="html">This method is called whenever an ESPPacket with a bad checksum is received.</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)didReceivePacketWithBadChecksum:(ESPPacket *)packet</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>packet</Name>
+					<Abstract type="html">the received packet </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didReceivePacketWithBadChecksum:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestVersionFrom:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the version number of the ESP device or one of its accessories</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestVersionFrom:(ESPRequestTarget)target completion:(void ( ^ ) ( NSString *version , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestVersionFrom:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestSerialNumberFrom:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the serial number of the ESP device or one of its accessories</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestSerialNumberFrom:(ESPRequestTarget)target completion:(void ( ^ ) ( NSString *serial , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestSerialNumberFrom:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestUserBytesFrom:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the user bytes of the ESP device</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestUserBytesFrom:(ESPRequestTarget)target completion:(void ( ^ ) ( ESPUserBytes *userBytes , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestUserBytesFrom:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestUserBytes:</TokenIdentifier>
+			<Abstract type="html">Requests the user bytes of the Valentine One</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestUserBytes:(void ( ^ ) ( ESPUserBytes *userBytes , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestUserBytes:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestWriteUserBytes:target:completion:</TokenIdentifier>
+			<Abstract type="html">Writes the given user bytes to the ESP device</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestWriteUserBytes:(ESPUserBytes *)userBytes target:(ESPRequestTarget)target completion:(void ( ^ ) ( NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userBytes</Name>
+					<Abstract type="html">the user bytes to write</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestWriteUserBytes:target:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestWriteUserBytes:completion:</TokenIdentifier>
+			<Abstract type="html">Writes the given user bytes to the Valentine On</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestWriteUserBytes:(ESPUserBytes *)userBytes completion:(void ( ^ ) ( NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userBytes</Name>
+					<Abstract type="html">the user bytes to write</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestWriteUserBytes:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestWriteFactoryDefaultFor:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the ESP device or one of its accessories to set its factory default settings</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestWriteFactoryDefaultFor:(ESPRequestTarget)target completion:(void ( ^ ) ( NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestWriteFactoryDefaultFor:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestWriteSweepDefinition:target:</TokenIdentifier>
+			<Abstract type="html">Writes a single sweep definition to the ESP device</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestWriteSweepDefinition:(ESPCustomSweepData *)sweep target:(ESPRequestTarget)target</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sweep</Name>
+					<Abstract type="html">the custom sweep to write to the device</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestWriteSweepDefinition:target:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestWriteSweepDefinition:</TokenIdentifier>
+			<Abstract type="html">Writes a single sweep definition to the Valentine One</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestWriteSweepDefinition:(ESPCustomSweepData *)sweep</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sweep</Name>
+					<Abstract type="html">the custom sweep to write to the device </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestWriteSweepDefinition:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestWriteSweepDefinitions:target:completion:</TokenIdentifier>
+			<Abstract type="html">Writes all the given custom sweeps to the ESP device</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestWriteSweepDefinitions:(NSArray&lt;ESPFrequencyRange*&gt; *)sweeps target:(ESPRequestTarget)target completion:(void ( ^ ) ( NSUInteger writeResult , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sweeps</Name>
+					<Abstract type="html">the sweeps (frequency ranges) to write to the device</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestWriteSweepDefinitions:target:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestWriteSweepDefinitions:completion:</TokenIdentifier>
+			<Abstract type="html">Writes all the given custom sweeps to the Valentine One</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestWriteSweepDefinitions:(NSArray&lt;ESPFrequencyRange*&gt; *)sweeps completion:(void ( ^ ) ( NSUInteger , NSError *))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sweeps</Name>
+					<Abstract type="html">the sweeps (frequency ranges) to write to the device</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestWriteSweepDefinitions:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestAllSweepDefinitionsFrom:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the sweep definitions from the ESP device. Some of the definitions returned may have frequencies of (0,0). These sweeps are not used and are considered &quot;null&quot; sweeps.</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestAllSweepDefinitionsFrom:(ESPRequestTarget)target completion:(void ( ^ ) ( NSArray&lt;ESPFrequencyRange*&gt; *sweeps , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestAllSweepDefinitionsFrom:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestAllSweepDefinitions:</TokenIdentifier>
+			<Abstract type="html">Requests the sweep definitions from the Valentine One. Some of the definitions returned may have frequencies of (0,0). These sweeps are not used and are considered &quot;null&quot; sweeps.</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestAllSweepDefinitions:(void ( ^ ) ( NSArray&lt;ESPFrequencyRange*&gt; *sweeps , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestAllSweepDefinitions:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestWriteDefaultSweepsFor:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the ESP device to reset its custom sweeps to the defaults</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestWriteDefaultSweepsFor:(ESPRequestTarget)target completion:(void ( ^ ) ( NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestWriteDefaultSweepsFor:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestWriteDefaultSweeps:</TokenIdentifier>
+			<Abstract type="html">Requests the Valentine One to reset its custom sweeps to the defaults</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestWriteDefaultSweeps:(void ( ^ ) ( NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestWriteDefaultSweeps:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestMaxSweepIndexFrom:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the max sweep index from the ESP device</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestMaxSweepIndexFrom:(ESPRequestTarget)target completion:(void ( ^ ) ( NSUInteger maxSweepIndex , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestMaxSweepIndexFrom:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestMaxSweepIndex:</TokenIdentifier>
+			<Abstract type="html">Requests the max sweep index from the Valentine One</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestMaxSweepIndex:(void ( ^ ) ( NSUInteger maxSweepIndex , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestMaxSweepIndex:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestSweepSectionsFrom:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the available custom sweep sections from the ESP device. Some of the sections returned may have frequencies of (0,0). These sections are not used and are considered &quot;null&quot; sections</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestSweepSectionsFrom:(ESPRequestTarget)target completion:(void ( ^ ) ( NSArray&lt;ESPFrequencyRange*&gt; *sections , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestSweepSectionsFrom:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestSweepSections:</TokenIdentifier>
+			<Abstract type="html">Requests the available custom sweep sections from the Valentine One. Some of the sections returned may have frequencies of (0,0). These sections are not used and are considered &quot;null&quot; sections</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestSweepSections:(void ( ^ ) ( NSArray&lt;ESPFrequencyRange*&gt; *sections , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestSweepSections:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestDefaultSweepDefinitionsFrom:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the default custom sweep definitions from the ESP device. Some of the definitions returned may have frequencies of (0,0). These sweeps are not used and are considered &quot;null&quot; sweeps</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestDefaultSweepDefinitionsFrom:(ESPRequestTarget)target completion:(void ( ^ ) ( NSArray&lt;ESPFrequencyRange*&gt; *sweeps , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestDefaultSweepDefinitionsFrom:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestDefaultSweepDefinitions:</TokenIdentifier>
+			<Abstract type="html">Requests the default custom sweep definitions from the Valentine One. Some of the definitions returned may have frequencies of (0,0). These sweeps are not used and are considered &quot;null&quot; sweeps</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestDefaultSweepDefinitions:(void ( ^ ) ( NSArray&lt;ESPFrequencyRange*&gt; *sweeps , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestDefaultSweepDefinitions:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestTurnOffMainDisplayFor:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the ESP device to turn off its main display</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestTurnOffMainDisplayFor:(ESPRequestTarget)target completion:(void ( ^ ) ( BOOL displayOn , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestTurnOffMainDisplayFor:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestTurnOnMainDisplayFor:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the ESP device to turn on its main display</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestTurnOnMainDisplayFor:(ESPRequestTarget)target completion:(void ( ^ ) ( BOOL displayOn , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestTurnOnMainDisplayFor:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestMuteOnFor:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the ESP device to mute the current alerts</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestMuteOnFor:(ESPRequestTarget)target completion:(void ( ^ ) ( BOOL muteOn , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestMuteOnFor:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestMuteOn:</TokenIdentifier>
+			<Abstract type="html">Requests the Valentine One to mute the current alerts</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestMuteOn:(void ( ^ ) ( BOOL muteOn , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestMuteOn:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestMuteOffFor:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the ESP device to unmute all alerts that weren&apos;t muted by the ESP device&apos;s internal logic</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestMuteOffFor:(ESPRequestTarget)target completion:(void ( ^ ) ( BOOL muteOn , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestMuteOffFor:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestMuteOff:</TokenIdentifier>
+			<Abstract type="html">Requests the Valentine One to unmute all alerts that weren&apos;t muted by the Valentine One&apos;s internal logic</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestMuteOff:(void ( ^ ) ( BOOL muteOn , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestMuteOff:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestChangeMode:target:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the ESP device to change its mode</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestChangeMode:(ESPV1Mode)mode target:(ESPRequestTarget)target completion:(void ( ^ ) ( ESPV1Mode mode , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mode</Name>
+					<Abstract type="html">the operating mode of the ESP device</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs
+	@throws NSInvalidArgumentException if the given mode is ESPV1ModeUnknown</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestChangeMode:target:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestChangeMode:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the Valentine One to change its mode</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestChangeMode:(ESPV1Mode)mode completion:(void ( ^ ) ( ESPV1Mode mode , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mode</Name>
+					<Abstract type="html">the operating mode of the Valentine One</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs
+	@throws NSInvalidArgumentException if the given mode is ESPV1ModeUnknown</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestChangeMode:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestStartAlertDataFor:completion:</TokenIdentifier>
+			<Abstract type="html">Requests alert data to start being received from the ESP device to the current delegate</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/ESPClientDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)requestStartAlertDataFor:(ESPRequestTarget)target completion:(void ( ^ ) ( NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestStartAlertDataFor:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestStartAlertData:</TokenIdentifier>
+			<Abstract type="html">Requests alert data to start being received from the Valentine One to the current delegate</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/ESPClientDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)requestStartAlertData:(void ( ^ ) ( NSError *))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestStartAlertData:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestStopAlertDataFor:completion:</TokenIdentifier>
+			<Abstract type="html">Requests alert data to stop being received from the ESP device to the current delegate</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/ESPClientDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)requestStopAlertDataFor:(ESPRequestTarget)target completion:(void ( ^ ) ( NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestStopAlertDataFor:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestStopAlertData:</TokenIdentifier>
+			<Abstract type="html">Requests alert data to stop being received from the Valentine One to the current delegate</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/ESPClientDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)requestStopAlertData:(void ( ^ ) ( NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if the request is successful, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestStopAlertData:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestBatteryVoltageFrom:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the current battery voltage of the ESP device</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestBatteryVoltageFrom:(ESPRequestTarget)target completion:(void ( ^ ) ( double voltage , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestBatteryVoltageFrom:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestBatteryVoltage:</TokenIdentifier>
+			<Abstract type="html">Requests the current battery voltage of the Valentine One</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestBatteryVoltage:(void ( ^ ) ( double voltage , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestBatteryVoltage:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestSavvyStatusFrom:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the current savvy status from the ESP device</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestSavvyStatusFrom:(ESPRequestTarget)target completion:(void ( ^ ) ( ESPSavvyStatus *savvyStatus , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetSavvy is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestSavvyStatusFrom:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestSavvyStatus:</TokenIdentifier>
+			<Abstract type="html">Requests the current savvy status from the Savvy accessory</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestSavvyStatus:(void ( ^ ) ( ESPSavvyStatus *savvyStatus , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestSavvyStatus:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestVehicleSpeedFrom:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the current vehicle speed from the ESP device</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestVehicleSpeedFrom:(ESPRequestTarget)target completion:(void ( ^ ) ( NSUInteger vehicleSpeedKPH , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetSavvy is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestVehicleSpeedFrom:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestVehicleSpeed:</TokenIdentifier>
+			<Abstract type="html">Requests the current vehicle speed from the Savvy accessory</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestVehicleSpeed:(void ( ^ ) ( NSUInteger vehicleSpeedKPH , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestVehicleSpeed:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestOverrideThumbwheel:target:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the thumbwheel speed of the ESP device to be overridden</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestOverrideThumbwheel:(NSUInteger)speedKPH target:(ESPRequestTarget)target completion:(void ( ^ ) ( NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>speedKPH</Name>
+					<Abstract type="html">the speed, in KPH, to override the thumbwheel speed. If this value is greater than or equal to 255, the savvy will mute all speeds.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetSavvy is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestOverrideThumbwheel:target:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestOverrideThumbwheel:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the thumbwheel speed of the Savvy to be overridden</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestOverrideThumbwheel:(NSUInteger)speedKPH completion:(void ( ^ ) ( NSError *))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>speedKPH</Name>
+					<Abstract type="html">the speed, in KPH, to override the thumbwheel speed. If this value is greater than or equal to 255, the Savvy will mute all speeds.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestOverrideThumbwheel:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestSetSavvyUnmuteEnabled:target:completion:</TokenIdentifier>
+			<Abstract type="html">Enables or disables the unmute functionality of the ESP device</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestSetSavvyUnmuteEnabled:(BOOL)unmuteEnabled target:(ESPRequestTarget)target completion:(void ( ^ ) ( NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>unmuteEnabled</Name>
+					<Abstract type="html">whether or not to automatically unmute the main ESP device</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetSavvy is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestSetSavvyUnmuteEnabled:target:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestSetSavvyUnmuteEnabled:completion:</TokenIdentifier>
+			<Abstract type="html">Enables or disables the unmute functionality of the Savvy</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestSetSavvyUnmuteEnabled:(BOOL)unmuteEnabled completion:(void ( ^ ) ( NSError *))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>unmuteEnabled</Name>
+					<Abstract type="html">whether or not to automatically unmute the Valentine One</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestSetSavvyUnmuteEnabled:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate object to receive ESPClient events</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;ESPClientDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate object to receive ESPClient events</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;ESPClientDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPClient/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate object to receive ESPClient events</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;ESPClientDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/setPeripheral:</TokenIdentifier>
+			<Abstract type="html">the CBPeripheral object that handles the BLE connection to the ESP device</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CBPeripheral *peripheral</Declaration>
+			
+			
+			<Anchor>//api/name/peripheral</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/peripheral</TokenIdentifier>
+			<Abstract type="html">the CBPeripheral object that handles the BLE connection to the ESP device</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CBPeripheral *peripheral</Declaration>
+			
+			
+			<Anchor>//api/name/peripheral</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPClient/peripheral</TokenIdentifier>
+			<Abstract type="html">the CBPeripheral object that handles the BLE connection to the ESP device</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CBPeripheral *peripheral</Declaration>
+			
+			
+			<Anchor>//api/name/peripheral</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/setLegacy:</TokenIdentifier>
+			<Abstract type="html">Tells whether the ESP device is in legacy mode or not. This property may be NO by default until enough display data packets are received with the legacy bit set to confirm that the ESP device is in legacy mode</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isLegacy) BOOL legacy</Declaration>
+			
+			
+			<Anchor>//api/name/legacy</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/isLegacy</TokenIdentifier>
+			<Abstract type="html">Tells whether the ESP device is in legacy mode or not. This property may be NO by default until enough display data packets are received with the legacy bit set to confirm that the ESP device is in legacy mode</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isLegacy) BOOL legacy</Declaration>
+			
+			
+			<Anchor>//api/name/legacy</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPClient/legacy</TokenIdentifier>
+			<Abstract type="html">Tells whether the ESP device is in legacy mode or not. This property may be NO by default until enough display data packets are received with the legacy bit set to confirm that the ESP device is in legacy mode</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isLegacy) BOOL legacy</Declaration>
+			
+			
+			<Anchor>//api/name/legacy</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/setChecksums:</TokenIdentifier>
+			<Abstract type="html">Tells whether the ESP device uses checksums. This property may be NO by default until enough packets are recieved to tell whether the ESP device has checksums</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=hasChecksums) BOOL checksums</Declaration>
+			
+			
+			<Anchor>//api/name/checksums</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/hasChecksums</TokenIdentifier>
+			<Abstract type="html">Tells whether the ESP device uses checksums. This property may be NO by default until enough packets are recieved to tell whether the ESP device has checksums</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=hasChecksums) BOOL checksums</Declaration>
+			
+			
+			<Anchor>//api/name/checksums</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPClient/checksums</TokenIdentifier>
+			<Abstract type="html">Tells whether the ESP device uses checksums. This property may be NO by default until enough packets are recieved to tell whether the ESP device has checksums</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=hasChecksums) BOOL checksums</Declaration>
+			
+			
+			<Anchor>//api/name/checksums</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/setConnected:</TokenIdentifier>
+			<Abstract type="html">Tells whether the client is connected. Once disconnected, this specific client instance will never be reconnected and the ESPScanner class must be used to connect a new client</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isConnected) BOOL connected</Declaration>
+			
+			
+			<Anchor>//api/name/connected</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/isConnected</TokenIdentifier>
+			<Abstract type="html">Tells whether the client is connected. Once disconnected, this specific client instance will never be reconnected and the ESPScanner class must be used to connect a new client</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isConnected) BOOL connected</Declaration>
+			
+			
+			<Anchor>//api/name/connected</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPClient/connected</TokenIdentifier>
+			<Abstract type="html">Tells whether the client is connected. Once disconnected, this specific client instance will never be reconnected and the ESPScanner class must be used to connect a new client</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isConnected) BOOL connected</Declaration>
+			
+			
+			<Anchor>//api/name/connected</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/setPowerLossDetected:</TokenIdentifier>
+			<Abstract type="html">Tells whether a power loss has been detected. This means that a packet has not been received within the powerLossTimeout. @see ESPClient::powerLossTimeout</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL powerLossDetected</Declaration>
+			
+			
+			<Anchor>//api/name/powerLossDetected</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/powerLossDetected</TokenIdentifier>
+			<Abstract type="html">Tells whether a power loss has been detected. This means that a packet has not been received within the powerLossTimeout. @see ESPClient::powerLossTimeout</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL powerLossDetected</Declaration>
+			
+			
+			<Anchor>//api/name/powerLossDetected</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPClient/powerLossDetected</TokenIdentifier>
+			<Abstract type="html">Tells whether a power loss has been detected. This means that a packet has not been received within the powerLossTimeout. @see ESPClient::powerLossTimeout</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL powerLossDetected</Declaration>
+			
+			
+			<Anchor>//api/name/powerLossDetected</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/setPowerLossTimeout:</TokenIdentifier>
+			<Abstract type="html">The amount of time after receiving a packet to &quot;detect&quot; a power loss if no further packets are received. The default value is 5 seconds</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSTimeInterval powerLossTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/powerLossTimeout</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/powerLossTimeout</TokenIdentifier>
+			<Abstract type="html">The amount of time after receiving a packet to &quot;detect&quot; a power loss if no further packets are received. The default value is 5 seconds</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSTimeInterval powerLossTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/powerLossTimeout</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPClient/powerLossTimeout</TokenIdentifier>
+			<Abstract type="html">The amount of time after receiving a packet to &quot;detect&quot; a power loss if no further packets are received. The default value is 5 seconds</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSTimeInterval powerLossTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/powerLossTimeout</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/setRequestTimeout:</TokenIdentifier>
+			<Abstract type="html">The amount of time to wait after a request is sent for it to time out. The default value is 5 seconds</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSTimeInterval requestTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/requestTimeout</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestTimeout</TokenIdentifier>
+			<Abstract type="html">The amount of time to wait after a request is sent for it to time out. The default value is 5 seconds</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSTimeInterval requestTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/requestTimeout</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPClient/requestTimeout</TokenIdentifier>
+			<Abstract type="html">The amount of time to wait after a request is sent for it to time out. The default value is 5 seconds</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSTimeInterval requestTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/requestTimeout</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/setReportsEchoedPackets:</TokenIdentifier>
+			<Abstract type="html">Controls whether echo packets (packets sent to the V1 that are re-sent back to the client) should be recognized or not. Default value is NO</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL reportsEchoedPackets</Declaration>
+			
+			
+			<Anchor>//api/name/reportsEchoedPackets</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/reportsEchoedPackets</TokenIdentifier>
+			<Abstract type="html">Controls whether echo packets (packets sent to the V1 that are re-sent back to the client) should be recognized or not. Default value is NO</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL reportsEchoedPackets</Declaration>
+			
+			
+			<Anchor>//api/name/reportsEchoedPackets</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPClient/reportsEchoedPackets</TokenIdentifier>
+			<Abstract type="html">Controls whether echo packets (packets sent to the V1 that are re-sent back to the client) should be recognized or not. Default value is NO</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL reportsEchoedPackets</Declaration>
+			
+			
+			<Anchor>//api/name/reportsEchoedPackets</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/_destinationFromRequestTarget:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ESPRequest+ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (ESPDeviceID)_destinationFromRequestTarget:(ESPRequestTarget)target</Declaration>
+			
+			
+			<Anchor>//api/name/_destinationFromRequestTarget:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/_queueRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ESPRequest+ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)_queueRequest:(ESPRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/_queueRequest:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/_performRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ESPRequest+ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)_performRequest:(ESPRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/_performRequest:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/_payloadFromPacket:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ESPRequest+ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)_payloadFromPacket:(ESPPacket *)packet</Declaration>
+			
+			
+			<Anchor>//api/name/_payloadFromPacket:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/_requestIsInBusyQueue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ESPRequest+ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)_requestIsInBusyQueue:(ESPResponseExpector *)expector</Declaration>
+			
+			
+			<Anchor>//api/name/_requestIsInBusyQueue:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/_handleResponsePacket:forResponseExpector:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ESPRequest+ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)_handleResponsePacket:(ESPPacket *)packet forResponseExpector:(ESPResponseExpector *)responseExpector</Declaration>
+			
+			
+			<Anchor>//api/name/_handleResponsePacket:forResponseExpector:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/initWithPeripheral:inShort:inLong:outShort:outLong:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ESPScanner+ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithPeripheral:(CBPeripheral *)peripheral inShort:(CBCharacteristic *)inShort inLong:(CBCharacteristic *)inLong outShort:(CBCharacteristic *)outShort outLong:(CBCharacteristic *)outLong</Declaration>
+			
+			
+			<Anchor>//api/name/initWithPeripheral:inShort:inLong:outShort:outLong:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/_handleDisconnect</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ESPScanner+ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)_handleDisconnect</Declaration>
+			
+			
+			<Anchor>//api/name/_handleDisconnect</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

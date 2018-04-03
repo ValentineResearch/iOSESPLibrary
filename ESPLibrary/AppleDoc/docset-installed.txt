@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/jdavis_local/Library/Developer/Shared/Documentation/DocSets/com.Valentine.ESPLibrary.docset
+Time: 2018-04-03 14:57:03 +0000

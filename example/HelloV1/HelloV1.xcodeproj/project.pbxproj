@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F17C7A051E817792008BE717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17C7A031E817792008BE717 /* Main.storyboard */; };
+		F17C7A071E817792008BE717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17C7A061E817792008BE717 /* Assets.xcassets */; };
+		F17C7A0A1E817792008BE717 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17C7A081E817792008BE717 /* LaunchScreen.storyboard */; };
+		F17C7A171E8177B4008BE717 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F17C7A131E8177B4008BE717 /* AppDelegate.m */; };
+		F17C7A181E8177B4008BE717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F17C7A141E8177B4008BE717 /* main.m */; };
+		F17C7A191E8177B4008BE717 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17C7A161E8177B4008BE717 /* ViewController.m */; };
+		F17C7A2C1E817813008BE717 /* libESPLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F17C7A2B1E817813008BE717 /* libESPLibrary.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F17C79F71E817792008BE717 /* HelloV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17C7A041E817792008BE717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F17C7A061E817792008BE717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F17C7A091E817792008BE717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F17C7A0B1E817792008BE717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F17C7A121E8177B4008BE717 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F17C7A131E8177B4008BE717 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F17C7A141E8177B4008BE717 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F17C7A151E8177B4008BE717 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F17C7A161E8177B4008BE717 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F17C7A1F1E817813008BE717 /* ESPAlertData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPAlertData.h; sourceTree = "<group>"; };
+		F17C7A201E817813008BE717 /* ESPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPClient.h; sourceTree = "<group>"; };
+		F17C7A211E817813008BE717 /* ESPCustomSweepData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPCustomSweepData.h; sourceTree = "<group>"; };
+		F17C7A221E817813008BE717 /* ESPDisplayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPDisplayData.h; sourceTree = "<group>"; };
+		F17C7A231E817813008BE717 /* ESPFrequency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPFrequency.h; sourceTree = "<group>"; };
+		F17C7A241E817813008BE717 /* ESPFrequencyRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPFrequencyRange.h; sourceTree = "<group>"; };
+		F17C7A251E817813008BE717 /* ESPLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPLibrary.h; sourceTree = "<group>"; };
+		F17C7A261E817813008BE717 /* ESPPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPPacket.h; sourceTree = "<group>"; };
+		F17C7A271E817813008BE717 /* ESPSavvyStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPSavvyStatus.h; sourceTree = "<group>"; };
+		F17C7A281E817813008BE717 /* ESPScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPScanner.h; sourceTree = "<group>"; };
+		F17C7A291E817813008BE717 /* ESPUserBytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPUserBytes.h; sourceTree = "<group>"; };
+		F17C7A2B1E817813008BE717 /* libESPLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libESPLibrary.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F17C79F41E817792008BE717 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17C7A2C1E817813008BE717 /* libESPLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F17C79EE1E817792008BE717 = {
+			isa = PBXGroup;
+			children = (
+				F17C7A1B1E817813008BE717 /* external */,
+				F17C7A1A1E8177C1008BE717 /* assets */,
+				F17C7A111E8177B4008BE717 /* src */,
+				F17C79F81E817792008BE717 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F17C79F81E817792008BE717 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F17C79F71E817792008BE717 /* HelloV1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F17C7A111E8177B4008BE717 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F17C7A121E8177B4008BE717 /* AppDelegate.h */,
+				F17C7A131E8177B4008BE717 /* AppDelegate.m */,
+				F17C7A141E8177B4008BE717 /* main.m */,
+				F17C7A151E8177B4008BE717 /* ViewController.h */,
+				F17C7A161E8177B4008BE717 /* ViewController.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		F17C7A1A1E8177C1008BE717 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				F17C7A061E817792008BE717 /* Assets.xcassets */,
+				F17C7A081E817792008BE717 /* LaunchScreen.storyboard */,
+				F17C7A031E817792008BE717 /* Main.storyboard */,
+				F17C7A0B1E817792008BE717 /* Info.plist */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		F17C7A1B1E817813008BE717 /* external */ = {
+			isa = PBXGroup;
+			children = (
+				F17C7A1C1E817813008BE717 /* ESPLibrary */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+		F17C7A1C1E817813008BE717 /* ESPLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				F17C7A1D1E817813008BE717 /* include */,
+				F17C7A2A1E817813008BE717 /* lib */,
+			);
+			path = ESPLibrary;
+			sourceTree = "<group>";
+		};
+		F17C7A1D1E817813008BE717 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F17C7A1E1E817813008BE717 /* ESPLibrary */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		F17C7A1E1E817813008BE717 /* ESPLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				F17C7A1F1E817813008BE717 /* ESPAlertData.h */,
+				F17C7A201E817813008BE717 /* ESPClient.h */,
+				F17C7A211E817813008BE717 /* ESPCustomSweepData.h */,
+				F17C7A221E817813008BE717 /* ESPDisplayData.h */,
+				F17C7A231E817813008BE717 /* ESPFrequency.h */,
+				F17C7A241E817813008BE717 /* ESPFrequencyRange.h */,
+				F17C7A251E817813008BE717 /* ESPLibrary.h */,
+				F17C7A261E817813008BE717 /* ESPPacket.h */,
+				F17C7A271E817813008BE717 /* ESPSavvyStatus.h */,
+				F17C7A281E817813008BE717 /* ESPScanner.h */,
+				F17C7A291E817813008BE717 /* ESPUserBytes.h */,
+			);
+			path = ESPLibrary;
+			sourceTree = "<group>";
+		};
+		F17C7A2A1E817813008BE717 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F17C7A2B1E817813008BE717 /* libESPLibrary.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F17C79F61E817792008BE717 /* HelloV1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F17C7A0E1E817792008BE717 /* Build configuration list for PBXNativeTarget "HelloV1" */;
+			buildPhases = (
+				F17C79F31E817792008BE717 /* Sources */,
+				F17C79F41E817792008BE717 /* Frameworks */,
+				F17C79F51E817792008BE717 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloV1;
+			productName = HelloV1;
+			productReference = F17C79F71E817792008BE717 /* HelloV1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F17C79EF1E817792008BE717 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Valentine Research Inc.";
+				TargetAttributes = {
+					F17C79F61E817792008BE717 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TEV655VVD3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F17C79F21E817792008BE717 /* Build configuration list for PBXProject "HelloV1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F17C79EE1E817792008BE717;
+			productRefGroup = F17C79F81E817792008BE717 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F17C79F61E817792008BE717 /* HelloV1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F17C79F51E817792008BE717 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17C7A0A1E817792008BE717 /* LaunchScreen.storyboard in Resources */,
+				F17C7A071E817792008BE717 /* Assets.xcassets in Resources */,
+				F17C7A051E817792008BE717 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F17C79F31E817792008BE717 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17C7A191E8177B4008BE717 /* ViewController.m in Sources */,
+				F17C7A181E8177B4008BE717 /* main.m in Sources */,
+				F17C7A171E8177B4008BE717 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F17C7A031E817792008BE717 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F17C7A041E817792008BE717 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F17C7A081E817792008BE717 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F17C7A091E817792008BE717 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F17C7A0C1E817792008BE717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F17C7A0D1E817792008BE717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F17C7A0F1E817792008BE717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TEV655VVD3;
+				INFOPLIST_FILE = "$(SRCROOT)/assets/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/external/ESPLibrary/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Valentine.HelloV1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F17C7A101E817792008BE717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TEV655VVD3;
+				INFOPLIST_FILE = "$(SRCROOT)/assets/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/external/ESPLibrary/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Valentine.HelloV1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F17C79F21E817792008BE717 /* Build configuration list for PBXProject "HelloV1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17C7A0C1E817792008BE717 /* Debug */,
+				F17C7A0D1E817792008BE717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F17C7A0E1E817792008BE717 /* Build configuration list for PBXNativeTarget "HelloV1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17C7A0F1E817792008BE717 /* Debug */,
+				F17C7A101E817792008BE717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F17C79EF1E817792008BE717 /* Project object */;
+}

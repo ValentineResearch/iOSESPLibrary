@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ESPPartialDataBuilder.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ESPPartialDataBuilder</TokenIdentifier>
+			<Abstract type="html">ESPPartialDataBuilder</Abstract>
+			<DeclaredIn>ESPPartialDataBuilder.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPPartialDataBuilder/addPartial:</TokenIdentifier>
+			<Abstract type="html">Adds a partial to attempt to build a full ESPPacket</Abstract>
+			<DeclaredIn>ESPPartialDataBuilder.h</DeclaredIn>
+			
+			<Declaration>- (ESPPacket *)addPartial:(ESPPartialData *)partial</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>partial</Name>
+					<Abstract type="html">the partial to be added</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a full ESPPacket if one can be constructed, or nil if a full ESPPacket cannot be constructed </Abstract></ReturnValue>
+			<Anchor>//api/name/addPartial:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPPartialDataBuilder/removeAllPartials</TokenIdentifier>
+			<Abstract type="html">Removes all the added partials</Abstract>
+			<DeclaredIn>ESPPartialDataBuilder.h</DeclaredIn>
+			
+			<Declaration>- (void)removeAllPartials</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllPartials</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

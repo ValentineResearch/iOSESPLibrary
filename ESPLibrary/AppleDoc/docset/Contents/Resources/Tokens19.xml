@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ESPScannerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ESPScannerDelegate</TokenIdentifier>
+			<Abstract type="html">The ESP device disconnected unexpectedly</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+            
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ESPScannerDelegate/espScannerDidTimeoutScan:</TokenIdentifier>
+			<Abstract type="html">Invoked when a scan has timed out</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)espScannerDidTimeoutScan:(ESPScanner *)scanner</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scanner</Name>
+					<Abstract type="html">the scanner that finished </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/espScannerDidTimeoutScan:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ESPScannerDelegate/espScanner:didFailScanWithError:</TokenIdentifier>
+			<Abstract type="html">Invoked when a scan failed</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)espScanner:(ESPScanner *)scanner didFailScanWithError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scanner</Name>
+					<Abstract type="html">the scanner that failed</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">the error describing the failure </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/espScanner:didFailScanWithError:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ESPScannerDelegate/espScanner:didDiscoverPeripheral:</TokenIdentifier>
+			<Abstract type="html">Invoked when a peripheral is discovered by the scanner</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)espScanner:(ESPScanner *)scanner didDiscoverPeripheral:(CBPeripheral *)peripheral</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scanner</Name>
+					<Abstract type="html">the scanner that discovered the peripheral</Abstract>
+				</Parameter><Parameter>
+					<Name>peripheral</Name>
+					<Abstract type="html">the peripheral that was discovered </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/espScanner:didDiscoverPeripheral:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ESPScannerDelegate/espScanner:didUpdatePeripheral:</TokenIdentifier>
+			<Abstract type="html">Invoked when a discovered peripheral&apos;s properties are updated by the scanner</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)espScanner:(ESPScanner *)scanner didUpdatePeripheral:(CBPeripheral *)peripheral</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scanner</Name>
+					<Abstract type="html">the scanner that discovered the peripheral</Abstract>
+				</Parameter><Parameter>
+					<Name>peripheral</Name>
+					<Abstract type="html">the peripheral that was updated </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/espScanner:didUpdatePeripheral:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ESPScannerDelegate/espScanner:didFailToConnectPeripheral:error:</TokenIdentifier>
+			<Abstract type="html">Invoked when ESPScanner::connectPeripheral: is called on a peripheral and it fails to connect</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)espScanner:(ESPScanner *)scanner didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scanner</Name>
+					<Abstract type="html">the scanner that failed</Abstract>
+				</Parameter><Parameter>
+					<Name>peripheral</Name>
+					<Abstract type="html">the peripheral that could not be connected</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">the error describing the failure </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/espScanner:didFailToConnectPeripheral:error:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ESPScannerDelegate/espScanner:didConnectClient:</TokenIdentifier>
+			<Abstract type="html">Invoked when a peripheral has successfully connected and found the ESP service</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)espScanner:(ESPScanner *)scanner didConnectClient:(__kindof ESPClient *)client</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scanner</Name>
+					<Abstract type="html">the scanner that connected the peripheral</Abstract>
+				</Parameter><Parameter>
+					<Name>client</Name>
+					<Abstract type="html">the client containing the connected peripheral </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/espScanner:didConnectClient:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ESPScannerDelegate/espScanner:didDisconnectClient:error:</TokenIdentifier>
+			<Abstract type="html">Invoked when a connected ESP client/peripheral is disconnected</Abstract>
+			<DeclaredIn>ESPScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)espScanner:(ESPScanner *)scanner didDisconnectClient:(__kindof ESPClient *)client error:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scanner</Name>
+					<Abstract type="html">the scanner that connected the client</Abstract>
+				</Parameter><Parameter>
+					<Name>client</Name>
+					<Abstract type="html">the client that disconnected</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">the error describing why the disconnection happened, or nil if the client was disconnected via ESPScanner::disconnectClient </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/espScanner:didDisconnectClient:error:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

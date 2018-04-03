@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ESPSweepSectionData.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ESPSweepSectionData</TokenIdentifier>
+			<Abstract type="html">ESPSweepSectionData</Abstract>
+			<DeclaredIn>ESPSweepSectionData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepSectionData/initWithData:</TokenIdentifier>
+			<Abstract type="html">Initializes the sweep sections from the payload of an ESPPacket</Abstract>
+			<DeclaredIn>ESPSweepSectionData.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithData:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">the payload data from a respSweepSections packet</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized sweep section data </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepSectionData/setData:</TokenIdentifier>
+			<Abstract type="html">The full data of the sweep sections</Abstract>
+			<DeclaredIn>ESPSweepSectionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepSectionData/data</TokenIdentifier>
+			<Abstract type="html">The full data of the sweep sections</Abstract>
+			<DeclaredIn>ESPSweepSectionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPSweepSectionData/data</TokenIdentifier>
+			<Abstract type="html">The full data of the sweep sections</Abstract>
+			<DeclaredIn>ESPSweepSectionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepSectionData/setNumberOfSections:</TokenIdentifier>
+			<Abstract type="html">The number of sections that were in the packet</Abstract>
+			<DeclaredIn>ESPSweepSectionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger numberOfSections</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfSections</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepSectionData/numberOfSections</TokenIdentifier>
+			<Abstract type="html">The number of sections that were in the packet</Abstract>
+			<DeclaredIn>ESPSweepSectionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger numberOfSections</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfSections</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPSweepSectionData/numberOfSections</TokenIdentifier>
+			<Abstract type="html">The number of sections that were in the packet</Abstract>
+			<DeclaredIn>ESPSweepSectionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger numberOfSections</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfSections</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepSectionData/setSections:</TokenIdentifier>
+			<Abstract type="html">The sweep sections in the packet</Abstract>
+			<DeclaredIn>ESPSweepSectionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray&lt;ESPFrequencyRange*&gt; *sections</Declaration>
+			
+			
+			<Anchor>//api/name/sections</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepSectionData/sections</TokenIdentifier>
+			<Abstract type="html">The sweep sections in the packet</Abstract>
+			<DeclaredIn>ESPSweepSectionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray&lt;ESPFrequencyRange*&gt; *sections</Declaration>
+			
+			
+			<Anchor>//api/name/sections</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPSweepSectionData/sections</TokenIdentifier>
+			<Abstract type="html">The sweep sections in the packet</Abstract>
+			<DeclaredIn>ESPSweepSectionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray&lt;ESPFrequencyRange*&gt; *sections</Declaration>
+			
+			
+			<Anchor>//api/name/sections</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepSectionData/setSectionIndexes:</TokenIdentifier>
+			<Abstract type="html">The sweep section indexes in the packet</Abstract>
+			<DeclaredIn>ESPSweepSectionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray&lt;NSNumber*&gt; *sectionIndexes</Declaration>
+			
+			
+			<Anchor>//api/name/sectionIndexes</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepSectionData/sectionIndexes</TokenIdentifier>
+			<Abstract type="html">The sweep section indexes in the packet</Abstract>
+			<DeclaredIn>ESPSweepSectionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray&lt;NSNumber*&gt; *sectionIndexes</Declaration>
+			
+			
+			<Anchor>//api/name/sectionIndexes</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPSweepSectionData/sectionIndexes</TokenIdentifier>
+			<Abstract type="html">The sweep section indexes in the packet</Abstract>
+			<DeclaredIn>ESPSweepSectionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray&lt;NSNumber*&gt; *sectionIndexes</Declaration>
+			
+			
+			<Anchor>//api/name/sectionIndexes</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepSectionData/setCount:</TokenIdentifier>
+			<Abstract type="html">The total number of sections</Abstract>
+			<DeclaredIn>ESPSweepSectionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepSectionData/count</TokenIdentifier>
+			<Abstract type="html">The total number of sections</Abstract>
+			<DeclaredIn>ESPSweepSectionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPSweepSectionData/count</TokenIdentifier>
+			<Abstract type="html">The total number of sections</Abstract>
+			<DeclaredIn>ESPSweepSectionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

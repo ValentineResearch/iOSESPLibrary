@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ESPScannerDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">ESPLibrary </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Valentine</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/espScanner:didConnectClient:">- espScanner:didConnectClient:</option>
+		
+		<option value="//api/name/espScanner:didDisconnectClient:error:">- espScanner:didDisconnectClient:error:</option>
+		
+		<option value="//api/name/espScanner:didDiscoverPeripheral:">- espScanner:didDiscoverPeripheral:</option>
+		
+		<option value="//api/name/espScanner:didFailScanWithError:">- espScanner:didFailScanWithError:</option>
+		
+		<option value="//api/name/espScanner:didFailToConnectPeripheral:error:">- espScanner:didFailToConnectPeripheral:error:</option>
+		
+		<option value="//api/name/espScanner:didUpdatePeripheral:">- espScanner:didUpdatePeripheral:</option>
+		
+		<option value="//api/name/espScannerDidTimeoutScan:">- espScannerDidTimeoutScan:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ESPScannerDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ESPScanner.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The ESP device disconnected unexpectedly</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/espScannerDidTimeoutScan:" title="espScannerDidTimeoutScan:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/espScannerDidTimeoutScan:">&ndash;&nbsp;espScannerDidTimeoutScan:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked when a scan has timed out</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)espScannerDidTimeoutScan:(ESPScanner *)<em>scanner</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scanner</code></th>
+						<td><p>the scanner that finished</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Invoked when a scan has timed out</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPScanner.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/espScanner:didFailScanWithError:" title="espScanner:didFailScanWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/espScanner:didFailScanWithError:">&ndash;&nbsp;espScanner:didFailScanWithError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked when a scan failed</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)espScanner:(ESPScanner *)<em>scanner</em> didFailScanWithError:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scanner</code></th>
+						<td><p>the scanner that failed</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>the error describing the failure</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Invoked when a scan failed</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPScanner.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/espScanner:didDiscoverPeripheral:" title="espScanner:didDiscoverPeripheral:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/espScanner:didDiscoverPeripheral:">&ndash;&nbsp;espScanner:didDiscoverPeripheral:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked when a peripheral is discovered by the scanner</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)espScanner:(ESPScanner *)<em>scanner</em> didDiscoverPeripheral:(CBPeripheral *)<em>peripheral</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scanner</code></th>
+						<td><p>the scanner that discovered the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>peripheral</code></th>
+						<td><p>the peripheral that was discovered</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Invoked when a peripheral is discovered by the scanner</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPScanner.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/espScanner:didUpdatePeripheral:" title="espScanner:didUpdatePeripheral:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/espScanner:didUpdatePeripheral:">&ndash;&nbsp;espScanner:didUpdatePeripheral:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked when a discovered peripheral&rsquo;s properties are updated by the scanner</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)espScanner:(ESPScanner *)<em>scanner</em> didUpdatePeripheral:(CBPeripheral *)<em>peripheral</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scanner</code></th>
+						<td><p>the scanner that discovered the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>peripheral</code></th>
+						<td><p>the peripheral that was updated</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Invoked when a discovered peripheral&rsquo;s properties are updated by the scanner</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPScanner.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/espScanner:didFailToConnectPeripheral:error:" title="espScanner:didFailToConnectPeripheral:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/espScanner:didFailToConnectPeripheral:error:">&ndash;&nbsp;espScanner:didFailToConnectPeripheral:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked when <a href="../Classes/ESPScanner.html">ESPScanner</a>::connectPeripheral: is called on a peripheral and it fails to connect</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)espScanner:(ESPScanner *)<em>scanner</em> didFailToConnectPeripheral:(CBPeripheral *)<em>peripheral</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scanner</code></th>
+						<td><p>the scanner that failed</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>peripheral</code></th>
+						<td><p>the peripheral that could not be connected</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>the error describing the failure</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Invoked when <a href="../Classes/ESPScanner.html">ESPScanner</a>::connectPeripheral: is called on a peripheral and it fails to connect</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPScanner.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/espScanner:didConnectClient:" title="espScanner:didConnectClient:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/espScanner:didConnectClient:">&ndash;&nbsp;espScanner:didConnectClient:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked when a peripheral has successfully connected and found the ESP service</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)espScanner:(ESPScanner *)<em>scanner</em> didConnectClient:(__kindof ESPClient *)<em>client</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scanner</code></th>
+						<td><p>the scanner that connected the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>the client containing the connected peripheral</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Invoked when a peripheral has successfully connected and found the ESP service</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPScanner.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/espScanner:didDisconnectClient:error:" title="espScanner:didDisconnectClient:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/espScanner:didDisconnectClient:error:">&ndash;&nbsp;espScanner:didDisconnectClient:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked when a connected ESP client/peripheral is disconnected</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)espScanner:(ESPScanner *)<em>scanner</em> didDisconnectClient:(__kindof ESPClient *)<em>client</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scanner</code></th>
+						<td><p>the scanner that connected the client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>the client that disconnected</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>the error describing why the disconnection happened, or nil if the client was disconnected via <a href="../Classes/ESPScanner.html">ESPScanner</a>::disconnectClient</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Invoked when a connected ESP client/peripheral is disconnected</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPScanner.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Valentine. All rights reserved. Updated: 2018-04-03</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

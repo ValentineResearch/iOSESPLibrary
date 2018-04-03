@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ESPSavvyStatus.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ESPSavvyStatus</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSavvyStatus/init</TokenIdentifier>
+			<Abstract type="html">Initializes savvy status with default values</Abstract>
+			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">a newly initialized savvy status </Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSavvyStatus/initWithData:</TokenIdentifier>
+			<Abstract type="html">Initializes the savvy status from a received packet&apos;s payload</Abstract>
+			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithData:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">the payload data from a respSavvyStatus packet</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized savvy status </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSavvyStatus/initWithSavvyStatus:</TokenIdentifier>
+			<Abstract type="html">Initializes the savvy status by copying data from another savvy status</Abstract>
+			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithSavvyStatus:(ESPSavvyStatus *)savvyStatus</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>savvyStatus</Name>
+					<Abstract type="html">the savvy status to copy from</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized savvy status </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithSavvyStatus:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSavvyStatus/isEqualToSavvyStatus:</TokenIdentifier>
+			<Abstract type="html">Tells whether the savvy status is equal to another savvy status</Abstract>
+			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqualToSavvyStatus:(ESPSavvyStatus *)savvyStatus</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>savvyStatus</Name>
+					<Abstract type="html">the status to compare against</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if they are equal, NO if they are not </Abstract></ReturnValue>
+			<Anchor>//api/name/isEqualToSavvyStatus:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSavvyStatus/setData:</TokenIdentifier>
+			<Abstract type="html">The full payload data of the savvy status</Abstract>
+			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSavvyStatus/data</TokenIdentifier>
+			<Abstract type="html">The full payload data of the savvy status</Abstract>
+			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPSavvyStatus/data</TokenIdentifier>
+			<Abstract type="html">The full payload data of the savvy status</Abstract>
+			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSavvyStatus/setThresholdKPH:</TokenIdentifier>
+			<Abstract type="html">The speed threshold of the savvy, in KPH</Abstract>
+			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) Byte thresholdKPH</Declaration>
+			
+			
+			<Anchor>//api/name/thresholdKPH</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSavvyStatus/thresholdKPH</TokenIdentifier>
+			<Abstract type="html">The speed threshold of the savvy, in KPH</Abstract>
+			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) Byte thresholdKPH</Declaration>
+			
+			
+			<Anchor>//api/name/thresholdKPH</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPSavvyStatus/thresholdKPH</TokenIdentifier>
+			<Abstract type="html">The speed threshold of the savvy, in KPH</Abstract>
+			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) Byte thresholdKPH</Declaration>
+			
+			
+			<Anchor>//api/name/thresholdKPH</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSavvyStatus/setOverriddenByUser:</TokenIdentifier>
+			<Abstract type="html">Tells whether the savvy thumbwheel has been overridden by the user</Abstract>
+			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL overriddenByUser</Declaration>
+			
+			
+			<Anchor>//api/name/overriddenByUser</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSavvyStatus/overriddenByUser</TokenIdentifier>
+			<Abstract type="html">Tells whether the savvy thumbwheel has been overridden by the user</Abstract>
+			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL overriddenByUser</Declaration>
+			
+			
+			<Anchor>//api/name/overriddenByUser</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPSavvyStatus/overriddenByUser</TokenIdentifier>
+			<Abstract type="html">Tells whether the savvy thumbwheel has been overridden by the user</Abstract>
+			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL overriddenByUser</Declaration>
+			
+			
+			<Anchor>//api/name/overriddenByUser</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSavvyStatus/setUnmuteEnabled:</TokenIdentifier>
+			<Abstract type="html">Tells whether unmute functionality is enabled on the savvy</Abstract>
+			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL unmuteEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/unmuteEnabled</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPSavvyStatus/unmuteEnabled</TokenIdentifier>
+			<Abstract type="html">Tells whether unmute functionality is enabled on the savvy</Abstract>
+			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL unmuteEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/unmuteEnabled</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPSavvyStatus/unmuteEnabled</TokenIdentifier>
+			<Abstract type="html">Tells whether unmute functionality is enabled on the savvy</Abstract>
+			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL unmuteEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/unmuteEnabled</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
