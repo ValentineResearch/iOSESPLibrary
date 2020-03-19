@@ -1,4 +1,7 @@
-#Library Structure
+# **ESP Library v2.0 – March 19, 2020**
+* Added support for ESP Specification 3.005
+
+# Library Structure
 Interaction with the Valentine one and ESP devices has been localized in to a new class called ESPClient. This class is the public interface for the ESP Library. It contains all methods for exchanging ESP data with the Valentine One and its accessories.
 
 The old callback scheme that required you to register for every packet type that you wanted to receive callbacks for has been replaced with the ESPClientDelegate. ESPClientDelegate has several delegation methods that allow for receiving display data, alert tables and other ESP data. The delegate also provides notifications when the Valentine One loses power or enters/exist Legacy mode.

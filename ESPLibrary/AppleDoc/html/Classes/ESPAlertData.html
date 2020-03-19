@@ -151,7 +151,7 @@ A packet that represents an alert detected by the Valentine One.</p>
 						
 
 						
-						
+						<h2 class="task-title">Other Methods</h2>
 
 						<div class="task-list">
 							<div class="section-method">
@@ -343,69 +343,6 @@ A packet that represents an alert detected by the Valentine One.</p>
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Tells if the given alert is equal to this alert</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ESPAlertData.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/isWithinDevianceWindow:" title="isWithinDevianceWindow:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/isWithinDevianceWindow:">&ndash;&nbsp;isWithinDevianceWindow:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Tells if the given alert is within the <a href="#//api/name/deviance">deviance</a> window of this alert</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)isWithinDevianceWindow:(ESPAlertData *)<em>alert</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>alert</code></th>
-						<td><p>the alert to compare</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>YES if the alert is within the <a href="#//api/name/deviance">deviance</a> window, NO if it is not</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Tells if the given alert is within the <a href="#//api/name/deviance">deviance</a> window of this alert</p>
 			</div>
 			
 
@@ -974,9 +911,17 @@ A packet that represents an alert detected by the Valentine One.</p>
 			
 		</div>
 	</div>
-</div><div class="section-method">
-	<a name="//api/name/upperWindowEdge" title="upperWindowEdge"></a>
-	<h3 class="method-title"><code><a href="#//api/name/upperWindowEdge">&nbsp;&nbsp;upperWindowEdge</a></code>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/isWithinDevianceWindow:" title="isWithinDevianceWindow:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isWithinDevianceWindow:">&ndash;&nbsp;isWithinDevianceWindow:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -986,16 +931,33 @@ A packet that represents an alert detected by the Valentine One.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>The alert <a href="#//api/name/frequency">frequency</a> plus <a href="#//api/name/deviance">deviance</a></p>
+				<p>Tells if the given alert is within the <a href="#//api/name/deviance">deviance</a> window of this alert</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) ESPFrequencyMHz upperWindowEdge</code></div>
+			<div class="method-subsection method-declaration"><code>- (BOOL)isWithinDevianceWindow:(ESPAlertData *)<em>alert</em></code></div>
 
 		    
 			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>alert</code></th>
+						<td><p>the alert to compare</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if the alert is within the <a href="#//api/name/deviance">deviance</a> window, NO if it is not</p>
+			</div>
 			
 
 			
@@ -1003,7 +965,7 @@ A packet that represents an alert detected by the Valentine One.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>The alert <a href="#//api/name/frequency">frequency</a> plus <a href="#//api/name/deviance">deviance</a></p>
+				<p>Tells if the given alert is within the <a href="#//api/name/deviance">deviance</a> window of this alert</p>
 			</div>
 			
 
@@ -1021,6 +983,22 @@ A packet that represents an alert detected by the Valentine One.</p>
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/upperWindowEdge" title="upperWindowEdge"></a>
+	<h3 class="method-title"><code><a href="#//api/name/upperWindowEdge">&nbsp;&nbsp;upperWindowEdge</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) ESPFrequencyMHz upperWindowEdge</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/lowerWindowEdge" title="lowerWindowEdge"></a>
 	<h3 class="method-title"><code><a href="#//api/name/lowerWindowEdge">&nbsp;&nbsp;lowerWindowEdge</a></code>
 </h3>
@@ -1030,40 +1008,10 @@ A packet that represents an alert detected by the Valentine One.</p>
 
 		<div class="method-info-container">
 			
-			
-			<div class="method-subsection brief-description">
-				<p>The alert <a href="#//api/name/frequency">frequency</a> minus devience</p>
-			</div>
-			
-		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) ESPFrequencyMHz lowerWindowEdge</code></div>
 
 		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>The alert <a href="#//api/name/frequency">frequency</a> minus devience</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ESPAlertData.h</code></p>
-			</div>
-			
-			
 		</div>
 	</div>
 </div>
@@ -1081,7 +1029,7 @@ A packet that represents an alert detected by the Valentine One.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Valentine. All rights reserved. Updated: 2018-04-03</p>
+						<p class="copyright">Copyright &copy; 2020 Valentine. All rights reserved. Updated: 2020-03-19</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

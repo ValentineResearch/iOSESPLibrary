@@ -56,6 +56,10 @@
 	
 	<optgroup label="Properties">
 		
+		<option value="//api/name/BogeyLockToneLoadAfterMuting">BogeyLockToneLoadAfterMuting</option>
+		
+		<option value="//api/name/CustomFrequencies">CustomFrequencies</option>
+		
 		<option value="//api/name/KBandOn">KBandOn</option>
 		
 		<option value="//api/name/KInitialUnmute4LightsOn">KInitialUnmute4LightsOn</option>
@@ -74,6 +78,10 @@
 		
 		<option value="//api/name/KuBandOn">KuBandOn</option>
 		
+		<option value="//api/name/LaserRear">LaserRear</option>
+		
+		<option value="//api/name/MuteXAndKRear">MuteXAndKRear</option>
+		
 		<option value="//api/name/XBandOn">XBandOn</option>
 		
 		<option value="//api/name/bargraphSensitivity">bargraphSensitivity</option>
@@ -90,11 +98,15 @@
 		
 		<option value="//api/name/laserOn">laserOn</option>
 		
+		<option value="//api/name/muteToMuteVolume">muteToMuteVolume</option>
+		
 		<option value="//api/name/muteVolumeState">muteVolumeState</option>
 		
 		<option value="//api/name/popOn">popOn</option>
 		
 		<option value="//api/name/postMuteBogeyLockVolumeState">postMuteBogeyLockVolumeState</option>
+		
+		<option value="//api/name/v1Version">v1Version</option>
 		
 	</optgroup>
 	
@@ -108,7 +120,11 @@
 		
 		<option value="//api/name/initWithData:">- initWithData:</option>
 		
+		<option value="//api/name/initWithData:v1Version:">- initWithData:v1Version:</option>
+		
 		<option value="//api/name/initWithUserBytes:">- initWithUserBytes:</option>
+		
+		<option value="//api/name/initWithV1Version:">- initWithV1Version:</option>
 		
 		<option value="//api/name/isEqualToUserBytes:">- isEqualToUserBytes:</option>
 		
@@ -163,7 +179,7 @@ The &ldquo;user bytes&rdquo; of an ESP device. For more info on the V1&rsquo;s i
 						
 
 						
-						
+						<h2 class="task-title">Other Methods</h2>
 
 						<div class="task-list">
 							<div class="section-method">
@@ -218,8 +234,71 @@ The &ldquo;user bytes&rdquo; of an ESP device. For more info on the V1&rsquo;s i
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/initWithData:" title="initWithData:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initWithData:">&ndash;&nbsp;initWithData:</a></code>
+	<a name="//api/name/initWithV1Version:" title="initWithV1Version:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithV1Version:">&ndash;&nbsp;initWithV1Version:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes user bytes with default values and the provided v1 version.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithV1Version:(NSUInteger)<em>version</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>version</code></th>
+						<td><p>Version of the attached V1</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a newly initialized user bytes object</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes user bytes with default values and the provided v1 version.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPUserBytes.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithData:v1Version:" title="initWithData:v1Version:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithData:v1Version:">&ndash;&nbsp;initWithData:v1Version:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -234,7 +313,7 @@ The &ldquo;user bytes&rdquo; of an ESP device. For more info on the V1&rsquo;s i
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (id)initWithData:(NSData *)<em>data</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (id)initWithData:(NSData *)<em>data</em> v1Version:(NSUInteger)<em>version</em></code></div>
 
 		    
 			
@@ -482,6 +561,52 @@ The &ldquo;user bytes&rdquo; of an ESP device. For more info on the V1&rsquo;s i
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>The full payload data of the user bytes</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPUserBytes.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/v1Version" title="v1Version"></a>
+	<h3 class="method-title"><code><a href="#//api/name/v1Version">&nbsp;&nbsp;v1Version</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Version of the V1 this instance of user bytes belongs too</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSUInteger v1Version</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Version of the V1 this instance of user bytes belongs too</p>
 			</div>
 			
 
@@ -1372,6 +1497,307 @@ The &ldquo;user bytes&rdquo; of an ESP device. For more info on the V1&rsquo;s i
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/muteToMuteVolume" title="muteToMuteVolume"></a>
+	<h3 class="method-title"><code><a href="#//api/name/muteToMuteVolume">&nbsp;&nbsp;muteToMuteVolume</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Toggles Mute to Muted Volume</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL muteToMuteVolume</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Toggles Mute to Muted Volume</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPUserBytes.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BogeyLockToneLoadAfterMuting" title="BogeyLockToneLoadAfterMuting"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BogeyLockToneLoadAfterMuting">&nbsp;&nbsp;BogeyLockToneLoadAfterMuting</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Toggles load bogey lock tones after muting</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL BogeyLockToneLoadAfterMuting</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Toggles load bogey lock tones after muting</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPUserBytes.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/MuteXAndKRear" title="MuteXAndKRear"></a>
+	<h3 class="method-title"><code><a href="#//api/name/MuteXAndKRear">&nbsp;&nbsp;MuteXAndKRear</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Toggles automatic X &amp; K rear alert muting</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL MuteXAndKRear</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Toggles automatic X &amp; K rear alert muting</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPUserBytes.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/LaserRear" title="LaserRear"></a>
+	<h3 class="method-title"><code><a href="#//api/name/LaserRear">&nbsp;&nbsp;LaserRear</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Toggles rear Laser alerts</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL LaserRear</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Toggles rear Laser alerts</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPUserBytes.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/CustomFrequencies" title="CustomFrequencies"></a>
+	<h3 class="method-title"><code><a href="#//api/name/CustomFrequencies">&nbsp;&nbsp;CustomFrequencies</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Toglles Custom Frequencies</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL CustomFrequencies</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Toglles Custom Frequencies</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPUserBytes.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithData:" title="initWithData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithData:">&ndash;&nbsp;initWithData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes user bytes with the payload <a href="#//api/name/data">data</a> of a received packet</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithData:(NSData *)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>the payload <a href="#//api/name/data">data</a> from a respUserBytes or reqWriteUserBytes packet</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a newly initialized user bytes object</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes user bytes with the payload <a href="#//api/name/data">data</a> of a received packet</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPUserBytes.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -1387,7 +1813,7 @@ The &ldquo;user bytes&rdquo; of an ESP device. For more info on the V1&rsquo;s i
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Valentine. All rights reserved. Updated: 2018-04-03</p>
+						<p class="copyright">Copyright &copy; 2020 Valentine. All rights reserved. Updated: 2020-03-19</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

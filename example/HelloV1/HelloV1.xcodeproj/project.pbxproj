@@ -7,16 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13AE6FC42422929900F2DB09 /* libESPLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AE6FC32422929900F2DB09 /* libESPLibrary.a */; };
 		F17C7A051E817792008BE717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17C7A031E817792008BE717 /* Main.storyboard */; };
 		F17C7A071E817792008BE717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17C7A061E817792008BE717 /* Assets.xcassets */; };
 		F17C7A0A1E817792008BE717 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17C7A081E817792008BE717 /* LaunchScreen.storyboard */; };
 		F17C7A171E8177B4008BE717 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F17C7A131E8177B4008BE717 /* AppDelegate.m */; };
 		F17C7A181E8177B4008BE717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F17C7A141E8177B4008BE717 /* main.m */; };
 		F17C7A191E8177B4008BE717 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17C7A161E8177B4008BE717 /* ViewController.m */; };
-		F17C7A2C1E817813008BE717 /* libESPLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F17C7A2B1E817813008BE717 /* libESPLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13AE6FB82422929900F2DB09 /* ESPPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPPacket.h; sourceTree = "<group>"; };
+		13AE6FB92422929900F2DB09 /* ESPUserBytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPUserBytes.h; sourceTree = "<group>"; };
+		13AE6FBA2422929900F2DB09 /* ESPLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPLibrary.h; sourceTree = "<group>"; };
+		13AE6FBB2422929900F2DB09 /* ESPScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPScanner.h; sourceTree = "<group>"; };
+		13AE6FBC2422929900F2DB09 /* ESPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPClient.h; sourceTree = "<group>"; };
+		13AE6FBD2422929900F2DB09 /* ESPDisplayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPDisplayData.h; sourceTree = "<group>"; };
+		13AE6FBE2422929900F2DB09 /* ESPCustomSweepData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPCustomSweepData.h; sourceTree = "<group>"; };
+		13AE6FBF2422929900F2DB09 /* ESPFrequency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPFrequency.h; sourceTree = "<group>"; };
+		13AE6FC02422929900F2DB09 /* ESPSavvyStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPSavvyStatus.h; sourceTree = "<group>"; };
+		13AE6FC12422929900F2DB09 /* ESPAlertData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPAlertData.h; sourceTree = "<group>"; };
+		13AE6FC22422929900F2DB09 /* ESPFrequencyRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPFrequencyRange.h; sourceTree = "<group>"; };
+		13AE6FC32422929900F2DB09 /* libESPLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libESPLibrary.a; sourceTree = "<group>"; };
 		F17C79F71E817792008BE717 /* HelloV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17C7A041E817792008BE717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F17C7A061E817792008BE717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -27,18 +39,6 @@
 		F17C7A141E8177B4008BE717 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F17C7A151E8177B4008BE717 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F17C7A161E8177B4008BE717 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F17C7A1F1E817813008BE717 /* ESPAlertData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPAlertData.h; sourceTree = "<group>"; };
-		F17C7A201E817813008BE717 /* ESPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPClient.h; sourceTree = "<group>"; };
-		F17C7A211E817813008BE717 /* ESPCustomSweepData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPCustomSweepData.h; sourceTree = "<group>"; };
-		F17C7A221E817813008BE717 /* ESPDisplayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPDisplayData.h; sourceTree = "<group>"; };
-		F17C7A231E817813008BE717 /* ESPFrequency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPFrequency.h; sourceTree = "<group>"; };
-		F17C7A241E817813008BE717 /* ESPFrequencyRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPFrequencyRange.h; sourceTree = "<group>"; };
-		F17C7A251E817813008BE717 /* ESPLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPLibrary.h; sourceTree = "<group>"; };
-		F17C7A261E817813008BE717 /* ESPPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPPacket.h; sourceTree = "<group>"; };
-		F17C7A271E817813008BE717 /* ESPSavvyStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPSavvyStatus.h; sourceTree = "<group>"; };
-		F17C7A281E817813008BE717 /* ESPScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPScanner.h; sourceTree = "<group>"; };
-		F17C7A291E817813008BE717 /* ESPUserBytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPUserBytes.h; sourceTree = "<group>"; };
-		F17C7A2B1E817813008BE717 /* libESPLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libESPLibrary.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,17 +46,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F17C7A2C1E817813008BE717 /* libESPLibrary.a in Frameworks */,
+				13AE6FC42422929900F2DB09 /* libESPLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		136E20742422543400A750D6 /* external */ = {
+			isa = PBXGroup;
+			children = (
+				13AE6FB62422929900F2DB09 /* include */,
+				13AE6FC32422929900F2DB09 /* libESPLibrary.a */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+		13AE6FB62422929900F2DB09 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				13AE6FB72422929900F2DB09 /* ESPLibrary */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		13AE6FB72422929900F2DB09 /* ESPLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				13AE6FB82422929900F2DB09 /* ESPPacket.h */,
+				13AE6FB92422929900F2DB09 /* ESPUserBytes.h */,
+				13AE6FBA2422929900F2DB09 /* ESPLibrary.h */,
+				13AE6FBB2422929900F2DB09 /* ESPScanner.h */,
+				13AE6FBC2422929900F2DB09 /* ESPClient.h */,
+				13AE6FBD2422929900F2DB09 /* ESPDisplayData.h */,
+				13AE6FBE2422929900F2DB09 /* ESPCustomSweepData.h */,
+				13AE6FBF2422929900F2DB09 /* ESPFrequency.h */,
+				13AE6FC02422929900F2DB09 /* ESPSavvyStatus.h */,
+				13AE6FC12422929900F2DB09 /* ESPAlertData.h */,
+				13AE6FC22422929900F2DB09 /* ESPFrequencyRange.h */,
+			);
+			path = ESPLibrary;
+			sourceTree = "<group>";
+		};
 		F17C79EE1E817792008BE717 = {
 			isa = PBXGroup;
 			children = (
-				F17C7A1B1E817813008BE717 /* external */,
+				136E20742422543400A750D6 /* external */,
 				F17C7A1A1E8177C1008BE717 /* assets */,
 				F17C7A111E8177B4008BE717 /* src */,
 				F17C79F81E817792008BE717 /* Products */,
@@ -92,57 +127,6 @@
 				F17C7A0B1E817792008BE717 /* Info.plist */,
 			);
 			path = assets;
-			sourceTree = "<group>";
-		};
-		F17C7A1B1E817813008BE717 /* external */ = {
-			isa = PBXGroup;
-			children = (
-				F17C7A1C1E817813008BE717 /* ESPLibrary */,
-			);
-			path = external;
-			sourceTree = "<group>";
-		};
-		F17C7A1C1E817813008BE717 /* ESPLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				F17C7A1D1E817813008BE717 /* include */,
-				F17C7A2A1E817813008BE717 /* lib */,
-			);
-			path = ESPLibrary;
-			sourceTree = "<group>";
-		};
-		F17C7A1D1E817813008BE717 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				F17C7A1E1E817813008BE717 /* ESPLibrary */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		F17C7A1E1E817813008BE717 /* ESPLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				F17C7A1F1E817813008BE717 /* ESPAlertData.h */,
-				F17C7A201E817813008BE717 /* ESPClient.h */,
-				F17C7A211E817813008BE717 /* ESPCustomSweepData.h */,
-				F17C7A221E817813008BE717 /* ESPDisplayData.h */,
-				F17C7A231E817813008BE717 /* ESPFrequency.h */,
-				F17C7A241E817813008BE717 /* ESPFrequencyRange.h */,
-				F17C7A251E817813008BE717 /* ESPLibrary.h */,
-				F17C7A261E817813008BE717 /* ESPPacket.h */,
-				F17C7A271E817813008BE717 /* ESPSavvyStatus.h */,
-				F17C7A281E817813008BE717 /* ESPScanner.h */,
-				F17C7A291E817813008BE717 /* ESPUserBytes.h */,
-			);
-			path = ESPLibrary;
-			sourceTree = "<group>";
-		};
-		F17C7A2A1E817813008BE717 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				F17C7A2B1E817813008BE717 /* libESPLibrary.a */,
-			);
-			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +170,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -285,9 +270,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -327,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,12 +326,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TEV655VVD3;
 				INFOPLIST_FILE = "$(SRCROOT)/assets/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/external/ESPLibrary/lib",
+					"$(PROJECT_DIR)/external",
+					"$(PROJECT_DIR)",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Valentine.HelloV1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,11 +345,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TEV655VVD3;
 				INFOPLIST_FILE = "$(SRCROOT)/assets/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/external/ESPLibrary/lib",
+					"$(PROJECT_DIR)/external",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Valentine.HelloV1;
 				PRODUCT_NAME = "$(TARGET_NAME)";

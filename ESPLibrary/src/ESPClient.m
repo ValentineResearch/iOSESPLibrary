@@ -953,7 +953,38 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 	[self _queueRequest:request];
 }
 
--(void)requestUserBytesFrom:(ESPRequestTarget)target completion:(void(^)(ESPUserBytes*, NSError*))completion
+-(void)requestUserBytesDataFrom:(ESPRequestTarget)target completion:(void(^)(NSData* userBytes, NSError* error))completion {
+    ESPRequest* request = [ESPRequest request];
+    request.target = target;
+    request.packetID = ESPPacketReqUserBytes;
+    request.packetData = [NSData data];
+    
+    ESPResponseExpector* expector = [ESPResponseExpector expector];
+    [expector addResponseID:ESPPacketRespUserBytes];
+    expector.packetRecievedCallback = ^BOOL (ESPPacket* packet){
+        NSData* payload = [self _payloadFromPacket:packet];
+        if(completion!=nil)
+        {
+            completion(payload, nil);
+        }
+        return YES;
+    };
+    expector.failureCallback = ^(NSError* error){
+        if(completion!=nil)
+        {
+            completion(nil, error);
+        }
+    };
+    request.responseExpector = expector;
+    
+    [self _queueRequest:request];
+}
+
+-(void)requestUserDataBytes:(void(^)(NSData* userBytes, NSError* error))completion {
+    [self requestUserBytesDataFrom:ESPRequestTargetValentineOne completion:completion];
+}
+
+-(void)requestUserBytesFrom:(ESPRequestTarget)target forV1Version:(NSUInteger)version completion:(void(^)(ESPUserBytes* userBytes, NSError* error))completion;
 {
 	ESPRequest* request = [ESPRequest request];
 	request.target = target;
@@ -964,7 +995,7 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 	[expector addResponseID:ESPPacketRespUserBytes];
 	expector.packetRecievedCallback = ^BOOL (ESPPacket* packet){
 		NSData* payload = [self _payloadFromPacket:packet];
-		ESPUserBytes* userBytes = [[ESPUserBytes alloc] initWithData:payload];
+        ESPUserBytes* userBytes = [[ESPUserBytes alloc] initWithData:payload v1Version:version];
 		if(completion!=nil)
 		{
 			completion(userBytes, nil);
@@ -982,9 +1013,9 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 	[self _queueRequest:request];
 }
 
--(void)requestUserBytes:(void(^)(ESPUserBytes*, NSError*))completion
+-(void)requestUserBytesforV1Version:(NSUInteger)version completion:(void(^)(ESPUserBytes* userBytes, NSError* error))completion 
 {
-	[self requestUserBytesFrom:ESPRequestTargetValentineOne completion:completion];
+    [self requestUserBytesFrom:ESPRequestTargetValentineOne forV1Version:version completion:completion];
 }
 
 -(void)requestWriteUserBytes:(ESPUserBytes*)userBytes target:(ESPRequestTarget)target completion:(void(^)(NSError*))completion
@@ -1416,9 +1447,9 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 		if(completion!=nil)
 		{
 			BOOL displayOn = NO;
-			if(_lastDisplayData!=nil)
+            if(self->_lastDisplayData!=nil)
 			{
-				displayOn = _lastDisplayData.displayOn;
+                displayOn = self->_lastDisplayData.displayOn;
 			}
 			completion(displayOn, error);
 		}
@@ -1472,9 +1503,9 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 		if(completion!=nil)
 		{
 			BOOL displayOn = NO;
-			if(_lastDisplayData!=nil)
+            if(self->_lastDisplayData!=nil)
 			{
-				displayOn = _lastDisplayData.displayOn;
+                displayOn = self->_lastDisplayData.displayOn;
 			}
 			completion(displayOn, error);
 		}
@@ -1528,9 +1559,9 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 		if(completion!=nil)
 		{
 			BOOL muteOn = NO;
-			if(_lastDisplayData!=nil)
+            if(self->_lastDisplayData!=nil)
 			{
-				muteOn = _lastDisplayData.soft;
+                muteOn = self->_lastDisplayData.soft;
 			}
 			completion(muteOn, error);
 		}
@@ -1589,9 +1620,9 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 		if(completion!=nil)
 		{
 			BOOL muteOn = NO;
-			if(_lastDisplayData!=nil)
+            if(self->_lastDisplayData!=nil)
 			{
-				muteOn = _lastDisplayData.soft;
+                muteOn = self->_lastDisplayData.soft;
 			}
 			completion(muteOn, error);
 		}

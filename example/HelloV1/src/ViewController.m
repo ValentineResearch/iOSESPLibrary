@@ -10,6 +10,7 @@
 
 @interface ViewController()
 -(UIColor*)colorForDisplayState:(ESPDisplayState)displayState;
+-(UIColor*)bluetoothColorForDisplayState:(ESPDisplayState)displayState;
 @end
 
 @implementation ViewController
@@ -78,6 +79,7 @@
 		else
 		{
 			_versionLabel.text = version;
+            _versionLabel.textColor = UIColor.blackColor;
 		}
 	}];
 }
@@ -94,6 +96,7 @@
 		else
 		{
 			_v1CVersionLabel.text = version;
+            _v1CVersionLabel.textColor = UIColor.blackColor;
 		}
 	}];
 }
@@ -172,6 +175,22 @@
 	return [UIColor blackColor];
 }
 
+-(UIColor*)bluetoothColorForDisplayState:(ESPDisplayState)displayState
+{
+    switch(displayState)
+    {
+        case ESPDisplayStateOn:
+            return [UIColor blueColor];
+            
+        case ESPDisplayStateBlinking:
+            return [UIColor blueColor];
+            
+        case ESPDisplayStateOff:
+            return [UIColor blackColor];
+    }
+    return [UIColor blackColor];
+}
+
 
 #pragma mark - ESPScannerDelegate
 
@@ -196,6 +215,10 @@
 -(void)espScanner:(ESPScanner*)scanner didConnectClient:(__kindof ESPClient*)client
 {
 	_statusLabel.text = @"Connected";
+    _statusLabel.textColor = [UIColor blackColor];
+    _versionLabel.textColor = [UIColor blackColor];
+    _v1CVersionLabel.textColor = [UIColor blackColor];
+    
 	_disconnectButton.enabled = YES;
 	_connectButton.enabled = NO;
 	
@@ -221,7 +244,9 @@
 	_startAlertDataButton.enabled = NO;
 	_stopAlertDataButton.enabled = NO;
 	_readSweepsButton.enabled = NO;
-	
+	    
+    _versionLabel.textColor = [UIColor blackColor];
+    _v1CVersionLabel.textColor =[UIColor blackColor];
 	_laserLabel.textColor = [UIColor blackColor];
 	_kaLabel.textColor = [UIColor blackColor];
 	_kLabel.textColor = [UIColor blackColor];
@@ -230,6 +255,9 @@
 	_frontLabel.textColor = [UIColor blackColor];
 	_sideLabel.textColor = [UIColor blackColor];
 	_rearLabel.textColor = [UIColor blackColor];
+    
+    _bluetooth.textColor = [UIColor blackColor];
+    _mute.textColor = [UIColor blackColor];
 	
 	_alertTextBox.text = @"";
 	
@@ -251,6 +279,9 @@
 	_frontLabel.textColor = [self colorForDisplayState:displayData.front];
 	_sideLabel.textColor = [self colorForDisplayState:displayData.side];
 	_rearLabel.textColor = [self colorForDisplayState:displayData.rear];
+    
+    _bluetooth.textColor = [self bluetoothColorForDisplayState:displayData.bluetooth];
+    _mute.textColor = [self colorForDisplayState:displayData.mute];
 }
 
 -(void)espClient:(ESPClient*)client didReceiveAlertTable:(NSArray<ESPAlertData*>*)alertTable

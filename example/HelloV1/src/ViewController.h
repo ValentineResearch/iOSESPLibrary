@@ -31,6 +31,10 @@
 @property (weak, nonatomic) IBOutlet UILabel* sideLabel;
 @property (weak, nonatomic) IBOutlet UILabel* rearLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *bluetooth;
+@property (weak, nonatomic) IBOutlet UILabel *mute;
+
+
 @property (weak, nonatomic) IBOutlet UILabel* statusLabel;
 @property (weak, nonatomic) IBOutlet UILabel* versionLabel;
 @property (weak, nonatomic) IBOutlet UILabel* v1CVersionLabel;

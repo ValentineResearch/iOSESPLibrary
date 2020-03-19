@@ -976,6 +976,78 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setMute:</TokenIdentifier>
+			<Abstract type="html">Tells whether the mute light is lit (This value is only meaningful on versin V4.1018 and above)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState mute</Declaration>
+			
+			
+			<Anchor>//api/name/mute</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/mute</TokenIdentifier>
+			<Abstract type="html">Tells whether the mute light is lit (This value is only meaningful on versin V4.1018 and above)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState mute</Declaration>
+			
+			
+			<Anchor>//api/name/mute</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/mute</TokenIdentifier>
+			<Abstract type="html">Tells whether the mute light is lit (This value is only meaningful on versin V4.1018 and above)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState mute</Declaration>
+			
+			
+			<Anchor>//api/name/mute</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setBluetooth:</TokenIdentifier>
+			<Abstract type="html">Tells whether the Bluetooth light is lit (This value is only meaningful on versin V4.1018 and above)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState bluetooth</Declaration>
+			
+			
+			<Anchor>//api/name/bluetooth</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/bluetooth</TokenIdentifier>
+			<Abstract type="html">Tells whether the Bluetooth light is lit (This value is only meaningful on versin V4.1018 and above)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState bluetooth</Declaration>
+			
+			
+			<Anchor>//api/name/bluetooth</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPDisplayData/bluetooth</TokenIdentifier>
+			<Abstract type="html">Tells whether the Bluetooth light is lit (This value is only meaningful on versin V4.1018 and above)</Abstract>
+			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ESPDisplayState bluetooth</Declaration>
+			
+			
+			<Anchor>//api/name/bluetooth</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/setSoft:</TokenIdentifier>
 			<Abstract type="html">Tells the current mute status. (NO means not muted, YES means muted)</Abstract>
 			<DeclaredIn>ESPDisplayData.h</DeclaredIn>

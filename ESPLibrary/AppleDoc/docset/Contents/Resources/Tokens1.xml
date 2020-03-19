@@ -76,23 +76,6 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/isWithinDevianceWindow:</TokenIdentifier>
-			<Abstract type="html">Tells if the given alert is within the deviance window of this alert</Abstract>
-			<DeclaredIn>ESPAlertData.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)isWithinDevianceWindow:(ESPAlertData *)alert</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>alert</Name>
-					<Abstract type="html">the alert to compare</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the alert is within the deviance window, NO if it is not </Abstract></ReturnValue>
-			<Anchor>//api/name/isWithinDevianceWindow:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/setData:</TokenIdentifier>
 			<Abstract type="html">The full payload data of the alert</Abstract>
 			<DeclaredIn>ESPAlertData.h</DeclaredIn>
@@ -525,8 +508,25 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/isWithinDevianceWindow:</TokenIdentifier>
+			<Abstract type="html">Tells if the given alert is within the deviance window of this alert</Abstract>
+			<DeclaredIn>ESPAlertData.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isWithinDevianceWindow:(ESPAlertData *)alert</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>alert</Name>
+					<Abstract type="html">the alert to compare</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the alert is within the deviance window, NO if it is not </Abstract></ReturnValue>
+			<Anchor>//api/name/isWithinDevianceWindow:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/setUpperWindowEdge:</TokenIdentifier>
-			<Abstract type="html">The alert frequency plus deviance</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>ESPAlertData.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz upperWindowEdge</Declaration>
@@ -538,7 +538,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/upperWindowEdge</TokenIdentifier>
-			<Abstract type="html">The alert frequency plus deviance</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>ESPAlertData.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz upperWindowEdge</Declaration>
@@ -550,7 +550,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ESPAlertData/upperWindowEdge</TokenIdentifier>
-			<Abstract type="html">The alert frequency plus deviance</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>ESPAlertData.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz upperWindowEdge</Declaration>
@@ -562,7 +562,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/setLowerWindowEdge:</TokenIdentifier>
-			<Abstract type="html">The alert frequency minus devience</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>ESPAlertData.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz lowerWindowEdge</Declaration>
@@ -574,7 +574,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/lowerWindowEdge</TokenIdentifier>
-			<Abstract type="html">The alert frequency minus devience</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>ESPAlertData.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz lowerWindowEdge</Declaration>
@@ -586,7 +586,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ESPAlertData/lowerWindowEdge</TokenIdentifier>
-			<Abstract type="html">The alert frequency minus devience</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>ESPAlertData.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) ESPFrequencyMHz lowerWindowEdge</Declaration>

@@ -6,6 +6,7 @@
 
 #import "ESPAlertData.h"
 #import "ESPDataUtils.h"
+#import "V1VersionUtil.h"
 
 @implementation ESPAlertData
 
@@ -47,23 +48,6 @@
 		return [self isEqualToAlertData:object];
 	}
 	return NO;
-}
-
--(BOOL)isWithinDevianceWindow:(ESPAlertData*)alert
-{
-	if(self.band != alert.band)
-	{
-		return NO;
-	}
-	ESPFrequencyMHz freq = self.frequency;
-	ESPFrequencyMHz cmpFreq = alert.frequency;
-	ESPFrequencyMHz minFreq = MIN(freq, cmpFreq);
-	ESPFrequencyMHz maxFreq = MAX(freq, cmpFreq);
-	if((maxFreq - minFreq) > self.deviance)
-	{
-		return NO;
-	}
-	return YES;
 }
 
 -(NSUInteger)count
@@ -234,7 +218,7 @@
 			return 0;
 			
 		case ESPAlertBandLaser:
-			return 0;
+			return 8;
 	}
 }
 
@@ -285,53 +269,6 @@
 		return ESPAlertBandKu;
 	}
 	return ESPAlertBandInvalid;
-}
-
--(ESPFrequencyMHz)deviance
-{
-	switch(self.band)
-	{
-		case ESPAlertBandInvalid:
-			return 0;
-			
-		case ESPAlertBandLaser:
-			return 0;
-			
-		case ESPAlertBandKa:
-			return 6;
-			
-		case ESPAlertBandK:
-			return 5;
-			
-		case ESPAlertBandX:
-			return 2;
-			
-		case ESPAlertBandKu:
-			return 6;
-	}
-	return 0;
-}
-
--(ESPFrequencyMHz)lowerWindowEdge
-{
-	ESPFrequencyMHz freq = self.frequency;
-	ESPFrequencyMHz deviance = self.deviance;
-	if(freq < deviance)
-	{
-		return 0;
-	}
-	return freq - deviance;
-}
-
--(ESPFrequencyMHz)upperWindowEdge
-{
-	ESPFrequencyMHz freq = self.frequency;
-	ESPFrequencyMHz deviance = self.deviance;
-	if((ESPFrequencyMHzMax-deviance)<freq)
-	{
-		return ESPFrequencyMHzMax;
-	}
-	return freq + deviance;
 }
 
 -(NSString*)debugDescription
@@ -394,9 +331,6 @@
 			break;
 	}
 	[desc appendFormat:@"band: %@\n", bandString];
-	[desc appendFormat:@"deviance: %lu MHz\n", (unsigned long)self.deviance];
-	[desc appendFormat:@"lowerWindowEdge: %lu MHz\n", (unsigned long)self.lowerWindowEdge];
-	[desc appendFormat:@"upperWindowEdge: %lu MHz\n", (unsigned long)self.upperWindowEdge];
 	return desc;
 }
 

@@ -43,5 +43,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>HelloV1 uses Bluetooth to connect to the V1connection LE</string>
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>HelloV1 uses Bluetooth to connect to the V1connection LE</string>
 </dict>
 </plist>

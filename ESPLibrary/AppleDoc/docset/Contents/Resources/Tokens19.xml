@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intf/ESPScannerDelegate</TokenIdentifier>
-			<Abstract type="html">The ESP device disconnected unexpectedly</Abstract>
+			<Abstract type="html">Receives events from an ESPScanner object</Abstract>
 			<DeclaredIn>ESPScanner.h</DeclaredIn>
             
 			

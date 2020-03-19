@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13218B9D23770BA500C4D873 /* V1VersionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 13218B9C23770BA500C4D873 /* V1VersionUtil.m */; };
 		847325BC16F0FC4200258402 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847325BB16F0FC4200258402 /* Foundation.framework */; };
 		8473262716F1196100258402 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8473262616F1196100258402 /* UIKit.framework */; };
 		A524EB5E1D2D9396006A7C55 /* ESPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A524EB5D1D2D9396006A7C55 /* ESPClient.m */; };
@@ -66,6 +67,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		13218B9B2377068700C4D873 /* V1VersionUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = V1VersionUtil.h; sourceTree = "<group>"; };
+		13218B9C23770BA500C4D873 /* V1VersionUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = V1VersionUtil.m; sourceTree = "<group>"; };
 		847325B816F0FC4200258402 /* libESPLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libESPLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		847325BB16F0FC4200258402 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8473262616F1196100258402 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -169,6 +172,7 @@
 				A59F9EFF1D2C1987002ACC31 /* ESPCustomSweepData.h */,
 				A59F9F051D2C1987002ACC31 /* ESPSavvyStatus.h */,
 				A59F9F071D2C1987002ACC31 /* ESPUserBytes.h */,
+				13218B9B2377068700C4D873 /* V1VersionUtil.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -206,6 +210,7 @@
 				A59F9F121D2C3815002ACC31 /* ESPCustomSweepData.m */,
 				A59F9F181D2C3911002ACC31 /* ESPSavvyStatus.m */,
 				A58342B11D2D2F2700A706A7 /* ESPUserBytes.m */,
+				13218B9C23770BA500C4D873 /* V1VersionUtil.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -237,15 +242,16 @@
 		847325B016F0FC4200258402 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Valentine Research, Inc.";
 			};
 			buildConfigurationList = 847325B316F0FC4200258402 /* Build configuration list for PBXProject "ESPLibrary" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 847325AF16F0FC4200258402;
 			productRefGroup = 847325B916F0FC4200258402 /* Products */;
@@ -269,7 +275,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" ];\nthen\n/usr/local/bin/appledoc \\\n--project-name ESPLibrary \\\n--project-company \"Valentine\" \\\n--company-id com.Valentine \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--search-undocumented-doc \\\n--exit-threshold 2 \\\n--ignore .m \\\n--output \"AppleDoc\" .\nfi";
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -283,6 +290,7 @@
 				A59F9F191D2C3911002ACC31 /* ESPSavvyStatus.m in Sources */,
 				A56C4CC41D300FFC00F0CC16 /* ESPRequest.m in Sources */,
 				A59F9F171D2C3815002ACC31 /* ESPFrequencyRange.m in Sources */,
+				13218B9D23770BA500C4D873 /* V1VersionUtil.m in Sources */,
 				A59F9F1C1D2C448A002ACC31 /* ESPDataUtils.m in Sources */,
 				A57A0DEF1D41355B00F4C050 /* ESPSweepsBuilder.m in Sources */,
 				A58342B41D2D43DD00A706A7 /* ESPScanner.m in Sources */,
@@ -314,11 +322,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -343,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -360,11 +370,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -381,7 +393,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -393,7 +405,7 @@
 				DSTROOT = /tmp/ESPLibrary.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,7 +422,7 @@
 				DSTROOT = /tmp/ESPLibrary.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

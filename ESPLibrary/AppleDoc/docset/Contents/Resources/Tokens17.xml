@@ -25,11 +25,28 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/initWithData:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/initWithV1Version:</TokenIdentifier>
+			<Abstract type="html">Initializes user bytes with default values and the provided v1 version.</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithV1Version:(NSUInteger)version</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>version</Name>
+					<Abstract type="html">Version of the attached V1</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized user bytes object</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithV1Version:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/initWithData:v1Version:</TokenIdentifier>
 			<Abstract type="html">Initializes user bytes with the payload data of a received packet</Abstract>
 			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithData:(NSData *)data</Declaration>
+			<Declaration>- (id)initWithData:(NSData *)data v1Version:(NSUInteger)version</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>data</Name>
@@ -37,7 +54,7 @@
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">a newly initialized user bytes object </Abstract></ReturnValue>
-			<Anchor>//api/name/initWithData:</Anchor>
+			<Anchor>//api/name/initWithData:v1Version:</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		
@@ -120,6 +137,42 @@
 			
 			
 			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setV1Version:</TokenIdentifier>
+			<Abstract type="html">Version of the V1 this instance of user bytes belongs too</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger v1Version</Declaration>
+			
+			
+			<Anchor>//api/name/v1Version</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/v1Version</TokenIdentifier>
+			<Abstract type="html">Version of the V1 this instance of user bytes belongs too</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger v1Version</Declaration>
+			
+			
+			<Anchor>//api/name/v1Version</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/v1Version</TokenIdentifier>
+			<Abstract type="html">Version of the V1 this instance of user bytes belongs too</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger v1Version</Declaration>
+			
+			
+			<Anchor>//api/name/v1Version</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		
@@ -804,6 +857,203 @@
 			
 			
 			<Anchor>//api/name/forceLegacyCD</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setMuteToMuteVolume:</TokenIdentifier>
+			<Abstract type="html">Toggles Mute to Muted Volume</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL muteToMuteVolume</Declaration>
+			
+			
+			<Anchor>//api/name/muteToMuteVolume</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/muteToMuteVolume</TokenIdentifier>
+			<Abstract type="html">Toggles Mute to Muted Volume</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL muteToMuteVolume</Declaration>
+			
+			
+			<Anchor>//api/name/muteToMuteVolume</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/muteToMuteVolume</TokenIdentifier>
+			<Abstract type="html">Toggles Mute to Muted Volume</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL muteToMuteVolume</Declaration>
+			
+			
+			<Anchor>//api/name/muteToMuteVolume</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setBogeyLockToneLoadAfterMuting:</TokenIdentifier>
+			<Abstract type="html">Toggles load bogey lock tones after muting</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL BogeyLockToneLoadAfterMuting</Declaration>
+			
+			
+			<Anchor>//api/name/BogeyLockToneLoadAfterMuting</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/BogeyLockToneLoadAfterMuting</TokenIdentifier>
+			<Abstract type="html">Toggles load bogey lock tones after muting</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL BogeyLockToneLoadAfterMuting</Declaration>
+			
+			
+			<Anchor>//api/name/BogeyLockToneLoadAfterMuting</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/BogeyLockToneLoadAfterMuting</TokenIdentifier>
+			<Abstract type="html">Toggles load bogey lock tones after muting</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL BogeyLockToneLoadAfterMuting</Declaration>
+			
+			
+			<Anchor>//api/name/BogeyLockToneLoadAfterMuting</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setMuteXAndKRear:</TokenIdentifier>
+			<Abstract type="html">Toggles automatic X &amp;amp; K rear alert muting</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL MuteXAndKRear</Declaration>
+			
+			
+			<Anchor>//api/name/MuteXAndKRear</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/MuteXAndKRear</TokenIdentifier>
+			<Abstract type="html">Toggles automatic X &amp;amp; K rear alert muting</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL MuteXAndKRear</Declaration>
+			
+			
+			<Anchor>//api/name/MuteXAndKRear</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/MuteXAndKRear</TokenIdentifier>
+			<Abstract type="html">Toggles automatic X &amp;amp; K rear alert muting</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL MuteXAndKRear</Declaration>
+			
+			
+			<Anchor>//api/name/MuteXAndKRear</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setLaserRear:</TokenIdentifier>
+			<Abstract type="html">Toggles rear Laser alerts</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL LaserRear</Declaration>
+			
+			
+			<Anchor>//api/name/LaserRear</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/LaserRear</TokenIdentifier>
+			<Abstract type="html">Toggles rear Laser alerts</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL LaserRear</Declaration>
+			
+			
+			<Anchor>//api/name/LaserRear</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/LaserRear</TokenIdentifier>
+			<Abstract type="html">Toggles rear Laser alerts</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL LaserRear</Declaration>
+			
+			
+			<Anchor>//api/name/LaserRear</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/setCustomFrequencies:</TokenIdentifier>
+			<Abstract type="html">Toglles Custom Frequencies</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL CustomFrequencies</Declaration>
+			
+			
+			<Anchor>//api/name/CustomFrequencies</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/CustomFrequencies</TokenIdentifier>
+			<Abstract type="html">Toglles Custom Frequencies</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL CustomFrequencies</Declaration>
+			
+			
+			<Anchor>//api/name/CustomFrequencies</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ESPUserBytes/CustomFrequencies</TokenIdentifier>
+			<Abstract type="html">Toglles Custom Frequencies</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL CustomFrequencies</Declaration>
+			
+			
+			<Anchor>//api/name/CustomFrequencies</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPUserBytes/initWithData:</TokenIdentifier>
+			<Abstract type="html">Initializes user bytes with the payload data of a received packet</Abstract>
+			<DeclaredIn>ESPUserBytes.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithData:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">the payload data from a respUserBytes or reqWriteUserBytes packet</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly initialized user bytes object </Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		

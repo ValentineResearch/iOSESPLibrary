@@ -121,11 +121,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestUserBytesFrom:completion:</TokenIdentifier>
-			<Abstract type="html">Requests the user bytes of the ESP device</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestUserBytesDataFrom:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the user bytes data of the ESP device</Abstract>
 			<DeclaredIn>ESPClient.h</DeclaredIn>
 			
-			<Declaration>- (void)requestUserBytesFrom:(ESPRequestTarget)target completion:(void ( ^ ) ( ESPUserBytes *userBytes , NSError *error ))completion</Declaration>
+			<Declaration>- (void)requestUserBytesDataFrom:(ESPRequestTarget)target completion:(void ( ^ ) ( NSData *userBytes , NSError *error ))completion</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>target</Name>
@@ -136,16 +136,16 @@
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/requestUserBytesFrom:completion:</Anchor>
+			<Anchor>//api/name/requestUserBytesDataFrom:completion:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestUserBytes:</TokenIdentifier>
-			<Abstract type="html">Requests the user bytes of the Valentine One</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestUserDataBytes:</TokenIdentifier>
+			<Abstract type="html">Requests the user bytes data of the Valentine One</Abstract>
 			<DeclaredIn>ESPClient.h</DeclaredIn>
 			
-			<Declaration>- (void)requestUserBytes:(void ( ^ ) ( ESPUserBytes *userBytes , NSError *error ))completion</Declaration>
+			<Declaration>- (void)requestUserDataBytes:(void ( ^ ) ( NSData *userBytes , NSError *error ))completion</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>completion</Name>
@@ -153,7 +153,44 @@
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/requestUserBytes:</Anchor>
+			<Anchor>//api/name/requestUserDataBytes:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestUserBytesFrom:forV1Version:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the user bytes of the ESP device</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestUserBytesFrom:(ESPRequestTarget)target forV1Version:(NSUInteger)version completion:(void ( ^ ) ( ESPUserBytes *userBytes , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestUserBytesFrom:forV1Version:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestUserBytesforV1Version:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the user bytes of the Valentine One</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestUserBytesforV1Version:(NSUInteger)version completion:(void ( ^ ) ( ESPUserBytes *userBytes , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestUserBytesforV1Version:completion:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
@@ -1256,6 +1293,43 @@
 			
 			
 			<Anchor>//api/name/reportsEchoedPackets</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestUserBytesFrom:completion:</TokenIdentifier>
+			<Abstract type="html">Requests the user bytes of the ESP device</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestUserBytesFrom:(ESPRequestTarget)target completion:(void ( ^ ) ( ESPUserBytes *userBytes , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestUserBytesFrom:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/requestUserBytes:</TokenIdentifier>
+			<Abstract type="html">Requests the user bytes of the Valentine One</Abstract>
+			<DeclaredIn>ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)requestUserBytes:(void ( ^ ) ( ESPUserBytes *userBytes , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestUserBytes:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		

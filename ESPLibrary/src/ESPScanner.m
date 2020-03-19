@@ -289,39 +289,39 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 	DebugLog(@"preparing to start scan");
 	if(!_scanning)
 	{
-		if(_central.state == CBCentralManagerStateUnsupported)
+		if(_central.state == CBManagerStateUnsupported)
 		{
 			//fail scan
 			dispatch_async(dispatch_get_main_queue(), ^{
 				DebugLog(@"failing scan. BTLE not supported");
-				if(_delegate!=nil && [_delegate respondsToSelector:@selector(espScanner:didFailScanWithError:)])
+                if(self->_delegate!=nil && [self->_delegate respondsToSelector:@selector(espScanner:didFailScanWithError:)])
 				{
 					NSError* error = [NSError errorWithDomain:ESPScannerErrorDomain code:ESPScannerErrorCodeBLEUnsupported userInfo:@{NSLocalizedDescriptionKey:@"Bluetooth is not supported on this device"}];
-					[_delegate espScanner:self didFailScanWithError:error];
+                    [self->_delegate espScanner:self didFailScanWithError:error];
 				}
 			});
 		}
-		else if(_central.state == CBCentralManagerStatePoweredOff)
+		else if(_central.state == CBManagerStatePoweredOff)
 		{
 			//fail scan
 			dispatch_async(dispatch_get_main_queue(), ^{
 				DebugLog(@"failing scan. Bluetooth is off");
-				if(_delegate!=nil && [_delegate respondsToSelector:@selector(espScanner:didFailScanWithError:)])
+                if(self->_delegate!=nil && [self->_delegate respondsToSelector:@selector(espScanner:didFailScanWithError:)])
 				{
 					NSError* error = [NSError errorWithDomain:ESPScannerErrorDomain code:ESPScannerErrorCodeBLEPoweredOff userInfo:@{NSLocalizedDescriptionKey:@"Bluetooth is powered off"}];
-					[_delegate espScanner:self didFailScanWithError:error];
+                    [self->_delegate espScanner:self didFailScanWithError:error];
 				}
 			});
 		}
-		else if(_central.state == CBCentralManagerStateUnauthorized)
+		else if(_central.state == CBManagerStateUnauthorized)
 		{
 			//fail scan
 			dispatch_async(dispatch_get_main_queue(), ^{
 				DebugLog(@"failing scan. Unauthorized");
-				if(_delegate!=nil && [_delegate respondsToSelector:@selector(espScanner:didFailScanWithError:)])
+                if(self->_delegate!=nil && [self->_delegate respondsToSelector:@selector(espScanner:didFailScanWithError:)])
 				{
 					NSError* error = [NSError errorWithDomain:ESPScannerErrorDomain code:ESPScannerErrorCodeBLENotAuthorized userInfo:@{NSLocalizedDescriptionKey:@"This app is not authorized to use bluetooth"}];
-					[_delegate espScanner:self didFailScanWithError:error];
+                    [self->_delegate espScanner:self didFailScanWithError:error];
 				}
 			});
 		}
@@ -397,7 +397,7 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 					}
 					break;
 			}
-			if(_central.state==CBCentralManagerStatePoweredOn)
+			if(_central.state==CBManagerStatePoweredOn)
 			{
 				DebugLog(@"starting central manager scan");
 				CBUUID* serviceUUID = [CBUUID UUIDWithString:ESPUUIDV1ConnectionLEService];
@@ -702,7 +702,7 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 	if(_scanning)
 	{
 		//if the central manager changes into a "dead" state while scanning, end the scan
-		if(_central.state==CBCentralManagerStateUnsupported)
+		if(_central.state==CBManagerStateUnsupported)
 		{
 			DebugLog(@"failing scan. BTLE not supported");
 			[self stopScan];
@@ -712,7 +712,7 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 				[_delegate espScanner:self didFailScanWithError:error];
 			}
 		}
-		else if(_central.state==CBCentralManagerStatePoweredOff)
+		else if(_central.state==CBManagerStatePoweredOff)
 		{
 			DebugLog(@"failing scan. Bluetooth is off");
 			[self stopScan];
@@ -722,7 +722,7 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 				[_delegate espScanner:self didFailScanWithError:error];
 			}
 		}
-		else if(_central.state==CBCentralManagerStateUnauthorized)
+		else if(_central.state==CBManagerStateUnauthorized)
 		{
 			DebugLog(@"failing scan. Unauthorized");
 			[self stopScan];
@@ -732,7 +732,7 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 				[_delegate espScanner:self didFailScanWithError:error];
 			}
 		}
-		else if(_central.state==CBCentralManagerStatePoweredOn)
+		else if(_central.state==CBManagerStatePoweredOn)
 		{
 			DebugLog(@"central manager is powered on");
 			if(_waitingToStartScan)

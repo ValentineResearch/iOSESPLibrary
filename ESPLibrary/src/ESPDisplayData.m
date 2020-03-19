@@ -269,6 +269,18 @@ BOOL ESPV1Mode_isValidMode(ESPV1Mode mode)
     return NO;
 }
 
+-(ESPDisplayState) mute {
+    BOOL img1 = ESPData_getBit(_data, 3, 4);
+    BOOL img2 = ESPData_getBit(_data, 4, 4);
+    return [self _displayStateFromImage1:img1 image2:img2];
+}
+
+-(ESPDisplayState) bluetooth {
+    BOOL img1 = ESPData_getBit(_data, 6, 6);
+    BOOL img2 = ESPData_getBit(_data, 6, 7);
+    return [self _displayStateFromImage1:img1 image2:img2];
+}
+
 -(BOOL)soft
 {
 	return ESPData_getBit(_data, 5, 0);

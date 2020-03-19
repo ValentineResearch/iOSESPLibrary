@@ -162,7 +162,15 @@
 		
 		<option value="//api/name/requestUserBytes:">- requestUserBytes:</option>
 		
+		<option value="//api/name/requestUserBytesDataFrom:completion:">- requestUserBytesDataFrom:completion:</option>
+		
 		<option value="//api/name/requestUserBytesFrom:completion:">- requestUserBytesFrom:completion:</option>
+		
+		<option value="//api/name/requestUserBytesFrom:forV1Version:completion:">- requestUserBytesFrom:forV1Version:completion:</option>
+		
+		<option value="//api/name/requestUserBytesforV1Version:completion:">- requestUserBytesforV1Version:completion:</option>
+		
+		<option value="//api/name/requestUserDataBytes:">- requestUserDataBytes:</option>
 		
 		<option value="//api/name/requestVehicleSpeed:">- requestVehicleSpeed:</option>
 		
@@ -616,8 +624,129 @@ Class used for interacting with an ESP device. This class is responsible for rec
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/requestUserBytesFrom:completion:" title="requestUserBytesFrom:completion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/requestUserBytesFrom:completion:">&ndash;&nbsp;requestUserBytesFrom:completion:</a></code>
+	<a name="//api/name/requestUserBytesDataFrom:completion:" title="requestUserBytesDataFrom:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestUserBytesDataFrom:completion:">&ndash;&nbsp;requestUserBytesDataFrom:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the user bytes data of the ESP device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestUserBytesDataFrom:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( NSData *userBytes , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the user bytes data of the ESP device</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestUserDataBytes:" title="requestUserDataBytes:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestUserDataBytes:">&ndash;&nbsp;requestUserDataBytes:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the user bytes data of the Valentine One</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestUserDataBytes:(void ( ^ ) ( NSData *userBytes , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the user bytes data of the Valentine One</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestUserBytesFrom:forV1Version:completion:" title="requestUserBytesFrom:forV1Version:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestUserBytesFrom:forV1Version:completion:">&ndash;&nbsp;requestUserBytesFrom:forV1Version:completion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -632,7 +761,7 @@ Class used for interacting with an ESP device. This class is responsible for rec
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)requestUserBytesFrom:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( ESPUserBytes *userBytes , NSError *error ))<em>completion</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)requestUserBytesFrom:(ESPRequestTarget)<em>target</em> forV1Version:(NSUInteger)<em>version</em> completion:(void ( ^ ) ( ESPUserBytes *userBytes , NSError *error ))<em>completion</em></code></div>
 
 		    
 			
@@ -679,8 +808,8 @@ Class used for interacting with an ESP device. This class is responsible for rec
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/requestUserBytes:" title="requestUserBytes:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/requestUserBytes:">&ndash;&nbsp;requestUserBytes:</a></code>
+	<a name="//api/name/requestUserBytesforV1Version:completion:" title="requestUserBytesforV1Version:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestUserBytesforV1Version:completion:">&ndash;&nbsp;requestUserBytesforV1Version:completion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -695,7 +824,7 @@ Class used for interacting with an ESP device. This class is responsible for rec
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)requestUserBytes:(void ( ^ ) ( ESPUserBytes *userBytes , NSError *error ))<em>completion</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)requestUserBytesforV1Version:(NSUInteger)<em>version</em> completion:(void ( ^ ) ( ESPUserBytes *userBytes , NSError *error ))<em>completion</em></code></div>
 
 		    
 			
@@ -3609,6 +3738,135 @@ Class used for interacting with an ESP device. This class is responsible for rec
 						</div>
 						
 
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/requestUserBytesFrom:completion:" title="requestUserBytesFrom:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestUserBytesFrom:completion:">&ndash;&nbsp;requestUserBytesFrom:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the user bytes of the ESP device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestUserBytesFrom:(ESPRequestTarget)<em>target</em> completion:(void ( ^ ) ( ESPUserBytes *userBytes , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the user bytes of the ESP device</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestUserBytes:" title="requestUserBytes:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestUserBytes:">&ndash;&nbsp;requestUserBytes:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the user bytes of the Valentine One</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestUserBytes:(void ( ^ ) ( ESPUserBytes *userBytes , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Requests the user bytes of the Valentine One</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
 						<a title="Extension Methods" name="task_Extension Methods"></a>
 						<h2 class="task-title">Extension Methods</h2>
 
@@ -3756,7 +4014,7 @@ Class used for interacting with an ESP device. This class is responsible for rec
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Valentine. All rights reserved. Updated: 2018-04-03</p>
+						<p class="copyright">Copyright &copy; 2020 Valentine. All rights reserved. Updated: 2020-03-19</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
