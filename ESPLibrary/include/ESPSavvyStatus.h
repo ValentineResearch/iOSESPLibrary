@@ -6,7 +6,12 @@
 
 #import <Foundation/Foundation.h>
 
-
+/*!
+ * ESPUserBytes
+ *
+ * Discussion:
+ *  The "status" of a SAVVY ESP device.
+ */
 @interface ESPSavvyStatus : NSObject
 
 /*! Initializes savvy status with default values

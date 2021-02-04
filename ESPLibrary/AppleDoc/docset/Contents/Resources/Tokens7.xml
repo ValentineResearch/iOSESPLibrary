@@ -14,9 +14,14 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/init</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Default initializer that always returns nil; DO NOT CALL</Abstract>
 			<DeclaredIn>ESPPacket.h</DeclaredIn>
 			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/initWithData:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
 			<Declaration>- (id)init</Declaration>
 			
 			
@@ -72,12 +77,17 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPPacket/isEqualToPacket:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Tells if this packet&apos;s data is equal to another packet&apos;s data</Abstract>
 			<DeclaredIn>ESPPacket.h</DeclaredIn>
 			
 			<Declaration>- (BOOL)isEqualToPacket:(ESPPacket *)packet</Declaration>
-			
-			
+			<Parameters>
+				<Parameter>
+					<Name>packet</Name>
+					<Abstract type="html">the packet to compare against</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the packets are equal, or NO if the packets are not equal </Abstract></ReturnValue>
 			<Anchor>//api/name/isEqualToPacket:</Anchor>
             <NodeRef refid="7"/>
 		</Token>

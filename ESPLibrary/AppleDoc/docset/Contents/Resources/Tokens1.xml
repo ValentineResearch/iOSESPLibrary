@@ -14,9 +14,14 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/init</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Default initializer that always returns nil; DO NOT CALL</Abstract>
 			<DeclaredIn>ESPAlertData.h</DeclaredIn>
 			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/ESPAlertData/initWithData:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
 			<Declaration>- (id)init</Declaration>
 			
 			

@@ -6,6 +6,7 @@
 
 #import "ESPScanner.h"
 #import "ESPScanner+ESPClient.h"
+#import "ESPScannerProtected.h"
 
 //#define LOGGING_ENABLED
 
@@ -23,8 +24,6 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 
 @interface ESPScanner() <CBCentralManagerDelegate, CBPeripheralDelegate>
 {
-	CBCentralManager* _central;
-	ESPConnectMode _mode;
 	BOOL _waitingToStartScan;
 	NSTimeInterval _scanTimeout;
 	NSTimeInterval _scanStartTime;
@@ -34,10 +33,15 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 	NSMutableArray<CBPeripheral*>* _discoveredPeripherals;
 	NSMutableArray<NSNumber*>* _peripheralRSSIs;
 	NSMutableArray<NSDate*>* _peripheralDates;
-	CBPeripheral* _connectingPeripheral;
-	
-	BOOL _expectingDisconnect;
-	NSString* _UUIDToFind;
+    
+    CBPeripheral* _connectingPeripheral;
+    NSArray<CBUUID*>* _espCharacteristics;
+    CBCentralManager* _central;
+    BOOL _expectingDisconnect;
+    ESPConnectMode _mode;
+    NSString* _UUIDToFind;
+    ESPClient* _espClient;
+    
 }
 -(void)_startScanWithMode:(ESPConnectMode)mode restrictingToUUID:(NSString*)UUIDString timeout:(NSTimeInterval)timeout;
 -(void)_delayTimerDidFire:(NSTimer*)timer;
@@ -51,7 +55,6 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 
 @synthesize delegate = _delegate;
 @synthesize scanning = _scanning;
-@synthesize connectedClient = _connectedClient;
 @synthesize userDefaults = _userDefaults;
 @synthesize automaticallyRemembersDevices = _automaticallyRemembersDevices;
 @synthesize maximumRecentDevices = _maximumRecentDevices;
@@ -64,7 +67,7 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 		_mode = ESPConnectModeManual;
 		
 		_scanning = NO;
-		_connectedClient = nil;
+		_espClient = nil;
 		_userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"com.Valentine.ESPLibrary"];
 		_automaticallyRemembersDevices = YES;
 		_maximumRecentDevices = 10;
@@ -97,7 +100,7 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 
 -(void)dealloc
 {
-	if(_connectedClient!=nil)
+	if(_espClient!=nil)
 	{
 		[self disconnectClient];
 	}
@@ -106,6 +109,19 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 -(Class)clientClass
 {
 	return [ESPClient class];
+}
+
+- (ESPClient *)connectedClient {
+    return _espClient;
+}
+
+-(NSArray<CBUUID*>*)_characteristicsToDiscover {
+    NSMutableArray<CBUUID*>* discoverChars = [NSMutableArray array];
+    [discoverChars addObject: [CBUUID UUIDWithString:ESPUUIDV1OutClientInShortCharacteristic]];
+    [discoverChars addObject: [CBUUID UUIDWithString:ESPUUIDV1OutClientInShortCharacteristic]];
+    [discoverChars addObject: [CBUUID UUIDWithString:ESPUUIDClientOutV1InShortCharacteristic]];
+    [discoverChars addObject: [CBUUID UUIDWithString:ESPUUIDClientOutV1InLongCharacteristic]];
+    return discoverChars;
 }
 
 -(NSNumber*)RSSIOfPeripheral:(CBPeripheral*)peripheral
@@ -335,9 +351,9 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 				CBPeripheral* retainedPeripheral = nil;
 				NSNumber* retainedRSSI = nil;
 				NSDate* retainedDate = nil;
-				if(_connectedClient!=nil)
+				if(_espClient!=nil)
 				{
-					NSString* UUIDString = _connectedClient.peripheral.identifier.UUIDString;
+					NSString* UUIDString = _espClient.peripheral.identifier.UUIDString;
 					for(NSUInteger i=0; i<_discoveredPeripherals.count; i++)
 					{
 						CBPeripheral* cmpPeripheral = _discoveredPeripherals[i];
@@ -455,9 +471,9 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 			DebugLog(@"attempting to connect the same peripheral twice. You shouldn't be doing this");
 		}
 	}
-	else if(_connectedClient!=nil)
+	else if(_espClient!=nil)
 	{
-		if(_connectedClient.peripheral!=peripheral)
+		if(_espClient.peripheral!=peripheral)
 		{
 			DebugLog(@"another peripheral is currently connected already");
 			if(_delegate!=nil && [_delegate respondsToSelector:@selector(espScanner:didFailToConnectPeripheral:error:)])
@@ -500,12 +516,12 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 	}
 	else
 	{
-		if(_connectedClient==nil)
+		if(_espClient==nil)
 		{
 			return;
 		}
 		_expectingDisconnect = YES;
-		[_central cancelPeripheralConnection:_connectedClient.peripheral];
+		[_central cancelPeripheralConnection:_espClient.peripheral];
 	}
 }
 
@@ -908,7 +924,7 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 	}
 	else //if the ESPClient was already connected and has now been disconnected
 	{
-		NSAssert(_connectedClient.peripheral==peripheral, @"Unknown peripheral disconnected");
+		NSAssert(_espClient.peripheral==peripheral, @"Unknown peripheral disconnected");
 		
 		if(error==nil && !_expectingDisconnect)
 		{
@@ -917,8 +933,8 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 		}
 		_expectingDisconnect = NO;
 		
-		ESPClient* client = _connectedClient;
-		_connectedClient = nil;
+		ESPClient* client = _espClient;
+		_espClient = nil;
 		[client _handleDisconnect];
 		if(_delegate!=nil && [_delegate respondsToSelector:@selector(espScanner:didDisconnectClient:error:)])
 		{
@@ -971,15 +987,46 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 	}
 	
 	//CONNECT step 3: the service was discovered. Now discover the characteristics
-	CBUUID* V1OutClientInShort = [CBUUID UUIDWithString:ESPUUIDV1OutClientInShortCharacteristic];
-	CBUUID* V1OutClientInLong = [CBUUID UUIDWithString:ESPUUIDV1OutClientInLongCharacteristic];
-	CBUUID* ClientOutV1InShort = [CBUUID UUIDWithString:ESPUUIDClientOutV1InShortCharacteristic];
-	CBUUID* ClientOutV1InLong = [CBUUID UUIDWithString:ESPUUIDClientOutV1InLongCharacteristic];
-	
-	NSArray<CBUUID*>* characteristics = @[V1OutClientInShort, V1OutClientInLong, ClientOutV1InShort, ClientOutV1InLong];
-	
 	DebugLog(@"found service. discovering characteristics");
-	[peripheral discoverCharacteristics:characteristics forService:comService];
+	[peripheral discoverCharacteristics:[self _characteristicsToDiscover] forService:comService];
+}
+
+-(ESPClient*) _constructESPClientWith:(CBService*)service forPeripheral:(CBPeripheral*)peripheral {
+    CBCharacteristic* inShort = nil;
+    CBCharacteristic* inLong = nil;
+    CBCharacteristic* outShort = nil;
+    CBCharacteristic* outLong = nil;
+    
+    NSArray<CBCharacteristic*>* characteristics = service.characteristics;
+    for(NSUInteger i=0; i<characteristics.count; i++)
+    {
+        CBCharacteristic* characteristic = characteristics[i];
+        if([characteristic.UUID.UUIDString isEqualToString:ESPUUIDV1OutClientInShortCharacteristic])
+        {
+            inShort = characteristic;
+            [peripheral setNotifyValue:YES forCharacteristic:characteristic];
+        }
+        else if([characteristic.UUID.UUIDString isEqualToString:ESPUUIDV1OutClientInLongCharacteristic])
+        {
+            inLong = characteristic;
+            [peripheral setNotifyValue:YES forCharacteristic:characteristic];
+        }
+        else if([characteristic.UUID.UUIDString isEqualToString:ESPUUIDClientOutV1InShortCharacteristic])
+        {
+            outShort = characteristic;
+        }
+        else if([characteristic.UUID.UUIDString isEqualToString:ESPUUIDClientOutV1InLongCharacteristic])
+        {
+            outLong = characteristic;
+        }
+    }
+    
+    ESPClient* client =  [[self.clientClass alloc] initWithPeripheral:peripheral
+                                                        inShort:inShort
+                                                         inLong:inLong
+                                                       outShort:outShort
+                                                        outLong:outLong];
+    return client;
 }
 
 -(void)peripheral:(CBPeripheral*)peripheral didDiscoverCharacteristicsForService:(CBService*)service error:(NSError*)error
@@ -997,52 +1044,22 @@ NSString* const ESPScannerErrorDomain = @"ESPScannerErrorDomain";
 		return;
 	}
 	
-	CBCharacteristic* inShort = nil;
-	CBCharacteristic* inLong = nil;
-	CBCharacteristic* outShort = nil;
-	CBCharacteristic* outLong = nil;
-	
-	NSArray<CBCharacteristic*>* characteristics = service.characteristics;
-	for(NSUInteger i=0; i<characteristics.count; i++)
-	{
-		CBCharacteristic* characteristic = characteristics[i];
-		if([characteristic.UUID.UUIDString isEqualToString:ESPUUIDV1OutClientInShortCharacteristic])
-		{
-			inShort = characteristic;
-			[peripheral setNotifyValue:YES forCharacteristic:characteristic];
-		}
-		else if([characteristic.UUID.UUIDString isEqualToString:ESPUUIDV1OutClientInLongCharacteristic])
-		{
-			inLong = characteristic;
-			[peripheral setNotifyValue:YES forCharacteristic:characteristic];
-		}
-		else if([characteristic.UUID.UUIDString isEqualToString:ESPUUIDClientOutV1InShortCharacteristic])
-		{
-			outShort = characteristic;
-		}
-		else if([characteristic.UUID.UUIDString isEqualToString:ESPUUIDClientOutV1InLongCharacteristic])
-		{
-			outLong = characteristic;
-		}
-	}
-	
 	DebugLog(@"found characteristics. finished connecting");
 	//CONNECT step 4: peripheral found the service and its characteristics and successfully connected
 	if(_mode!=ESPConnectModeManual || _UUIDToFind!=nil)
 	{
 		[self stopScan];
 	}
+        
 	peripheral.delegate = nil;
 	_connectingPeripheral = nil;
 	_expectingDisconnect = NO;
-	_connectedClient = [[self.clientClass alloc] initWithPeripheral:peripheral
-													 inShort:inShort
-													  inLong:inLong
-													outShort:outShort
-													 outLong:outLong];
+    // Construct the ESPClient using the service's characteristics
+    _espClient = [self _constructESPClientWith:service forPeripheral:peripheral];
+    
 	if(_delegate!=nil && [_delegate respondsToSelector:@selector(espScanner:didConnectClient:)])
 	{
-		[_delegate espScanner:self didConnectClient:_connectedClient];
+		[_delegate espScanner:self didConnectClient:_espClient];
 	}
 	if(_automaticallyRemembersDevices)
 	{

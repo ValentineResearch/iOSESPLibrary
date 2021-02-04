@@ -40,6 +40,9 @@ BOOL ESPV1Mode_isValidMode(ESPV1Mode mode);
  */
 @interface ESPDisplayData : NSObject
 
+/*! Default initializer that always returns nil; DO NOT CALL
+   @see initWithData:(NSData)
+*/
 -(id)init __attribute__((unavailable("You must use initWithData: or initWithDisplayData:")));
 
 /*! Initializes the display data from a received packet's payload

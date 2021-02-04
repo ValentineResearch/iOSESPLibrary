@@ -14,9 +14,14 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPCustomSweepData/init</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Default initializer that always returns nil; DO NOT CALL</Abstract>
 			<DeclaredIn>ESPCustomSweepData.h</DeclaredIn>
 			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/ESPCustomSweepData/initWithData:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
 			<Declaration>- (id)init</Declaration>
 			
 			

@@ -51,7 +51,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPSweepsBuilder/removeAllSweeps</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Remove all previously added sweeps</Abstract>
 			<DeclaredIn>ESPSweepsBuilder.h</DeclaredIn>
 			
 			<Declaration>- (void)removeAllSweeps</Declaration>

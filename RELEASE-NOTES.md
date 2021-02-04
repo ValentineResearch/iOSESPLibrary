@@ -39,3 +39,6 @@ Interface Changes
 
 * Methods in all data object classes have been replaced with properties. For example, UserBytes.EuroOn() has been replaced with a bool property named euroOn in the ESPUserBytes class.
 * Enums throughout the library have been renamed to be prefixed with ‘ESP’.
+# **ESP Library v2.0.1 – March 19, 2021**
+* Added ESP Specification (3.006)
+* Refactored for extendability

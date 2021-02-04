@@ -122,6 +122,9 @@ static const ESPPacketID ESPPacketReqSetSavvyUnmuteEnable = 0x76;
  */
 @interface ESPPacket : NSObject
 
+/*! Default initializer that always returns nil; DO NOT CALL
+   @see initWithData:(NSData)
+*/
 -(id)init __attribute__((unavailable("You must use initWithData: or initWithDestination:origin:packetID:payload:checksum:")));
 
 /*! Initializes a packet from a received block of data.
@@ -137,7 +140,7 @@ static const ESPPacketID ESPPacketReqSetSavvyUnmuteEnable = 0x76;
 	@returns a newly initialized packet, or nil if the payload was too big */
 -(id)initWithDestination:(ESPDeviceID)destination origin:(ESPDeviceID)origin packetID:(ESPPacketID)packetID payload:(NSData*)payload checksum:(BOOL)checksum;
 
-/* Tells if this packet's data is equal to another packet's data
+/*! Tells if this packet's data is equal to another packet's data
 	@param packet the packet to compare against
 	@returns YES if the packets are equal, or NO if the packets are not equal */
 -(BOOL)isEqualToPacket:(ESPPacket*)packet;

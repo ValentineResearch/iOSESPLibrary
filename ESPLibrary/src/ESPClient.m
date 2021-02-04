@@ -65,7 +65,6 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 	NSMutableArray<NSDate*>* _echoFilterSendDates;
 }
 
--(void)_handleReceivedPacket:(ESPPacket*)packet;
 -(void)_handlePowerLossTimeout:(NSTimer*)timer;
 -(void)_handleRequestTimeoutTimer:(NSTimer*)timer;
 -(void)_startPowerLossTimer;
@@ -793,6 +792,15 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 		[_requestQueue addObject:request];
 		[_requestQueueDates addObject:[NSDate date]];
 	}
+}
+
+-(void)_clearRequests {
+    // Remove all pending request. We don't care about completing them
+    @synchronized(_requestQueue)
+    {
+        [_requestQueue removeAllObjects];
+        [_requestQueueDates removeAllObjects];
+    }
 }
 
 -(void)_performRequest:(ESPRequest*)request
@@ -1999,7 +2007,7 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 
 -(void)peripheral:(CBPeripheral*)peripheral didWriteValueForCharacteristic:(CBCharacteristic*)characteristic error:(NSError*)error
 {
-	if(error!=nil)
+    if(error!=nil)
 	{
 		//an error occured sending the packet
 		NSData* sentData = _lastSentData;

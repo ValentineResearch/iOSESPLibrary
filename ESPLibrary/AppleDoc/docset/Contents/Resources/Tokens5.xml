@@ -14,9 +14,14 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/init</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Default initializer that always returns nil; DO NOT CALL</Abstract>
 			<DeclaredIn>ESPDisplayData.h</DeclaredIn>
 			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/ESPDisplayData/initWithData:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
 			<Declaration>- (id)init</Declaration>
 			
 			

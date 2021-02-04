@@ -94,6 +94,10 @@
 		
 		<option value="//api/name/RSSIOfPeripheral:">- RSSIOfPeripheral:</option>
 		
+		<option value="//api/name/_characteristicsToDiscover">- _characteristicsToDiscover</option>
+		
+		<option value="//api/name/_constructESPClientWith:forPeripheral:">- _constructESPClientWith:forPeripheral:</option>
+		
 		<option value="//api/name/clearRecentUUIDs">- clearRecentUUIDs</option>
 		
 		<option value="//api/name/connectPeripheral:">- connectPeripheral:</option>
@@ -167,7 +171,7 @@ Class used for discovering/<a href="#//api/name/connecting">connecting</a> a per
 						
 
 						
-						
+						<h2 class="task-title">Other Methods</h2>
 
 						<div class="task-list">
 							<div class="section-method">
@@ -182,7 +186,7 @@ Class used for discovering/<a href="#//api/name/connecting">connecting</a> a per
 			
 			
 			<div class="method-subsection brief-description">
-				<p>  Initializes the ESPScanner object with a <a href="../Protocols/ESPScannerDelegate.html">ESPScannerDelegate</a> instance</p>
+				<p>Initializes the ESPScanner object with a <a href="../Protocols/ESPScannerDelegate.html">ESPScannerDelegate</a> instance</p>
 			</div>
 			
 		    
@@ -190,6 +194,18 @@ Class used for discovering/<a href="#//api/name/connecting">connecting</a> a per
 			<div class="method-subsection method-declaration"><code>- (id)initWithDelegate:(id&lt;ESPScannerDelegate&gt;)<em>delegate</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>a <a href="../Protocols/ESPScannerDelegate.html">ESPScannerDelegate</a> that will get registered for ongoing ESPScanner events</p></td>
+					</tr>
+				
+				</table>
+			</div>
 			
 
 			
@@ -199,7 +215,7 @@ Class used for discovering/<a href="#//api/name/connecting">connecting</a> a per
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>  Initializes the ESPScanner object with a <a href="../Protocols/ESPScannerDelegate.html">ESPScannerDelegate</a> instance</p>
+				<p>Initializes the ESPScanner object with a <a href="../Protocols/ESPScannerDelegate.html">ESPScannerDelegate</a> instance</p>
 			</div>
 			
 
@@ -1536,6 +1552,123 @@ Class used for discovering/<a href="#//api/name/connecting">connecting</a> a per
 </div>
 						</div>
 						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/_characteristicsToDiscover" title="_characteristicsToDiscover"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_characteristicsToDiscover">&ndash;&nbsp;_characteristicsToDiscover</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an array of CBUUID of the CBCharacteristics to discover from the V1 LE Service.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;CBUUID*&gt; *)_characteristicsToDiscover</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns an array of CBUUID of the CBCharacteristics to discover from the V1 LE Service.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPScannerProtected.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_constructESPClientWith:forPeripheral:" title="_constructESPClientWith:forPeripheral:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_constructESPClientWith:forPeripheral:">&ndash;&nbsp;_constructESPClientWith:forPeripheral:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Constructs a new <a href="../Classes/ESPClient.html">ESPClient</a> instance using the CBService and CBPeripheral.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (ESPClient *)_constructESPClientWith:(CBService *)<em>service</em> forPeripheral:(CBPeripheral *)<em>peripheral</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>service</code></th>
+						<td><p>a service discovered from CBperipharal</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>peripheral</code></th>
+						<td><p>the bluetooth device a connection was made</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Constructs a new <a href="../Classes/ESPClient.html">ESPClient</a> instance using the CBService and CBPeripheral.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPScannerProtected.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
 					</div>
 					
 					
@@ -1548,7 +1681,7 @@ Class used for discovering/<a href="#//api/name/connecting">connecting</a> a per
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2020 Valentine. All rights reserved. Updated: 2020-03-19</p>
+						<p class="copyright">Copyright &copy; 2021 Valentine. All rights reserved. Updated: 2021-02-04</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

@@ -69,6 +69,8 @@
 /* Begin PBXFileReference section */
 		13218B9B2377068700C4D873 /* V1VersionUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = V1VersionUtil.h; sourceTree = "<group>"; };
 		13218B9C23770BA500C4D873 /* V1VersionUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = V1VersionUtil.m; sourceTree = "<group>"; };
+		132920B2242A5F77001E8BBE /* ESPScannerProtected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESPScannerProtected.h; sourceTree = "<group>"; };
+		132920B3242A6942001E8BBE /* ESPClientProtected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESPClientProtected.h; sourceTree = "<group>"; };
 		847325B816F0FC4200258402 /* libESPLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libESPLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		847325BB16F0FC4200258402 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8473262616F1196100258402 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -211,6 +213,8 @@
 				A59F9F181D2C3911002ACC31 /* ESPSavvyStatus.m */,
 				A58342B11D2D2F2700A706A7 /* ESPUserBytes.m */,
 				13218B9C23770BA500C4D873 /* V1VersionUtil.m */,
+				132920B2242A5F77001E8BBE /* ESPScannerProtected.h */,
+				132920B3242A6942001E8BBE /* ESPClientProtected.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -242,7 +246,7 @@
 		847325B016F0FC4200258402 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Valentine Research, Inc.";
 			};
 			buildConfigurationList = 847325B316F0FC4200258402 /* Build configuration list for PBXProject "ESPLibrary" */;
@@ -330,6 +334,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -378,6 +383,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

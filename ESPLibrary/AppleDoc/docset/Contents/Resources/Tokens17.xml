@@ -51,6 +51,9 @@
 				<Parameter>
 					<Name>data</Name>
 					<Abstract type="html">the payload data from a respUserBytes or reqWriteUserBytes packet</Abstract>
+				</Parameter><Parameter>
+					<Name>version</Name>
+					<Abstract type="html">the version of the target V1</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">a newly initialized user bytes object </Abstract></ReturnValue>

@@ -43,7 +43,9 @@ typedef enum
  *      A packet that represents an alert detected by the Valentine One.
  */
 @interface ESPAlertData : NSObject
-
+/*! Default initializer that always returns nil; DO NOT CALL
+    @see initWithData:(NSData)
+ */
 -(id)init __attribute((unavailable("You must use initWithData: or initWithAlertData:")));
 
 /*! Initializes the alert from a received packet's payload

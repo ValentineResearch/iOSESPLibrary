@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/ESPSavvyStatus</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">ESPUserBytes</Abstract>
 			<DeclaredIn>ESPSavvyStatus.h</DeclaredIn>
             
 			

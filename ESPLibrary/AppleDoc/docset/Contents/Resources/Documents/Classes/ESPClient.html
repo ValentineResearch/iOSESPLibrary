@@ -82,9 +82,13 @@
 	
 	<optgroup label="Instance Methods">
 		
+		<option value="//api/name/_clearRequests">- _clearRequests</option>
+		
 		<option value="//api/name/_destinationFromRequestTarget:">- _destinationFromRequestTarget:</option>
 		
 		<option value="//api/name/_handleDisconnect">- _handleDisconnect</option>
+		
+		<option value="//api/name/_handleReceivedPacket:">- _handleReceivedPacket:</option>
 		
 		<option value="//api/name/_handleResponsePacket:forResponseExpector:">- _handleResponsePacket:forResponseExpector:</option>
 		
@@ -775,6 +779,11 @@ Class used for interacting with an ESP device. This class is responsible for rec
 					</tr>
 				
 					<tr>
+						<th scope="row" class="argument-name"><code>version</code></th>
+						<td><p>the version of the target v1</p></td>
+					</tr>
+				
+					<tr>
 						<th scope="row" class="argument-name"><code>completion</code></th>
 						<td><p>a callback called if a response is received, if the request times out, or if an error occurs</p></td>
 					</tr>
@@ -831,6 +840,11 @@ Class used for interacting with an ESP device. This class is responsible for rec
 			<div class="method-subsection arguments-section parameters">
 				<h4 class="method-subtitle parameter-title">Parameters</h4>
 				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>version</code></th>
+						<td><p>the version of the target v1</p></td>
+					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>completion</code></th>
@@ -3881,10 +3895,52 @@ Class used for interacting with an ESP device. This class is responsible for rec
 
 		<div class="method-info-container">
 			
+			
+			<div class="method-subsection brief-description">
+				<p>Return the Destination/DeviceID for the specified request target</p>
+			</div>
+			
+		    
 
 			<div class="method-subsection method-declaration"><code>- (ESPDeviceID)_destinationFromRequestTarget:(ESPRequestTarget)<em>target</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>the target ESP device to send a request</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Return the Destination/DeviceID for the specified request target</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPRequest+ESPClient.h</code></p>
+			</div>
+			
+			
 		</div>
 	</div>
 </div><div class="section-method">
@@ -3897,10 +3953,98 @@ Class used for interacting with an ESP device. This class is responsible for rec
 
 		<div class="method-info-container">
 			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds request to the top of the send queue</p>
+			</div>
+			
+		    
 
 			<div class="method-subsection method-declaration"><code>- (void)_queueRequest:(ESPRequest *)<em>request</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p><a href="../Classes/ESPRequest.html">ESPRequest</a> to be sent</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds request to the top of the send queue</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPRequest+ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_clearRequests" title="_clearRequests"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_clearRequests">&ndash;&nbsp;_clearRequests</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Clears all pending requests</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)_clearRequests</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Clears all pending requests</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPRequest+ESPClient.h</code></p>
+			</div>
+			
+			
 		</div>
 	</div>
 </div><div class="section-method">
@@ -3913,10 +4057,52 @@ Class used for interacting with an ESP device. This class is responsible for rec
 
 		<div class="method-info-container">
 			
+			
+			<div class="method-subsection brief-description">
+				<p>Performs the specified <a href="../Classes/ESPRequest.html">ESPRequest</a></p>
+			</div>
+			
+		    
 
 			<div class="method-subsection method-declaration"><code>- (void)_performRequest:(ESPRequest *)<em>request</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>the <a href="../Classes/ESPRequest.html">ESPRequest</a> to perform</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Performs the specified <a href="../Classes/ESPRequest.html">ESPRequest</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPRequest+ESPClient.h</code></p>
+			</div>
+			
+			
 		</div>
 	</div>
 </div><div class="section-method">
@@ -3929,10 +4115,52 @@ Class used for interacting with an ESP device. This class is responsible for rec
 
 		<div class="method-info-container">
 			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the payload for the specified <a href="../Classes/ESPPacket.html">ESPPacket</a></p>
+			</div>
+			
+		    
 
 			<div class="method-subsection method-declaration"><code>- (NSData *)_payloadFromPacket:(ESPPacket *)<em>packet</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>packet</code></th>
+						<td><p>the target packet whose payload should be returned</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the payload for the specified <a href="../Classes/ESPPacket.html">ESPPacket</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPRequest+ESPClient.h</code></p>
+			</div>
+			
+			
 		</div>
 	</div>
 </div><div class="section-method">
@@ -3945,10 +4173,52 @@ Class used for interacting with an ESP device. This class is responsible for rec
 
 		<div class="method-info-container">
 			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates if there is request in the busy queue for the specified response expector.</p>
+			</div>
+			
+		    
 
 			<div class="method-subsection method-declaration"><code>- (BOOL)_requestIsInBusyQueue:(ESPResponseExpector *)<em>expector</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>expector</code></th>
+						<td><p>the expector of the request to check for busy</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indicates if there is request in the busy queue for the specified response expector.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPRequest+ESPClient.h</code></p>
+			</div>
+			
+			
 		</div>
 	</div>
 </div><div class="section-method">
@@ -3961,10 +4231,57 @@ Class used for interacting with an ESP device. This class is responsible for rec
 
 		<div class="method-info-container">
 			
+			
+			<div class="method-subsection brief-description">
+				<p>Responds to an incomplete <a href="../Classes/ESPRequest.html">ESPRequest</a></p>
+			</div>
+			
+		    
 
 			<div class="method-subsection method-declaration"><code>- (BOOL)_handleResponsePacket:(ESPPacket *)<em>packet</em> forResponseExpector:(ESPResponseExpector *)<em>responseExpector</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>packet</code></th>
+						<td><p>response to an <a href="../Classes/ESPRequest.html">ESPRequest</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>responseExpector</code></th>
+						<td><p>a callback awaiting a response</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Responds to an incomplete <a href="../Classes/ESPRequest.html">ESPRequest</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPRequest+ESPClient.h</code></p>
+			</div>
+			
+			
 		</div>
 	</div>
 </div><div class="section-method">
@@ -3977,10 +4294,72 @@ Class used for interacting with an ESP device. This class is responsible for rec
 
 		<div class="method-info-container">
 			
+			
+			<div class="method-subsection brief-description">
+				<p>Initialzies the ESPClient</p>
+			</div>
+			
+		    
 
 			<div class="method-subsection method-declaration"><code>- (id)initWithPeripheral:(CBPeripheral *)<em>peripheral</em> inShort:(CBCharacteristic *)<em>inShort</em> inLong:(CBCharacteristic *)<em>inLong</em> outShort:(CBCharacteristic *)<em>outShort</em> outLong:(CBCharacteristic *)<em>outLong</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>peripheral</code></th>
+						<td><p>the <a href="#//api/name/connected">connected</a> remote Bluetooth device</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inShort</code></th>
+						<td><p>the input CBCharacteristic for receiving &lsquo;short&rsquo; data from the V1connectionLEService on <a href="#//api/name/peripheral">peripheral</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inLong</code></th>
+						<td><p>the input CBCharacteristic for receiving &lsquo;long&rsquo; data from the V1connectionLEService on <a href="#//api/name/peripheral">peripheral</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>outShort</code></th>
+						<td><p>the output CBCharacteristic for sending &lsquo;short&rsquo; data to the V1connectionLEService on <a href="#//api/name/peripheral">peripheral</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>outLong</code></th>
+						<td><p>the output CBCharacteristic for sending &lsquo;long&rsquo; data to the V1connectionLEService on <a href="#//api/name/peripheral">peripheral</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initialzies the ESPClient</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPScanner+ESPClient.h</code></p>
+			</div>
+			
+			
 		</div>
 	</div>
 </div><div class="section-method">
@@ -3993,10 +4372,98 @@ Class used for interacting with an ESP device. This class is responsible for rec
 
 		<div class="method-info-container">
 			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked when a disconnection event occurs. Ideally the connection state should be reset and resources released/close.</p>
+			</div>
+			
+		    
 
 			<div class="method-subsection method-declaration"><code>- (void)_handleDisconnect</code></div>
 
 		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Invoked when a disconnection event occurs. Ideally the connection state should be reset and resources released/close.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPScanner+ESPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_handleReceivedPacket:" title="_handleReceivedPacket:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_handleReceivedPacket:">&ndash;&nbsp;_handleReceivedPacket:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Processes the specified <a href="../Classes/ESPPacket.html">ESPPacket</a> received from Bluetooth</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)_handleReceivedPacket:(ESPPacket *)<em>packet</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>packet</code></th>
+						<td><p>the <a href="../Classes/ESPPacket.html">ESPPacket</a> to process</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Processes the specified <a href="../Classes/ESPPacket.html">ESPPacket</a> received from Bluetooth</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ESPClientProtected.h</code></p>
+			</div>
+			
+			
 		</div>
 	</div>
 </div>
@@ -4014,7 +4481,7 @@ Class used for interacting with an ESP device. This class is responsible for rec
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2020 Valentine. All rights reserved. Updated: 2020-03-19</p>
+						<p class="copyright">Copyright &copy; 2021 Valentine. All rights reserved. Updated: 2021-02-04</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

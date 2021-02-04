@@ -83,6 +83,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds);
 -(id)initWithV1Version:(NSUInteger)version;
 /*! Initializes user bytes with the payload data of a received packet
 	@param data the payload data from a respUserBytes or reqWriteUserBytes packet
+    @param version the version of the target V1
 	@returns a newly initialized user bytes object */
 -(id)initWithData:(NSData*)data v1Version:(NSUInteger)version;
 /*! Initializes user bytes by copying data from another user bytes object

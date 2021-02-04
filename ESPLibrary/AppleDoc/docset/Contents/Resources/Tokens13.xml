@@ -14,11 +14,16 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/initWithDelegate:</TokenIdentifier>
-			<Abstract type="html">  Initializes the ESPScanner object with a ESPScannerDelegate instance </Abstract>
+			<Abstract type="html">Initializes the ESPScanner object with a ESPScannerDelegate instance</Abstract>
 			<DeclaredIn>ESPScanner.h</DeclaredIn>
 			
 			<Declaration>- (id)initWithDelegate:(id&lt;ESPScannerDelegate&gt;)delegate</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">a ESPScannerDelegate that will get registered for ongoing ESPScanner events</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/initWithDelegate:</Anchor>
             <NodeRef refid="13"/>
@@ -715,6 +720,38 @@
 			
 			
 			<Anchor>//api/name/maximumRecentDevices</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/_characteristicsToDiscover</TokenIdentifier>
+			<Abstract type="html">Returns an array of CBUUID of the CBCharacteristics to discover from the V1 LE Service.</Abstract>
+			<DeclaredIn>ESPScannerProtected.h</DeclaredIn>
+			
+			<Declaration>- (NSArray&lt;CBUUID*&gt; *)_characteristicsToDiscover</Declaration>
+			
+			
+			<Anchor>//api/name/_characteristicsToDiscover</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPScanner/_constructESPClientWith:forPeripheral:</TokenIdentifier>
+			<Abstract type="html">Constructs a new ESPClient instance using the CBService and CBPeripheral.</Abstract>
+			<DeclaredIn>ESPScannerProtected.h</DeclaredIn>
+			
+			<Declaration>- (ESPClient *)_constructESPClientWith:(CBService *)service forPeripheral:(CBPeripheral *)peripheral</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>service</Name>
+					<Abstract type="html">a service discovered from CBperipharal</Abstract>
+				</Parameter><Parameter>
+					<Name>peripheral</Name>
+					<Abstract type="html">the bluetooth device a connection was made</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/_constructESPClientWith:forPeripheral:</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		

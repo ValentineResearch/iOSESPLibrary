@@ -168,6 +168,9 @@
 					<Name>target</Name>
 					<Abstract type="html">the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request</Abstract>
 				</Parameter><Parameter>
+					<Name>version</Name>
+					<Abstract type="html">the version of the target v1</Abstract>
+				</Parameter><Parameter>
 					<Name>completion</Name>
 					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
 				</Parameter>
@@ -185,6 +188,9 @@
 			<Declaration>- (void)requestUserBytesforV1Version:(NSUInteger)version completion:(void ( ^ ) ( ESPUserBytes *userBytes , NSError *error ))completion</Declaration>
 			<Parameters>
 				<Parameter>
+					<Name>version</Name>
+					<Abstract type="html">the version of the target v1 </Abstract>
+				</Parameter><Parameter>
 					<Name>completion</Name>
 					<Abstract type="html">a callback called if a response is received, if the request times out, or if an error occurs </Abstract>
 				</Parameter>
@@ -1335,11 +1341,16 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/_destinationFromRequestTarget:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Return the Destination/DeviceID for the specified request target</Abstract>
 			<DeclaredIn>ESPRequest+ESPClient.h</DeclaredIn>
 			
 			<Declaration>- (ESPDeviceID)_destinationFromRequestTarget:(ESPRequestTarget)target</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">the target ESP device to send a request</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/_destinationFromRequestTarget:</Anchor>
             <NodeRef refid="3"/>
@@ -1347,23 +1358,45 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/_queueRequest:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Adds request to the top of the send queue</Abstract>
 			<DeclaredIn>ESPRequest+ESPClient.h</DeclaredIn>
 			
 			<Declaration>- (void)_queueRequest:(ESPRequest *)request</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">ESPRequest to be sent</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/_queueRequest:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/_clearRequests</TokenIdentifier>
+			<Abstract type="html">Clears all pending requests</Abstract>
+			<DeclaredIn>ESPRequest+ESPClient.h</DeclaredIn>
+			
+			<Declaration>- (void)_clearRequests</Declaration>
+			
+			
+			<Anchor>//api/name/_clearRequests</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/_performRequest:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Performs the specified ESPRequest</Abstract>
 			<DeclaredIn>ESPRequest+ESPClient.h</DeclaredIn>
 			
 			<Declaration>- (void)_performRequest:(ESPRequest *)request</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">the ESPRequest to perform</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/_performRequest:</Anchor>
             <NodeRef refid="3"/>
@@ -1371,11 +1404,16 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/_payloadFromPacket:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Returns the payload for the specified ESPPacket</Abstract>
 			<DeclaredIn>ESPRequest+ESPClient.h</DeclaredIn>
 			
 			<Declaration>- (NSData *)_payloadFromPacket:(ESPPacket *)packet</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>packet</Name>
+					<Abstract type="html">the target packet whose payload should be returned</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/_payloadFromPacket:</Anchor>
             <NodeRef refid="3"/>
@@ -1383,11 +1421,16 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/_requestIsInBusyQueue:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Indicates if there is request in the busy queue for the specified response expector.</Abstract>
 			<DeclaredIn>ESPRequest+ESPClient.h</DeclaredIn>
 			
 			<Declaration>- (BOOL)_requestIsInBusyQueue:(ESPResponseExpector *)expector</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>expector</Name>
+					<Abstract type="html">the expector of the request to check for busy</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/_requestIsInBusyQueue:</Anchor>
             <NodeRef refid="3"/>
@@ -1395,11 +1438,19 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/_handleResponsePacket:forResponseExpector:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Responds to an incomplete ESPRequest</Abstract>
 			<DeclaredIn>ESPRequest+ESPClient.h</DeclaredIn>
 			
 			<Declaration>- (BOOL)_handleResponsePacket:(ESPPacket *)packet forResponseExpector:(ESPResponseExpector *)responseExpector</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>packet</Name>
+					<Abstract type="html">response to an ESPRequest</Abstract>
+				</Parameter><Parameter>
+					<Name>responseExpector</Name>
+					<Abstract type="html">a callback awaiting a response</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/_handleResponsePacket:forResponseExpector:</Anchor>
             <NodeRef refid="3"/>
@@ -1407,11 +1458,28 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/initWithPeripheral:inShort:inLong:outShort:outLong:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Initialzies the ESPClient</Abstract>
 			<DeclaredIn>ESPScanner+ESPClient.h</DeclaredIn>
 			
 			<Declaration>- (id)initWithPeripheral:(CBPeripheral *)peripheral inShort:(CBCharacteristic *)inShort inLong:(CBCharacteristic *)inLong outShort:(CBCharacteristic *)outShort outLong:(CBCharacteristic *)outLong</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>peripheral</Name>
+					<Abstract type="html">the connected remote Bluetooth device</Abstract>
+				</Parameter><Parameter>
+					<Name>inShort</Name>
+					<Abstract type="html">the input CBCharacteristic for receiving &apos;short&apos; data from the V1connectionLEService on peripheral</Abstract>
+				</Parameter><Parameter>
+					<Name>inLong</Name>
+					<Abstract type="html">the input CBCharacteristic for receiving &apos;long&apos; data from the V1connectionLEService on peripheral.</Abstract>
+				</Parameter><Parameter>
+					<Name>outShort</Name>
+					<Abstract type="html">the output CBCharacteristic for sending &apos;short&apos; data to the V1connectionLEService on peripheral</Abstract>
+				</Parameter><Parameter>
+					<Name>outLong</Name>
+					<Abstract type="html">the output CBCharacteristic for sending &apos;long&apos; data to the V1connectionLEService on peripheral.</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/initWithPeripheral:inShort:inLong:outShort:outLong:</Anchor>
             <NodeRef refid="3"/>
@@ -1419,13 +1487,30 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/_handleDisconnect</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Invoked when a disconnection event occurs. Ideally the connection state should be reset and resources released/close.</Abstract>
 			<DeclaredIn>ESPScanner+ESPClient.h</DeclaredIn>
 			
 			<Declaration>- (void)_handleDisconnect</Declaration>
 			
 			
 			<Anchor>//api/name/_handleDisconnect</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ESPClient/_handleReceivedPacket:</TokenIdentifier>
+			<Abstract type="html">Processes the specified ESPPacket received from Bluetooth</Abstract>
+			<DeclaredIn>ESPClientProtected.h</DeclaredIn>
+			
+			<Declaration>- (void)_handleReceivedPacket:(ESPPacket *)packet</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>packet</Name>
+					<Abstract type="html">the ESPPacket to process</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/_handleReceivedPacket:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		

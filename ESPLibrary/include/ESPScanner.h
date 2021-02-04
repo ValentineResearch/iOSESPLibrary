@@ -86,7 +86,9 @@ typedef enum
  */
 @interface ESPScanner : NSObject
 
-/*!  Initializes the ESPScanner object with a ESPScannerDelegate instance */
+/*! Initializes the ESPScanner object with a ESPScannerDelegate instance
+    @param delegate a ESPScannerDelegate that will get registered for ongoing ESPScanner events
+ */
 -(id)initWithDelegate:(id<ESPScannerDelegate>)delegate;
 /*! Starts scanning for ESP devices, or does nothing if already scanning. This method will not automatically connect any peripherals while scanning. Calling this method also clears any discovered peripherals. */
 -(void)startScan;

@@ -26,6 +26,8 @@
 	@param error a pointer to an error object that will be set if an error occurs constructing sweeps; If error is set, then the partial sweeps list has also been cleared
 	@returns a full list of sweeps, or nil if a full list could not be constructed */
 -(NSArray<ESPFrequencyRange*>*)addSweep:(ESPCustomSweepData*)sweep error:(NSError**)error;
+/*! Remove all previously added sweeps
+ */
 -(void)removeAllSweeps;
 
 /// The index of the last sweep in the sweep list

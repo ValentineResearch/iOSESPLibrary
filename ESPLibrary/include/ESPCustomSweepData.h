@@ -15,7 +15,9 @@
  *      A packet that represents a single custom sweep (sweep definition) received from the Valentine One.
  */
 @interface ESPCustomSweepData : NSObject
-
+/*! Default initializer that always returns nil; DO NOT CALL
+   @see initWithData:(NSData)
+*/
 -(id)init __attribute__((unavailable("You must use initWithData:, initWithIndex:range:commit:, initWithIndex:lowerEdge:upperEdge:commit:, or initWithCustomSweepData:")));
 
 /*! Initializes a custom sweep from a received packet's payload

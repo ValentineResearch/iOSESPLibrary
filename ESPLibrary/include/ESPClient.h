@@ -126,9 +126,11 @@ enum ESPRequestErrorCode
 
 /*! Requests the user bytes of the ESP device
 	@param target the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request
+    @param version the version of the target v1
 	@param completion a callback called if a response is received, if the request times out, or if an error occurs */
 -(void)requestUserBytesFrom:(ESPRequestTarget)target forV1Version:(NSUInteger)version completion:(void(^)(ESPUserBytes* userBytes, NSError* error))completion;
 /*! Requests the user bytes of the Valentine One
+    @param version the version of the target v1 
 	@param completion a callback called if a response is received, if the request times out, or if an error occurs */
 -(void)requestUserBytesforV1Version:(NSUInteger)version completion:(void(^)(ESPUserBytes* userBytes, NSError* error))completion;
 
