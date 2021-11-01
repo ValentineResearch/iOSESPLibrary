@@ -21,13 +21,10 @@
 
 #endif /* V1VersionUtil_h */
 
-/**
- * Gets the integral part of the ESP device version string.
- *
- * @param versionStr Non-null ESP device version string
- */
+/// Gets the integral part of the ESP device version string.
+/// @param versionStr Non-null ESP device version string
 NSUInteger getVersionFor(NSString* versionStr);
-/**
- * Returns the V1 version group for the specified version. This is useful for determing if the user settings belong to a V1 from a compatible generation.
- */
+
+/// Returns the V1 version group for the specified version. This is useful for determing if the user settings belong to a V1 from a compatible generation.
+/// @param version the version to convert into an NSUInteger.
 NSUInteger getVersionGroup(NSUInteger version);

@@ -6,29 +6,24 @@
 
 #import <Foundation/Foundation.h>
 
-/*!
- * ESPUserBytes
- *
- * Discussion:
- *  The "status" of a SAVVY ESP device.
- */
+/// The "status" of a SAVVY ESP device.
 @interface ESPSavvyStatus : NSObject
 
-/*! Initializes savvy status with default values
-	@returns a newly initialized savvy status */
+/// Initializes savvy status with default values
+/// @return a newly initialized savvy status
 -(id)init;
-/*! Initializes the savvy status from a received packet's payload
-	@param data the payload data from a respSavvyStatus packet
-	@returns a newly initialized savvy status */
+/// Initializes the savvy status from a received packet's payload
+/// @param data the payload data from a respSavvyStatus packet
+/// @return a newly initialized savvy status
 -(id)initWithData:(NSData*)data;
-/*! Initializes the savvy status by copying data from another savvy status
-	@param savvyStatus the savvy status to copy from
-	@returns a newly initialized savvy status */
+/// Initializes the savvy status by copying data from another savvy status
+/// @param savvyStatus the savvy status to copy from
+/// @return a newly initialized savvy status
 -(id)initWithSavvyStatus:(ESPSavvyStatus*)savvyStatus;
 
-/*! Tells whether the savvy status is equal to another savvy status
-	@param savvyStatus the status to compare against
-	@returns YES if they are equal, NO if they are not */
+/// Tells whether the savvy status is equal to another savvy status
+/// @param savvyStatus the status to compare against
+/// @return YES if they are equal, NO if they are not
 -(BOOL)isEqualToSavvyStatus:(ESPSavvyStatus*)savvyStatus;
 
 /// The full payload data of the savvy status

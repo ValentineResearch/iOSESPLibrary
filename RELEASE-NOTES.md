@@ -42,3 +42,6 @@ Interface Changes
 # **ESP Library v2.0.1 – March 19, 2021**
 * Added ESP Specification (3.006)
 * Refactored for extendability
+
+# **ESP Library2 v2.0.2 ñ October 29, 2021**
+*Added support for remoting adjusting the V1 Gen2's volume settings. **(Only supported on versions V4.1027 and above)**

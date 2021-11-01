@@ -6,7 +6,7 @@
 
 #import <Foundation/Foundation.h>
 
-/*! Constants that represent possible Bargraph sensitivities values */
+/// Constants that represent possible Bargraph sensitivities values
 typedef enum
 {
     /// Bargraph sensitivity is Responsive = (0)
@@ -15,88 +15,81 @@ typedef enum
 	ESPBargraphSensitivityNormal = 1
 } ESPBargraphSensitivity;
 
-/*! Constants that represent possible mute volume values */
+/// Constants that represent possible mute volume values
 typedef enum
 {
-    //* Muted volume is set to zero = (0)
+    /// Muted volume is set to zero = (0)
 	ESPMuteVolumeZero = 0,
-    //* Mute volume uses the control lever = (1)
+    /// Mute volume uses the control lever = (1)
 	ESPMuteVolumeLever = 1,
 } ESPMuteVolumeState;
 
-/*! Constants that represent possible Bogey-Lock Tone values after pressing mute */
+/// Constants that represent possible Bogey-Lock Tone values after pressing mute
 typedef enum
 {
-    //* Bogey-Lock Tone volume uses the control lever = (0)
+    /// Bogey-Lock Tone volume uses the control lever = (0)
 	ESPPostMuteBogeyLockVolumeLever = 0,
-    //* Bogey-Lock Tone volume uses the control knob = (1)
+    /// Bogey-Lock Tone volume uses the control knob = (1)
 	ESPPostMuteBogeyLockVolumeKnob = 1
 } ESPPostMuteBogeyLockVolumeState;
 
-/*! Constants that represent time periods in seconds of automatic muting at the of K-Band alerts  */
+/// Constants that represent time periods in seconds of automatic muting at the of K-Band alerts
 typedef enum
 {
-    //* 3 seconds of initial muting
+    /// 3 seconds of initial muting
 	ESPKMuteTimer3 = 0b000,
-    //* 4 seconds of initial muting
+    /// 4 seconds of initial muting
 	ESPKMuteTimer4 = 0b001,
-    //* 5 seconds of initial muting
+    /// 5 seconds of initial muting
 	ESPKMuteTimer5 = 0b010,
-    //* 7 seconds of initial muting
+    /// 7 seconds of initial muting
 	ESPKMuteTimer7 = 0b011,
-    //* 10 seconds of initial muting
+    /// 10 seconds of initial muting
 	ESPKMuteTimer10 = 0b111,
-    //* 15 seconds of initial muting
+    /// 15 seconds of initial muting
 	ESPKMuteTimer15 = 0b100,
-    //* 20 seconds of initial muting
+    /// 20 seconds of initial muting
 	ESPKMuteTimer20 = 0b101,
-    //* 30 seconds of initial muting
+    /// 30 seconds of initial muting
 	ESPKMuteTimer30 = 0b110
 } ESPKMuteTimerValue;
 
-/*! Converts a KMuteTimerValue enum to an unsigned integer with the value of the number of seconds that the enum value represents
-	@param value the KMuteTimerValue to convert to seconds
-	@returns an unsigned integer representing a number of seconds */
+/// Converts a KMuteTimerValue enum to an unsigned integer with the value of the number of seconds that the enum value represents
+/// @param value the KMuteTimerValue to convert to seconds
+/// @return an unsigned integer representing a number of seconds
 NSUInteger ESPKMuteTimerValue_toSeconds(ESPKMuteTimerValue value);
-/*! Converts an unsigned integer to the closest KMuteTimerValue. Values are rounded up.
-	@param seconds the number of seconds in the K mute timer
-	@returns a KMuteTimerValue enum */
+/// Converts an unsigned integer to the closest KMuteTimerValue. Values are rounded up.
+/// @param seconds the number of seconds in the K mute timer
+/// @return a KMuteTimerValue enum
 ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds);
 
-/*!
- *  ESPUserBytes
- *
- *  Discussion:
- *      The "user bytes" of an ESP device. For more info on the V1's internal settings, see http://www.valentine1.com/Lab/techreport3.asp
- */
+/// The "user bytes" of an ESP device. For more info on the V1's internal settings, see http://www.valentine1.com/Lab/techreport3.asp
 @interface ESPUserBytes : NSObject
 
-/*! Initializes user bytes with default values
-	@returns a newly initialized user bytes object */
+/// Initializes user bytes with default values
+/// @return a newly initialized user bytes object
 -(id)init;
 
-/**
- * Initializes user bytes with default values and the provided v1 version.
- * @param version Version of the attached V1
- * @return a newly initialized user bytes object
- */
+/// Initializes user bytes with default values and the provided v1 version.
+/// @param version Version of the attached V1
+/// @return a newly initialized user bytes object
 -(id)initWithV1Version:(NSUInteger)version;
-/*! Initializes user bytes with the payload data of a received packet
-	@param data the payload data from a respUserBytes or reqWriteUserBytes packet
-    @param version the version of the target V1
-	@returns a newly initialized user bytes object */
+/// Initializes user bytes with the payload data of a received packet
+/// @param data the payload data from a respUserBytes or reqWriteUserBytes packet
+/// @param version the version of the target V1
+/// @return a newly initialized user bytes object
 -(id)initWithData:(NSData*)data v1Version:(NSUInteger)version;
-/*! Initializes user bytes by copying data from another user bytes object
-	@param userBytes the user bytes to copy from
-	@returns a newly initialized user bytes object */
+/// Initializes user bytes by copying data from another user bytes object
+/// @param userBytes the user bytes to copy from
+/// @return a newly initialized user bytes object
 -(id)initWithUserBytes:(ESPUserBytes*)userBytes;
 
-/*! Tells whether the the user bytes are equal to another set of user bytes
-	@param userBytes the user bytes to compare
-	@returns YES if equal, NO if not equal */
+/// Tells whether the the user bytes are equal to another set of user bytes
+/// @param userBytes the user bytes to compare
+/// @return YES if equal, NO if not equal
 -(BOOL)isEqualToUserBytes:(ESPUserBytes*)userBytes;
 
-/*! Sets all the user bytes back to 0xFF, the default value */
+/// Sets all the user bytes back to 0xFF, the default value
 -(void)resetToDefaults;
 
 /// The full payload data of the user bytes

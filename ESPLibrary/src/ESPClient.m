@@ -1707,6 +1707,99 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 	[self requestChangeMode:mode target:ESPRequestTargetValentineOne completion:completion];
 }
 
+-(void)requestCurrentVolumeFrom:(ESPRequestTarget)target completion:(void (^)(NSData * volumeSettings, NSError * error))completion {
+    ESPRequest* request = [ESPRequest request];
+    request.target = target;
+    request.packetID = ESPPacketReqCurrentVolume;
+    request.packetData = [NSData data];
+    
+    ESPResponseExpector* expector = [ESPResponseExpector expector];
+    [expector addResponseID:ESPPacketRespCurrentVolume];
+    expector.packetRecievedCallback = ^BOOL (ESPPacket* packet){
+        NSData* payload = [self _payloadFromPacket:packet];
+        if(payload.length>=2)
+        {
+            // Extract the main and muted volume from the payload
+            Byte mainVolByte = ESPData_getByte(payload, 0);
+            Byte mutedVolByte = ESPData_getByte(payload, 1);
+            
+            Byte defaultBytes[] = { mainVolByte, mutedVolByte};
+            // Construct an NSData holding the volumes settings
+            NSData* _volumeSettings = [[NSData alloc] initWithBytes:defaultBytes length:2];
+            completion(_volumeSettings, nil);
+        }
+        else
+        {
+            if(completion!=nil)
+            {
+                NSError* error = [NSError errorWithDomain:ESPRequestErrorDomain code:ESPRequestErrorCodeReceivedBrokenData userInfo:@{NSLocalizedDescriptionKey:@"Received broken data"}];
+                completion(0, error);
+            }
+        }
+        return YES;
+    };
+    expector.failureCallback = ^(NSError* error){
+        if(completion!=nil)
+        {
+            completion(0, error);
+        }
+    };
+    request.responseExpector = expector;
+    
+    [self _queueRequest:request];
+}
+
+-(void)requestCurrentVolume:(void (^)(NSData * volumeSettings, NSError * error))completion
+{
+    [self requestCurrentVolumeFrom:ESPRequestTargetValentineOne completion:completion];
+}
+
+-(void)requestWriteVolume:(NSData*)volumeSettings target:(ESPRequestTarget)target completion:(void(^)(NSError* error))completion
+{
+    if(volumeSettings.length>3)
+    {
+        volumeSettings = [volumeSettings subdataWithRange:NSMakeRange(0, 3)];
+    }
+    else if(volumeSettings.length<3)
+    {
+        NSMutableData* data = [NSMutableData dataWithData:volumeSettings];
+        while(data.length<3)
+        {
+            Byte b = 0xFF;
+            [data appendBytes:(void*)&b length:1];
+        }
+        volumeSettings = data;
+    }
+    
+    ESPRequest* request = [ESPRequest request];
+    request.target = target;
+    request.packetID = ESPPacketReqWriteVolume;
+    request.packetData = volumeSettings;
+    
+    ESPResponseExpector* expector = [ESPResponseExpector expector];
+    expector.packetRecievedCallback = ^BOOL (ESPPacket* packet){
+        if(completion!=nil)
+        {
+            completion(nil);
+        }
+        return YES;
+    };
+    expector.failureCallback = ^(NSError* error){
+        if(completion!=nil)
+        {
+            completion(error);
+        }
+    };
+    request.responseExpector = expector;
+    
+    [self _queueRequest:request];
+}
+
+-(void)requestWriteVolume:(NSData*)volumeSettings completion:(void(^)(NSError* error))completion
+{
+    [self requestWriteVolume:volumeSettings target:ESPRequestTargetValentineOne completion:completion];
+}
+
 -(void)requestStartAlertDataFor:(ESPRequestTarget)target completion:(void(^)(NSError*))completion
 {
 	ESPRequest* request = [ESPRequest request];

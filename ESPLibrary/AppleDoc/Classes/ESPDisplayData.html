@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ESPDisplayData Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/ESPDisplayData" class="dashAnchor"></a>
+    <a title="ESPDisplayData Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">ESPLibrary 2.0.2 Docs</a> (95% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">ESPLibrary Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        ESPDisplayData Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ESPAlertData.html">ESPAlertData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ESPClient.html">ESPClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ESPCustomSweepData.html">ESPCustomSweepData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ESPDisplayData.html">ESPDisplayData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ESPFrequencyRange.html">ESPFrequencyRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ESPPacket.html">ESPPacket</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ESPSavvyStatus.html">ESPSavvyStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ESPScanner.html">ESPScanner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ESPUserBytes.html">ESPUserBytes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceConcealedDisplay">ESPDeviceConcealedDisplay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceGeneralBroadcast">ESPDeviceGeneralBroadcast</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceRemoteAudio">ESPDeviceRemoteAudio</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceSavvy">ESPDeviceSavvy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceThirdParty1">ESPDeviceThirdParty1</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceThirdParty2">ESPDeviceThirdParty2</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceThirdParty3">ESPDeviceThirdParty3</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceV1ConnectionLE">ESPDeviceV1ConnectionLE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceV1WithChecksum">ESPDeviceV1WithChecksum</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceV1WithoutChecksum">ESPDeviceV1WithoutChecksum</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketInfDisplayData">ESPPacketInfDisplayData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketInfV1Busy">ESPPacketInfV1Busy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqAllSweepDefinitions">ESPPacketReqAllSweepDefinitions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqBatteryVoltage">ESPPacketReqBatteryVoltage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqChangeMode">ESPPacketReqChangeMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqCurrentVolume">ESPPacketReqCurrentVolume</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqDefaultSweepDefinitions">ESPPacketReqDefaultSweepDefinitions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqDefaultSweeps">ESPPacketReqDefaultSweeps</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqFactoryDefault">ESPPacketReqFactoryDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqMaxSweepIndex">ESPPacketReqMaxSweepIndex</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqMuteOff">ESPPacketReqMuteOff</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqMuteOn">ESPPacketReqMuteOn</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqOverrideThumbwheel">ESPPacketReqOverrideThumbwheel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqSavvyStatus">ESPPacketReqSavvyStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqSerialNumber">ESPPacketReqSerialNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqSetSavvyUnmuteEnable">ESPPacketReqSetSavvyUnmuteEnable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqStartAlertData">ESPPacketReqStartAlertData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqStopAlertData">ESPPacketReqStopAlertData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqSweepSections">ESPPacketReqSweepSections</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqTurnOffMainDisplay">ESPPacketReqTurnOffMainDisplay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqTurnOnMainDisplay">ESPPacketReqTurnOnMainDisplay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqUserBytes">ESPPacketReqUserBytes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqVehicleSpeed">ESPPacketReqVehicleSpeed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqVersion">ESPPacketReqVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqWriteSweepDefinition">ESPPacketReqWriteSweepDefinition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqWriteUserBytes">ESPPacketReqWriteUserBytes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqWriteVolume">ESPPacketReqWriteVolume</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespAlertData">ESPPacketRespAlertData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespBatteryVoltage">ESPPacketRespBatteryVoltage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespCurrentVolume">ESPPacketRespCurrentVolume</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespDataError">ESPPacketRespDataError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespDataReceived">ESPPacketRespDataReceived</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespDefaultSweepDefinition">ESPPacketRespDefaultSweepDefinition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespMaxSweepIndex">ESPPacketRespMaxSweepIndex</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespRequestNotProcessed">ESPPacketRespRequestNotProcessed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespSavvyStatus">ESPPacketRespSavvyStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespSerialNumber">ESPPacketRespSerialNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespSweepDefiniton">ESPPacketRespSweepDefiniton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespSweepSections">ESPPacketRespSweepSections</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespSweepWriteResult">ESPPacketRespSweepWriteResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespUnsupportedPacket">ESPPacketRespUnsupportedPacket</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespUserBytes">ESPPacketRespUserBytes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespVehicleSpeed">ESPPacketRespVehicleSpeed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespVersion">ESPPacketRespVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@ESPRequestErrorDomain">ESPRequestErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@ESPScannerErrorDomain">ESPScannerErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPDisplayData.h@ESPV1ModeAdvancedLogic">ESPV1ModeAdvancedLogic</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPDisplayData.h@ESPV1ModeAllBogeysOrKKa">ESPV1ModeAllBogeysOrKKa</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPDisplayData.h@ESPV1ModeLogicOrKa">ESPV1ModeLogicOrKa</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPDisplayData.h@ESPV1ModeUnknown">ESPV1ModeUnknown</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ESPDisplayState.html">ESPDisplayState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ESPRequestErrorCode.html">ESPRequestErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ESPScannerErrorCode.html">ESPScannerErrorCode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ESPClientDelegate.html">ESPClientDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ESPScannerDelegate.html">ESPScannerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/ESPAlertBand.html">ESPAlertBand</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/ESPAlertDirection.html">ESPAlertDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/ESPBargraphSensitivity.html">ESPBargraphSensitivity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/ESPConnectMode.html">ESPConnectMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:ESPPacket.h@T@ESPDeviceID">ESPDeviceID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:ESPFrequency.h@T@ESPFrequencyGHz">ESPFrequencyGHz</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:ESPFrequency.h@T@ESPFrequencyMHz">ESPFrequencyMHz</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/ESPKMuteTimerValue.html">ESPKMuteTimerValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/ESPMuteVolumeState.html">ESPMuteVolumeState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:ESPPacket.h@T@ESPPacketID">ESPPacketID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/ESPPostMuteBogeyLockVolumeState.html">ESPPostMuteBogeyLockVolumeState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/ESPRequestTarget.html">ESPRequestTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:ESPDisplayData.h@T@ESPV1Mode">ESPV1Mode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@ESPFrequency_GHz_to_MHz">ESPFrequency_GHz_to_MHz</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@ESPFrequency_MHz_to_GHz">ESPFrequency_MHz_to_GHz</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@ESPKMuteTimerValue_fromSeconds">ESPKMuteTimerValue_fromSeconds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@ESPKMuteTimerValue_toSeconds">ESPKMuteTimerValue_toSeconds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@ESPV1Mode_isValidMode">ESPV1Mode_isValidMode</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ESPDisplayData</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">ESPDisplayData</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>A packet that represents an &lsquo;InfDisplayData&rsquo; received from the Valentine One. You can use the data from this packet to recreate the Valentine One&rsquo;s display.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)ESPDisplayData(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-unavailable">
+                        <p class="aside-title">Unavailable</p>
+                        <p>You must use initWithData: or initWithDisplayData:</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>Default initializer that always returns nil; DO NOT CALL</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    initWithData:(NSData)
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(im)initWithData:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithData:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(im)initWithData:">-initWithData:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes the display data from a received packet&rsquo;s payload</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="nf">initWithData</span><span class="p">:(</span><span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">data</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the payload data of an infDisplayData packet</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a newly initialized display data object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(im)initWithDisplayData:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithDisplayData:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(im)initWithDisplayData:">-initWithDisplayData:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialized the display data by copying from an existing display data object</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="nf">initWithDisplayData</span><span class="p">:(</span><span class="n">ESPDisplayData</span> <span class="o">*</span><span class="p">)</span><span class="nv">displayData</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>displayData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the display data to copy from</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a newly initialized display data object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)data"></a>
+                    <a name="//apple_ref/objc/Property/data" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)data">data</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The full payload data of the display data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">data</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)segmentA"></a>
+                    <a name="//apple_ref/objc/Property/segmentA" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)segmentA">segmentA</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Top segment of the seven segment display on the ESP device</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPDisplayState.html">ESPDisplayState</a></span> <span class="n">segmentA</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)segmentB"></a>
+                    <a name="//apple_ref/objc/Property/segmentB" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)segmentB">segmentB</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Upper right segment of the seven segment display on the ESP device</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPDisplayState.html">ESPDisplayState</a></span> <span class="n">segmentB</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)segmentC"></a>
+                    <a name="//apple_ref/objc/Property/segmentC" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)segmentC">segmentC</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Lower right segment of the seven segment display on the ESP device</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPDisplayState.html">ESPDisplayState</a></span> <span class="n">segmentC</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)segmentD"></a>
+                    <a name="//apple_ref/objc/Property/segmentD" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)segmentD">segmentD</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Bottom segment of the seven segment display on the ESP device</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPDisplayState.html">ESPDisplayState</a></span> <span class="n">segmentD</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)segmentE"></a>
+                    <a name="//apple_ref/objc/Property/segmentE" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)segmentE">segmentE</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Lower left segment of the seven segment display on the ESP device</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPDisplayState.html">ESPDisplayState</a></span> <span class="n">segmentE</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)segmentF"></a>
+                    <a name="//apple_ref/objc/Property/segmentF" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)segmentF">segmentF</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Upper left segment of the seven segment display on the ESP device</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPDisplayState.html">ESPDisplayState</a></span> <span class="n">segmentF</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)segmentG"></a>
+                    <a name="//apple_ref/objc/Property/segmentG" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)segmentG">segmentG</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Middle segment of the seven segment display on the ESP device</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPDisplayState.html">ESPDisplayState</a></span> <span class="n">segmentG</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)decimalPoint"></a>
+                    <a name="//apple_ref/objc/Property/decimalPoint" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)decimalPoint">decimalPoint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Decimal point of the seven segment display on the ESP device</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPDisplayState.html">ESPDisplayState</a></span> <span class="n">decimalPoint</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(im)strengthLightAtIndex:"></a>
+                    <a name="//apple_ref/objc/Method/-strengthLightAtIndex:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(im)strengthLightAtIndex:">-strengthLightAtIndex:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells whether the specified bargraph strength light is on</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">strengthLightAtIndex</span><span class="p">:(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="nv">index</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>index</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the index of the strength light</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>YES if the light is on, NO if the light is off</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)strengthLightCount"></a>
+                    <a name="//apple_ref/objc/Property/strengthLightCount" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)strengthLightCount">strengthLightCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The total number of strength lights on the ESP device (8)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSUInteger</span> <span class="n">strengthLightCount</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)strengthLight0"></a>
+                    <a name="//apple_ref/objc/Property/strengthLight0" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)strengthLight0">strengthLight0</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The state of bargraph strength light 0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">strengthLight0</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)strengthLight1"></a>
+                    <a name="//apple_ref/objc/Property/strengthLight1" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)strengthLight1">strengthLight1</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The state of bargraph strength light 1</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">strengthLight1</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)strengthLight2"></a>
+                    <a name="//apple_ref/objc/Property/strengthLight2" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)strengthLight2">strengthLight2</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The state of bargraph strength light 2</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">strengthLight2</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)strengthLight3"></a>
+                    <a name="//apple_ref/objc/Property/strengthLight3" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)strengthLight3">strengthLight3</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The state of bargraph strength light 3</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">strengthLight3</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)strengthLight4"></a>
+                    <a name="//apple_ref/objc/Property/strengthLight4" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)strengthLight4">strengthLight4</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The state of bargraph strength light 4</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">strengthLight4</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)strengthLight5"></a>
+                    <a name="//apple_ref/objc/Property/strengthLight5" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)strengthLight5">strengthLight5</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The state of bargraph strength light 5</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">strengthLight5</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)strengthLight6"></a>
+                    <a name="//apple_ref/objc/Property/strengthLight6" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)strengthLight6">strengthLight6</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The state of bargraph strength light 6</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">strengthLight6</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)strengthLight7"></a>
+                    <a name="//apple_ref/objc/Property/strengthLight7" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)strengthLight7">strengthLight7</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The state of bargraph strength light 7</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">strengthLight7</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)laser"></a>
+                    <a name="//apple_ref/objc/Property/laser" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)laser">laser</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The display state of the laser &ldquo;band&rdquo;</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPDisplayState.html">ESPDisplayState</a></span> <span class="n">laser</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)Ka"></a>
+                    <a name="//apple_ref/objc/Property/Ka" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)Ka">Ka</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The display state of the Ka band</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPDisplayState.html">ESPDisplayState</a></span> <span class="n">Ka</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)K"></a>
+                    <a name="//apple_ref/objc/Property/K" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)K">K</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The display state of the K band</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPDisplayState.html">ESPDisplayState</a></span> <span class="n">K</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)X"></a>
+                    <a name="//apple_ref/objc/Property/X" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)X">X</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The display state of the X band</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPDisplayState.html">ESPDisplayState</a></span> <span class="n">X</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)front"></a>
+                    <a name="//apple_ref/objc/Property/front" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)front">front</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The display state of the front arrow</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPDisplayState.html">ESPDisplayState</a></span> <span class="n">front</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)side"></a>
+                    <a name="//apple_ref/objc/Property/side" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)side">side</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The display state of the side arrow</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPDisplayState.html">ESPDisplayState</a></span> <span class="n">side</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)rear"></a>
+                    <a name="//apple_ref/objc/Property/rear" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)rear">rear</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The display state of the rear arrow</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPDisplayState.html">ESPDisplayState</a></span> <span class="n">rear</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)mute"></a>
+                    <a name="//apple_ref/objc/Property/mute" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)mute">mute</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells whether the mute light is lit (This value is only meaningful on versin V4.1018 and above)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPDisplayState.html">ESPDisplayState</a></span> <span class="n">mute</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)bluetooth"></a>
+                    <a name="//apple_ref/objc/Property/bluetooth" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)bluetooth">bluetooth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells whether the Bluetooth light is lit (This value is only meaningful on versin V4.1018 and above)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPDisplayState.html">ESPDisplayState</a></span> <span class="n">bluetooth</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)soft"></a>
+                    <a name="//apple_ref/objc/Property/soft" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)soft">soft</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the current mute status. (NO means not muted, YES means muted)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">soft</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)tsHoldoff"></a>
+                    <a name="//apple_ref/objc/Property/tsHoldoff" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)tsHoldoff">tsHoldoff</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the accessories if a time slice is allowed. (NO means that all accessories can have a time slice after this packet, YES means that none of the accessories can have a time slice after this packet)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">tsHoldoff</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)systemStatus"></a>
+                    <a name="//apple_ref/objc/Property/systemStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)systemStatus">systemStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells whether the ESP device is actively searching for alerts. (NO means the device is not actively searching for alerts, YES means that the device has successfully signed on and is actively searching for alerts)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">systemStatus</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)displayOn"></a>
+                    <a name="//apple_ref/objc/Property/displayOn" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)displayOn">displayOn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the ESP device&rsquo;s front display status (NO means off, YES means on)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">displayOn</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)euroMode"></a>
+                    <a name="//apple_ref/objc/Property/euroMode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)euroMode">euroMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells whether euro mode is enabled (NO means disabled, YES means enabled)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">euroMode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)customSweep"></a>
+                    <a name="//apple_ref/objc/Property/customSweep" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)customSweep">customSweep</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the custom sweep status (NO means custom sweeps have not been defined, YES means that custom sweeps have been defined and custom modes will be used if in euro mode)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">customSweep</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)legacy"></a>
+                    <a name="//apple_ref/objc/Property/legacy" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)legacy">legacy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells whether the ESP device is operating in legacy mode (NO means normal operation, YES means legacy mode)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">legacy</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)mode"></a>
+                    <a name="//apple_ref/objc/Property/mode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)mode">mode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the current mode of the V1. The mode is determined by reading the seven segment display data and the systemStatus bit. If the mode cannot be determined from the seven segment display, the mode is ESPV1ModeUnknown</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:ESPDisplayData.h@T@ESPV1Mode">ESPV1Mode</a></span> <span class="n">mode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)junk"></a>
+                    <a name="//apple_ref/objc/Property/junk" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)junk">junk</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells whether the V1 is indicating a junk signal. This is determined by reading the seven segment display data and the systemStatus bit.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">junk</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(py)error"></a>
+                    <a name="//apple_ref/objc/Property/error" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(py)error">error</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells whether the V1 is indicating an error. This is determined by reading the seven segment display state, the strength lights, and the arrow lights.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPDisplayData(im)isLaserAlerting"></a>
+                    <a name="//apple_ref/objc/Method/-isLaserAlerting" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPDisplayData(im)isLaserAlerting">-isLaserAlerting</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method to determine if a &ldquo;laser&rdquo; alert is present. This value is determined by a bit-wise AND of the laser property and systemStatus and front or rear properties.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isLaserAlerting</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external noopener">ESPLibrary</a>. All rights reserved. (Last updated: 2021-11-01)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
