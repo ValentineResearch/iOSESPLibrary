@@ -6,7 +6,8 @@
 
 #import <Foundation/Foundation.h>
 #import "ESPFrequency.h"
-/*! Constants that the represent the alert bands of alert determined by the Valentine One */
+
+/// Constants that the represent the alert bands of alert determined by the Valentine One
 typedef enum
 {
 	/// The band of an alert data packet with invalid band data
@@ -23,7 +24,7 @@ typedef enum
 	ESPAlertBandKu = 0x10,
 } ESPAlertBand;
 
-/*! Constants that the represent the direction of an alert determined by the Valentine One */
+/// Constants that the represent the direction of an alert determined by the Valentine One
 typedef enum
 {
 	/// The direction of an alert data packet with invalid direction data
@@ -36,28 +37,24 @@ typedef enum
 	ESPAlertDirectionRear = 0x01
 } ESPAlertDirection;
 
-/*!
- *  ESPAlertData
- *
- *  Discussion:
- *      A packet that represents an alert detected by the Valentine One.
- */
+/// A packet that represents an alert detected by the Valentine One.
 @interface ESPAlertData : NSObject
-
+/// Default initializer that always returns nil; DO NOT CALL
+/// @see initWithData:(NSData)
 -(id)init __attribute((unavailable("You must use initWithData: or initWithAlertData:")));
 
-/*! Initializes the alert from a received packet's payload
-	@param data the payload data of a respAlertData packet
-	@returns a newly initialized alert */
+/// Initializes the alert from a received packet's payload
+/// @param data the payload data of a respAlertData packet
+/// @return a newly initialized alert
 -(id)initWithData:(NSData*)data;
-/*! Initializes a new alert by copying information from an existing alert
-	@param alert the alert to copy from
-	@returns a newly initialized alert */
+/// Initializes a new alert by copying information from an existing alert
+/// @param alert the alert to copy from
+/// @return a newly initialized alert
 -(id)initWithAlertData:(ESPAlertData*)alert;
 
-/*! Tells if the given alert is equal to this alert
-	@param alertData the alert to compare
-	@returns YES if the alerts are equal, or NO if they are not equal */
+/// Tells if the given alert is equal to this alert
+/// @param alertData the alert to compare
+/// @return YES if the alerts are equal, or NO if they are not equal
 -(BOOL)isEqualToAlertData:(ESPAlertData*)alertData;
 
 /// The full payload data of the alert

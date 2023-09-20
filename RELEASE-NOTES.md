@@ -45,3 +45,6 @@ Interface Changes
 
 # **ESP Library2 v2.0.2 ñ October 29, 2021**
 *Added support for remoting adjusting the V1 Gen2's volume settings. **(Only supported on versions V4.1027 and above)**
+
+# **ESP Library2 v2.0.3 ñ September 19, 2023**
+*Added support for the Ka Always Radar Priority and Fast Laser Detection features. **(Only supported on versions V4.1031 and above)**

@@ -29,7 +29,7 @@ NSUInteger getVersionFor(NSString* versionStr) {
 }
 
 NSUInteger getVersionGroup(NSUInteger version) {
-    if(version >= DEFAULT_V1_VERSION) {
+    if(version >= INITIAL_V1_GEN_2_VERSION) {
         double versionD = INITIAL_V1_GEN_2_VERSION_GROUP / ((double) 10000.0);
         return floor(versionD);
     }

@@ -143,7 +143,11 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds);
 @property (nonatomic) BOOL MuteXAndKRear;
 /// Toggles rear Laser alerts
 @property (nonatomic) BOOL LaserRear;
-/// Toglles Custom Frequencies
+/// Toggles Custom Frequencies
 @property (nonatomic) BOOL CustomFrequencies;
+/// Toggle the Ka Always Radar Priority feature
+@property (nonatomic) BOOL KaAlwaysRadarPriority;
+/// Toggle the Fast Laser Detect feature
+@property (nonatomic) BOOL FastLaserDetect;
 
 @end

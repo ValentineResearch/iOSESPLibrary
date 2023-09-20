@@ -6,7 +6,7 @@
 
 #import <Foundation/Foundation.h>
 
-/*! Constants that the represent the Valentine One's display state */
+/// Constants that the represent the Valentine One's display state
 typedef enum ESPDisplayState
 {
     /// Indicates the Valentine One's display is off
@@ -27,28 +27,25 @@ static const ESPV1Mode ESPV1ModeLogicOrKa = 2;
 /// Constant that represents the Valentine operating mode is big 'L'
 static const ESPV1Mode ESPV1ModeAdvancedLogic = 3;
 
-/*! Tells whether the given mode is a valid mode to set the V1 to
-	@param mode the mode the evaluate
-	@returns YES if the mode is valid, or NO if the mode is not valid */
+/// Tells whether the given mode is a valid mode to set the V1 to
+/// @param mode the mode the evaluate
+/// @return YES if the mode is valid, or NO if the mode is not valid
 BOOL ESPV1Mode_isValidMode(ESPV1Mode mode);
 
-/*!
- *  ESPDisplayData
- *
- *  Discussion:
- *      A packet that represents an 'InfDisplayData' received from the Valentine One. You can use the data from this packet to recreate the Valentine One's display.
- */
+/// A packet that represents an 'InfDisplayData' received from the Valentine One. You can use the data from this packet to recreate the Valentine One's display.
 @interface ESPDisplayData : NSObject
 
+/// Default initializer that always returns nil; DO NOT CALL
+/// @see initWithData:(NSData)
 -(id)init __attribute__((unavailable("You must use initWithData: or initWithDisplayData:")));
 
-/*! Initializes the display data from a received packet's payload
-	@param data the payload data of an infDisplayData packet
-	@returns a newly initialized display data object */
+/// Initializes the display data from a received packet's payload
+/// @param data the payload data of an infDisplayData packet
+/// @return a newly initialized display data object
 -(id)initWithData:(NSData*)data;
-/*! Initialized the display data by copying from an existing display data object
-	@param displayData the display data to copy from
-	@returns a newly initialized display data object */
+/// Initialized the display data by copying from an existing display data object
+/// @param displayData the display data to copy from
+/// @return a newly initialized display data object
 -(id)initWithDisplayData:(ESPDisplayData*)displayData;
 
 /// The full payload data of the display data
@@ -71,9 +68,9 @@ BOOL ESPV1Mode_isValidMode(ESPV1Mode mode);
 /// Decimal point of the seven segment display on the ESP device
 @property (nonatomic, readonly) ESPDisplayState decimalPoint;
 
-/*! Tells whether the specified bargraph strength light is on
-	@param index the index of the strength light
-	@returns YES if the light is on, NO if the light is off */
+/// Tells whether the specified bargraph strength light is on
+/// @param index the index of the strength light
+/// @return YES if the light is on, NO if the light is off
 -(BOOL)strengthLightAtIndex:(NSUInteger)index;
 /// The total number of strength lights on the ESP device (8)
 @property (nonatomic, readonly) NSUInteger strengthLightCount;
@@ -139,7 +136,7 @@ BOOL ESPV1Mode_isValidMode(ESPV1Mode mode);
 /// Tells whether the V1 is indicating an error. This is determined by reading the seven segment display state, the strength lights, and the arrow lights.
 @property (nonatomic, readonly) BOOL error;
 
-/// @verbatim Method to determine if a "laser" alert is present. This value is determined by a bit-wise AND of the laser property and systemStatus and front or rear properties.
+/// Method to determine if a "laser" alert is present. This value is determined by a bit-wise AND of the laser property and systemStatus and front or rear properties.
 -(BOOL)isLaserAlerting;
 
 

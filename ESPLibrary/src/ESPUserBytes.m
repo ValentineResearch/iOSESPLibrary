@@ -192,7 +192,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 
 -(void)setBargraphSensitivity:(ESPBargraphSensitivity)bargraphSensitivity {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return;
     }
     
@@ -215,7 +215,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 
 -(ESPBargraphSensitivity)bargraphSensitivity {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return 0;
     }
 	BOOL bit = ESPData_getBit(_data, 0, 4);
@@ -232,7 +232,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(void)setKaFalseGuardOn:(BOOL)KaFalseGuardOn
 {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return;
     }
     
@@ -242,7 +242,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(BOOL)KaFalseGuardOn
 {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return false;
     }
 	return ESPData_getBit(_data, 0, 5);
@@ -251,7 +251,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(void)setKMutingOn:(BOOL)KMutingOn
 {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return;
     }
     
@@ -261,14 +261,14 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(BOOL)KMutingOn
 {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return false;
     }
 	return !ESPData_getBit(_data, 0, 6);
 }
 
 -(void)setMuteVolumeState:(ESPMuteVolumeState)muteVolumeState {
-    if(_v1Version >= DEFAULT_V1_VERSION) {
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION) {
         // Set the appropriate user bytes on new version
         [self setMuteToMuteVolume: (muteVolumeState == ESPMuteVolumeLever) ? true : false];
         return;
@@ -290,7 +290,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 }
 
 -(ESPMuteVolumeState)muteVolumeState {
-    if(_v1Version >= DEFAULT_V1_VERSION) {
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION) {
         return [self muteToMuteVolume] ? ESPMuteVolumeLever : ESPMuteVolumeZero;
     }
     
@@ -308,7 +308,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(void)setPostMuteBogeyLockVolumeState:(ESPPostMuteBogeyLockVolumeState)postMuteBogeyLockVolumeState
 {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return;
     }
 	BOOL bit;
@@ -331,7 +331,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(ESPPostMuteBogeyLockVolumeState)postMuteBogeyLockVolumeState
 {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return 0;
     }
 	BOOL bit = ESPData_getBit(_data, 1, 0);
@@ -348,7 +348,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(void)setKMuteTimer:(ESPKMuteTimerValue)KMuteTimer
 {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return;
     }
     
@@ -360,7 +360,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(ESPKMuteTimerValue)KMuteTimer
 {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return 0;
     }
 	Byte kMuteByte = ESPData_getByte(_data, 1);
@@ -371,7 +371,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(void)setKInitialUnmute4LightsOn:(BOOL)KInitialUnmute4LightsOn
 {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return;
     }
 	ESPData_setBit(_data, 1, 4, KInitialUnmute4LightsOn);
@@ -380,7 +380,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(BOOL)KInitialUnmute4LightsOn
 {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return false;
     }
 	return ESPData_getBit(_data, 1, 4);
@@ -389,7 +389,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(void)setKPersistantUnmute6LightsOn:(BOOL)KPersistantUnmute6LightsOn
 {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return;
     }
 	ESPData_setBit(_data, 1, 5, KPersistantUnmute6LightsOn);
@@ -403,7 +403,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(void)setKRearMuteOn:(BOOL)KRearMuteOn
 {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return;
     }
 	ESPData_setBit(_data, 1, 6, !KRearMuteOn);
@@ -412,7 +412,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(BOOL)KRearMuteOn
 {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return false;
     }
 	return !ESPData_getBit(_data, 1, 6);
@@ -420,7 +420,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 
 -(void)setKuBandOn:(BOOL)KuBandOn
 {
-    if(_v1Version >= DEFAULT_V1_VERSION) {
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION) {
         ESPData_setBit(_data, 0, 7, !KuBandOn);
         return;
     }
@@ -429,7 +429,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 
 -(BOOL)KuBandOn
 {
-    if(_v1Version >= DEFAULT_V1_VERSION) {
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION) {
         return !ESPData_getBit(_data, 0, 7);
     }
     
@@ -439,7 +439,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(void)setPopOn:(BOOL)popOn
 {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return;
     }
 	ESPData_setBit(_data, 2, 0, popOn);
@@ -448,14 +448,14 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(BOOL)popOn
 {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return false;
     }
 	return ESPData_getBit(_data, 2, 0);
 }
 
 -(void)setEuroOn:(BOOL)euroOn {
-    if(_v1Version >= DEFAULT_V1_VERSION) {
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION) {
         ESPData_setBit(_data, 1, 0, !euroOn);
         return;
     }
@@ -465,7 +465,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(BOOL)euroOn
 {
    // This isn't supported by the V1 gen 2 so do nothing
-   if(_v1Version >= DEFAULT_V1_VERSION) {
+   if(_v1Version >= INITIAL_V1_GEN_2_VERSION) {
        return !ESPData_getBit(_data, 1, 0);
    }
 	return !ESPData_getBit(_data, 2, 1);
@@ -473,7 +473,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 
 -(void)setEuroXBandOn:(BOOL)euroXBandOn {
     // On the V1 gen 2 this bit is mapped to the X band bit
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return [self setXBandOn:euroXBandOn];
     }
 	ESPData_setBit(_data, 2, 2, !euroXBandOn);
@@ -481,14 +481,14 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 
 -(BOOL)euroXBandOn {
     // On V1 gen 2 this bit is mapped to the X band bit.
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return self.XBandOn;
     }
 	return !ESPData_getBit(_data, 2, 2);
 }
 
 -(void)setFilterOn:(BOOL)filterOn {
-    if(_v1Version >= DEFAULT_V1_VERSION) {
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION) {
         ESPData_setBit(_data, 1, 1, filterOn);
         return;
     }
@@ -496,7 +496,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 }
 
 -(BOOL)filterOn {
-    if(_v1Version >= DEFAULT_V1_VERSION) {
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION) {
         return ESPData_getBit(_data, 1, 1);
     }
 	return !ESPData_getBit(_data, 2, 3);
@@ -505,7 +505,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(void)setForceLegacyCD:(BOOL)forceLegacyCD
 {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return;
     }
 	ESPData_setBit(_data, 2, 4, !forceLegacyCD);
@@ -514,14 +514,14 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 -(BOOL)forceLegacyCD
 {
     // This isn't supported by the V1 gen 2 so do nothing
-    if(_v1Version >= DEFAULT_V1_VERSION){
+    if(_v1Version >= INITIAL_V1_GEN_2_VERSION){
         return false;
     }
 	return !ESPData_getBit(_data, 2, 4);
 }
 
 -(void)setMuteToMuteVolume:(BOOL)useMuteVolume {
-    if(_v1Version < DEFAULT_V1_VERSION) {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
         // Set the appropriate user bytes on older version
         [self setMuteVolumeState: useMuteVolume ? ESPMuteVolumeLever : ESPMuteVolumeZero];
         return;
@@ -530,66 +530,94 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 }
 
 - (BOOL)muteToMuteVolume {
-    if(_v1Version < DEFAULT_V1_VERSION) {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
         return (self.muteVolumeState == ESPMuteVolumeLever);
     }
     return ESPData_getBit(_data, 0, 4);
 }
 
 - (void)setBogeyLockToneLoadAfterMuting:(BOOL)MemoLoudPostMute {
-    if(_v1Version < DEFAULT_V1_VERSION) {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
         return;
     }
     ESPData_setBit(_data, 0, 5, MemoLoudPostMute);
 }
 
 - (BOOL)BogeyLockToneLoadAfterMuting {
-    if(_v1Version < DEFAULT_V1_VERSION) {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
         return false;
     }
    return ESPData_getBit(_data, 0, 5);
 }
 
 - (void)setMuteXAndKRear:(BOOL)MuteXAndKRear {
-    if(_v1Version < DEFAULT_V1_VERSION) {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
         return;
     }
     ESPData_setBit(_data, 0, 6, !MuteXAndKRear);
 }
 
 - (BOOL)MuteXAndKRear {
-    if(_v1Version < DEFAULT_V1_VERSION) {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
         return false;
     }
     return !ESPData_getBit(_data, 0, 6);
 }
 
 - (void)setLaserRear:(BOOL)LaserRear {
-    if(_v1Version < DEFAULT_V1_VERSION) {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
         return;
     }
     ESPData_setBit(_data, 1, 2, LaserRear);
 }
 
 - (BOOL)LaserRear {
-    if(_v1Version < DEFAULT_V1_VERSION) {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
         return false;
     }
     return ESPData_getBit(_data, 1, 2);
 }
 
 -(void)setCustomFrequencies:(BOOL)customFrequencies {
-    if(_v1Version < DEFAULT_V1_VERSION) {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
         return;
     }
     ESPData_setBit(_data, 1, 3, !customFrequencies);
 }
 
 - (BOOL)CustomFrequencies {
-    if(_v1Version < DEFAULT_V1_VERSION) {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
         return false;
     }
     return !ESPData_getBit(_data, 1, 3);
+}
+
+-(void)setKaAlwaysRadarPriority:(BOOL)kaAlwaysRadarPriority {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return;
+    }
+    ESPData_setBit(_data, 1, 4, !kaAlwaysRadarPriority);
+}
+
+- (BOOL)KaAlwaysRadarPriority {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return false;
+    }
+    return !ESPData_getBit(_data, 1, 4);
+}
+
+-(void)setFastLaserDetect:(BOOL)fastLaserDetect {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return;
+    }
+    ESPData_setBit(_data, 1, 5, fastLaserDetect);
+}
+
+- (BOOL)FastLaserDetect {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return false;
+    }
+    return ESPData_getBit(_data, 1, 5);
 }
 
 -(NSString*)debugDescription

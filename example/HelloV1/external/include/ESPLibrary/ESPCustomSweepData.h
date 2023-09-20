@@ -7,37 +7,32 @@
 #import <Foundation/Foundation.h>
 #import "ESPFrequencyRange.h"
 
-
-/*!
- *  ESPCustomSweepData
- *
- *  Discussion:
- *      A packet that represents a single custom sweep (sweep definition) received from the Valentine One.
- */
+/// A packet that represents a single custom sweep (sweep definition) received from the Valentine One.
 @interface ESPCustomSweepData : NSObject
-
+/// Default initializer that always returns nil; DO NOT CALL
+/// @see initWithData:(NSData)
 -(id)init __attribute__((unavailable("You must use initWithData:, initWithIndex:range:commit:, initWithIndex:lowerEdge:upperEdge:commit:, or initWithCustomSweepData:")));
 
-/*! Initializes a custom sweep from a received packet's payload
-	@param data the payload data from a reqWriteSweepDefinition or respSweepDefinition packet
-	@returns a newly initialized custom sweep */
+/// Initializes a custom sweep from a received packet's payload
+/// @param data the payload data from a reqWriteSweepDefinition or respSweepDefinition packet
+/// @return a newly initialized custom sweep
 -(id)initWithData:(NSData*)data;
-/*! Initializes a custom sweep with an index, frequency range, and commit bit
-	@param index the index of the custom sweep
-	@param range the frequency range of the sweep
-	@param commit the commit bit of the sweep, which tells whether the sweep is the last sweep being sent
-	@returns a newly initialized custom sweep */
+/// Initializes a custom sweep with an index, frequency range, and commit bit
+/// @param index the index of the custom sweep
+/// @param range the frequency range of the sweep
+/// @param commit the commit bit of the sweep, which tells whether the sweep is the last sweep being sent
+/// @return a newly initialized custom sweep
 -(id)initWithIndex:(NSUInteger)index range:(ESPFrequencyRange*)range commit:(BOOL)commit;
-/*! Initializes a custom sweep with an index, frequency range, and commit bit
-	@param index the index of the custom sweep
-	@param lowerEdge the lower bound frequency of the sweep
-	@param upperEdge the upper bound frequency of the sweep
-	@param commit the commit bit of the sweep, which tells whether the sweep is the last sweep being sent
-	@returns a newly initialized custom sweep */
+/// Initializes a custom sweep with an index, frequency range, and commit bit
+/// @param index the index of the custom sweep
+/// @param lowerEdge the lower bound frequency of the sweep
+/// @param upperEdge the upper bound frequency of the sweep
+/// @param commit the commit bit of the sweep, which tells whether the sweep is the last sweep being sent
+/// @return a newly initialized custom sweep
 -(id)initWithIndex:(NSUInteger)index lowerEdge:(ESPFrequencyMHz)lowerEdge upperEdge:(ESPFrequencyMHz)upperEdge commit:(BOOL)commit;
-/*! Initializes a custom sweep by copying data from another custom sweep
-	@param customSweepData the custom sweep to copy from
-	@returns a newly initialized custom sweep */
+/// Initializes a custom sweep by copying data from another custom sweep
+/// @param customSweepData the custom sweep to copy from
+/// @return a newly initialized custom sweep
 -(id)initWithCustomSweepData:(ESPCustomSweepData*)customSweepData;
 
 /// The full payload data of the custom sweep
