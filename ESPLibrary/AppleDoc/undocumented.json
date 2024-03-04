@@ -127,10 +127,45 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPScanner.h",
-      "line": 11,
-      "symbol": "ESPScannerErrorDomain",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPUserBytes.h",
+      "line": 60,
+      "symbol": ".ESPKaFullSensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPUserBytes.h",
+      "line": 60,
+      "symbol": "ESPKaSensitivity..ESPKaFullSensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPUserBytes.h",
+      "line": 61,
+      "symbol": ".ESPKaOriginalGen2Sensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPUserBytes.h",
+      "line": 61,
+      "symbol": "ESPKaSensitivity..ESPKaOriginalGen2Sensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPUserBytes.h",
+      "line": 62,
+      "symbol": ".ESPKaRelaxedSensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPUserBytes.h",
+      "line": 62,
+      "symbol": "ESPKaSensitivity..ESPKaRelaxedSensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     }
   ],

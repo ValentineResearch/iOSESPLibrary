@@ -45,12 +45,16 @@ typedef enum
 
 /// Initializes the alert from a received packet's payload
 /// @param data the payload data of a respAlertData packet
+/// @param version the version of the target V1
 /// @return a newly initialized alert
--(id)initWithData:(NSData*)data;
+-(id)initWithData:(NSData*)data v1Version:(NSUInteger)version;
 /// Initializes a new alert by copying information from an existing alert
 /// @param alert the alert to copy from
 /// @return a newly initialized alert
 -(id)initWithAlertData:(ESPAlertData*)alert;
+
+/// Version of the V1 this instance of alert data belongs too
+@property (nonatomic) NSUInteger v1Version;
 
 /// Tells if the given alert is equal to this alert
 /// @param alertData the alert to compare
@@ -80,6 +84,9 @@ typedef enum
 
 /// Tells if this alert is a priority alert
 @property (nonatomic, readonly, getter=isPriority) BOOL priority;
+
+/// Tells if this alert is was junked out
+@property (nonatomic, readonly, getter=isJunkAlert) BOOL junkAlert;
 
 /// The direction of the alert
 @property (nonatomic, readonly) ESPAlertDirection direction;

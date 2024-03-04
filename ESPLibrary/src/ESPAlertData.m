@@ -12,17 +12,20 @@
 
 @synthesize data = _data;
 
+@synthesize v1Version = _v1Version;
+
 -(id)init
 {
 	//must be initialized with data
 	return nil;
 }
 
--(id)initWithData:(NSData*)data
+-(id)initWithData:(NSData*)data v1Version:(NSUInteger)version
 {
 	if(self = [super init])
 	{
 		_data = [[NSData alloc] initWithData:data];
+        _v1Version = version;
 	}
 	return self;
 }
@@ -32,6 +35,7 @@
 	if(self = [super init])
 	{
 		_data = [[NSData alloc] initWithData:alert->_data];
+        _v1Version = alert->_v1Version;
 	}
 	return self;
 }
@@ -225,6 +229,15 @@
 -(BOOL)isPriority
 {
 	return ESPData_getBit(_data, 6, 7);
+}
+
+-(BOOL)isJunkAlert
+{
+    if(_v1Version < ALERT_DATA_INCLUDES_JUNK_FLAG_START_VERSION) {
+        return FALSE;
+    }
+    
+    return ESPData_getBit(_data, 6, 6);
 }
 
 -(ESPAlertDirection)direction

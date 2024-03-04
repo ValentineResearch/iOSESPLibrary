@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ESPScannerDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Protocol/ESPScannerDelegate" class="dashAnchor"></a>
+    <a title="ESPScannerDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">ESPLibrary 2.0.3 Docs</a> (95% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">ESPLibrary Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        ESPScannerDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ESPAlertData.html">ESPAlertData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ESPClient.html">ESPClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ESPCustomSweepData.html">ESPCustomSweepData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ESPDisplayData.html">ESPDisplayData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ESPFrequencyRange.html">ESPFrequencyRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ESPPacket.html">ESPPacket</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ESPSavvyStatus.html">ESPSavvyStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ESPScanner.html">ESPScanner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ESPUserBytes.html">ESPUserBytes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceConcealedDisplay">ESPDeviceConcealedDisplay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceGeneralBroadcast">ESPDeviceGeneralBroadcast</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceRemoteAudio">ESPDeviceRemoteAudio</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceSavvy">ESPDeviceSavvy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceThirdParty1">ESPDeviceThirdParty1</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceThirdParty2">ESPDeviceThirdParty2</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceThirdParty3">ESPDeviceThirdParty3</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceV1ConnectionLE">ESPDeviceV1ConnectionLE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceV1WithChecksum">ESPDeviceV1WithChecksum</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPDeviceV1WithoutChecksum">ESPDeviceV1WithoutChecksum</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketInfDisplayData">ESPPacketInfDisplayData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketInfV1Busy">ESPPacketInfV1Busy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqAllSweepDefinitions">ESPPacketReqAllSweepDefinitions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqBatteryVoltage">ESPPacketReqBatteryVoltage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqChangeMode">ESPPacketReqChangeMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqCurrentVolume">ESPPacketReqCurrentVolume</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqDefaultSweepDefinitions">ESPPacketReqDefaultSweepDefinitions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqDefaultSweeps">ESPPacketReqDefaultSweeps</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqFactoryDefault">ESPPacketReqFactoryDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqMaxSweepIndex">ESPPacketReqMaxSweepIndex</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqMuteOff">ESPPacketReqMuteOff</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqMuteOn">ESPPacketReqMuteOn</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqOverrideThumbwheel">ESPPacketReqOverrideThumbwheel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqSavvyStatus">ESPPacketReqSavvyStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqSerialNumber">ESPPacketReqSerialNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqSetSavvyUnmuteEnable">ESPPacketReqSetSavvyUnmuteEnable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqStartAlertData">ESPPacketReqStartAlertData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqStopAlertData">ESPPacketReqStopAlertData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqSweepSections">ESPPacketReqSweepSections</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqTurnOffMainDisplay">ESPPacketReqTurnOffMainDisplay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqTurnOnMainDisplay">ESPPacketReqTurnOnMainDisplay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqUserBytes">ESPPacketReqUserBytes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqVehicleSpeed">ESPPacketReqVehicleSpeed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqVersion">ESPPacketReqVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqWriteSweepDefinition">ESPPacketReqWriteSweepDefinition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqWriteUserBytes">ESPPacketReqWriteUserBytes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqWriteVolume">ESPPacketReqWriteVolume</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespAlertData">ESPPacketRespAlertData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespBatteryVoltage">ESPPacketRespBatteryVoltage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespCurrentVolume">ESPPacketRespCurrentVolume</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespDataError">ESPPacketRespDataError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespDataReceived">ESPPacketRespDataReceived</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespDefaultSweepDefinition">ESPPacketRespDefaultSweepDefinition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespMaxSweepIndex">ESPPacketRespMaxSweepIndex</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespRequestNotProcessed">ESPPacketRespRequestNotProcessed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespSavvyStatus">ESPPacketRespSavvyStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespSerialNumber">ESPPacketRespSerialNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespSweepDefiniton">ESPPacketRespSweepDefiniton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespSweepSections">ESPPacketRespSweepSections</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespSweepWriteResult">ESPPacketRespSweepWriteResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespUnsupportedPacket">ESPPacketRespUnsupportedPacket</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespUserBytes">ESPPacketRespUserBytes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespVehicleSpeed">ESPPacketRespVehicleSpeed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketRespVersion">ESPPacketRespVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@ESPRequestErrorDomain">ESPRequestErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@ESPScannerErrorDomain">ESPScannerErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPDisplayData.h@ESPV1ModeAdvancedLogic">ESPV1ModeAdvancedLogic</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPDisplayData.h@ESPV1ModeAllBogeysOrKKa">ESPV1ModeAllBogeysOrKKa</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPDisplayData.h@ESPV1ModeLogicOrKa">ESPV1ModeLogicOrKa</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPDisplayData.h@ESPV1ModeUnknown">ESPV1ModeUnknown</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ESPDisplayState.html">ESPDisplayState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ESPRequestErrorCode.html">ESPRequestErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ESPScannerErrorCode.html">ESPScannerErrorCode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ESPClientDelegate.html">ESPClientDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ESPScannerDelegate.html">ESPScannerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/ESPAlertBand.html">ESPAlertBand</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/ESPAlertDirection.html">ESPAlertDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/ESPBargraphSensitivity.html">ESPBargraphSensitivity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/ESPConnectMode.html">ESPConnectMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:ESPPacket.h@T@ESPDeviceID">ESPDeviceID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:ESPFrequency.h@T@ESPFrequencyGHz">ESPFrequencyGHz</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:ESPFrequency.h@T@ESPFrequencyMHz">ESPFrequencyMHz</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/ESPKMuteTimerValue.html">ESPKMuteTimerValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/ESPMuteVolumeState.html">ESPMuteVolumeState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:ESPPacket.h@T@ESPPacketID">ESPPacketID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/ESPPostMuteBogeyLockVolumeState.html">ESPPostMuteBogeyLockVolumeState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/ESPRequestTarget.html">ESPRequestTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:ESPDisplayData.h@T@ESPV1Mode">ESPV1Mode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@ESPFrequency_GHz_to_MHz">ESPFrequency_GHz_to_MHz</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@ESPFrequency_MHz_to_GHz">ESPFrequency_MHz_to_GHz</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@ESPKMuteTimerValue_fromSeconds">ESPKMuteTimerValue_fromSeconds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@ESPKMuteTimerValue_toSeconds">ESPKMuteTimerValue_toSeconds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@ESPV1Mode_isValidMode">ESPV1Mode_isValidMode</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ESPScannerDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">ESPScannerDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Receives events from an ESPScanner object</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)ESPScannerDelegate(im)espScannerDidTimeoutScan:"></a>
+                    <a name="//apple_ref/objc/Method/-espScannerDidTimeoutScan:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)ESPScannerDelegate(im)espScannerDidTimeoutScan:">-espScannerDidTimeoutScan:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invoked when a scan has timed out</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">espScannerDidTimeoutScan</span><span class="p">:(</span><span class="n"><a href="../Classes/ESPScanner.html">ESPScanner</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">scanner</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scanner</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the scanner that finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)ESPScannerDelegate(im)espScanner:didFailScanWithError:"></a>
+                    <a name="//apple_ref/objc/Method/-espScanner:didFailScanWithError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)ESPScannerDelegate(im)espScanner:didFailScanWithError:">-espScanner:<wbr>didFailScanWithError:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invoked when a scan failed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">espScanner</span><span class="p">:(</span><span class="n"><a href="../Classes/ESPScanner.html">ESPScanner</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">scanner</span> <span class="nf">didFailScanWithError</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scanner</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the scanner that failed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the error describing the failure</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)ESPScannerDelegate(im)espScanner:didDiscoverPeripheral:"></a>
+                    <a name="//apple_ref/objc/Method/-espScanner:didDiscoverPeripheral:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)ESPScannerDelegate(im)espScanner:didDiscoverPeripheral:">-espScanner:<wbr>didDiscoverPeripheral:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invoked when a peripheral is discovered by the scanner</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">espScanner</span><span class="p">:(</span><span class="n"><a href="../Classes/ESPScanner.html">ESPScanner</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">scanner</span>
+    <span class="nf">didDiscoverPeripheral</span><span class="p">:(</span><span class="n">CBPeripheral</span> <span class="o">*</span><span class="p">)</span><span class="nv">peripheral</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scanner</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the scanner that discovered the peripheral</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>peripheral</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the peripheral that was discovered</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)ESPScannerDelegate(im)espScanner:didUpdatePeripheral:"></a>
+                    <a name="//apple_ref/objc/Method/-espScanner:didUpdatePeripheral:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)ESPScannerDelegate(im)espScanner:didUpdatePeripheral:">-espScanner:<wbr>didUpdatePeripheral:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invoked when a discovered peripheral&rsquo;s properties are updated by the scanner</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">espScanner</span><span class="p">:(</span><span class="n"><a href="../Classes/ESPScanner.html">ESPScanner</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">scanner</span>
+    <span class="nf">didUpdatePeripheral</span><span class="p">:(</span><span class="n">CBPeripheral</span> <span class="o">*</span><span class="p">)</span><span class="nv">peripheral</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scanner</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the scanner that discovered the peripheral</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>peripheral</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the peripheral that was updated</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)ESPScannerDelegate(im)espScanner:didFailToConnectPeripheral:error:"></a>
+                    <a name="//apple_ref/objc/Method/-espScanner:didFailToConnectPeripheral:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)ESPScannerDelegate(im)espScanner:didFailToConnectPeripheral:error:">-espScanner:<wbr>didFailToConnectPeripheral:<wbr>error:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invoked when ESPScanner::connectPeripheral: is called on a peripheral and it fails to connect</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">espScanner</span><span class="p">:(</span><span class="n"><a href="../Classes/ESPScanner.html">ESPScanner</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">scanner</span>
+    <span class="nf">didFailToConnectPeripheral</span><span class="p">:(</span><span class="n">CBPeripheral</span> <span class="o">*</span><span class="p">)</span><span class="nv">peripheral</span>
+                         <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scanner</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the scanner that failed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>peripheral</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the peripheral that could not be connected</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the error describing the failure</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)ESPScannerDelegate(im)espScanner:didConnectClient:"></a>
+                    <a name="//apple_ref/objc/Method/-espScanner:didConnectClient:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)ESPScannerDelegate(im)espScanner:didConnectClient:">-espScanner:<wbr>didConnectClient:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invoked when a peripheral has successfully connected and found the ESP service</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">espScanner</span><span class="p">:(</span><span class="n"><a href="../Classes/ESPScanner.html">ESPScanner</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">scanner</span>
+    <span class="nf">didConnectClient</span><span class="p">:(</span><span class="n">__kindof</span> <span class="n"><a href="../Classes/ESPClient.html">ESPClient</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">client</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scanner</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the scanner that connected the peripheral</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>client</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the client containing the connected peripheral</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)ESPScannerDelegate(im)espScanner:didDisconnectClient:error:"></a>
+                    <a name="//apple_ref/objc/Method/-espScanner:didDisconnectClient:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)ESPScannerDelegate(im)espScanner:didDisconnectClient:error:">-espScanner:<wbr>didDisconnectClient:<wbr>error:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invoked when a connected ESP client/peripheral is disconnected</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">espScanner</span><span class="p">:(</span><span class="n"><a href="../Classes/ESPScanner.html">ESPScanner</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">scanner</span>
+    <span class="nf">didDisconnectClient</span><span class="p">:(</span><span class="n">__kindof</span> <span class="n"><a href="../Classes/ESPClient.html">ESPClient</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">client</span>
+                  <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scanner</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the scanner that connected the client</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>client</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the client that disconnected</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the error describing why the disconnection happened, or nil if the client was disconnected via ESPScanner::disconnectClient</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2023-09-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

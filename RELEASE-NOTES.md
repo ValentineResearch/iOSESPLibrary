@@ -43,8 +43,13 @@ Interface Changes
 * Added ESP Specification (3.006)
 * Refactored for extendability
 
-# **ESP Library2 v2.0.2 ñ October 29, 2021**
+# **ESP Library2 v2.0.2 - October 29, 2021**
 *Added support for remoting adjusting the V1 Gen2's volume settings. **(Only supported on versions V4.1027 and above)**
 
-# **ESP Library2 v2.0.3 ñ September 19, 2023**
+# **ESP Library2 v2.0.3 - September 19, 2023**
 *Added support for the Ka Always Radar Priority and Fast Laser Detection features. **(Only supported on versions V4.1031 and above)**
+
+# **ESP Library2 v2.0.4 – March 4, 2024**
+* Added support for setting Ka sensitivity in the User Bytes. **(Only supported on versions V4.1032 and above)**
+* Added support for detecting junked out alerts in respAlertData. **(Only supported on versions V4.1031 and above)**
+* Added support for leaving the Bluetooth indicator on when turning off the main display on the V1 Gen2. **(Only supported on versions V4.1031 and above)**

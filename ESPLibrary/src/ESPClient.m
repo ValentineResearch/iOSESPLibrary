@@ -13,6 +13,7 @@
 #import "ESPSweepSectionsBuilder.h"
 #import "ESPSweepsBuilder.h"
 #import "ESPRequest.h"
+#import "V1VersionUtil.h"
 
 //#define LOGGING_ENABLED
 
@@ -51,6 +52,7 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 	BOOL _determinedV1Type;
 	BOOL _lastV1TypeHadChecksums;
 	NSUInteger _v1TypeDeterminationCount;
+    NSUInteger _lastV1Version;
 	
 	NSTimer* _powerLossTimer;
 	NSTimer* _requestTimeoutTimer;
@@ -111,6 +113,7 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 		_determinedV1Type = NO;
 		_lastV1TypeHadChecksums = NO;
 		_v1TypeDeterminationCount = 0;
+        _lastV1Version = 0;
 		
 		_delegate = nil;
 		_legacy = NO;
@@ -348,7 +351,11 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 	//handle misc packets
 	if(_determinedV1Type)
 	{
-		if(packet.packetID==ESPPacketInfV1Busy)
+        if(packet.packetID==ESPPacketRespVersion && (packet.origin==ESPDeviceV1WithChecksum || packet.origin==ESPDeviceV1WithoutChecksum))
+        {
+            _lastV1Version=getVersionFor([[NSString alloc] initWithData:[self _payloadFromPacket:packet] encoding:NSASCIIStringEncoding]);
+        }
+		else if(packet.packetID==ESPPacketInfV1Busy)
 		{
 			@synchronized(_v1BusyQueue)
 			{
@@ -536,7 +543,7 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 	//call display and alert data delegate methods
 	if(packet.packetID==ESPPacketInfDisplayData)
 	{
-		ESPDisplayData* displayData = [[ESPDisplayData alloc] initWithData:[self _payloadFromPacket:packet]];
+        ESPDisplayData* displayData = [[ESPDisplayData alloc] initWithData:[self _payloadFromPacket:packet]];
 		if(displayData!=nil && _delegate!=nil && [_delegate respondsToSelector:@selector(espClient:didReceiveDisplayData:)])
 		{
 			[_delegate espClient:self didReceiveDisplayData:displayData];
@@ -544,8 +551,8 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 	}
 	else if(packet.packetID==ESPPacketRespAlertData)
 	{
-		ESPAlertData* alert = [[ESPAlertData alloc] initWithData:[self _payloadFromPacket:packet]];
-		NSArray<ESPAlertData*>* alertTable = [_alertTableBuilder addAlert:alert];
+		ESPAlertData* alert = [[ESPAlertData alloc] initWithData:[self _payloadFromPacket:packet] v1Version:_lastV1Version];
+        NSArray<ESPAlertData*>* alertTable = [_alertTableBuilder addAlert:alert];
 		if(alertTable!=nil)
 		{
 			if(_delegate!=nil && [_delegate respondsToSelector:@selector(espClient:didReceiveAlertTable:)])
@@ -1413,10 +1420,23 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 
 -(void)requestTurnOffMainDisplayFor:(ESPRequestTarget)target completion:(void(^)(BOOL,NSError*))completion
 {
+    // Call the new function that supports leaving the Bluetooth indicator on with the default option of having the Bluetooth indicator turned off.
+    [self requestTurnOffMainDisplayFor:target withBluetoothIndicatorOn:FALSE completion:completion];
+}
+-(void)requestTurnOffMainDisplayFor:(ESPRequestTarget)target withBluetoothIndicatorOn:(BOOL) btIndOn completion:(void(^)(BOOL,NSError*))completion
+{
 	ESPRequest* request = [ESPRequest request];
 	request.target = target;
 	request.packetID = ESPPacketReqTurnOffMainDisplay;
-	request.packetData = [NSData data];
+    if ( _lastV1Version >=  ALLOW_BT_ON_DISPLAY_OFF_START_VERSION ){
+        // Construct an NSData holding the aux0 byte
+        Byte auxData [] = { btIndOn ? 0x01 : 0x00 };
+        request.packetData = [[NSData alloc] initWithBytes:auxData length:1] ;
+    }
+    else {
+        // Don't send aux1 if the V1 doesn't support
+        request.packetData = [NSData data];
+    }
 	
 	ESPResponseExpector* expector = [ESPResponseExpector expector];
 	[expector addResponseID:ESPPacketInfDisplayData];

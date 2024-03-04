@@ -201,6 +201,11 @@ enum ESPRequestErrorCode
 /// @param target the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request
 /// @param completion a callback called if the request is successful, if the request times out, or if an error occurs
 -(void)requestTurnOffMainDisplayFor:(ESPRequestTarget)target completion:(void(^)(BOOL displayOn, NSError* error))completion;
+/// Requests the ESP device to turn off its main display with the option to keep the Bluetooth LED on
+/// @param target the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request
+/// @param btIndOn flag to indicate whether or not the Bluetooth LED should be kept on when the rest of the display is turned off
+/// @param completion a callback called if the request is successful, if the request times out, or if an error occurs
+-(void)requestTurnOffMainDisplayFor:(ESPRequestTarget)target withBluetoothIndicatorOn:(BOOL) btIndOn completion:(void(^)(BOOL,NSError*))completion;
 /// Requests the ESP device to turn on its main display
 /// @param target the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request
 /// @param completion a callback called if the request is successful, if the request times out, or if an error occurs

@@ -620,6 +620,28 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
     return ESPData_getBit(_data, 1, 5);
 }
 
+-(void)setKaSensitivity:(ESPKaSensitivity)kaSensitivity {
+    if(_v1Version < ALLOW_KA_SENSITIVITY_ADJUST_START_VERSION) {
+        return;
+    }
+    Byte kaSensitivityByte = (Byte)kaSensitivity;
+    if ( kaSensitivityByte == 0 ){
+        // Do not allow an invalid value
+        kaSensitivityByte = (Byte)ESPKaFullSensitivity;
+    }
+    ESPData_setBit(_data, 1, 6, ESPByte_getBit(kaSensitivityByte, 0));
+    ESPData_setBit(_data, 1, 7, ESPByte_getBit(kaSensitivityByte, 1));
+}
+
+- (ESPKaSensitivity)kaSensitivity {
+    if(_v1Version < ALLOW_KA_SENSITIVITY_ADJUST_START_VERSION) {
+        return ESPKaFullSensitivity;
+    }
+    Byte kaSensitivityByte = ESPData_getByte(_data, 1);
+    kaSensitivityByte = (kaSensitivityByte >> 6);
+    return (ESPKaSensitivity)kaSensitivityByte;
+}
+
 -(NSString*)debugDescription
 {
 	NSMutableString* desc = [NSMutableString string];

@@ -54,6 +54,14 @@ typedef enum
 	ESPKMuteTimer30 = 0b110
 } ESPKMuteTimerValue;
 
+/// Constants that represent the Ka Sensitivity setting
+typedef enum
+{
+    ESPKaFullSensitivity = 0b11,
+    ESPKaOriginalGen2Sensitivity = 0b10,
+    ESPKaRelaxedSensitivity = 0b01,
+} ESPKaSensitivity;
+
 /// Converts a KMuteTimerValue enum to an unsigned integer with the value of the number of seconds that the enum value represents
 /// @param value the KMuteTimerValue to convert to seconds
 /// @return an unsigned integer representing a number of seconds
@@ -149,5 +157,6 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds);
 @property (nonatomic) BOOL KaAlwaysRadarPriority;
 /// Toggle the Fast Laser Detect feature
 @property (nonatomic) BOOL FastLaserDetect;
-
+/// Sets the Ka threhsold setting
+@property (nonatomic) ESPKaSensitivity kaSensitivity;
 @end
