@@ -1820,6 +1820,32 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
     [self requestWriteVolume:volumeSettings target:ESPRequestTargetValentineOne completion:completion];
 }
 
+-(void)requestAbortAudioDelay:(ESPRequestTarget)target completion:(void(^)(NSError*))completion
+{
+    ESPRequest* request = [ESPRequest request];
+    request.target = target;
+    request.packetID = ESPPacketReqAbortAudioDelay;
+    request.packetData = [NSData data];
+    
+    ESPResponseExpector* expector = [ESPResponseExpector expector];
+    expector.packetRecievedCallback = ^BOOL (ESPPacket* packet){
+        if(completion!=nil)
+        {
+            completion(nil);
+        }
+        return YES;
+    };
+    expector.failureCallback = ^(NSError* error){
+        if(completion!=nil)
+        {
+            completion(error);
+        }
+    };
+    request.responseExpector = expector;
+    
+    [self _queueRequest:request];
+}
+
 -(void)requestStartAlertDataFor:(ESPRequestTarget)target completion:(void(^)(NSError*))completion
 {
 	ESPRequest* request = [ESPRequest request];
@@ -2090,7 +2116,6 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 {
 	[self requestSetSavvyUnmuteEnabled:unmuteEnabled target:ESPRequestTargetSavvy completion:completion];
 }
-
 
 
 #pragma mark - CBPeripheralDelegate

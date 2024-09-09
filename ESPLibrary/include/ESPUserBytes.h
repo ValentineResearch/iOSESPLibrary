@@ -159,4 +159,10 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds);
 @property (nonatomic) BOOL FastLaserDetect;
 /// Sets the Ka threhsold setting
 @property (nonatomic) ESPKaSensitivity kaSensitivity;
+/// Toggle the Startup Sequence On/Off feature
+@property (nonatomic) BOOL StartupSequenceOn;
+/// Toggle the Resting Display On/Off feature
+@property (nonatomic) BOOL RestingDisplayOn;
+/// Toggle the BSM Plus On/Off feature
+@property (nonatomic) BOOL BSMPlusOn;
 @end

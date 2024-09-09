@@ -132,7 +132,7 @@ enum ESPRequestErrorCode
 /// @param target the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request
 /// @param completion a callback called if the request is successful, if the request times out, or if an error occurs
 -(void)requestWriteUserBytes:(ESPUserBytes*)userBytes target:(ESPRequestTarget)target completion:(void(^)(NSError* error))completion;
-/// Writes the given user bytes to the Valentine On
+/// Writes the given user bytes to the Valentine One
 /// @param userBytes the user bytes to write
 /// @param completion a callback called if the request is successful, if the request times out, or if an error occurs
 -(void)requestWriteUserBytes:(ESPUserBytes*)userBytes completion:(void(^)(NSError* error))completion;
@@ -251,10 +251,13 @@ enum ESPRequestErrorCode
 /// @param target the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request
 /// @param completion a callback called if the request is successful, if the request times out, or if an error occurs
 -(void)requestWriteVolume:(NSData*)volumeSettings target:(ESPRequestTarget)target completion:(void(^)(NSError* error))completion;
-/// Writes the given volume settings to the Valentine On
+/// Writes the given volume settings to the Valentine One
 /// @param volumeSettings the user bytes to write
 /// @param completion a callback called if the request is successful, if the request times out, or if an error occurs
 -(void)requestWriteVolume:(NSData*)volumeSettings completion:(void(^)(NSError* error))completion;
+/// Requests the Valentine One to abort the delay between tones
+/// @param completion a callback called if the request is successful, if the request times out, or if an error occurs
+-(void)requestAbortAudioDelay:(ESPRequestTarget)target completion:(void(^)(NSError*))completion;
 
 
 /// Requests alert data to start being received from the ESP device to the current delegate

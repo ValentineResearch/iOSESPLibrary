@@ -87,6 +87,8 @@ static const ESPPacketID ESPPacketReqCurrentVolume = 0x37;
 static const ESPPacketID ESPPacketRespCurrentVolume = 0x38;
 /// Represents the packet identifier for a volume write request packet
 static const ESPPacketID ESPPacketReqWriteVolume = 0x39;
+/// Represents the packet identifier for a volume write request packet
+static const ESPPacketID ESPPacketReqAbortAudioDelay = 0x3A;
 
 /// Represents the packet identifier for a start alert data request packet
 static const ESPPacketID ESPPacketReqStartAlertData = 0x41;

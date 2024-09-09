@@ -53,3 +53,9 @@ Interface Changes
 * Added support for setting Ka sensitivity in the User Bytes. **(Only supported on versions V4.1032 and above)**
 * Added support for detecting junked out alerts in respAlertData. **(Only supported on versions V4.1031 and above)**
 * Added support for leaving the Bluetooth indicator on when turning off the main display on the V1 Gen2. **(Only supported on versions V4.1031 and above)**
+
+# **ESP Library2 v2.0.5 ñ September, 2024**
+* Added support for turning the Startup Sequence on or off. **(Only supported on versions V4.1035 and above)**
+* Added support for turning the Resting Display on or off. **(Only supported on versions V4.1035 and above)**
+* Added support for turning BSM Plus on or off. **(Only supported on versions V4.1035 and above)**
+

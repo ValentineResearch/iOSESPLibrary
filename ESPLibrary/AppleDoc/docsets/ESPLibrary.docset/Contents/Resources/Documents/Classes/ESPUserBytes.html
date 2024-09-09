@@ -17,7 +17,7 @@
     <a title="ESPUserBytes Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">ESPLibrary 2.0.3 Docs</a> (95% documented)</p>
+        <p><a href="../index.html">ESPLibrary 2.0.5 Docs</a> (94% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -105,6 +105,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Constants.html#/c:ESPPacket.h@ESPPacketInfV1Busy">ESPPacketInfV1Busy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqAbortAudioDelay">ESPPacketReqAbortAudioDelay</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Constants.html#/c:ESPPacket.h@ESPPacketReqAllSweepDefinitions">ESPPacketReqAllSweepDefinitions</a>
@@ -256,10 +259,37 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Enums/ESPAlertBand.html">ESPAlertBand</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ESPAlertDirection.html">ESPAlertDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ESPBargraphSensitivity.html">ESPBargraphSensitivity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ESPConnectMode.html">ESPConnectMode</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/ESPDisplayState.html">ESPDisplayState</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/ESPKMuteTimerValue.html">ESPKMuteTimerValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ESPKaSensitivity.html">ESPKaSensitivity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ESPMuteVolumeState.html">ESPMuteVolumeState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ESPPostMuteBogeyLockVolumeState.html">ESPPostMuteBogeyLockVolumeState</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/ESPRequestErrorCode.html">ESPRequestErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ESPRequestTarget.html">ESPRequestTarget</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/ESPScannerErrorCode.html">ESPScannerErrorCode</a>
@@ -281,18 +311,6 @@
             <a href="../Type%20Definitions.html">Type Definitions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Type%20Definitions/ESPAlertBand.html">ESPAlertBand</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Type%20Definitions/ESPAlertDirection.html">ESPAlertDirection</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Type%20Definitions/ESPBargraphSensitivity.html">ESPBargraphSensitivity</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Type%20Definitions/ESPConnectMode.html">ESPConnectMode</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Type%20Definitions.html#/c:ESPPacket.h@T@ESPDeviceID">ESPDeviceID</a>
               </li>
               <li class="nav-group-task">
@@ -302,19 +320,7 @@
                 <a href="../Type%20Definitions.html#/c:ESPFrequency.h@T@ESPFrequencyMHz">ESPFrequencyMHz</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Type%20Definitions/ESPKMuteTimerValue.html">ESPKMuteTimerValue</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Type%20Definitions/ESPMuteVolumeState.html">ESPMuteVolumeState</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Type%20Definitions.html#/c:ESPPacket.h@T@ESPPacketID">ESPPacketID</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Type%20Definitions/ESPPostMuteBogeyLockVolumeState.html">ESPPostMuteBogeyLockVolumeState</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Type%20Definitions/ESPRequestTarget.html">ESPRequestTarget</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Type%20Definitions.html#/c:ESPDisplayData.h@T@ESPV1Mode">ESPV1Mode</a>
@@ -812,7 +818,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions/ESPBargraphSensitivity.html">ESPBargraphSensitivity</a></span> <span class="n">bargraphSensitivity</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPBargraphSensitivity.html">ESPBargraphSensitivity</a></span> <span class="n">bargraphSensitivity</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -893,7 +899,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions/ESPMuteVolumeState.html">ESPMuteVolumeState</a></span> <span class="n">muteVolumeState</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPMuteVolumeState.html">ESPMuteVolumeState</a></span> <span class="n">muteVolumeState</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -920,7 +926,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions/ESPPostMuteBogeyLockVolumeState.html">ESPPostMuteBogeyLockVolumeState</a></span> <span class="n">postMuteBogeyLockVolumeState</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPPostMuteBogeyLockVolumeState.html">ESPPostMuteBogeyLockVolumeState</a></span> <span class="n">postMuteBogeyLockVolumeState</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -947,7 +953,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions/ESPKMuteTimerValue.html">ESPKMuteTimerValue</a></span> <span class="n">KMuteTimer</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPKMuteTimerValue.html">ESPKMuteTimerValue</a></span> <span class="n">KMuteTimer</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -1386,13 +1392,121 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPUserBytes(py)kaSensitivity"></a>
+                    <a name="//apple_ref/objc/Property/kaSensitivity" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPUserBytes(py)kaSensitivity">kaSensitivity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the Ka threhsold setting</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/ESPKaSensitivity.html">ESPKaSensitivity</a></span> <span class="n">kaSensitivity</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPUserBytes(py)StartupSequenceOn"></a>
+                    <a name="//apple_ref/objc/Property/StartupSequenceOn" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPUserBytes(py)StartupSequenceOn">StartupSequenceOn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Toggle the Startup Sequence On/Off feature</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">StartupSequenceOn</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPUserBytes(py)RestingDisplayOn"></a>
+                    <a name="//apple_ref/objc/Property/RestingDisplayOn" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPUserBytes(py)RestingDisplayOn">RestingDisplayOn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Toggle the Resting Display On/Off feature</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">RestingDisplayOn</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPUserBytes(py)BSMPlusOn"></a>
+                    <a name="//apple_ref/objc/Property/BSMPlusOn" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPUserBytes(py)BSMPlusOn">BSMPlusOn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Toggle the BSM Plus On/Off feature</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">BSMPlusOn</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2023-09-18)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2024-09-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>

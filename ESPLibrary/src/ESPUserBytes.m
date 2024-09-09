@@ -642,6 +642,50 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
     return (ESPKaSensitivity)kaSensitivityByte;
 }
 
+-(void)setStartupSequenceOn:(bool)startupSequenceOn {
+    if(_v1Version < ALLOW_STARTUP_SEQUENCE_DISABLE_START_VERSION) {
+        return;
+    }
+    ESPData_setBit(_data, 2, 0, startupSequenceOn);
+}
+
+- (bool)StartupSequenceOn {
+    if(_v1Version < ALLOW_STARTUP_SEQUENCE_DISABLE_START_VERSION) {
+        return true;
+    }
+    return ESPData_getBit(_data, 2, 0);
+}
+
+-(void)setRestingDisplayOn:(bool)restingDisplayOn {
+    if(_v1Version < ALLOW_RESTING_DISPLAY_DISABLE_START_VERSION) {
+        return;
+    }
+    ESPData_setBit(_data, 2, 1, restingDisplayOn);
+}
+
+- (bool)RestingDisplayOn {
+    if(_v1Version < ALLOW_RESTING_DISPLAY_DISABLE_START_VERSION) {
+        return true;
+    }
+    return ESPData_getBit(_data, 2, 1);
+}
+
+-(void)setBSMPlusOn:(bool)bsmPlusOn {
+    if(_v1Version < ALLOW_BSM_PLUS_ENABLE_START_VERSION) {
+        return;
+    }
+    ESPData_setBit(_data, 2, 2, !bsmPlusOn);
+}
+
+- (bool)BSMPlusOn {
+    if(_v1Version < ALLOW_BSM_PLUS_ENABLE_START_VERSION) {
+        return true;
+    }
+    return !ESPData_getBit(_data, 2, 2);
+}
+
+
+
 -(NSString*)debugDescription
 {
 	NSMutableString* desc = [NSMutableString string];
