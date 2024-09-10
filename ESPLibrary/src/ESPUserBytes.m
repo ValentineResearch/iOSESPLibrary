@@ -621,7 +621,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 }
 
 -(void)setKaSensitivity:(ESPKaSensitivity)kaSensitivity {
-    if(_v1Version < ALLOW_KA_SENSITIVITY_ADJUST_START_VERSION) {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
         return;
     }
     Byte kaSensitivityByte = (Byte)kaSensitivity;
@@ -634,7 +634,7 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 }
 
 - (ESPKaSensitivity)kaSensitivity {
-    if(_v1Version < ALLOW_KA_SENSITIVITY_ADJUST_START_VERSION) {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
         return ESPKaFullSensitivity;
     }
     Byte kaSensitivityByte = ESPData_getByte(_data, 1);
@@ -643,48 +643,46 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
 }
 
 -(void)setStartupSequenceOn:(bool)startupSequenceOn {
-    if(_v1Version < ALLOW_STARTUP_SEQUENCE_DISABLE_START_VERSION) {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
         return;
     }
     ESPData_setBit(_data, 2, 0, startupSequenceOn);
 }
 
 - (bool)StartupSequenceOn {
-    if(_v1Version < ALLOW_STARTUP_SEQUENCE_DISABLE_START_VERSION) {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
         return true;
     }
     return ESPData_getBit(_data, 2, 0);
 }
 
 -(void)setRestingDisplayOn:(bool)restingDisplayOn {
-    if(_v1Version < ALLOW_RESTING_DISPLAY_DISABLE_START_VERSION) {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
         return;
     }
     ESPData_setBit(_data, 2, 1, restingDisplayOn);
 }
 
 - (bool)RestingDisplayOn {
-    if(_v1Version < ALLOW_RESTING_DISPLAY_DISABLE_START_VERSION) {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
         return true;
     }
     return ESPData_getBit(_data, 2, 1);
 }
 
 -(void)setBSMPlusOn:(bool)bsmPlusOn {
-    if(_v1Version < ALLOW_BSM_PLUS_ENABLE_START_VERSION) {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
         return;
     }
     ESPData_setBit(_data, 2, 2, !bsmPlusOn);
 }
 
 - (bool)BSMPlusOn {
-    if(_v1Version < ALLOW_BSM_PLUS_ENABLE_START_VERSION) {
-        return true;
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return false;
     }
     return !ESPData_getBit(_data, 2, 2);
 }
-
-
 
 -(NSString*)debugDescription
 {
