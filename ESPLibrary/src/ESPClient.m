@@ -999,43 +999,47 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
     [self requestUserBytesDataFrom:ESPRequestTargetValentineOne completion:completion];
 }
 
--(void)requestUserBytesFrom:(ESPRequestTarget)target forV1Version:(NSUInteger)version completion:(void(^)(ESPUserBytes* userBytes, NSError* error))completion;
+-(void)requestUserBytesFrom:(ESPRequestTarget)target forVersion:(NSUInteger)version completion:(void(^)(ESPUserBytesBase* userBytes, NSError* error))completion;
 {
-	ESPRequest* request = [ESPRequest request];
-	request.target = target;
-	request.packetID = ESPPacketReqUserBytes;
-	request.packetData = [NSData data];
-	
-	ESPResponseExpector* expector = [ESPResponseExpector expector];
-	[expector addResponseID:ESPPacketRespUserBytes];
-	expector.packetRecievedCallback = ^BOOL (ESPPacket* packet){
-		NSData* payload = [self _payloadFromPacket:packet];
-        ESPUserBytes* userBytes = [[ESPUserBytes alloc] initWithData:payload v1Version:version];
-		if(completion!=nil)
-		{
-			completion(userBytes, nil);
-		}
-		return YES;
-	};
-	expector.failureCallback = ^(NSError* error){
-		if(completion!=nil)
-		{
-			completion(nil, error);
-		}
-	};
-	request.responseExpector = expector;
-	
-	[self _queueRequest:request];
+    [self requestUserBytesDataFrom:target completion:^(NSData *userBytes, NSError *error) {
+         if ( completion != nil ) {
+            if ( error == nil ){
+                if ( target == ESPRequestTargetTechDisplay ){
+                    ESPTechDisplayUserBytes* espUserBytes = [[ESPTechDisplayUserBytes alloc] initWithData:userBytes t1Version:version];
+                    completion (espUserBytes, nil);
+                }
+                else {
+                    ESPV1UserBytes* espUserBytes = [[ESPV1UserBytes alloc] initWithData:userBytes v1Version:version];
+                    completion (espUserBytes, nil);
+                }
+            }
+            else {
+                completion (nil, error);
+            }
+        }
+    }];
 }
 
--(void)requestUserBytesforV1Version:(NSUInteger)version completion:(void(^)(ESPUserBytes* userBytes, NSError* error))completion 
+-(void)requestUserBytesforV1Version:(NSUInteger)version completion:(void(^)(ESPV1UserBytes* userBytes, NSError* error))completion 
 {
-    [self requestUserBytesFrom:ESPRequestTargetValentineOne forV1Version:version completion:completion];
+    [self requestUserBytesFrom:ESPRequestTargetValentineOne forVersion:version completion:^(ESPUserBytesBase* userBytes, NSError* error){
+        if ( error == nil ){
+            completion ((ESPV1UserBytes*)userBytes, nil);
+        }
+        else {
+            completion (nil, error);
+        }
+    }];
 }
 
--(void)requestWriteUserBytes:(ESPUserBytes*)userBytes target:(ESPRequestTarget)target completion:(void(^)(NSError*))completion
+-(void)requestWriteUserBytes:(ESPUserBytesBase*)userBytes target:(ESPRequestTarget)target completion:(void(^)(NSError*))completion
 {
-	NSData* userBytesData = userBytes.data;
+    [self requestWriteUserBytesData:userBytes.data target:target completion:completion];
+}
+
+-(void)requestWriteUserBytesData:(NSData*)data target:(ESPRequestTarget)target completion:(void(^)(NSError*))completion
+{
+    NSData* userBytesData = [[NSMutableData alloc] initWithData:data];
 	if(userBytesData.length>6)
 	{
 		userBytesData = [userBytesData subdataWithRange:NSMakeRange(0, 6)];
@@ -1075,7 +1079,7 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 	[self _queueRequest:request];
 }
 
--(void)requestWriteUserBytes:(ESPUserBytes*)userBytes completion:(void(^)(NSError*))completion
+-(void)requestWriteUserBytes:(ESPUserBytesBase*)userBytes completion:(void(^)(NSError*))completion
 {
 	[self requestWriteUserBytes:userBytes target:ESPRequestTargetValentineOne completion:completion];
 }
@@ -1825,6 +1829,32 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
     ESPRequest* request = [ESPRequest request];
     request.target = target;
     request.packetID = ESPPacketReqAbortAudioDelay;
+    request.packetData = [NSData data];
+    
+    ESPResponseExpector* expector = [ESPResponseExpector expector];
+    expector.packetRecievedCallback = ^BOOL (ESPPacket* packet){
+        if(completion!=nil)
+        {
+            completion(nil);
+        }
+        return YES;
+    };
+    expector.failureCallback = ^(NSError* error){
+        if(completion!=nil)
+        {
+            completion(error);
+        }
+    };
+    request.responseExpector = expector;
+    
+    [self _queueRequest:request];
+}
+
+-(void)requestDisplayCurrentVolume:(ESPRequestTarget)target completion:(void(^)(NSError*))completion
+{
+    ESPRequest* request = [ESPRequest request];
+    request.target = target;
+    request.packetID = ESPPacketReqDisplayCurrentVolume;
     request.packetData = [NSData data];
     
     ESPResponseExpector* expector = [ESPResponseExpector expector];

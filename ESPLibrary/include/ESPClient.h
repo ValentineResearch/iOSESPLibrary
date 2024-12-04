@@ -8,7 +8,9 @@
 #import <CoreBluetooth/CoreBluetooth.h>
 #import "ESPPacket.h"
 #import "ESPAlertData.h"
-#import "ESPUserBytes.h"
+#import "ESPUserBytesBase.h"
+#import "ESPTechDisplayUserBytes.h"
+#import "ESPV1UserBytes.h"
 #import "ESPDisplayData.h"
 #import "ESPCustomSweepData.h"
 #import "ESPSavvyStatus.h"
@@ -19,6 +21,7 @@ typedef enum
 {
 	ESPRequestTargetValentineOne = 00,
 	ESPRequestTargetConcealedDisplay = 01,
+    ESPRequestTargetTechDisplay = 01, // The Tech Display and Concealed Display use the same ESP ID
 	ESPRequestTargetRemoteAudio = 02,
 	ESPRequestTargetSavvy = 03,
 	ESPRequestTargetV1ConnectionLE = 04,
@@ -121,21 +124,28 @@ enum ESPRequestErrorCode
 /// @param target the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request
 /// @param version the version of the target v1
 /// @param completion a callback called if a response is received, if the request times out, or if an error occurs
--(void)requestUserBytesFrom:(ESPRequestTarget)target forV1Version:(NSUInteger)version completion:(void(^)(ESPUserBytes* userBytes, NSError* error))completion;
+-(void)requestUserBytesFrom:(ESPRequestTarget)target forVersion:(NSUInteger)version completion:(void(^)(ESPUserBytesBase* userBytes, NSError* error))completion;
 /// Requests the user bytes of the Valentine One
 /// @param version the version of the target v1
 /// @param completion a callback called if a response is received, if the request times out, or if an error occurs
--(void)requestUserBytesforV1Version:(NSUInteger)version completion:(void(^)(ESPUserBytes* userBytes, NSError* error))completion;
+-(void)requestUserBytesforV1Version:(NSUInteger)version completion:(void(^)(ESPV1UserBytes* userBytes, NSError* error))completion;
 
 /// Writes the given user bytes to the ESP device
 /// @param userBytes the user bytes to write
 /// @param target the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request
 /// @param completion a callback called if the request is successful, if the request times out, or if an error occurs
--(void)requestWriteUserBytes:(ESPUserBytes*)userBytes target:(ESPRequestTarget)target completion:(void(^)(NSError* error))completion;
+-(void)requestWriteUserBytes:(ESPUserBytesBase*)userBytes target:(ESPRequestTarget)target completion:(void(^)(NSError* error))completion;
+
+/// Writes the given user byte data  to the ESP device
+/// @param data the user bytes data to write
+/// @param target the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request
+/// @param completion a callback called if the request is successful, if the request times out, or if an error occurs
+-(void)requestWriteUserBytesData:(NSData*)data target:(ESPRequestTarget)target completion:(void(^)(NSError* error))completion;
+
 /// Writes the given user bytes to the Valentine One
 /// @param userBytes the user bytes to write
 /// @param completion a callback called if the request is successful, if the request times out, or if an error occurs
--(void)requestWriteUserBytes:(ESPUserBytes*)userBytes completion:(void(^)(NSError* error))completion;
+-(void)requestWriteUserBytes:(ESPUserBytesBase*)userBytes completion:(void(^)(NSError* error))completion;
 
 
 /// Requests the ESP device or one of its accessories to set its factory default settings
@@ -258,7 +268,9 @@ enum ESPRequestErrorCode
 /// Requests the Valentine One to abort the delay between tones
 /// @param completion a callback called if the request is successful, if the request times out, or if an error occurs
 -(void)requestAbortAudioDelay:(ESPRequestTarget)target completion:(void(^)(NSError*))completion;
-
+/// Requests the Valentine One to display the current volume
+/// @param completion a callback called if the request is successful, if the request times out, or if an error occurs
+-(void)requestDisplayCurrentVolume:(ESPRequestTarget)target completion:(void(^)(NSError*))completion;
 
 /// Requests alert data to start being received from the ESP device to the current delegate
 /// @see ESPClientDelegate

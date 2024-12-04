@@ -2,119 +2,133 @@
   "warnings": [
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
-      "line": 20,
+      "line": 22,
       "symbol": "ESPRequestTarget.ESPRequestTarget.ESPRequestTargetValentineOne",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
-      "line": 20,
+      "line": 22,
       "symbol": "ESPRequestTarget.ESPRequestTargetValentineOne",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
-      "line": 21,
+      "line": 23,
       "symbol": "ESPRequestTarget.ESPRequestTarget.ESPRequestTargetConcealedDisplay",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
-      "line": 21,
+      "line": 23,
       "symbol": "ESPRequestTarget.ESPRequestTargetConcealedDisplay",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
-      "line": 22,
+      "line": 24,
+      "symbol": "ESPRequestTarget.ESPRequestTarget.ESPRequestTargetTechDisplay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
+      "line": 24,
+      "symbol": "ESPRequestTarget.ESPRequestTargetTechDisplay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
+      "line": 25,
       "symbol": "ESPRequestTarget.ESPRequestTarget.ESPRequestTargetRemoteAudio",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
-      "line": 22,
+      "line": 25,
       "symbol": "ESPRequestTarget.ESPRequestTargetRemoteAudio",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
-      "line": 23,
+      "line": 26,
       "symbol": "ESPRequestTarget.ESPRequestTarget.ESPRequestTargetSavvy",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
-      "line": 23,
+      "line": 26,
       "symbol": "ESPRequestTarget.ESPRequestTargetSavvy",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
-      "line": 24,
+      "line": 27,
       "symbol": "ESPRequestTarget.ESPRequestTarget.ESPRequestTargetV1ConnectionLE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
-      "line": 24,
+      "line": 27,
       "symbol": "ESPRequestTarget.ESPRequestTargetV1ConnectionLE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
-      "line": 25,
+      "line": 28,
       "symbol": "ESPRequestTarget.ESPRequestTarget.ESPRequestTargetThirdParty1",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
-      "line": 25,
+      "line": 28,
       "symbol": "ESPRequestTarget.ESPRequestTargetThirdParty1",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
-      "line": 26,
+      "line": 29,
       "symbol": "ESPRequestTarget.ESPRequestTarget.ESPRequestTargetThirdParty2",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
-      "line": 26,
+      "line": 29,
       "symbol": "ESPRequestTarget.ESPRequestTargetThirdParty2",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
-      "line": 27,
+      "line": 30,
       "symbol": "ESPRequestTarget.ESPRequestTarget.ESPRequestTargetThirdParty3",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
-      "line": 27,
+      "line": 30,
       "symbol": "ESPRequestTarget.ESPRequestTargetThirdParty3",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
-      "line": 30,
+      "line": 33,
       "symbol": "ESPRequestErrorDomain",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
@@ -134,44 +148,86 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPUserBytes.h",
-      "line": 60,
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 61,
       "symbol": "ESPKaSensitivity.ESPKaFullSensitivity",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPUserBytes.h",
-      "line": 60,
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 61,
       "symbol": "ESPKaSensitivity.ESPKaSensitivity.ESPKaFullSensitivity",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPUserBytes.h",
-      "line": 61,
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 62,
       "symbol": "ESPKaSensitivity.ESPKaOriginalGen2Sensitivity",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPUserBytes.h",
-      "line": 61,
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 62,
       "symbol": "ESPKaSensitivity.ESPKaSensitivity.ESPKaOriginalGen2Sensitivity",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPUserBytes.h",
-      "line": 62,
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 63,
       "symbol": "ESPKaSensitivity.ESPKaRelaxedSensitivity",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPUserBytes.h",
-      "line": 62,
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 63,
       "symbol": "ESPKaSensitivity.ESPKaSensitivity.ESPKaRelaxedSensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 69,
+      "symbol": "ESPAutoMute.ESPAutoMute.ESPAutoMuteOff",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 69,
+      "symbol": "ESPAutoMute.ESPAutoMuteOff",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 70,
+      "symbol": "ESPAutoMute.ESPAutoMute.ESPAutoMuteOn",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 70,
+      "symbol": "ESPAutoMute.ESPAutoMuteOn",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 71,
+      "symbol": "ESPAutoMute.ESPAdvancedAutoMute",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 71,
+      "symbol": "ESPAutoMute.ESPAutoMute.ESPAdvancedAutoMute",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     }

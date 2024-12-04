@@ -10,6 +10,8 @@
 typedef Byte ESPDeviceID;
 /// Represents the device identifier for a Concealed Display (CD)
 static const ESPDeviceID ESPDeviceConcealedDisplay = 0x00;
+/// Represents the device identifier for a Tech Display, which is the same as the Concealed Display
+static const ESPDeviceID ESPDeviceTechDisplay = ESPDeviceConcealedDisplay;
 /// Represents the device identifier for a Remote Audio (RA)
 static const ESPDeviceID ESPDeviceRemoteAudio = 0x01;
 /// Represents the device identifier for a Savvy
@@ -87,8 +89,10 @@ static const ESPPacketID ESPPacketReqCurrentVolume = 0x37;
 static const ESPPacketID ESPPacketRespCurrentVolume = 0x38;
 /// Represents the packet identifier for a volume write request packet
 static const ESPPacketID ESPPacketReqWriteVolume = 0x39;
-/// Represents the packet identifier for a volume write request packet
+/// Represents the packet identifier to abort the audio delay in the V1
 static const ESPPacketID ESPPacketReqAbortAudioDelay = 0x3A;
+/// Represents the packet identifier to display the current volume on the V1
+static const ESPPacketID ESPPacketReqDisplayCurrentVolume = 0x3B;
 
 /// Represents the packet identifier for a start alert data request packet
 static const ESPPacketID ESPPacketReqStartAlertData = 0x41;

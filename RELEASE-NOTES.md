@@ -54,8 +54,13 @@ Interface Changes
 * Added support for detecting junked out alerts in respAlertData. **(Only supported on versions V4.1031 and above)**
 * Added support for leaving the Bluetooth indicator on when turning off the main display on the V1 Gen2. **(Only supported on versions V4.1031 and above)**
 
-# **ESP Library2 v2.0.5 ñ September, 2024**
+# **ESP Library2 v2.0.5 – September, 2024**
 * Added support for turning the Startup Sequence on or off. **(Only supported on versions V4.1035 and above)**
 * Added support for turning the Resting Display on or off. **(Only supported on versions V4.1035 and above)**
 * Added support for turning BSM Plus on or off. **(Only supported on versions V4.1035 and above)**
+
+# **ESP Library2 v2.0.6 – December, 2024**
+* Added support for the Tech Display. This includes adding a user bytes object for the Tech Display and providing the option to specify a target device on some existing functions.
+* Added support for turning Auto Mute on or off. **(Only supported on versions V4.1036 and above)**
+* Added support for displaying the current volume setting on the V1. **(Only supported on versions V4.1036 and above)**
 

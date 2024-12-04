@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		13218B9D23770BA500C4D873 /* V1VersionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 13218B9C23770BA500C4D873 /* V1VersionUtil.m */; };
+		1336F5C42CDEB2C400893D97 /* ESPUserBytesBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1336F5C32CDEAC8100893D97 /* ESPUserBytesBase.m */; };
+		1336F5C72CE3A68500893D97 /* ESPTechDisplayUserBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1336F5C62CE39A8B00893D97 /* ESPTechDisplayUserBytes.m */; };
 		847325BC16F0FC4200258402 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847325BB16F0FC4200258402 /* Foundation.framework */; };
 		8473262716F1196100258402 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8473262616F1196100258402 /* UIKit.framework */; };
 		A524EB5E1D2D9396006A7C55 /* ESPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A524EB5D1D2D9396006A7C55 /* ESPClient.m */; };
@@ -18,7 +20,7 @@
 		A57562101D355FE300543C59 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A575620F1D355FE300543C59 /* CoreBluetooth.framework */; };
 		A57690581D2EDF19005FBBAF /* ESPPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = A57690571D2EDF19005FBBAF /* ESPPacket.m */; };
 		A57A0DEF1D41355B00F4C050 /* ESPSweepsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A57A0DEE1D41355B00F4C050 /* ESPSweepsBuilder.m */; };
-		A58342B21D2D2F2700A706A7 /* ESPUserBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = A58342B11D2D2F2700A706A7 /* ESPUserBytes.m */; };
+		A58342B21D2D2F2700A706A7 /* ESPV1UserBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = A58342B11D2D2F2700A706A7 /* ESPV1UserBytes.m */; };
 		A58342B41D2D43DD00A706A7 /* ESPScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = A58342B31D2D43DD00A706A7 /* ESPScanner.m */; };
 		A59F9F091D2C19E3002ACC31 /* ESPDisplayData.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F9F081D2C19E3002ACC31 /* ESPDisplayData.m */; };
 		A59F9F0B1D2C1C4E002ACC31 /* ESPAlertData.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F9F0A1D2C1C4E002ACC31 /* ESPAlertData.m */; };
@@ -40,7 +42,7 @@
 		F17C79C91E8165C5008BE717 /* ESPDisplayData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A59F9F001D2C1987002ACC31 /* ESPDisplayData.h */; };
 		F17C79CA1E8165C5008BE717 /* ESPCustomSweepData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A59F9EFF1D2C1987002ACC31 /* ESPCustomSweepData.h */; };
 		F17C79CB1E8165C5008BE717 /* ESPSavvyStatus.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A59F9F051D2C1987002ACC31 /* ESPSavvyStatus.h */; };
-		F17C79CC1E8165C5008BE717 /* ESPUserBytes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A59F9F071D2C1987002ACC31 /* ESPUserBytes.h */; };
+		F17C79CC1E8165C5008BE717 /* ESPV1UserBytes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A59F9F071D2C1987002ACC31 /* ESPV1UserBytes.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,7 +62,7 @@
 				F17C79C91E8165C5008BE717 /* ESPDisplayData.h in CopyFiles */,
 				F17C79CA1E8165C5008BE717 /* ESPCustomSweepData.h in CopyFiles */,
 				F17C79CB1E8165C5008BE717 /* ESPSavvyStatus.h in CopyFiles */,
-				F17C79CC1E8165C5008BE717 /* ESPUserBytes.h in CopyFiles */,
+				F17C79CC1E8165C5008BE717 /* ESPV1UserBytes.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +73,10 @@
 		13218B9C23770BA500C4D873 /* V1VersionUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = V1VersionUtil.m; sourceTree = "<group>"; };
 		132920B2242A5F77001E8BBE /* ESPScannerProtected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESPScannerProtected.h; sourceTree = "<group>"; };
 		132920B3242A6942001E8BBE /* ESPClientProtected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESPClientProtected.h; sourceTree = "<group>"; };
+		1336F5C22CDEAC5B00893D97 /* ESPUserBytesBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESPUserBytesBase.h; sourceTree = "<group>"; };
+		1336F5C32CDEAC8100893D97 /* ESPUserBytesBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESPUserBytesBase.m; sourceTree = "<group>"; };
+		1336F5C52CE399F300893D97 /* ESPTechDisplayUserBytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESPTechDisplayUserBytes.h; sourceTree = "<group>"; };
+		1336F5C62CE39A8B00893D97 /* ESPTechDisplayUserBytes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESPTechDisplayUserBytes.m; sourceTree = "<group>"; };
 		847325B816F0FC4200258402 /* libESPLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libESPLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		847325BB16F0FC4200258402 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8473262616F1196100258402 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -87,7 +93,7 @@
 		A57690571D2EDF19005FBBAF /* ESPPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPPacket.m; sourceTree = "<group>"; };
 		A57A0DED1D41355B00F4C050 /* ESPSweepsBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPSweepsBuilder.h; sourceTree = "<group>"; };
 		A57A0DEE1D41355B00F4C050 /* ESPSweepsBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPSweepsBuilder.m; sourceTree = "<group>"; };
-		A58342B11D2D2F2700A706A7 /* ESPUserBytes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPUserBytes.m; sourceTree = "<group>"; };
+		A58342B11D2D2F2700A706A7 /* ESPV1UserBytes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPV1UserBytes.m; sourceTree = "<group>"; };
 		A58342B31D2D43DD00A706A7 /* ESPScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPScanner.m; sourceTree = "<group>"; };
 		A58342B51D2D60D100A706A7 /* ESPScanner+ESPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ESPScanner+ESPClient.h"; sourceTree = "<group>"; };
 		A59F9EFD1D2C1987002ACC31 /* ESPAlertData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESPAlertData.h; sourceTree = "<group>"; };
@@ -100,7 +106,7 @@
 		A59F9F041D2C1987002ACC31 /* ESPPacket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESPPacket.h; sourceTree = "<group>"; };
 		A59F9F051D2C1987002ACC31 /* ESPSavvyStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESPSavvyStatus.h; sourceTree = "<group>"; };
 		A59F9F061D2C1987002ACC31 /* ESPScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESPScanner.h; sourceTree = "<group>"; };
-		A59F9F071D2C1987002ACC31 /* ESPUserBytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESPUserBytes.h; sourceTree = "<group>"; };
+		A59F9F071D2C1987002ACC31 /* ESPV1UserBytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESPV1UserBytes.h; sourceTree = "<group>"; };
 		A59F9F081D2C19E3002ACC31 /* ESPDisplayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPDisplayData.m; sourceTree = "<group>"; };
 		A59F9F0A1D2C1C4E002ACC31 /* ESPAlertData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPAlertData.m; sourceTree = "<group>"; };
 		A59F9F121D2C3815002ACC31 /* ESPCustomSweepData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPCustomSweepData.m; sourceTree = "<group>"; };
@@ -173,7 +179,9 @@
 				A59F9F001D2C1987002ACC31 /* ESPDisplayData.h */,
 				A59F9EFF1D2C1987002ACC31 /* ESPCustomSweepData.h */,
 				A59F9F051D2C1987002ACC31 /* ESPSavvyStatus.h */,
-				A59F9F071D2C1987002ACC31 /* ESPUserBytes.h */,
+				1336F5C52CE399F300893D97 /* ESPTechDisplayUserBytes.h */,
+				1336F5C22CDEAC5B00893D97 /* ESPUserBytesBase.h */,
+				A59F9F071D2C1987002ACC31 /* ESPV1UserBytes.h */,
 				13218B9B2377068700C4D873 /* V1VersionUtil.h */,
 			);
 			path = include;
@@ -211,7 +219,9 @@
 				A59F9F081D2C19E3002ACC31 /* ESPDisplayData.m */,
 				A59F9F121D2C3815002ACC31 /* ESPCustomSweepData.m */,
 				A59F9F181D2C3911002ACC31 /* ESPSavvyStatus.m */,
-				A58342B11D2D2F2700A706A7 /* ESPUserBytes.m */,
+				1336F5C62CE39A8B00893D97 /* ESPTechDisplayUserBytes.m */,
+				1336F5C32CDEAC8100893D97 /* ESPUserBytesBase.m */,
+				A58342B11D2D2F2700A706A7 /* ESPV1UserBytes.m */,
 				13218B9C23770BA500C4D873 /* V1VersionUtil.m */,
 				132920B2242A5F77001E8BBE /* ESPScannerProtected.h */,
 				132920B3242A6942001E8BBE /* ESPClientProtected.h */,
@@ -307,7 +317,9 @@
 				A59F9F161D2C3815002ACC31 /* ESPFrequency.m in Sources */,
 				A57562071D35195A00543C59 /* ESPSweepSectionData.m in Sources */,
 				A56C4CBB1D2FD14E00F0CC16 /* ESPPartialData.m in Sources */,
-				A58342B21D2D2F2700A706A7 /* ESPUserBytes.m in Sources */,
+				1336F5C42CDEB2C400893D97 /* ESPUserBytesBase.m in Sources */,
+				A58342B21D2D2F2700A706A7 /* ESPV1UserBytes.m in Sources */,
+				1336F5C72CE3A68500893D97 /* ESPTechDisplayUserBytes.m in Sources */,
 				A5F159351D34171C008177B1 /* ESPPartialDataBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

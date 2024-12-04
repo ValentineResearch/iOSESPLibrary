@@ -17,7 +17,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">ESPLibrary 2.0.5 Docs</a> (94% documented)</p>
+        <p><a href="index.html">ESPLibrary 2.0.5 Docs</a> (93% documented)</p>
         <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -63,7 +63,13 @@
                 <a href="Classes/ESPScanner.html">ESPScanner</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/ESPUserBytes.html">ESPUserBytes</a>
+                <a href="Classes/ESPTechDisplayUserBytes.html">ESPTechDisplayUserBytes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ESPUserBytesBase.html">ESPUserBytesBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ESPV1UserBytes.html">ESPV1UserBytes</a>
               </li>
             </ul>
           </li>
@@ -81,6 +87,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Constants.html#/c:ESPPacket.h@ESPDeviceSavvy">ESPDeviceSavvy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:ESPPacket.h@ESPDeviceTechDisplay">ESPDeviceTechDisplay</a>
               </li>
               <li class="nav-group-task">
                 <a href="Constants.html#/c:ESPPacket.h@ESPDeviceThirdParty1">ESPDeviceThirdParty1</a>
@@ -126,6 +135,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Constants.html#/c:ESPPacket.h@ESPPacketReqDefaultSweeps">ESPPacketReqDefaultSweeps</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:ESPPacket.h@ESPPacketReqDisplayCurrentVolume">ESPPacketReqDisplayCurrentVolume</a>
               </li>
               <li class="nav-group-task">
                 <a href="Constants.html#/c:ESPPacket.h@ESPPacketReqFactoryDefault">ESPPacketReqFactoryDefault</a>
@@ -263,6 +275,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Enums/ESPAlertDirection.html">ESPAlertDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/ESPAutoMute.html">ESPAutoMute</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/ESPBargraphSensitivity.html">ESPBargraphSensitivity</a>
@@ -586,9 +601,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)ESPUserBytes"></a>
-                    <a name="//apple_ref/objc/Class/ESPUserBytes" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)ESPUserBytes">ESPUserBytes</a>
+                    <a name="/c:objc(cs)ESPTechDisplayUserBytes"></a>
+                    <a name="//apple_ref/objc/Class/ESPTechDisplayUserBytes" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPTechDisplayUserBytes">ESPTechDisplayUserBytes</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -598,13 +613,69 @@
                       <div class="abstract">
                         <p>The &ldquo;user bytes&rdquo; of an ESP device. For more info on the V1&rsquo;s internal settings, see <a href="http://www.valentine1.com/Lab/techreport3.asp">http://www.valentine1.com/Lab/techreport3.asp</a></p>
 
-                        <a href="Classes/ESPUserBytes.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/ESPTechDisplayUserBytes.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">ESPUserBytes</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">ESPTechDisplayUserBytes</span> <span class="p">:</span> <span class="nc"><a href="Classes/ESPUserBytesBase.html">ESPUserBytesBase</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPUserBytesBase"></a>
+                    <a name="//apple_ref/objc/Class/ESPUserBytesBase" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPUserBytesBase">ESPUserBytesBase</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The base class for &ldquo;user bytes&rdquo; of an ESP device.</p>
+
+                        <a href="Classes/ESPUserBytesBase.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">ESPUserBytesBase</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)ESPV1UserBytes"></a>
+                    <a name="//apple_ref/objc/Class/ESPV1UserBytes" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ESPV1UserBytes">ESPV1UserBytes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The &ldquo;user bytes&rdquo; of a V1 device. For more info on the V1&rsquo;s internal settings, see <a href="http://www.valentine1.com/Lab/techreport3.asp">http://www.valentine1.com/Lab/techreport3.asp</a></p>
+
+                        <a href="Classes/ESPV1UserBytes.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">ESPV1UserBytes</span> <span class="p">:</span> <span class="nc"><a href="Classes/ESPUserBytesBase.html">ESPUserBytesBase</a></span></code></pre>
 
                         </div>
                       </div>
@@ -616,7 +687,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2024-09-09)</p>
+          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2024-12-03)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
