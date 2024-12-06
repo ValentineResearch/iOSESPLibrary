@@ -1443,38 +1443,51 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
     }
 	
 	ESPResponseExpector* expector = [ESPResponseExpector expector];
-	[expector addResponseID:ESPPacketInfDisplayData];
-	__block NSUInteger packetsLeft = 42;
-	__weak ESPResponseExpector* _expector = expector;
-	expector.packetRecievedCallback = ^BOOL (ESPPacket* packet){
-		if([self _requestIsInBusyQueue:_expector])
-		{
-			return NO;
-		}
-		NSData* payload = [self _payloadFromPacket:packet];
-		ESPDisplayData* displayData = [[ESPDisplayData alloc] initWithData:payload];
-		if(displayData.displayOn)
-		{
-			packetsLeft--;
-			if(packetsLeft==0)
-			{
-				if(completion!=nil)
-				{
-					completion(displayData.displayOn, nil);
-				}
-				return YES;
-			}
-			return NO;
-		}
-		else
-		{
-			if(completion!=nil)
-			{
-				completion(displayData.displayOn, nil);
-			}
-			return YES;
-		}
-	};
+    if ( target == ESPRequestTargetTechDisplay ){
+        // There is no response from the Tech Display to indicate whether or not this was successful. Execute the success callback if the command was sent.
+        expector.packetRecievedCallback = ^BOOL (ESPPacket* packet){
+            if(completion!=nil)
+            {
+                completion(false, nil);
+            }
+            return YES;
+        };
+    }
+    else {
+        // Wait for display data from the V1 to verify the display is in the correct state
+        [expector addResponseID:ESPPacketInfDisplayData];
+        __block NSUInteger packetsLeft = 42;
+        __weak ESPResponseExpector* _expector = expector;
+        expector.packetRecievedCallback = ^BOOL (ESPPacket* packet){
+            if([self _requestIsInBusyQueue:_expector])
+            {
+                return NO;
+            }
+            NSData* payload = [self _payloadFromPacket:packet];
+            ESPDisplayData* displayData = [[ESPDisplayData alloc] initWithData:payload];
+            if(displayData.displayOn)
+            {
+                packetsLeft--;
+                if(packetsLeft==0)
+                {
+                    if(completion!=nil)
+                    {
+                        completion(displayData.displayOn, nil);
+                    }
+                    return YES;
+                }
+                return NO;
+            }
+            else
+            {
+                if(completion!=nil)
+                {
+                    completion(displayData.displayOn, nil);
+                }
+                return YES;
+            }
+        };
+    }
 	expector.failureCallback = ^(NSError* error){
 		if(completion!=nil)
 		{
@@ -1499,38 +1512,51 @@ NSString* const ESPRequestErrorDomain = @"ESPRequestErrorDomain";
 	request.packetData = [NSData data];
 	
 	ESPResponseExpector* expector = [ESPResponseExpector expector];
-	[expector addResponseID:ESPPacketInfDisplayData];
-	__block NSUInteger packetsLeft = 42;
-	__weak ESPResponseExpector* _expector = expector;
-	expector.packetRecievedCallback = ^BOOL (ESPPacket* packet){
-		if([self _requestIsInBusyQueue:_expector])
-		{
-			return NO;
-		}
-		NSData* payload = [self _payloadFromPacket:packet];
-		ESPDisplayData* displayData = [[ESPDisplayData alloc] initWithData:payload];
-		if(displayData.displayOn)
-		{
-			if(completion!=nil)
-			{
-				completion(displayData.displayOn, nil);
-			}
-			return YES;
-		}
-		else
-		{
-			packetsLeft--;
-			if(packetsLeft==0)
-			{
-				if(completion!=nil)
-				{
-					completion(displayData.displayOn, nil);
-				}
-				return YES;
-			}
-			return NO;
-		}
-	};
+    if ( target == ESPRequestTargetTechDisplay ){
+        // There is no response from the Tech Display to indicate whether or not this was successful. Execute the success callback if the command was sent.
+        expector.packetRecievedCallback = ^BOOL (ESPPacket* packet){
+            if(completion!=nil)
+            {
+                completion(true, nil);
+            }
+            return YES;
+        };
+    }
+    else {
+        // Wait for display data from the V1 to verify the display is in the correct state
+        [expector addResponseID:ESPPacketInfDisplayData];
+        __block NSUInteger packetsLeft = 42;
+        __weak ESPResponseExpector* _expector = expector;
+        expector.packetRecievedCallback = ^BOOL (ESPPacket* packet){
+            if([self _requestIsInBusyQueue:_expector])
+            {
+                return NO;
+            }
+            NSData* payload = [self _payloadFromPacket:packet];
+            ESPDisplayData* displayData = [[ESPDisplayData alloc] initWithData:payload];
+            if(displayData.displayOn)
+            {
+                if(completion!=nil)
+                {
+                    completion(displayData.displayOn, nil);
+                }
+                return YES;
+            }
+            else
+            {
+                packetsLeft--;
+                if(packetsLeft==0)
+                {
+                    if(completion!=nil)
+                    {
+                        completion(displayData.displayOn, nil);
+                    }
+                    return YES;
+                }
+                return NO;
+            }
+        };
+    }
 	expector.failureCallback = ^(NSError* error){
 		if(completion!=nil)
 		{
