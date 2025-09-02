@@ -1,6 +1,132 @@
 {
   "warnings": [
     {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 42,
+      "symbol": "ESPPhotoRadarType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 42,
+      "symbol": "ESPPhotoRadarType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 42,
+      "symbol": "ESPPhotoRadarType.ESPPhotoRadarType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 44,
+      "symbol": "ESPPhotoRadarType.ESPPhotoRadarType.prtNotPhoto",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 44,
+      "symbol": "ESPPhotoRadarType.prtNotPhoto",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 45,
+      "symbol": "ESPPhotoRadarType.ESPPhotoRadarType.prtMRCT",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 45,
+      "symbol": "ESPPhotoRadarType.prtMRCT",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 46,
+      "symbol": "ESPPhotoRadarType.ESPPhotoRadarType.prtDriveSafe3D",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 46,
+      "symbol": "ESPPhotoRadarType.prtDriveSafe3D",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 47,
+      "symbol": "ESPPhotoRadarType.ESPPhotoRadarType.prtDriveSafe3DHD",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 47,
+      "symbol": "ESPPhotoRadarType.prtDriveSafe3DHD",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 48,
+      "symbol": "ESPPhotoRadarType.ESPPhotoRadarType.prtRedflexHalo",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 48,
+      "symbol": "ESPPhotoRadarType.prtRedflexHalo",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 49,
+      "symbol": "ESPPhotoRadarType.ESPPhotoRadarType.prtRdflexNK7",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 49,
+      "symbol": "ESPPhotoRadarType.prtRdflexNK7",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 50,
+      "symbol": "ESPPhotoRadarType.ESPPhotoRadarType.prtEkin",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 50,
+      "symbol": "ESPPhotoRadarType.prtEkin",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPAlertData.h",
+      "line": 100,
+      "symbol": "ESPAlertData.photoType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPClient.h",
       "line": 22,
       "symbol": "ESPRequestTarget.ESPRequestTarget.ESPRequestTargetValentineOne",
@@ -192,41 +318,125 @@
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
       "line": 69,
-      "symbol": "ESPAutoMute.ESPAutoMute.ESPAutoMuteOff",
+      "symbol": "ESPKSensitivity.ESPKFullSensitivity",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
       "line": 69,
+      "symbol": "ESPKSensitivity.ESPKSensitivity.ESPKFullSensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 70,
+      "symbol": "ESPKSensitivity.ESPKOriginalGen2Sensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 70,
+      "symbol": "ESPKSensitivity.ESPKSensitivity.ESPKOriginalGen2Sensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 71,
+      "symbol": "ESPKSensitivity.ESPKRelaxedSensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 71,
+      "symbol": "ESPKSensitivity.ESPKSensitivity.ESPKRelaxedSensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 77,
+      "symbol": "ESPXSensitivity.ESPXFullSensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 77,
+      "symbol": "ESPXSensitivity.ESPXSensitivity.ESPXFullSensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 78,
+      "symbol": "ESPXSensitivity.ESPXOriginalGen2Sensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 78,
+      "symbol": "ESPXSensitivity.ESPXSensitivity.ESPXOriginalGen2Sensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 79,
+      "symbol": "ESPXSensitivity.ESPXRelaxedSensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 79,
+      "symbol": "ESPXSensitivity.ESPXSensitivity.ESPXRelaxedSensitivity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 85,
+      "symbol": "ESPAutoMute.ESPAutoMute.ESPAutoMuteOff",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
+      "line": 85,
       "symbol": "ESPAutoMute.ESPAutoMuteOff",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
-      "line": 70,
+      "line": 86,
       "symbol": "ESPAutoMute.ESPAutoMute.ESPAutoMuteOn",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
-      "line": 70,
+      "line": 86,
       "symbol": "ESPAutoMute.ESPAutoMuteOn",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
-      "line": 71,
+      "line": 87,
       "symbol": "ESPAutoMute.ESPAdvancedAutoMute",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jdavis_local/Documents/LocalVRIGitRepo/MobileApps/iOS_V1CTA/Library/ESPLibrary/include/ESPV1UserBytes.h",
-      "line": 71,
+      "line": 87,
       "symbol": "ESPAutoMute.ESPAutoMute.ESPAdvancedAutoMute",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ESPDisplayState Enumeration Reference</title>
+    <title>ESPPhotoRadarType Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Enum/ESPDisplayState" class="dashAnchor"></a>
-    <a title="ESPDisplayState Enumeration Reference"></a>
+    <a name="//apple_ref/objc/Enum/ESPPhotoRadarType" class="dashAnchor"></a>
+    <a title="ESPPhotoRadarType Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">ESPLibrary 2.0.5 Docs</a> (88% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">ESPLibrary Reference</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        ESPDisplayState Enumeration Reference
+        ESPPhotoRadarType Enumeration Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -382,15 +382,24 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>ESPDisplayState</h1>
+            <h1>ESPPhotoRadarType</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">ESPDisplayState</span> <span class="p">{}</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">enum</span>
+<span class="p">{</span>
+    <span class="n">prtNotPhoto</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="n">prtMRCT</span><span class="p">,</span>
+    <span class="n">prtDriveSafe3D</span><span class="p">,</span>
+    <span class="n">prtDriveSafe3DHD</span><span class="p">,</span>
+    <span class="n">prtRedflexHalo</span><span class="p">,</span>
+    <span class="n">prtRdflexNK7</span><span class="p">,</span>
+    <span class="n">prtEkin</span>
+<span class="p">}</span></code></pre>
 
                 </div>
               </div>
-            <p>Constants that the represent the Valentine One&rsquo;s display state</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -399,9 +408,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@ESPDisplayState@ESPDisplayStateOff"></a>
-                    <a name="//apple_ref/objc/Case/ESPDisplayStateOff" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@ESPDisplayState@ESPDisplayStateOff">ESPDisplayStateOff</a>
+                    <a name="/c:@EA@ESPPhotoRadarType@prtNotPhoto"></a>
+                    <a name="//apple_ref/objc/Case/prtNotPhoto" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@EA@ESPPhotoRadarType@prtNotPhoto">prtNotPhoto</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -409,14 +418,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Indicates the Valentine One&rsquo;s display is off</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">ESPDisplayStateOff</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">prtNotPhoto</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
 
                         </div>
                       </div>
@@ -426,9 +435,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@ESPDisplayState@ESPDisplayStateBlinking"></a>
-                    <a name="//apple_ref/objc/Case/ESPDisplayStateBlinking" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@ESPDisplayState@ESPDisplayStateBlinking">ESPDisplayStateBlinking</a>
+                    <a name="/c:@EA@ESPPhotoRadarType@prtMRCT"></a>
+                    <a name="//apple_ref/objc/Case/prtMRCT" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@EA@ESPPhotoRadarType@prtMRCT">prtMRCT</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -436,14 +445,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Indicates the Valentine One&rsquo;s display is blinking</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">ESPDisplayStateBlinking</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">prtMRCT</span></code></pre>
 
                         </div>
                       </div>
@@ -453,9 +462,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@ESPDisplayState@ESPDisplayStateOn"></a>
-                    <a name="//apple_ref/objc/Case/ESPDisplayStateOn" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@ESPDisplayState@ESPDisplayStateOn">ESPDisplayStateOn</a>
+                    <a name="/c:@EA@ESPPhotoRadarType@prtDriveSafe3D"></a>
+                    <a name="//apple_ref/objc/Case/prtDriveSafe3D" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@EA@ESPPhotoRadarType@prtDriveSafe3D">prtDriveSafe3D</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -463,14 +472,122 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Indicates the Valentine One&rsquo;s display is on</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">ESPDisplayStateOn</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">prtDriveSafe3D</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@EA@ESPPhotoRadarType@prtDriveSafe3DHD"></a>
+                    <a name="//apple_ref/objc/Case/prtDriveSafe3DHD" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@EA@ESPPhotoRadarType@prtDriveSafe3DHD">prtDriveSafe3DHD</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">prtDriveSafe3DHD</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@EA@ESPPhotoRadarType@prtRedflexHalo"></a>
+                    <a name="//apple_ref/objc/Case/prtRedflexHalo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@EA@ESPPhotoRadarType@prtRedflexHalo">prtRedflexHalo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">prtRedflexHalo</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@EA@ESPPhotoRadarType@prtRdflexNK7"></a>
+                    <a name="//apple_ref/objc/Case/prtRdflexNK7" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@EA@ESPPhotoRadarType@prtRdflexNK7">prtRdflexNK7</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">prtRdflexNK7</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@EA@ESPPhotoRadarType@prtEkin"></a>
+                    <a name="//apple_ref/objc/Case/prtEkin" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@EA@ESPPhotoRadarType@prtEkin">prtEkin</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">prtEkin</span></code></pre>
 
                         </div>
                       </div>

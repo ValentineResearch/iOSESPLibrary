@@ -63,6 +63,22 @@ typedef enum
     ESPKaRelaxedSensitivity = 0b01,
 } ESPKaSensitivity;
 
+/// Constants that represent the K Sensitivity setting
+typedef enum
+{
+    ESPKFullSensitivity = 0b10,
+    ESPKOriginalGen2Sensitivity = 0b11,
+    ESPKRelaxedSensitivity = 0b01,
+} ESPKSensitivity;
+
+/// Constants that represent the X Sensitivity setting
+typedef enum
+{
+    ESPXFullSensitivity = 0b10,
+    ESPXOriginalGen2Sensitivity = 0b11,
+    ESPXRelaxedSensitivity = 0b01,
+} ESPXSensitivity;
+
 /// Constants that represent the AutoMute setting
 typedef enum
 {
@@ -164,8 +180,6 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds);
 @property (nonatomic) BOOL KaAlwaysRadarPriority;
 /// Toggle the Fast Laser Detect feature
 @property (nonatomic) BOOL FastLaserDetect;
-/// Sets the Ka threhsold setting
-@property (nonatomic) ESPKaSensitivity kaSensitivity;
 /// Toggle the Startup Sequence On/Off feature
 @property (nonatomic) BOOL StartupSequenceOn;
 /// Toggle the Resting Display On/Off feature
@@ -174,4 +188,24 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds);
 @property (nonatomic) BOOL BSMPlusOn;
 /// Sets the Auto Mute setting
 @property (nonatomic) ESPAutoMute autoMuteEnable;
+/// Sets the Ka threhsold setting
+@property (nonatomic) ESPKaSensitivity kaSensitivity;
+/// Sets the K threhsold setting
+@property (nonatomic) ESPKSensitivity kSensitivity;
+/// Sets the X threhsold setting
+@property (nonatomic) ESPXSensitivity xSensitivity;
+/// Toggle the MRCT On/Off feature
+@property (nonatomic) BOOL MRCTOn;
+/// Toggle the Drivesafe 3D On/Off feature
+@property (nonatomic) BOOL driveSafe3DOn;
+/// Toggle the Drivesafe 3DHD On/Off feature
+@property (nonatomic) BOOL driveSafe3DHDOn;
+/// Toggle the Redflex Halo On/Off feature
+@property (nonatomic) BOOL redflexHaloOn;
+/// Toggle the Redflex NK7 On/Off feature
+@property (nonatomic) BOOL redflexNK7On;
+/// Toggle the Ekin On/Off feature
+@property (nonatomic) BOOL ekinOn;
+/// Toggle the Photo Verifier On/Off feature
+@property (nonatomic) BOOL photoVerifierOn;
 @end

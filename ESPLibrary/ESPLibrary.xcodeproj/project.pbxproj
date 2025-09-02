@@ -77,6 +77,7 @@
 		1336F5C32CDEAC8100893D97 /* ESPUserBytesBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESPUserBytesBase.m; sourceTree = "<group>"; };
 		1336F5C52CE399F300893D97 /* ESPTechDisplayUserBytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESPTechDisplayUserBytes.h; sourceTree = "<group>"; };
 		1336F5C62CE39A8B00893D97 /* ESPTechDisplayUserBytes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESPTechDisplayUserBytes.m; sourceTree = "<group>"; };
+		139B510D2D8B324100571D67 /* TechDisplayVersionUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TechDisplayVersionUtil.h; sourceTree = "<group>"; };
 		847325B816F0FC4200258402 /* libESPLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libESPLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		847325BB16F0FC4200258402 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8473262616F1196100258402 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -169,6 +170,7 @@
 		A5478FD81CE20B7400FFCA49 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				139B510D2D8B324100571D67 /* TechDisplayVersionUtil.h */,
 				A59F9F031D2C1987002ACC31 /* ESPLibrary.h */,
 				A59F9F061D2C1987002ACC31 /* ESPScanner.h */,
 				A59F9EFE1D2C1987002ACC31 /* ESPClient.h */,

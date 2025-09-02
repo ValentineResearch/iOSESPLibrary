@@ -12,6 +12,8 @@ typedef enum
 {
 	/// The band of an alert data packet with invalid band data
 	ESPAlertBandInvalid = -1,
+    /// Photo alert
+    ESPAlertBandPhoto = -2,
 	/// "Laser" band is currently not supported by the V1
 	ESPAlertBandLaser = 0x01,
     /// Ka band alert
@@ -36,6 +38,17 @@ typedef enum
     /// Rear direction
 	ESPAlertDirectionRear = 0x01
 } ESPAlertDirection;
+
+typedef enum
+{
+    prtNotPhoto = 0,
+    prtMRCT,
+    prtDriveSafe3D,
+    prtDriveSafe3DHD,
+    prtRedflexHalo,
+    prtRdflexNK7,
+    prtEkin
+} ESPPhotoRadarType;
 
 /// A packet that represents an alert detected by the Valentine One.
 @interface ESPAlertData : NSObject
@@ -78,12 +91,13 @@ typedef enum
 @property (nonatomic, readonly) NSUInteger rearSignalStrength;
 /// The alert signal strength to use for the bargraph (0-255)
 @property (nonatomic, readonly) NSUInteger alertSignalStrength;
-
 /// The bargraph strength indicator strength (0-8)
 @property (nonatomic, readonly) NSUInteger bargraphSignalStrength;
 
 /// Tells if this alert is a priority alert
 @property (nonatomic, readonly, getter=isPriority) BOOL priority;
+
+@property (nonatomic, readonly, getter=getPhotoType) ESPPhotoRadarType photoType;
 
 /// Tells if this alert is was junked out
 @property (nonatomic, readonly, getter=isJunkAlert) BOOL junkAlert;

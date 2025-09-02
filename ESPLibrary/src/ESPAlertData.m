@@ -149,7 +149,7 @@
 				return 1;
 			}
 			return 0;
-			
+        case ESPAlertBandPhoto:
 		case ESPAlertBandK:
 		case ESPAlertBandKu:
 			if(signalStrength>=0xC2)
@@ -240,6 +240,13 @@
     return ESPData_getBit(_data, 6, 6);
 }
 
+-(ESPPhotoRadarType)getPhotoType
+{
+    Byte photoBits = (ESPData_getByte(_data, 6)) & 0x0F;
+    
+    return (ESPPhotoRadarType) photoBits;
+}
+
 -(ESPAlertDirection)direction
 {
 	Byte dirVal = ((ESPData_getByte(_data, 5) >> 5) & 0b00000111);
@@ -260,7 +267,14 @@
 
 -(ESPAlertBand)band
 {
-	Byte bandVal = (ESPData_getByte(_data, 5) & 0b00011111);
+    Byte bandVal;
+    bandVal = (ESPData_getByte(_data, 6) & 0b00001111);
+    if ((bandVal & 0x0F) != 0)
+    {
+        return ESPAlertBandPhoto;
+    }
+    
+	bandVal = (ESPData_getByte(_data, 5) & 0b00011111);
 	if(bandVal==0x01)
 	{
 		return ESPAlertBandLaser;

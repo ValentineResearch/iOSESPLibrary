@@ -93,7 +93,10 @@ static const ESPPacketID ESPPacketReqWriteVolume = 0x39;
 static const ESPPacketID ESPPacketReqAbortAudioDelay = 0x3A;
 /// Represents the packet identifier to display the current volume on the V1
 static const ESPPacketID ESPPacketReqDisplayCurrentVolume = 0x3B;
-
+/// Represents the packet identifier to request all volume on the V1
+static const ESPPacketID ESPPacketReqAllVolume = 0x3C;
+/// Represents the packet identifier for  all volume response from the V1
+static const ESPPacketID ESPPacketRespAllVolume = 0x3D;
 /// Represents the packet identifier for a start alert data request packet
 static const ESPPacketID ESPPacketReqStartAlertData = 0x41;
 /// Represents the packet identifier for a stop alert data request packet

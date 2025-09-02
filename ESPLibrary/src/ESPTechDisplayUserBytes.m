@@ -6,7 +6,7 @@
 
 #import "ESPTechDisplayUserBytes.h"
 #import "ESPDataUtils.h"
-#import "V1VersionUtil.h"
+#import "TechDisplayVersionUtil.h"
 
 
 
@@ -22,7 +22,7 @@
 {
 	if(self = [super init])
     {
-        _t1Version = DEFAULT_T1_VERSION;
+        _t1Version = DEFAULT_TECHDISPLAY_VERSION;
     }
 	return self;
 }
@@ -98,6 +98,26 @@
 -(BOOL)ExtendedRecallModeTimeoutOn
 {
     return !ESPData_getBit(self.data, 0, 2);
+}
+
+-(void)setRestingDisplayEnabled:(BOOL)on
+{
+    ESPData_setBit(self.data, 0, 3, on);
+}
+
+-(BOOL)restingDisplayEnabled
+{
+    return ESPData_getBit(self.data, 0, 3);
+}
+
+-(void)setExtendedAlertFrequencyOn:(BOOL)on
+{
+    ESPData_setBit(self.data, 0, 4, !on);
+}
+
+-(BOOL)extendedAlertFrequencyOn
+{
+    return !ESPData_getBit(self.data, 0, 4);
 }
 
 -(NSString*)debugDescription

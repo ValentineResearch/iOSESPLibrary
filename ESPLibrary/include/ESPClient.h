@@ -271,6 +271,13 @@ enum ESPRequestErrorCode
 /// Requests the Valentine One to display the current volume
 /// @param completion a callback called if the request is successful, if the request times out, or if an error occurs
 -(void)requestDisplayCurrentVolume:(ESPRequestTarget)target completion:(void(^)(NSError*))completion;
+/// Requests the all volume settings of the ESP device
+/// @param target the target to send the request to. Currently only ESPRequestTargetValentineOne is able to handle this type of request
+/// @param completion a callback called if a response is received, if the request times out, or if an error occurs
+-(void)requestAllVolumeFrom:(ESPRequestTarget)target completion:(void (^)(NSData *, NSError *))completion;
+/// Requests the Valentine One for all volume bytes
+/// @param completion a callback called if the request is successful, if the request times out, or if an error occurs
+-(void)requestAllVolume:(void (^)(NSData *, NSError *))completion;
 
 /// Requests alert data to start being received from the ESP device to the current delegate
 /// @see ESPClientDelegate

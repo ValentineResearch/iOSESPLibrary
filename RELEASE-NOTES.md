@@ -64,3 +64,12 @@ Interface Changes
 * Added support for turning Auto Mute on or off. **(Only supported on versions V4.1036 and above)**
 * Added support for displaying the current volume setting on the V1. **(Only supported on versions V4.1036 and above)**
 
+# **ESP Library2 v2.0.7 - September, 2025**
+* Added support for Photo radar settings in the user bytes **(Only supported on versions V4.1037 and above)**
+* Added support for Photo radar type identification in the alert data **(Only supported on versions V4.1037 and above)**
+* Added support for adjusting X and K band sensitivity **(Only supported on versions V4.1037 and above)**
+* Added support for reading the saved and temporary volume together in the reqAllVolume packet. Temporary volume changes can be made be clearing the Save Volume bit in Aux 0 of the reqWriteVolume packet **(Only supported on versions V4.1037 and above)**
+* Added the display active flag to the infDisplayData packet to indicate when the V1 display is active, or not "resting" **(Only supported on versions V4.1037 and above)**
+* Added support for the resting display feature on the Tech Display **(Only supported on versions T1.0001 and above)**
+* Added support for the extended frequency timeout feature on the Tech Display **(Only supported on versions T1.0001 and above)**
+

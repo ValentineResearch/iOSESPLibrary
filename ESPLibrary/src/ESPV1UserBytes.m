@@ -608,27 +608,6 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
     return ESPData_getBit(self.data, 1, 5);
 }
 
--(void)setKaSensitivity:(ESPKaSensitivity)kaSensitivity {
-    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
-        return;
-    }
-    Byte kaSensitivityByte = (Byte)kaSensitivity;
-    if ( kaSensitivityByte == 0 ){
-        // Do not allow an invalid value
-        kaSensitivityByte = (Byte)ESPKaFullSensitivity;
-    }
-    ESPData_setBit(self.data, 1, 6, ESPByte_getBit(kaSensitivityByte, 0));
-    ESPData_setBit(self.data, 1, 7, ESPByte_getBit(kaSensitivityByte, 1));
-}
-
-- (ESPKaSensitivity)kaSensitivity {
-    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
-        return ESPKaFullSensitivity;
-    }
-    Byte kaSensitivityByte = ESPData_getByte(self.data, 1);
-    kaSensitivityByte = (kaSensitivityByte >> 6);
-    return (ESPKaSensitivity)kaSensitivityByte;
-}
 
 -(void)setStartupSequenceOn:(bool)startupSequenceOn {
     if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
@@ -692,6 +671,170 @@ ESPKMuteTimerValue ESPKMuteTimerValue_fromSeconds(NSUInteger seconds)
     Byte autoMuteByte = ESPData_getByte(self.data, 2);
     autoMuteByte = ( (autoMuteByte & 0x18) >> 3);
     return (ESPAutoMute)autoMuteByte;
+}
+
+-(void)setKaSensitivity:(ESPKaSensitivity)kaSensitivity {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return;
+    }
+    Byte kaSensitivityByte = (Byte)kaSensitivity;
+    if ( kaSensitivityByte == 0 ){
+        // Do not allow an invalid value
+        kaSensitivityByte = (Byte)ESPKaFullSensitivity;
+    }
+    ESPData_setBit(self.data, 1, 6, ESPByte_getBit(kaSensitivityByte, 0));
+    ESPData_setBit(self.data, 1, 7, ESPByte_getBit(kaSensitivityByte, 1));
+}
+
+- (ESPKaSensitivity)kaSensitivity {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return ESPKaFullSensitivity;
+    }
+    Byte kaSensitivityByte = ESPData_getByte(self.data, 1);
+    kaSensitivityByte = (kaSensitivityByte >> 6);
+    return (ESPKaSensitivity)kaSensitivityByte;
+}
+
+-(void)setKSensitivity:(ESPKSensitivity)kSensitivity {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return;
+    }
+    Byte kSensitivityByte = (Byte)kSensitivity;
+    if ( kSensitivityByte == 0 ){
+        // Do not allow an invalid value
+        kSensitivityByte = (Byte)ESPKOriginalGen2Sensitivity;
+    }
+    ESPData_setBit(self.data, 2, 5, ESPByte_getBit(kSensitivityByte, 0));
+    ESPData_setBit(self.data, 2, 6, ESPByte_getBit(kSensitivityByte, 1));
+}
+
+- (ESPKSensitivity)kSensitivity {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return ESPKFullSensitivity;
+    }
+    Byte kSensitivityByte = ESPData_getByte(self.data, 2);
+    kSensitivityByte = (kSensitivityByte & 0x60) >> 5;
+    return (ESPKSensitivity)kSensitivityByte;
+}
+
+-(void)setMRCTOn:(bool)MRCTOn {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return;
+    }
+    ESPData_setBit(self.data, 2, 7, !MRCTOn);
+}
+
+- (bool)MRCTOn {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return false;
+    }
+    return !ESPData_getBit(self.data, 2, 7);
+}
+
+-(void)setXSensitivity:(ESPXSensitivity)xSensitivity {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return;
+    }
+    Byte xSensitivityByte = (Byte)xSensitivity;
+    if ( xSensitivityByte == 0 ){
+        // Do not allow an invalid value
+        xSensitivityByte = (Byte)ESPKOriginalGen2Sensitivity;
+    }
+    ESPData_setBit(self.data, 3, 0, ESPByte_getBit(xSensitivityByte, 0));
+    ESPData_setBit(self.data, 3, 1, ESPByte_getBit(xSensitivityByte, 1));
+}
+
+- (ESPXSensitivity)xSensitivity {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return ESPXFullSensitivity;
+    }
+    Byte xSensitivityByte = ESPData_getByte(self.data, 3);
+    xSensitivityByte = (xSensitivityByte & 0x03);
+    return (ESPXSensitivity)xSensitivityByte;
+}
+
+-(void)setDriveSafe3DOn:(bool)driveSafe3DOn {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return;
+    }
+    ESPData_setBit(self.data, 3, 2, !driveSafe3DOn);
+}
+
+- (bool)driveSafe3DOn {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return false;
+    }
+    return !ESPData_getBit(self.data, 3, 2);
+}
+
+-(void)setDriveSafe3DHDOn:(bool)driveSafe3DHDOn {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return;
+    }
+    ESPData_setBit(self.data, 3, 3, !driveSafe3DHDOn);
+}
+
+- (bool)driveSafe3DHDOn {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return false;
+    }
+    return !ESPData_getBit(self.data, 3, 3);
+}
+
+-(void)setRedflexHaloOn:(bool)redflexHaloOn {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return;
+    }
+    ESPData_setBit(self.data, 3, 4, !redflexHaloOn);
+}
+
+- (bool)redflexHaloOn {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return false;
+    }
+    return !ESPData_getBit(self.data, 3, 4);
+}
+
+-(void)setRedflexNK7On:(bool)redflexNK7On {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return;
+    }
+    ESPData_setBit(self.data, 3, 5, !redflexNK7On);
+}
+
+- (bool)redflexNK7On {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return false;
+    }
+    return !ESPData_getBit(self.data, 3, 5);
+}
+
+-(void)setEkinOn:(bool)ekinOn {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return;
+    }
+    ESPData_setBit(self.data, 3, 6, !ekinOn);
+}
+
+- (bool)ekinOn {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return false;
+    }
+    return !ESPData_getBit(self.data, 3, 6);
+}
+
+-(void)setPhotoVerifierOn:(bool)photoVerifierOn {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return;
+    }
+    ESPData_setBit(self.data, 3, 7, !photoVerifierOn);
+}
+
+- (bool)photoVerifierOn {
+    if(_v1Version < INITIAL_V1_GEN_2_VERSION) {
+        return false;
+    }
+    return !ESPData_getBit(self.data, 3, 7);
 }
 
 -(NSString*)debugDescription

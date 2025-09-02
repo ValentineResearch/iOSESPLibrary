@@ -45,5 +45,9 @@
 @property (nonatomic) BOOL TechDisplayOn;
 /// Toggles Extended Recall Mode Timeout On/Off
 @property (nonatomic) BOOL ExtendedRecallModeTimeoutOn;
+/// Toggles Resting Display On/Off
+@property (nonatomic) BOOL restingDisplayEnabled;
+/// Toggles Extended Alert Frequency On/Off
+@property (nonatomic) BOOL extendedAlertFrequencyOn;
 
 @end

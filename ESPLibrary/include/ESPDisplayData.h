@@ -127,6 +127,8 @@ BOOL ESPV1Mode_isValidMode(ESPV1Mode mode);
 @property (nonatomic, readonly) BOOL customSweep;
 /// Tells whether the ESP device is operating in legacy mode (NO means normal operation, YES means legacy mode)
 @property (nonatomic, readonly) BOOL legacy;
+/// Tells the Valentine One display status. NO means the V1 is displaying the mode or resting display indicator, YES means the V1 is displaying an alert, volume or other important information
+@property (nonatomic, readonly) BOOL displayActive;
 
 /// Tells the current mode of the V1. The mode is determined by reading the seven segment display data and the systemStatus bit. If the mode cannot be determined from the seven segment display, the mode is ESPV1ModeUnknown
 @property (nonatomic, readonly) ESPV1Mode mode;

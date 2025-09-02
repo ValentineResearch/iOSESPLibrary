@@ -316,6 +316,11 @@ BOOL ESPV1Mode_isValidMode(ESPV1Mode mode)
 	return ESPData_getBit(_data, 5, 6);
 }
 
+-(BOOL)displayActive
+{
+    return ESPData_getBit(_data, 5, 7);
+}
+
 -(ESPV1Mode)mode
 {
 	if(self.systemStatus)
