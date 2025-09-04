@@ -242,8 +242,12 @@
 
 -(ESPPhotoRadarType)getPhotoType
 {
-    Byte photoBits = (ESPData_getByte(_data, 6)) & 0x0F;
+    if ( _v1Version < ALLOW_PHOTORADAR_START_VERSION ) {
+        // Photo not available
+        return prtNotPhoto;
+    }
     
+    Byte photoBits = (ESPData_getByte(_data, 6)) & 0x0F;
     return (ESPPhotoRadarType) photoBits;
 }
 
@@ -267,35 +271,37 @@
 
 -(ESPAlertBand)band
 {
-    Byte bandVal;
-    bandVal = (ESPData_getByte(_data, 6) & 0b00001111);
-    if ((bandVal & 0x0F) != 0)
-    {
-        return ESPAlertBandPhoto;
-    }
+    ESPAlertBand alertBand = ESPAlertBandInvalid;
     
-	bandVal = (ESPData_getByte(_data, 5) & 0b00011111);
+    Byte bandVal = (ESPData_getByte(_data, 5) & 0b00011111);
+    
 	if(bandVal==0x01)
 	{
-		return ESPAlertBandLaser;
+        alertBand = ESPAlertBandLaser;
 	}
 	else if(bandVal==0x02)
 	{
-		return ESPAlertBandKa;
+        alertBand = ESPAlertBandKa;
 	}
 	else if(bandVal==0x04)
 	{
-		return ESPAlertBandK;
+        alertBand = ESPAlertBandK;
 	}
 	else if(bandVal==0x08)
 	{
-		return ESPAlertBandX;
+        alertBand = ESPAlertBandX;
 	}
 	else if(bandVal==0x10)
 	{
-		return ESPAlertBandKu;
+        alertBand = ESPAlertBandKu;
 	}
-	return ESPAlertBandInvalid;
+    
+    if ( (alertBand == ESPAlertBandK) && ( self.photoType != prtNotPhoto) ) {
+        // Override the band and report Photo if necessary
+        alertBand = ESPAlertBandPhoto;
+    }
+    
+	return alertBand;
 }
 
 -(NSString*)debugDescription
