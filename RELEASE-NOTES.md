@@ -76,3 +76,6 @@ Interface Changes
 # **ESP Library2 v2.0.8 - September, 2025**
 * Fixed an issue causing alerts on V1 Gen1 versions to be reported as photo**
 
+# **ESP Library2 v2.0.9 - October, 2025**
+* Updated specification to 3.014 to add the Keep Curent on on BT Disconnect bit to reqWriteVolume**
+
